@@ -301,6 +301,45 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/Assets\/IETA-elevating-the-field-image.jpg" : {
+      "ft" : 16384,
+      "iS" : 988829,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/Assets\/IETA-elevating-the-field-image.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/Assets\/IETA-hero-Image.png" : {
+      "ft" : 32768,
+      "iS" : 1100883,
+      "oA" : 0,
+      "oAP" : "\/Assets\/IETA-hero-Image.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/Assets\/IETA-join-our-community.jpg" : {
+      "ft" : 16384,
+      "iS" : 229995,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/Assets\/IETA-join-our-community.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/Assets\/IETA-LOGO_Full-Black.png" : {
       "ft" : 32768,
       "iS" : 58441,
@@ -369,6 +408,45 @@
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
+    },
+    "\/Assets\/IETA-upcoming-event-hero-Image.jpg" : {
+      "ft" : 16384,
+      "iS" : 160193,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/Assets\/IETA-upcoming-event-hero-Image.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/Assets\/our-research-image-group.jpg" : {
+      "ft" : 16384,
+      "iS" : 299330,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/Assets\/our-research-image-group.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/Assets\/our-research-image-room.jpg" : {
+      "ft" : 16384,
+      "iS" : 274608,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/Assets\/our-research-image-room.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
     },
     "\/blog.scss" : {
       "aP" : 0,
