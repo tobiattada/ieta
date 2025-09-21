@@ -2178,6 +2178,8 @@ footer.page-footer .footer-wrapper .footer-navigation h4 {
 
 .navbar__brand {
   padding: 8px 0px;
+}
+.navbar__brand img {
   max-width: 200px;
 }
 
