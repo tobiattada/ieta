@@ -52,6 +52,10 @@ html {
     transform: none;
 }
 
+.row-has-promo:not(.row-full-width)>[class^=col-]:first-child{
+	margin-left: 0px !important;
+}
+
 .page-main{
 	padding: 0px;
 }

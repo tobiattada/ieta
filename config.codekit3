@@ -422,6 +422,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/Assets\/news-and-events-hero-image.jpg" : {
+      "ft" : 16384,
+      "iS" : 905742,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/Assets\/news-and-events-hero-image.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/Assets\/our-research-image-group.jpg" : {
       "ft" : 16384,
       "iS" : 299330,
@@ -444,6 +457,32 @@
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/Assets\/trip-planning-resources-hero-image.png" : {
+      "ft" : 32768,
+      "iS" : 3259627,
+      "oA" : 0,
+      "oAP" : "\/Assets\/trip-planning-resources-hero-image.png",
+      "oF" : 0,
+      "oIPL" : 1,
+      "opt" : 1,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/Assets\/who-we-are-hero-image.png" : {
+      "ft" : 32768,
+      "iS" : 3710065,
+      "oA" : 0,
+      "oAP" : "\/Assets\/who-we-are-hero-image.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
