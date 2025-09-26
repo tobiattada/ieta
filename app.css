@@ -1968,13 +1968,6 @@ b mark, mark b {
   background: #27277C;
 }
 
-.footer-push {
-  display: none;
-}
-
-footer.page-footer {
-  display: inline;
-}
 footer.page-footer .rich-text *, footer.page-footer * {
   color: #F5F5F5;
 }
