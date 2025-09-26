@@ -51,6 +51,10 @@ html {
   margin-left: 0px;
 }
 
+.row:not(.row-full-width) .component-promo.right-left-no-spacing {
+  margin: 0px !important;
+}
+
 .component-promo:not(.btn-anchored).overlay-horizontal-position-middle.overlay-vertical-position-bottom .bg-type-image {
   bottom: 0;
   left: 0;
