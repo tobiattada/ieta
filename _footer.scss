@@ -1,3 +1,7 @@
+.footer-push{
+	display: none;
+}
+
 footer.page-footer{
 	.rich-text *, *{color: $light;}
 
@@ -6,6 +10,8 @@ footer.page-footer{
 	.shell{padding:0px;}
 
 	.footer-section>.footer-column:nth-child(2n){background-color: $dark-gray;}
+
+	display: inline;
 
 	.footer-section{ // wraps the bottom section
 

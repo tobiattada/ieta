@@ -65,6 +65,10 @@ html {
   padding: 0px;
 }
 
+header.page-header {
+  display: none;
+}
+
 .header-wrap, .navs, div.navs nav {
   display: none;
 }
@@ -1964,6 +1968,13 @@ b mark, mark b {
   background: #27277C;
 }
 
+.footer-push {
+  display: none;
+}
+
+footer.page-footer {
+  display: inline;
+}
 footer.page-footer .rich-text *, footer.page-footer * {
   color: #F5F5F5;
 }
@@ -3096,8 +3107,182 @@ footer.page-footer .footer-wrapper .footer-navigation h4 {
   border-radius: 24px;
   box-sizing: border-box;
   background: #FDFDFD;
-  width: 50%;
+  width: 50% !important;
   padding: 25px;
+}
+.promo-event .row .component-overlaybutton.bg-overlay .rich-text h1 {
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 44px;
+  letter-spacing: 0%;
+  color: #1E3EAF;
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  .promo-event .row .component-overlaybutton.bg-overlay .rich-text h1 {
+    font-size: 70px;
+    line-height: 91px;
+  }
+}
+.promo-event .row .component-overlaybutton.bg-overlay .rich-text h1.hebrew {
+  font-family: "Noto Sans Hebrew", sans-serif !important;
+  font-weight: 600;
+  text-align: right;
+  direction: rtl;
+}
+.promo-event .row .component-overlaybutton.bg-overlay .rich-text h2 {
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 42px;
+  letter-spacing: 0%;
+  color: #1E3EAF;
+}
+@media (min-width: 1024px) {
+  .promo-event .row .component-overlaybutton.bg-overlay .rich-text h2 {
+    font-size: 60px;
+    line-height: 78px;
+  }
+}
+.promo-event .row .component-overlaybutton.bg-overlay .rich-text h2.hebrew {
+  font-family: "Noto Sans Hebrew", sans-serif !important;
+  font-weight: 600;
+  text-align: right;
+  direction: rtl;
+}
+.promo-event .row .component-overlaybutton.bg-overlay .rich-text h3 {
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 130%;
+  letter-spacing: 0%;
+  color: #1E3EAF;
+}
+.promo-event .row .component-overlaybutton.bg-overlay .rich-text h3.hebrew {
+  font-family: "Noto Sans Hebrew", sans-serif !important;
+  font-weight: 600;
+  text-align: right;
+  direction: rtl;
+}
+@media (min-width: 1024px) {
+  .promo-event .row .component-overlaybutton.bg-overlay .rich-text h3 {
+    font-size: 45px;
+    line-height: 58.5px;
+  }
+}
+@media (min-width: 1300px) {
+  .promo-event .row .component-overlaybutton.bg-overlay .rich-text h3 {
+    line-height: 150%;
+  }
+}
+.promo-event .row .component-overlaybutton.bg-overlay .rich-text h4 {
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 28px;
+  letter-spacing: 0%;
+  color: #1E3EAF;
+}
+@media (min-width: 1024px) {
+  .promo-event .row .component-overlaybutton.bg-overlay .rich-text h4 {
+    font-size: 32px;
+    line-height: 42px;
+  }
+}
+.promo-event .row .component-overlaybutton.bg-overlay .rich-text h4.hebrew {
+  font-family: "Noto Sans Hebrew", sans-serif !important;
+  font-weight: 600;
+  text-align: right;
+  direction: rtl;
+}
+.promo-event .row .component-overlaybutton.bg-overlay .rich-text h5 {
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: 0%;
+  color: #27277C;
+}
+@media (min-width: 1024px) {
+  .promo-event .row .component-overlaybutton.bg-overlay .rich-text h5 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+.promo-event .row .component-overlaybutton.bg-overlay .rich-text h5.hebrew {
+  font-family: "Noto Sans Hebrew", sans-serif !important;
+  font-weight: 600;
+  text-align: right;
+  direction: rtl;
+}
+.promo-event .row .component-overlaybutton.bg-overlay .rich-text h6 {
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 130%;
+  letter-spacing: 0%;
+  color: #27277C;
+}
+@media (min-width: 1024px) {
+  .promo-event .row .component-overlaybutton.bg-overlay .rich-text h6 {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+.promo-event .row .component-overlaybutton.bg-overlay .rich-text h6.hebrew {
+  font-family: "Noto Sans Hebrew", sans-serif !important;
+  font-weight: 600;
+  text-align: right;
+  direction: rtl;
+}
+.promo-event .row .component-overlaybutton.bg-overlay .rich-text p {
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: #2A2A2A;
+}
+@media (min-width: 1024px) {
+  .promo-event .row .component-overlaybutton.bg-overlay .rich-text p {
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
+.promo-event .row .component-overlaybutton.bg-overlay .rich-text p strong, .promo-event .row .component-overlaybutton.bg-overlay .rich-text p em, .promo-event .row .component-overlaybutton.bg-overlay .rich-text p b {
+  font-weight: 600;
+  color: #2A2A2A;
+}
+.promo-event .row .component-overlaybutton.bg-overlay .rich-text p.hebrew {
+  font-family: "Noto Sans Hebrew", sans-serif !important;
+  font-weight: 600;
+  text-align: right;
+  direction: rtl;
+}
+.promo-event .row .component-overlaybutton.bg-overlay .rich-text p.eyebrow {
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: #1E3EAF;
+}
+@media (min-width: 1024px) {
+  .promo-event .row .component-overlaybutton.bg-overlay .rich-text p.eyebrow {
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
+.promo-event .row .component-overlaybutton.bg-overlay .rich-text p.eyebrow strong, .promo-event .row .component-overlaybutton.bg-overlay .rich-text p.eyebrow em, .promo-event .row .component-overlaybutton.bg-overlay .rich-text p.eyebrow b {
+  font-weight: 600;
+  color: #1E3EAF;
+}
+.promo-event .row .component-overlaybutton.bg-overlay .rich-text p.eyebrow.hebrew {
+  font-family: "Noto Sans Hebrew", sans-serif !important;
+  font-weight: 600;
+  text-align: right;
+  direction: rtl;
 }
 
 .modals {
