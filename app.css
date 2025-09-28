@@ -3084,6 +3084,9 @@ footer.page-footer .footer-wrapper .footer-navigation h4 {
   background: linear-gradient(180deg, rgba(9, 14, 32, 0) 27.83%, rgba(9, 14, 32, 0.8) 98.31%);
   pointer-events: none;
 }
+.home-hero .component-promo:not(.btn-anchored).overlay-horizontal-position-middle.overlay-vertical-position-middle .bg-type-image {
+  top: none;
+}
 .home-hero .component-promo .mobile-image {
   height: 100%;
   width: auto;
