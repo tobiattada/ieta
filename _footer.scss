@@ -19,7 +19,7 @@ footer.page-footer{
 		grid-template-columns: 1fr;
 
 		@include desktop {
-			grid-template-columns: 2fr 1fr;
+			grid-template-columns: 1fr 1fr 1fr 1fr;
 		}
 
 		.flex-item{
@@ -107,6 +107,21 @@ footer.page-footer{
 				@include button($light-blue, $primary-blue);
 			}
 		}
+
+		h4{
+				text-transform: none;
+				font-family: $outfit;
+				font-weight: 600;
+				font-size: 16px;
+				line-height: 24px;
+				letter-spacing: 0%;
+				color: $light;
+
+				@include desktop {
+					font-size: 18px;
+					line-height: 27px;
+				}
+			}
 
 
 		.footer-navigation{

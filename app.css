@@ -1990,7 +1990,7 @@ footer.page-footer .footer-section {
 }
 @media (min-width: 1024px) {
   footer.page-footer .footer-section {
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 footer.page-footer .footer-section .flex-item {
@@ -2133,6 +2133,21 @@ footer.page-footer .footer-wrapper form#subForm button:hover a, footer.page-foot
 }
 footer.page-footer .footer-wrapper form#subForm button:active {
   background: #27277C;
+}
+footer.page-footer .footer-wrapper h4 {
+  text-transform: none;
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: #F5F5F5;
+}
+@media (min-width: 1024px) {
+  footer.page-footer .footer-wrapper h4 {
+    font-size: 18px;
+    line-height: 27px;
+  }
 }
 footer.page-footer .footer-wrapper .footer-navigation .flex-container {
   gap: 20px;
