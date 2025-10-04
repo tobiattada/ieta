@@ -2055,7 +2055,7 @@ footer.page-footer .footer-section {
 }
 @media (min-width: 1024px) {
   footer.page-footer .footer-section {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 4fr 3fr 3fr 4fr;
   }
 }
 footer.page-footer .footer-section .flex-item {
@@ -4187,7 +4187,7 @@ ul.stats-main.col2 li {
   font-size: 32px;
   line-height: 130%;
   letter-spacing: 0%;
-  color: #D2E9FF;
+  color: #F5F5F5;
 }
 .bg-primary-blue .rich-text h3.hebrew {
   font-family: "Noto Sans Hebrew", sans-serif !important;
@@ -10701,7 +10701,7 @@ div.two-videos {
   font-size: 32px;
   line-height: 130%;
   letter-spacing: 0%;
-  color: #D2E9FF;
+  color: #F5F5F5;
 }
 .callout .rich-text h3.hebrew {
   font-family: "Noto Sans Hebrew", sans-serif !important;
@@ -11520,7 +11520,7 @@ div.two-videos {
   font-size: 32px;
   line-height: 130%;
   letter-spacing: 0%;
-  color: #D2E9FF;
+  color: #F5F5F5;
 }
 .callout.reverse .rich-text h3.hebrew {
   font-family: "Noto Sans Hebrew", sans-serif !important;

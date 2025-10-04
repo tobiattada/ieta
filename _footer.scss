@@ -17,7 +17,7 @@ footer.page-footer{
 		grid-template-columns: 1fr;
 
 		@include desktop {
-			grid-template-columns: 1fr 1fr 1fr 1fr;
+			grid-template-columns: 4fr 3fr 3fr 4fr;
 		}
 
 		.flex-item{
