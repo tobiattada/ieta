@@ -20,10 +20,6 @@
 		}
 	}
 
-	.row-has-promo, .row-has-promo:not(.row-full-width){
-		max-width: none !important;
-	}
-	
 	.component-promo:not(.btn-anchored).overlay-horizontal-position-middle.overlay-vertical-position-middle .bg-type-image{
 		top: none;
 	}
@@ -41,6 +37,10 @@
 }
 
 
+.row-has-promo, .row-has-promo:not(.row-full-width){
+	max-width: none !important;
+}
+	
 
 
 
