@@ -203,6 +203,10 @@
 			@include p-bold($light);
 		}
 
+		.promo-title h2{
+			br{   display: none;}
+		}
+
 		 &::after {
 		    content: "";
 		    position: absolute;
@@ -923,7 +927,28 @@ div.two-videos{
 
 
 
+/// ON THE WHO WE ARE PAGE
 
+.sponsor-gallery{
+	.col-12{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+		gap: 10px;
+
+		.component-image{
+			.has-ratio-image{
+		    border: 1px solid gray;
+		    background: white;
+		    border-radius: 24px;
+		    overflow: hidden;
+		    aspect-ratio: 1 / 1;
+		    display: flex;
+		    align-items: center;
+		    justify-content: center;
+			}
+		}
+	}
+}
 
 
 

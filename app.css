@@ -8243,6 +8243,9 @@ ul.stats-main.col2 li {
   text-align: right;
   direction: rtl;
 }
+.about-us-header .component-promo .promo-title h2 br {
+  display: none;
+}
 .about-us-header .component-promo::after {
   content: "";
   position: absolute;
@@ -9274,6 +9277,22 @@ div.two-videos {
     font-size: 16px;
     line-height: 150%;
   }
+}
+
+.sponsor-gallery .col-12 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px;
+}
+.sponsor-gallery .col-12 .component-image .has-ratio-image {
+  border: 1px solid gray;
+  background: white;
+  border-radius: 24px;
+  overflow: hidden;
+  aspect-ratio: 1/1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .features-4-up {
