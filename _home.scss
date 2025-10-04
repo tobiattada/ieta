@@ -20,7 +20,7 @@
 		}
 	}
 
-	.row-has-promo{
+	.row-has-promo, .row-has-promo:not(.row-full-width){
 		max-width: none !important;
 	}
 	
@@ -90,29 +90,6 @@
 	}
 }
  
-
-/// This is on the row to style just the resource block
-
-.featured-resource{
-	.component-feature.manual{
-		.home-boxes{
-			.box{
-
-				border-radius:24px;
-				border: 1px solid $medium-gray;
-				padding: 5px;
-				ul{
-					div.image{display:none;}
-				}
-
-				h4.title{
-					@include h6($navy-blue);
-					text-transform: capitalize;
-				}
-			}
-		}
-	}
-}
 
 
 
