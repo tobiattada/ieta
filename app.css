@@ -15877,7 +15877,7 @@ div.two-videos {
     padding-right: 60px;
   }
   .basic .row .col-6:last-child {
-    padding-right: 60px;
+    padding-right: 0px;
   }
 }
 .basic .component-image {

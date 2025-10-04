@@ -338,7 +338,7 @@
 
 	    @include desktop {
 	    	.col-6:first-child{ padding-right: 60px;  }
-		    .col-6:last-child{ padding-right: 60px; }
+		    .col-6:last-child{ padding-right: 0px; }
 	    	flex-direction: row;
 	    }
 	}
