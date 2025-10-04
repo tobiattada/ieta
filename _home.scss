@@ -83,9 +83,14 @@
 		    box-sizing: border-box;
 		    background: $white;
 		    width: 50% !important;
-		    padding: 25px;
+		    padding: 40px;
+		    display: inline-block;
 
 		    @include white-card-text();
+
+		    h4, p strong {
+		    	color: $navy-blue;
+		    }
 		}
 
 		.col-6:nth-child(2){
@@ -93,6 +98,10 @@
 		    left: 0;
 		    border-radius: 0;
 		    z-index: -1;
+		}
+
+		.section-header-left{
+			margin-bottom:40px;
 		}
 }
  

@@ -3215,7 +3215,8 @@ footer.page-footer .footer-wrapper .footer-navigation h4 {
   box-sizing: border-box;
   background: #FDFDFD;
   width: 50% !important;
-  padding: 25px;
+  padding: 40px;
+  display: inline-block;
 }
 .event-promo-full-width.basic .rich-text .rich-text h1 {
   font-family: "Outfit", sans-serif;
@@ -3391,11 +3392,17 @@ footer.page-footer .footer-wrapper .footer-navigation h4 {
   text-align: right;
   direction: rtl;
 }
+.event-promo-full-width.basic .rich-text h4, .event-promo-full-width.basic .rich-text p strong {
+  color: #27277C;
+}
 .event-promo-full-width.basic .col-6:nth-child(2) {
   position: absolute;
   left: 0;
   border-radius: 0;
   z-index: -1;
+}
+.event-promo-full-width.basic .section-header-left {
+  margin-bottom: 40px;
 }
 
 .modals {
