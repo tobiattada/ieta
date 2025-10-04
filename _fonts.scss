@@ -111,9 +111,12 @@
 		}
 	}
 
+
+	//// CHANGING h6 FROM JFNA
+
 	@mixin h6($color){ 
 		font-family: $outfit;
-		font-weight: 300;
+		font-weight: 700;
 		font-size: 18px;
 		line-height: 130%;
 		letter-spacing: 0%;
@@ -126,11 +129,12 @@
 
 		&.hebrew{
 			font-family: $hebrew !important;
-			font-weight: 600;
+			font-weight: 700;
 			text-align: right;
 			direction: rtl;
 		}
 	}
+
 
 	@mixin p($color){ //light
 		font-family: $outfit;
