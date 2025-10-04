@@ -102,4 +102,9 @@ a{
 }
 
 
+.row:is([class*="flex"], [class*="grid"])::after {
+  display: none;
+  content: none;
+}
+
 

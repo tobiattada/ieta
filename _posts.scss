@@ -337,8 +337,8 @@
 		.col-6{ padding-bottom: 20px; }
 
 	    @include desktop {
-	    	// .col-6:first-child{ padding-right: 60px;  }
-		    // .col-6:last-child{ padding-right: 60px; }
+	    	.col-6:first-child{ padding-right: 60px;  }
+		    .col-6:last-child{ padding-right: 60px; }
 	    	flex-direction: row;
 	    }
 	}

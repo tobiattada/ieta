@@ -112,6 +112,11 @@ a {
   margin-top: 0px;
 }
 
+.row:is([class*="flex"], [class*="grid"])::after {
+  display: none;
+  content: none;
+}
+
 h1 {
   font-family: "Outfit", sans-serif;
   font-weight: 600;
@@ -15867,6 +15872,12 @@ div.two-videos {
 @media (min-width: 1024px) {
   .basic .row {
     flex-direction: row;
+  }
+  .basic .row .col-6:first-child {
+    padding-right: 60px;
+  }
+  .basic .row .col-6:last-child {
+    padding-right: 60px;
   }
 }
 .basic .component-image {
