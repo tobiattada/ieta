@@ -129,6 +129,10 @@ footer, footer section {
   margin: 0 auto;
 }
 
+.component-divider .line {
+  background: #8F8F8F;
+}
+
 h1 {
   font-family: "Outfit", sans-serif;
   font-weight: 600;
