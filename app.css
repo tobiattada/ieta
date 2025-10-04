@@ -15309,6 +15309,234 @@ div.two-videos {
   text-align: right;
   direction: rtl;
 }
+.basic.bg-navy-blue h1 {
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 44px;
+  letter-spacing: 0%;
+  color: #F5F5F5;
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  .basic.bg-navy-blue h1 {
+    font-size: 70px;
+    line-height: 91px;
+  }
+}
+.basic.bg-navy-blue h1.hebrew {
+  font-family: "Noto Sans Hebrew", sans-serif !important;
+  font-weight: 600;
+  text-align: right;
+  direction: rtl;
+}
+.basic.bg-navy-blue h2 {
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 42px;
+  letter-spacing: 0%;
+  color: #F5F5F5;
+}
+@media (min-width: 1024px) {
+  .basic.bg-navy-blue h2 {
+    font-size: 60px;
+    line-height: 78px;
+  }
+}
+.basic.bg-navy-blue h2.hebrew {
+  font-family: "Noto Sans Hebrew", sans-serif !important;
+  font-weight: 600;
+  text-align: right;
+  direction: rtl;
+}
+.basic.bg-navy-blue h3 {
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 130%;
+  letter-spacing: 0%;
+  color: #F5F5F5;
+}
+.basic.bg-navy-blue h3.hebrew {
+  font-family: "Noto Sans Hebrew", sans-serif !important;
+  font-weight: 600;
+  text-align: right;
+  direction: rtl;
+}
+@media (min-width: 1024px) {
+  .basic.bg-navy-blue h3 {
+    font-size: 45px;
+    line-height: 58.5px;
+  }
+}
+@media (min-width: 1300px) {
+  .basic.bg-navy-blue h3 {
+    line-height: 150%;
+  }
+}
+.basic.bg-navy-blue h4 {
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 28px;
+  letter-spacing: 0%;
+  color: #F5F5F5;
+}
+@media (min-width: 1024px) {
+  .basic.bg-navy-blue h4 {
+    font-size: 32px;
+    line-height: 42px;
+  }
+}
+.basic.bg-navy-blue h4.hebrew {
+  font-family: "Noto Sans Hebrew", sans-serif !important;
+  font-weight: 600;
+  text-align: right;
+  direction: rtl;
+}
+.basic.bg-navy-blue h5 {
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: 0%;
+  color: #F5F5F5;
+}
+@media (min-width: 1024px) {
+  .basic.bg-navy-blue h5 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+.basic.bg-navy-blue h5.hebrew {
+  font-family: "Noto Sans Hebrew", sans-serif !important;
+  font-weight: 600;
+  text-align: right;
+  direction: rtl;
+}
+.basic.bg-navy-blue h6 {
+  font-family: "Outfit", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 130%;
+  letter-spacing: 0%;
+  color: #F5F5F5;
+}
+@media (min-width: 1024px) {
+  .basic.bg-navy-blue h6 {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+.basic.bg-navy-blue h6.hebrew {
+  font-family: "Noto Sans Hebrew", sans-serif !important;
+  font-weight: 700;
+  text-align: right;
+  direction: rtl;
+}
+.basic.bg-navy-blue p {
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: #F5F5F5;
+}
+@media (min-width: 1024px) {
+  .basic.bg-navy-blue p {
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
+.basic.bg-navy-blue p strong, .basic.bg-navy-blue p em, .basic.bg-navy-blue p b {
+  font-weight: 600;
+  color: #F5F5F5;
+}
+.basic.bg-navy-blue p.hebrew {
+  font-family: "Noto Sans Hebrew", sans-serif !important;
+  font-weight: 600;
+  text-align: right;
+  direction: rtl;
+}
+.basic.bg-navy-blue p b {
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: #F5F5F5;
+}
+@media (min-width: 1024px) {
+  .basic.bg-navy-blue p b {
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
+.basic.bg-navy-blue p b strong, .basic.bg-navy-blue p b em, .basic.bg-navy-blue p b b {
+  font-weight: 600;
+  color: #F5F5F5;
+}
+.basic.bg-navy-blue p b.hebrew {
+  font-family: "Noto Sans Hebrew", sans-serif !important;
+  font-weight: 600;
+  text-align: right;
+  direction: rtl;
+}
+.basic.bg-navy-blue p.large {
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 0%;
+  color: #F5F5F5;
+}
+.basic.bg-navy-blue p.large strong, .basic.bg-navy-blue p.large em, .basic.bg-navy-blue p.large b {
+  font-weight: 600;
+  color: #1E3EAF;
+}
+@media (min-width: 1024px) {
+  .basic.bg-navy-blue p.large {
+    font-size: 24px;
+    line-height: 150%;
+  }
+}
+.basic.bg-navy-blue p.large.hebrew {
+  font-family: "Noto Sans Hebrew", sans-serif !important;
+  font-weight: 400;
+  text-align: right;
+  direction: rtl;
+}
+.basic.bg-navy-blue p.large b {
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 0%;
+  color: #F5F5F5;
+  font-weight: 500;
+}
+.basic.bg-navy-blue p.large b strong, .basic.bg-navy-blue p.large b em, .basic.bg-navy-blue p.large b b {
+  font-weight: 600;
+  color: #1E3EAF;
+}
+@media (min-width: 1024px) {
+  .basic.bg-navy-blue p.large b {
+    font-size: 24px;
+    line-height: 150%;
+  }
+}
+.basic.bg-navy-blue p.large b.hebrew {
+  font-family: "Noto Sans Hebrew", sans-serif !important;
+  font-weight: 400;
+  text-align: right;
+  direction: rtl;
+}
+.basic .col-12 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
 .basic.gray-card {
   box-sizing: border-box;
   padding: 30px 20px;

@@ -115,6 +115,25 @@
 	}
 
 
+	&.bg-navy-blue{ /// THIS IS NEW
+		h1{@include h1($light);}
+      	h2{@include h2($light);}
+      	h3{@include h3($light);}
+      	h4{@include h4($light);}
+      	h5{@include h5($light);}
+      	h6{@include h6($light);}
+      	p{@include p($light);}
+      	p b{@include p-semi($light);}
+      	p.large{@include p-large($light);}
+      	p.large b{@include p-large($light); font-weight: 500;}
+	}
+
+	.col-12{
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 20px;
+	}
+
 	//// WHEN IT IS ONE WIDE CARD
 	&.gray-card{
 		@include card($white);
