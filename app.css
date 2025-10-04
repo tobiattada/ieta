@@ -117,6 +117,18 @@ a {
   content: none;
 }
 
+.footer-push {
+  display: none;
+}
+
+footer, footer section {
+  display: inline;
+}
+
+.page-wrapper {
+  margin: 0 auto;
+}
+
 h1 {
   font-family: "Outfit", sans-serif;
   font-weight: 600;
