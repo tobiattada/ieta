@@ -3507,8 +3507,25 @@ footer.page-footer .footer-wrapper .footer-navigation h4 {
   }
 }
 .modals .col-3 .component-class-richtext h5, .modals .col-6 .component-class-richtext h5 {
-  color: #000000;
-  margin-top: 10px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: 0%;
+  color: #2A2A2A;
+  margin-top: 20px;
+}
+@media (min-width: 1024px) {
+  .modals .col-3 .component-class-richtext h5, .modals .col-6 .component-class-richtext h5 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+.modals .col-3 .component-class-richtext h5.hebrew, .modals .col-6 .component-class-richtext h5.hebrew {
+  font-family: "Noto Sans Hebrew", sans-serif !important;
+  font-weight: 600;
+  text-align: right;
+  direction: rtl;
 }
 .modals .col-3 .component-class-richtext p, .modals .col-6 .component-class-richtext p {
   color: #000000;
