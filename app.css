@@ -9282,10 +9282,10 @@ div.two-videos {
 .sponsor-gallery .col-12 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  gap: 10px;
+  gap: 20px;
 }
 .sponsor-gallery .col-12 .component-image .has-ratio-image {
-  border: 1px solid gray;
+  border: 1px solid #c9c9c9;
   background: white;
   border-radius: 24px;
   overflow: hidden;
@@ -9293,6 +9293,7 @@ div.two-videos {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 10px;
 }
 
 .features-4-up {
