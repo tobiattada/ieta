@@ -102,16 +102,16 @@
 
 
 	&.bg-primary-blue{
-		h1{@include h1($white);}
-      	h2{@include h2($white);}
-      	h3{@include h3($light-blue);}
+		h1{@include h1($light);}
+      	h2{@include h2($light);}
+      	h3{@include h3($light);}
       	h4{@include h4($light-blue);}
-      	h5{@include h5($white);}
-      	h6{@include h6($white);}
-      	p{@include p($white);}
-      	p b{@include p-semi($white);}
-      	p.large{@include p-large($white);}
-      	p.large b{@include p-large($white); font-weight: 500;}
+      	h5{@include h5($light);}
+      	h6{@include h6($light);}
+      	p{@include p($light);}
+      	p b{@include p-semi($light);}
+      	p.large{@include p-large($light);}
+      	p.large b{@include p-large($light); font-weight: 500;}
 	}
 
 
@@ -326,7 +326,6 @@
 			}
 		}
 	}
-
 
  	.row{
 	    display: flex;

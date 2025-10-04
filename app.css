@@ -15092,7 +15092,7 @@ div.two-videos {
   font-size: 40px;
   line-height: 44px;
   letter-spacing: 0%;
-  color: #FDFDFD;
+  color: #F5F5F5;
   text-align: center;
 }
 @media (min-width: 1024px) {
@@ -15113,7 +15113,7 @@ div.two-videos {
   font-size: 32px;
   line-height: 42px;
   letter-spacing: 0%;
-  color: #FDFDFD;
+  color: #F5F5F5;
 }
 @media (min-width: 1024px) {
   .basic.bg-primary-blue h2 {
@@ -15133,7 +15133,7 @@ div.two-videos {
   font-size: 32px;
   line-height: 130%;
   letter-spacing: 0%;
-  color: #D2E9FF;
+  color: #F5F5F5;
 }
 .basic.bg-primary-blue h3.hebrew {
   font-family: "Noto Sans Hebrew", sans-serif !important;
@@ -15178,7 +15178,7 @@ div.two-videos {
   font-size: 20px;
   line-height: 26px;
   letter-spacing: 0%;
-  color: #FDFDFD;
+  color: #F5F5F5;
 }
 @media (min-width: 1024px) {
   .basic.bg-primary-blue h5 {
@@ -15198,7 +15198,7 @@ div.two-videos {
   font-size: 18px;
   line-height: 130%;
   letter-spacing: 0%;
-  color: #FDFDFD;
+  color: #F5F5F5;
 }
 @media (min-width: 1024px) {
   .basic.bg-primary-blue h6 {
@@ -15218,7 +15218,7 @@ div.two-videos {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0%;
-  color: #FDFDFD;
+  color: #F5F5F5;
 }
 @media (min-width: 1024px) {
   .basic.bg-primary-blue p {
@@ -15228,7 +15228,7 @@ div.two-videos {
 }
 .basic.bg-primary-blue p strong, .basic.bg-primary-blue p em, .basic.bg-primary-blue p b {
   font-weight: 600;
-  color: #FDFDFD;
+  color: #F5F5F5;
 }
 .basic.bg-primary-blue p.hebrew {
   font-family: "Noto Sans Hebrew", sans-serif !important;
@@ -15242,7 +15242,7 @@ div.two-videos {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0%;
-  color: #FDFDFD;
+  color: #F5F5F5;
 }
 @media (min-width: 1024px) {
   .basic.bg-primary-blue p b {
@@ -15252,7 +15252,7 @@ div.two-videos {
 }
 .basic.bg-primary-blue p b strong, .basic.bg-primary-blue p b em, .basic.bg-primary-blue p b b {
   font-weight: 600;
-  color: #FDFDFD;
+  color: #F5F5F5;
 }
 .basic.bg-primary-blue p b.hebrew {
   font-family: "Noto Sans Hebrew", sans-serif !important;
@@ -15266,7 +15266,7 @@ div.two-videos {
   font-size: 18px;
   line-height: 26px;
   letter-spacing: 0%;
-  color: #FDFDFD;
+  color: #F5F5F5;
 }
 .basic.bg-primary-blue p.large strong, .basic.bg-primary-blue p.large em, .basic.bg-primary-blue p.large b {
   font-weight: 600;
@@ -15290,7 +15290,7 @@ div.two-videos {
   font-size: 18px;
   line-height: 26px;
   letter-spacing: 0%;
-  color: #FDFDFD;
+  color: #F5F5F5;
   font-weight: 500;
 }
 .basic.bg-primary-blue p.large b strong, .basic.bg-primary-blue p.large b em, .basic.bg-primary-blue p.large b b {
