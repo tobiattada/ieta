@@ -19,7 +19,7 @@
 			text-align: right;
 			direction: rtl;
 		}
-	}
+	} 
 
 	@mixin h2($color){
 		font-family: $outfit;
@@ -63,7 +63,7 @@
 		}
 
 		@include largedesktop{
-			line-height: 150%;
+			line-height: 130%;
 		}
 	}
 

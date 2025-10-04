@@ -72,7 +72,7 @@ h3.hebrew {
 }
 @media (min-width: 1300px) {
   h3 {
-    line-height: 150%;
+    line-height: 130%;
   }
 }
 
@@ -274,7 +274,7 @@ p.caption.hebrew {
 }
 @media (min-width: 1300px) {
   .rich-text h3, .page.page-main h3 {
-    line-height: 150%;
+    line-height: 130%;
   }
 }
 .rich-text h4, .page.page-main h4 {
@@ -2774,7 +2774,7 @@ section.career-center-listing .post-heading h2.hebrew {
 }
 @media (min-width: 1300px) {
   section.career-center-listing .post-heading h2 {
-    line-height: 150%;
+    line-height: 130%;
   }
 }
 section.career-center-listing .col-8 {
