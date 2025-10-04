@@ -9295,6 +9295,12 @@ div.two-videos {
   justify-content: center;
   padding: 10px;
 }
+.sponsor-gallery .col-12 .component-image .caption {
+  background: none;
+  font-size: inherit;
+  line-height: inherit;
+  padding: 5px 0px;
+}
 
 .features-4-up {
   box-sizing: border-box;
