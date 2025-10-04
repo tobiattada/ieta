@@ -1,6 +1,10 @@
-// .footer-push{
-// 	display: none;
-// }
+.footer-push{
+	display: none;
+}
+
+footer{
+	display: inline;
+}
 
 footer.page-footer{
 	.rich-text *, *{color: $light;}
@@ -39,6 +43,15 @@ footer.page-footer{
 
 	.footer-row.row-has-code{
 		.footer-section{display: flex;}
+	}
+
+	.footer-row:nth-child(2){
+		border-top:1px solid $medium-gray;
+		padding-top: 20px;
+		.footer-section{
+			grid-template-columns: 1fr 1fr;
+		}
+		.caption, p{color: $gray;}
 	}
 
 	.footer-wrapper{
