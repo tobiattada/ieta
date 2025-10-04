@@ -129,8 +129,8 @@ footer, footer section {
   margin: 0 auto;
 }
 
-.component-divider .line {
-  background: #8F8F8F;
+.component-divider .line, .component-divider[data-line-color=dark] .line {
+  background-color: #8F8F8F;
 }
 
 h1 {

@@ -119,8 +119,8 @@ footer, footer section{
 	margin: 0 auto;
 }
 
-.component-divider .line{
-	background: $medium-gray;
+.component-divider .line, .component-divider[data-line-color=dark] .line{
+	background-color: $medium-gray;
 }
 
 
