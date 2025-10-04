@@ -3364,20 +3364,14 @@ footer.page-footer .footer-wrapper .footer-navigation h4 {
   text-align: right;
   direction: rtl;
 }
-.event-promo-full-width.basic img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-}
 .event-promo-full-width.basic .col-6:nth-child(2) {
   position: absolute;
   left: 0;
   border-radius: 0;
   z-index: -1;
 }
-.event-promo-full-width.basic .col-6:nth-child(2) .component-image .has-ratio-image {
-  border-radius: 0px;
+.event-promo-full-width.basic .component-image .has-ratio-image {
+  border-radius: 0px !important;
 }
 
 .modals {
