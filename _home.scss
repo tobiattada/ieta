@@ -88,23 +88,12 @@
 		    @include white-card-text();
 		}
 
-		// img{
-		//     position: absolute;
-		//     top: 0;
-		//     left: 0;
-		//     width: 100%;
-		// }
-
 		.col-6:nth-child(2){
 			position: absolute;
 		    left: 0;
 		    border-radius: 0;
 		    z-index: -1;
 		}
-
-		.component-image .has-ratio-image{
-		    	border-radius: 0px !important;
-		    }
 }
  
 

@@ -337,8 +337,8 @@
 		.col-6{ padding-bottom: 20px; }
 
 	    @include desktop {
-	    	.col-6:first-child{ padding-right: 60px;  }
-		    .col-6:last-child{ padding-right: 60px; }
+	    	// .col-6:first-child{ padding-right: 60px;  }
+		    // .col-6:last-child{ padding-right: 60px; }
 	    	flex-direction: row;
 	    }
 	}
@@ -356,4 +356,16 @@
 }
 
 
+.basic.event-promo-full-width{
+	///// SOLO IMAGE - WIDE
+	.component-image{
+		max-height: none;
+		overflow: hidden;
+		border-radius: 24px;
+		display: flex;
+    	align-items: center;
+
+    	.has-ratio-image{ border-radius: 24px; }
+	}
+} 
 

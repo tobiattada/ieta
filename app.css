@@ -3370,9 +3370,6 @@ footer.page-footer .footer-wrapper .footer-navigation h4 {
   border-radius: 0;
   z-index: -1;
 }
-.event-promo-full-width.basic .component-image .has-ratio-image {
-  border-radius: 0px !important;
-}
 
 .modals {
   padding-top: 0px !important;
@@ -15871,12 +15868,6 @@ div.two-videos {
   .basic .row {
     flex-direction: row;
   }
-  .basic .row .col-6:first-child {
-    padding-right: 60px;
-  }
-  .basic .row .col-6:last-child {
-    padding-right: 60px;
-  }
 }
 .basic .component-image {
   max-height: 530px;
@@ -15886,6 +15877,17 @@ div.two-videos {
   align-items: center;
 }
 .basic .component-image .has-ratio-image {
+  border-radius: 24px;
+}
+
+.basic.event-promo-full-width .component-image {
+  max-height: none;
+  overflow: hidden;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+}
+.basic.event-promo-full-width .component-image .has-ratio-image {
   border-radius: 24px;
 }
 
