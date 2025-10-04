@@ -3376,7 +3376,7 @@ footer.page-footer .footer-wrapper .footer-navigation h4 {
   border-radius: 0;
   z-index: -1;
 }
-.event-promo-full-width .col-6:nth-child(2) .has-ratio-image {
+.event-promo-full-width .col-6:nth-child(2) .component-image .has-ratio-image {
   border-radius: 0px;
 }
 
