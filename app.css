@@ -3486,43 +3486,43 @@ footer.page-footer .footer-wrapper .footer-navigation h4 {
     flex: 1;
   }
 }
-.modals .col-3 {
+.modals .col-3, .modals .col-6 {
   width: 100%;
   transition: 0.3s;
 }
-.modals .col-3 .component-image {
+.modals .col-3 .component-image, .modals .col-6 .component-image {
   margin-bottom: 15px;
 }
-.modals .col-3 .component-image .aspect-ratio {
+.modals .col-3 .component-image .aspect-ratio, .modals .col-6 .component-image .aspect-ratio {
   border-radius: 24px;
   overflow: hidden;
 }
-.modals .col-3 .component-class-richtext .rich-text {
+.modals .col-3 .component-class-richtext .rich-text, .modals .col-6 .component-class-richtext .rich-text {
   margin-bottom: 0px;
   text-align: center;
 }
 @media (min-width: 1024px) {
-  .modals .col-3 .component-class-richtext .rich-text {
+  .modals .col-3 .component-class-richtext .rich-text, .modals .col-6 .component-class-richtext .rich-text {
     text-align: left;
   }
 }
-.modals .col-3 .component-class-richtext h5 {
+.modals .col-3 .component-class-richtext h5, .modals .col-6 .component-class-richtext h5 {
   color: #000000;
   margin-top: 10px;
 }
-.modals .col-3 .component-class-richtext p {
+.modals .col-3 .component-class-richtext p, .modals .col-6 .component-class-richtext p {
   color: #000000;
   margin-top: 0px;
 }
 @media (min-width: 1024px) {
-  .modals .col-3 .component-class-richtext p {
+  .modals .col-3 .component-class-richtext p, .modals .col-6 .component-class-richtext p {
     margin-top: 10px;
   }
 }
-.modals .col-3 .component-class-wysiwyg {
+.modals .col-3 .component-class-wysiwyg, .modals .col-6 .component-class-wysiwyg {
   display: none;
 }
-.modals.enabled .col-3:hover {
+.modals.enabled .col-3:hover, .modals.enabled .col-6:hover {
   cursor: pointer;
   transition: 0.3s;
   transform: scale(1.02);
@@ -9282,7 +9282,7 @@ div.two-videos {
 .sponsor-gallery .col-12 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  gap: 20px;
+  gap: 50px 20px;
 }
 .sponsor-gallery .col-12 .component-image .has-ratio-image {
   border: 1px solid #c9c9c9;

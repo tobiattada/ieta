@@ -52,7 +52,7 @@
 	}
 
 
-	.col-3{
+	.col-3, .col-6{
 		width: 100%;
 			transition:.3s;
 		.component-image{
@@ -95,7 +95,7 @@
 	}
 
 	&.enabled{
-		.col-3{
+		.col-3, .col-6{
 			&:hover{
 				cursor: pointer;
 				transition:.3s;
