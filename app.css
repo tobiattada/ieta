@@ -3687,47 +3687,47 @@ footer.page-footer .footer-wrapper .footer-navigation h4 {
     padding: 60px 10%;
   }
 }
-.modal-content #modal-body {
+.modal-content #modal-body, .modal-content #modal-body-subscribe {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas: "image" "title" "bio";
   grid-gap: 20px;
 }
 @media (min-width: 768px) {
-  .modal-content #modal-body {
+  .modal-content #modal-body, .modal-content #modal-body-subscribe {
     grid-template-columns: auto 1fr;
     grid-template-areas: "image title" "bio bio";
     grid-gap: 20px;
   }
 }
-.modal-content #modal-body .component-image {
+.modal-content #modal-body .component-image, .modal-content #modal-body-subscribe .component-image {
   grid-area: image;
   margin-bottom: 10px;
   width: 200px;
 }
-.modal-content #modal-body .component-image .aspect-ratio {
+.modal-content #modal-body .component-image .aspect-ratio, .modal-content #modal-body-subscribe .component-image .aspect-ratio {
   border-radius: 24px;
   overflow: hidden;
 }
-.modal-content #modal-body .component-class-richtext {
+.modal-content #modal-body .component-class-richtext, .modal-content #modal-body-subscribe .component-class-richtext {
   grid-area: title;
 }
-.modal-content #modal-body .component-class-richtext .rich-text {
+.modal-content #modal-body .component-class-richtext .rich-text, .modal-content #modal-body-subscribe .component-class-richtext .rich-text {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   height: 100%;
 }
-.modal-content #modal-body .component-class-richtext .rich-text * {
+.modal-content #modal-body .component-class-richtext .rich-text *, .modal-content #modal-body-subscribe .component-class-richtext .rich-text * {
   margin: 0px;
 }
 @media (min-width: 1024px) {
-  .modal-content #modal-body .component-class-richtext .rich-text {
+  .modal-content #modal-body .component-class-richtext .rich-text, .modal-content #modal-body-subscribe .component-class-richtext .rich-text {
     gap: 10px;
   }
 }
-.modal-content #modal-body .component-class-richtext .rich-text h5 {
+.modal-content #modal-body .component-class-richtext .rich-text h5, .modal-content #modal-body-subscribe .component-class-richtext .rich-text h5 {
   font-family: "Outfit", sans-serif;
   font-weight: 600;
   font-size: 28px;
@@ -3736,18 +3736,18 @@ footer.page-footer .footer-wrapper .footer-navigation h4 {
   color: #1E3EAF;
   margin-bottom: 10px;
 }
-.modal-content #modal-body .component-class-richtext .rich-text h5.hebrew {
+.modal-content #modal-body .component-class-richtext .rich-text h5.hebrew, .modal-content #modal-body-subscribe .component-class-richtext .rich-text h5.hebrew {
   font-family: "Noto Sans Hebrew", sans-serif !important;
   font-weight: 600;
   text-align: right;
   direction: rtl;
 }
 @media (min-width: 1024px) {
-  .modal-content #modal-body .component-class-richtext .rich-text h5 {
+  .modal-content #modal-body .component-class-richtext .rich-text h5, .modal-content #modal-body-subscribe .component-class-richtext .rich-text h5 {
     font-size: 45px;
   }
 }
-.modal-content #modal-body .component-class-richtext .rich-text p {
+.modal-content #modal-body .component-class-richtext .rich-text p, .modal-content #modal-body-subscribe .component-class-richtext .rich-text p {
   font-family: "Outfit", sans-serif;
   font-weight: 600;
   font-size: 20px;
@@ -3756,24 +3756,24 @@ footer.page-footer .footer-wrapper .footer-navigation h4 {
   color: #2A2A2A;
 }
 @media (min-width: 1024px) {
-  .modal-content #modal-body .component-class-richtext .rich-text p {
+  .modal-content #modal-body .component-class-richtext .rich-text p, .modal-content #modal-body-subscribe .component-class-richtext .rich-text p {
     font-size: 24px;
     line-height: 32px;
   }
 }
-.modal-content #modal-body .component-class-richtext .rich-text p.hebrew {
+.modal-content #modal-body .component-class-richtext .rich-text p.hebrew, .modal-content #modal-body-subscribe .component-class-richtext .rich-text p.hebrew {
   font-family: "Noto Sans Hebrew", sans-serif !important;
   font-weight: 600;
   text-align: right;
   direction: rtl;
 }
-.modal-content #modal-body .component-class-wysiwyg {
+.modal-content #modal-body .component-class-wysiwyg, .modal-content #modal-body-subscribe .component-class-wysiwyg {
   grid-area: bio;
 }
-.modal-content #modal-body .component-class-wysiwyg .editor-copy {
+.modal-content #modal-body .component-class-wysiwyg .editor-copy, .modal-content #modal-body-subscribe .component-class-wysiwyg .editor-copy {
   margin-bottom: 0px;
 }
-.modal-content #modal-body .component-class-wysiwyg .editor-copy p:last-child {
+.modal-content #modal-body .component-class-wysiwyg .editor-copy p:last-child, .modal-content #modal-body-subscribe .component-class-wysiwyg .editor-copy p:last-child {
   padding-bottom: 0px;
 }
 
