@@ -12,11 +12,14 @@
 
 
 .extra-padding{
-  .row{
-    @include responsive-padding;
-    padding-top: 0px !important;
-    padding-bottom: 0px !important;
-  }
+
+	@include tablet{
+	  .row{
+	    @include responsive-padding;
+	    padding-top: 0px !important;
+	    padding-bottom: 0px !important;
+	  }
+	}
 }
 
 
