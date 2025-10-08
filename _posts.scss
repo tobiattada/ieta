@@ -376,6 +376,9 @@
 	&.text-image{
 		.row{
 			flex-direction: column-reverse;
+			@include desktop{
+				flex-direction: row;
+			}
 		}
 	}
 

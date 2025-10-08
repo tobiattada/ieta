@@ -16025,6 +16025,11 @@ div.two-videos {
 .basic.text-image .row {
   flex-direction: column-reverse;
 }
+@media (min-width: 1024px) {
+  .basic.text-image .row {
+    flex-direction: row;
+  }
+}
 .basic.event-promo-full-width .component-image {
   max-height: none;
   overflow: hidden;
