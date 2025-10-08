@@ -5,6 +5,8 @@
 
 .navbar__brand{
   padding: 8px 0px;
+      z-index: 10000;
+
   img {
     max-width: 120px;
 
@@ -67,6 +69,11 @@
       }
     }
 
+    .search-link, .subscribe-link{
+            opacity: 1;
+          }
+
+
 
 }
 
@@ -116,6 +123,10 @@
               top: 0px;
               transition: .3s;
             }
+          }
+
+          .search-link, .subscribe-link{
+            opacity: 0;
           }
 
           .back-button.visible{

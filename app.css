@@ -2325,6 +2325,7 @@ footer.page-footer .footer-wrapper .footer-navigation h4 {
 
 .navbar__brand {
   padding: 8px 0px;
+  z-index: 10000;
 }
 .navbar__brand img {
   max-width: 120px;
@@ -2387,6 +2388,9 @@ footer.page-footer .footer-wrapper .footer-navigation h4 {
 .navbar__toggle .back-button svg path {
   fill: #27277C;
 }
+.navbar__toggle .search-link, .navbar__toggle .subscribe-link {
+  opacity: 1;
+}
 
 .navbar__toggle .hamburger {
   width: 25px;
@@ -2431,6 +2435,9 @@ footer.page-footer .footer-wrapper .footer-navigation h4 {
   transform: rotate(-45deg);
   top: 0px;
   transition: 0.3s;
+}
+.navbar__toggle.open-menu .search-link, .navbar__toggle.open-menu .subscribe-link {
+  opacity: 0;
 }
 .navbar__toggle.open-menu .back-button.visible {
   position: absolute;
