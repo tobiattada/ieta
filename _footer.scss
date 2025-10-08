@@ -43,6 +43,17 @@ footer.page-footer{
 				padding: 0px;
 			}
 		}
+
+		.button{
+			margin-top: 0px !important;
+			span{padding: 0px;}
+
+			padding: 7px 16px !important;
+
+			@include desktop{
+				padding: inherit !important;
+			}
+		}
 	}
 
 	.footer-row.row-has-code{

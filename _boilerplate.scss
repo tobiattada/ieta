@@ -118,6 +118,11 @@ a{
 	display: none;
 }
 
+.page-footer .footer-section>.footer-column{
+	margin: 0px !important;
+	padding: 0px !important;
+}
+
 footer, footer section{
 	display: inline;
 }
@@ -129,5 +134,7 @@ footer, footer section{
 .component-divider .line, .component-divider[data-line-color=dark] .line{
 	background-color: $medium-gray;
 }
+
+
 
 

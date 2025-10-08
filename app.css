@@ -130,6 +130,11 @@ a {
   display: none;
 }
 
+.page-footer .footer-section > .footer-column {
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
 footer, footer section {
   display: inline;
 }
@@ -2081,6 +2086,18 @@ footer.page-footer .footer-section .flex-item a:hover {
 }
 footer.page-footer .footer-section .flex-item .footer-column-wrapper {
   padding: 0px;
+}
+footer.page-footer .footer-section .button {
+  margin-top: 0px !important;
+  padding: 7px 16px !important;
+}
+footer.page-footer .footer-section .button span {
+  padding: 0px;
+}
+@media (min-width: 1024px) {
+  footer.page-footer .footer-section .button {
+    padding: inherit !important;
+  }
 }
 footer.page-footer .footer-row.row-has-code .footer-section {
   display: flex;
