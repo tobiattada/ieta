@@ -3222,7 +3222,7 @@ footer.page-footer .footer-wrapper .footer-navigation h4 {
   }
 }
 
-#contact-link {
+.subscribe-link {
   display: flex;
   align-items: center;
   gap: 7px;
