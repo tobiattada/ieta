@@ -729,7 +729,7 @@
 
 /// RESETS THE BUTTON OPTIONS WITHIN THE COMPONENT 
 
-.component-promo .button-container .button.btn-blue, .component-button .button-container .button.btn-blue {
+.component-promo .button-container .button.btn-blue, .component-button .button-container .button.btn-blue, a.button.btn-blue {
 	@include button($primary-blue, $white); // Default solid
 	display: inline-block;
 	margin-top: 30px;
@@ -738,7 +738,7 @@
 	line-height: inherit;
 }
 
-.component-promo .button-container .button.btn-black, .component-button .button-container .button.btn-black {
+.component-promo .button-container .button.btn-black, .component-button .button-container .button.btn-black, a.button.btn-black{
 	@include button($primary-blue, $primary-blue, outline); // Blue outline
 	display: inline-block;
 	margin-top: 30px;
@@ -751,7 +751,7 @@
   }
 }
 
-.component-promo .button-container .button.btn-red, .component-button .button-container .button.btn-red {
+.component-promo .button-container .button.btn-red, .component-button .button-container .button.btn-red, a.button.btn-red {
 	@include button($light, $light, outline); // white outline
 	display: inline-block;
 	margin-top: 30px;
@@ -761,7 +761,7 @@
 }
 
 
-.component-promo .button-container .button.btn-green, .component-button .button-container .button.btn-green {
+.component-promo .button-container .button.btn-green, .component-button .button-container .button.btn-green, a.button.btn-green {
 	@include button($light-blue, $primary-blue); // light-blue solid
 	display: inline-block;
 	margin-top: 30px;
