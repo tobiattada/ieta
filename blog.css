@@ -474,7 +474,7 @@ h4.section-header {
   display: table;
   padding-bottom: 10px;
   margin-left: 0;
-  border-bottom: 8px solid #1E3EAF;
+  border-bottom: 6px solid #1E3EAF;
   margin: 0 auto;
 }
 
@@ -509,7 +509,7 @@ h4.section-header-center {
   display: table;
   padding-bottom: 10px;
   margin-left: 0;
-  border-bottom: 8px solid #1E3EAF;
+  border-bottom: 6px solid #1E3EAF;
   margin: 0 auto;
   margin-bottom: 40px;
 }
@@ -518,7 +518,7 @@ h4.section-header-left {
   display: table;
   padding-bottom: 10px;
   margin-left: 0;
-  border-bottom: 8px solid #1E3EAF;
+  border-bottom: 6px solid #1E3EAF;
   margin-left: 0;
 }
 
@@ -526,7 +526,7 @@ h4.section-header-right {
   display: table;
   padding-bottom: 10px;
   margin-left: 0;
-  border-bottom: 8px solid #1E3EAF;
+  border-bottom: 6px solid #1E3EAF;
   margin-right: 0;
   margin-left: auto;
 }
@@ -535,7 +535,7 @@ h5.section-header {
   display: table;
   padding-bottom: 10px;
   margin-left: 0;
-  border-bottom: 8px solid #1E3EAF;
+  border-bottom: 6px solid #1E3EAF;
   margin: 0 auto;
   color: #1E3EAF !important;
 }
@@ -544,7 +544,7 @@ h5.section-header-center {
   display: table;
   padding-bottom: 10px;
   margin-left: 0;
-  border-bottom: 8px solid #1E3EAF;
+  border-bottom: 6px solid #1E3EAF;
   margin: 0 auto;
   margin-bottom: 40px;
 }
@@ -553,7 +553,7 @@ h5.section-header-left {
   display: table;
   padding-bottom: 10px;
   margin-left: 0;
-  border-bottom: 8px solid #1E3EAF;
+  border-bottom: 6px solid #1E3EAF;
   margin-left: 0;
   color: #1E3EAF !important;
 }
@@ -562,7 +562,7 @@ h5.section-header-right {
   display: table;
   padding-bottom: 10px;
   margin-left: 0;
-  border-bottom: 8px solid #1E3EAF;
+  border-bottom: 6px solid #1E3EAF;
   margin-right: 0;
   margin-left: auto;
 }
@@ -589,7 +589,7 @@ h5.section-header {
   display: table;
   padding-bottom: 10px;
   margin-left: 0;
-  border-bottom: 8px solid #1E3EAF;
+  border-bottom: 6px solid #1E3EAF;
   margin: 0 auto;
 }
 
