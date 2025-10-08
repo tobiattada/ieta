@@ -5,7 +5,13 @@
 
 .navbar__brand{
   padding: 8px 0px;
-  img {max-width: 200px;}
+  img {
+    max-width: 120px;
+
+    @include desktop{
+      max-width: 180px;
+    }
+  }
 }
 
 #home-link{
@@ -60,6 +66,8 @@
         fill: $navy-blue;
       }
     }
+
+
 }
 
         .navbar__toggle .hamburger {
@@ -361,6 +369,15 @@
   .navbar__toggle {
     display: block;
     z-index: 5000;
+
+      display: flex;
+      align-items:center;
+      gap: 15px;
+
+      div{
+        display:flex;
+        align-items:center;
+      }
   }
   .nav-menu {
     flex-direction: column;
