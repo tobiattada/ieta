@@ -6,8 +6,11 @@
 
 		@include desktop{ 
 			height: 100%;
-			height: 50vh;
+			height: 65vh;
+		}
 
+		@include largedesktop{
+			height: 72vh;
 		}
 
 		 &::after {
