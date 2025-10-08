@@ -3520,33 +3520,9 @@ footer.page-footer .footer-wrapper .footer-navigation h4 {
   padding-bottom: 0px !important;
 }
 .modals .row {
-  box-sizing: border-box;
-  padding: 30px 20px;
-  padding-top: 0px !important;
-  padding-bottom: 0px !important;
   display: grid;
-  gap: 25px;
+  gap: 5px;
   grid-template-columns: 1fr;
-}
-@media (min-width: 768px) {
-  .modals .row {
-    padding: 30px 20px;
-  }
-}
-@media (min-width: 1024px) {
-  .modals .row {
-    padding: 50px 60px;
-  }
-}
-@media (min-width: 1300px) {
-  .modals .row {
-    padding: 60px 80px;
-  }
-}
-@media (min-width: 1500px) {
-  .modals .row {
-    padding: 60px 10%;
-  }
 }
 @media (min-width: 768px) {
   .modals .row {
