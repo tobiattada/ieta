@@ -8947,7 +8947,7 @@ div.two-videos {
 }
 .jotform-form input[type=checkbox] {
   width: auto !important;
-  margin-right: 10px;
+  margin: auto 10px auto 0px;
 }
 .jotform-form .check {
   display: flex;
@@ -9288,78 +9288,6 @@ div.two-videos {
   color: #27277C;
 }
 .error-page p.hebrew {
-  font-family: "Noto Sans Hebrew", sans-serif !important;
-  font-weight: 600;
-  text-align: right;
-  direction: rtl;
-}
-
-.gettinggrounded h6 {
-  margin-bottom: 20px;
-}
-@media (min-width: 768px) {
-  .gettinggrounded h6 {
-    margin-bottom: 10px;
-  }
-}
-.gettinggrounded h6 b {
-  border: 1px solid #1E3EAF;
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  text-align: center;
-  line-height: 40px;
-  border-radius: 100%;
-  display: block;
-  margin-left: 0px;
-  margin-right: 12px;
-  margin-bottom: 5px;
-  float: left;
-}
-@media (min-width: 768px) {
-  .gettinggrounded h6 b {
-    display: inline-block;
-    margin-right: 8px !important;
-    margin-bottom: 0px;
-    float: none;
-  }
-}
-.gettinggrounded .form-footer {
-  display: flex;
-  justify-content: space-between;
-}
-.gettinggrounded .sc-cSHVUG {
-  margin-bottom: 20px;
-}
-.gettinggrounded .jotform-form label {
-  font-family: "Outfit", sans-serif;
-}
-.gettinggrounded .check {
-  display: flex;
-  align-items: flex-end;
-  gap: 10px;
-}
-.gettinggrounded .jotform-form .check input {
-  width: 20px !important;
-  height: 20px;
-}
-.gettinggrounded .form-footer p a {
-  color: #2A2A2A;
-  font-family: "Outfit", sans-serif;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 150%;
-  letter-spacing: 0%;
-  color: #2A2A2A;
-  margin-top: 3px;
-}
-@media (min-width: 1024px) {
-  .gettinggrounded .form-footer p a {
-    font-size: 15px;
-    line-height: 150%;
-  }
-}
-.gettinggrounded .form-footer p a.hebrew {
   font-family: "Noto Sans Hebrew", sans-serif !important;
   font-weight: 600;
   text-align: right;

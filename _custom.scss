@@ -644,13 +644,13 @@ div.two-videos{
 
 			input[type=checkbox]{
 				width: auto !important;
-				margin-right: 10px;
+				margin: auto 10px auto 0px;
 			}
 
 			.check{
 				display: flex;
 				justify-content: flex-start;
-    align-items: center;
+    		align-items: center;
 			}
 
 	button{
@@ -825,75 +825,6 @@ div.two-videos{
 	}
 
 }
-
-
-.gettinggrounded{
-
-	h6{
-		margin-bottom: 20px;
-
-		@include tablet{
-			margin-bottom: 10px;
-		}
-	}
-
-	h6 b{
-    border: 1px solid #1E3EAF;
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    text-align: center;
-    line-height: 40px;
-    border-radius: 100%;
-
-		display: block;
-		    margin-left: 0px;
-		    margin-right: 12px;
-		    margin-bottom: 5px;
-
-		        float: left;
-
-    @include tablet{
-    	display: inline-block;
-    	margin-right: 8px !important;
-    	margin-bottom: 0px;
-    	float: none;
-    }
-	}
-
-	.form-footer{
-	  display: flex;
-	  justify-content: space-between;
-	}
-	.sc-cSHVUG{
-		margin-bottom: 20px;
-	}
-
-	.jotform-form label{
-		font-family: "Outfit", sans-serif;
-	}
-
-	.check{
-		display: flex;
-		align-items: flex-end;
-	   gap: 10px;
-	}
-
-	.jotform-form .check input{
-		width:20px !important;
-		height: 20px;
-	}
-
-	.form-footer p a{ 
-		color: #2A2A2A; 
-		@include caption($dark-gray);
-	}
-}
-
-
-
-
-
 
 
 
