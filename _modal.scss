@@ -222,12 +222,20 @@
   background: #fff;
   @include responsive-padding;
 
-  width: 60%;
+  width: 95%;
   max-height: 90%;
   overflow: scroll;
     
   border-radius: 24px;
   position: relative;
+
+  @include tablet{
+  	 width: 70%;
+  }
+
+  @include desktop{
+  	 width: 60%;
+  }
 
 	#modal-body-subscribe{
 	  	display: grid;
@@ -249,8 +257,12 @@
 
 		  h3, p{
 		  	text-align:center;
-		  	width: 80%;
+		  	width: 90%;
 		  	margin: 0 auto;
+
+		  	@include tablet{
+		  		width: 80%;
+		  	}
 		  }
 
 		  h3{ color: $primary-blue;}
