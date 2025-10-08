@@ -932,8 +932,13 @@ div.two-videos{
 .sponsor-gallery{
 	.col-12{
 		display: grid;
-		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-		gap: 50px 20px;
+		grid-template-columns: 1fr 1fr;
+		gap: 20px 10px;
+
+		@include desktop{
+			gap: 50px 20px;
+			grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+		}
 
 		.component-image{
 			.has-ratio-image{

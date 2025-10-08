@@ -3605,7 +3605,7 @@ footer.page-footer .footer-wrapper .footer-navigation h4 {
 }
 .modals .col-3 .component-class-richtext .rich-text, .modals .col-6 .component-class-richtext .rich-text {
   margin-bottom: 0px;
-  text-align: center;
+  text-align: left;
 }
 @media (min-width: 1024px) {
   .modals .col-3 .component-class-richtext .rich-text, .modals .col-6 .component-class-richtext .rich-text {
@@ -9268,8 +9268,14 @@ div.two-videos {
 
 .sponsor-gallery .col-12 {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  gap: 50px 20px;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 10px;
+}
+@media (min-width: 1024px) {
+  .sponsor-gallery .col-12 {
+    gap: 50px 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
 }
 .sponsor-gallery .col-12 .component-image .has-ratio-image {
   border: 1px solid #c9c9c9;
