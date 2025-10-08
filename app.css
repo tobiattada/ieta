@@ -3542,6 +3542,21 @@ footer.page-footer .footer-wrapper .footer-navigation h4 {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
+.modals.two-up {
+  grid-template-columns: 1fr 1fr;
+}
+@media (min-width: 768px) {
+  .modals.two-up {
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (min-width: 1024px) {
+  .modals.two-up {
+    gap: 40px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
 .modals.two-modals .row {
   grid-template-columns: 1fr;
 }
