@@ -3542,17 +3542,17 @@ footer.page-footer .footer-wrapper .footer-navigation h4 {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
-.modals.two-up {
+.modals.two-up .row {
   grid-template-columns: 1fr 1fr;
 }
 @media (min-width: 768px) {
-  .modals.two-up {
+  .modals.two-up .row {
     gap: 20px;
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 @media (min-width: 1024px) {
-  .modals.two-up {
+  .modals.two-up .row {
     gap: 40px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
