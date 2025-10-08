@@ -2112,10 +2112,24 @@ footer.page-footer .footer-row:nth-child(2) {
   margin-top: 30px;
 }
 footer.page-footer .footer-row:nth-child(2) .footer-section {
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 1024px) {
+  footer.page-footer .footer-row:nth-child(2) .footer-section {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 footer.page-footer .footer-row:nth-child(2) .caption, footer.page-footer .footer-row:nth-child(2) p {
   color: #c9c9c9;
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  footer.page-footer .footer-row:nth-child(2) .caption, footer.page-footer .footer-row:nth-child(2) p {
+    text-align: left;
+  }
+  footer.page-footer .footer-row:nth-child(2) .caption.align-right, footer.page-footer .footer-row:nth-child(2) p.align-right {
+    text-align: right;
+  }
 }
 footer.page-footer .footer-wrapper {
   box-sizing: border-box;

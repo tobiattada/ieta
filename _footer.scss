@@ -72,9 +72,24 @@ footer.page-footer{
     	margin-top: 30px;
 
 		.footer-section{
-			grid-template-columns: 1fr 1fr;
+			grid-template-columns: 1fr;
+
+			@include desktop{
+				grid-template-columns: 1fr 1fr;
+			}
 		}
-		.caption, p{color: $gray;}
+		.caption, p{
+			color: $gray;
+			text-align: center;
+
+			@include desktop{
+				text-align:left;
+
+				&.align-right{
+					text-align:right;
+				}
+			}
+		}
 	}
 
 	.footer-wrapper{
