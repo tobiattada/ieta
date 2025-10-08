@@ -2434,7 +2434,7 @@ footer.page-footer .footer-wrapper .footer-navigation h4 {
 }
 .nav-menu .nav-item a {
   text-decoration: none;
-  padding: 20px 0px;
+  padding: 16px 0px;
   font-family: "Outfit", sans-serif;
   font-weight: 600;
   letter-spacing: 0%;
@@ -2442,7 +2442,7 @@ footer.page-footer .footer-wrapper .footer-navigation h4 {
 }
 @media (min-width: 1300px) {
   .nav-menu .nav-item a {
-    padding: 20px;
+    padding: 16px;
   }
 }
 .nav-menu .nav-item a strong, .nav-menu .nav-item a em, .nav-menu .nav-item a b {
@@ -3199,6 +3199,11 @@ footer.page-footer .footer-wrapper .footer-navigation h4 {
   height: 100%;
   background: linear-gradient(180deg, rgba(9, 14, 32, 0) 27.83%, rgba(9, 14, 32, 0.8) 98.31%);
   pointer-events: none;
+}
+@media (min-width: 768px) {
+  .home-hero .row-has-promo .item-count-1 .component-class-promo::after {
+    background: none;
+  }
 }
 .home-hero .component-promo:not(.btn-anchored).overlay-horizontal-position-middle.overlay-vertical-position-middle .bg-type-image {
   top: none;

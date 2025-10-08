@@ -158,10 +158,10 @@
 
     a { 
       text-decoration: none;
-      padding: 20px 0px;
+      padding: 16px 0px;
 
       @include largedesktop {
-        padding: 20px;
+        padding: 16px;
       }
 
       @include p-bold($dark-gray);
