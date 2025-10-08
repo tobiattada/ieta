@@ -2393,7 +2393,7 @@ footer.page-footer .footer-wrapper .footer-navigation h4 {
 }
 
 .navbar__toggle .hamburger {
-  width: 25px;
+  width: 18px;
   height: 2px;
   background: #27277C;
   position: relative;
@@ -2415,11 +2415,11 @@ footer.page-footer .footer-wrapper .footer-navigation h4 {
 }
 
 .navbar__toggle .hamburger::before {
-  top: -8px;
+  top: -6px;
 }
 
 .navbar__toggle .hamburger::after {
-  top: 8px;
+  top: 6px;
 }
 
 .navbar__toggle.open-menu .hamburger {
@@ -2849,7 +2849,7 @@ footer.page-footer .footer-wrapper .footer-navigation h4 {
     padding: 25% 20px;
     box-sizing: border-box;
     justify-content: flex-start;
-    gap: 20px;
+    gap: 40px;
   }
   .nav-menu.open .subscribe, .nav-menu.open .search {
     display: none;

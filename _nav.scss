@@ -78,7 +78,7 @@
 }
 
         .navbar__toggle .hamburger {
-          width: 25px;
+          width: 18px;
           height: 2px;
           background: $navy-blue;
           position: relative;
@@ -100,10 +100,10 @@
         }
 
         .navbar__toggle .hamburger::before {
-          top: -8px;
+          top: -6px;
         }
         .navbar__toggle .hamburger::after {
-          top: 8px; 
+          top: 6px; 
         }
 
         .navbar__toggle.open-menu {
@@ -420,7 +420,7 @@
     box-sizing: border-box;
 
     justify-content: flex-start;
-    gap: 20px;
+    gap: 40px;
 
     .subscribe, .search{
       display:none;
