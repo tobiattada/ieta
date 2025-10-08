@@ -188,7 +188,7 @@ h2.hebrew {
 h3 {
   font-family: "Outfit", sans-serif;
   font-weight: 600;
-  font-size: 32px;
+  font-size: 28px;
   line-height: 130%;
   letter-spacing: 0%;
   color: #1E3EAF;
@@ -202,12 +202,6 @@ h3.hebrew {
 @media (min-width: 1024px) {
   h3 {
     font-size: 45px;
-    line-height: 58.5px;
-  }
-}
-@media (min-width: 1300px) {
-  h3 {
-    line-height: 130%;
   }
 }
 
@@ -303,8 +297,8 @@ p.large {
   font-family: "Outfit", sans-serif;
   font-weight: 300;
   font-size: 18px;
-  line-height: 26px;
-  letter-spacing: 0%;
+  line-height: 150%;
+  letter-spacing: 0;
   color: #2A2A2A;
 }
 p.large strong, p.large em, p.large b {
@@ -314,7 +308,6 @@ p.large strong, p.large em, p.large b {
 @media (min-width: 1024px) {
   p.large {
     font-size: 24px;
-    line-height: 150%;
   }
 }
 p.large.hebrew {
@@ -390,7 +383,7 @@ p.caption.hebrew {
 .rich-text h3, .page.page-main h3 {
   font-family: "Outfit", sans-serif;
   font-weight: 600;
-  font-size: 32px;
+  font-size: 28px;
   line-height: 130%;
   letter-spacing: 0%;
   color: #D2E9FF;
@@ -404,12 +397,6 @@ p.caption.hebrew {
 @media (min-width: 1024px) {
   .rich-text h3, .page.page-main h3 {
     font-size: 45px;
-    line-height: 58.5px;
-  }
-}
-@media (min-width: 1300px) {
-  .rich-text h3, .page.page-main h3 {
-    line-height: 130%;
   }
 }
 .rich-text h4, .page.page-main h4 {
@@ -500,8 +487,8 @@ p.caption.hebrew {
   font-family: "Outfit", sans-serif;
   font-weight: 300;
   font-size: 18px;
-  line-height: 26px;
-  letter-spacing: 0%;
+  line-height: 150%;
+  letter-spacing: 0;
   color: #2A2A2A;
 }
 .rich-text p.large strong, .rich-text p.large em, .rich-text p.large b, .page.page-main p.large strong, .page.page-main p.large em, .page.page-main p.large b {
@@ -511,7 +498,6 @@ p.caption.hebrew {
 @media (min-width: 1024px) {
   .rich-text p.large, .page.page-main p.large {
     font-size: 24px;
-    line-height: 150%;
   }
 }
 .rich-text p.large.hebrew, .page.page-main p.large.hebrew {
@@ -2064,10 +2050,24 @@ footer.page-footer .footer-section > .footer-column:nth-child(2n) {
 }
 footer.page-footer .footer-section {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "quicklinks quicklinks" "join contact" "info info";
+}
+footer.page-footer .footer-section section.flex-item:first-child {
+  grid-area: quicklinks;
+}
+footer.page-footer .footer-section section.flex-item:nth-child(2) {
+  grid-area: join;
+}
+footer.page-footer .footer-section section.flex-item:nth-child(3) {
+  grid-area: contact;
+}
+footer.page-footer .footer-section section.flex-item:nth-child(4) {
+  grid-area: info;
 }
 @media (min-width: 1024px) {
   footer.page-footer .footer-section {
+    grid-template-areas: "quicklinks join contact info";
     grid-template-columns: 4fr 3fr 3fr 4fr;
   }
 }
@@ -3308,7 +3308,7 @@ footer.page-footer .footer-wrapper .footer-navigation h4 {
 .event-promo-full-width.basic .rich-text .rich-text h3 {
   font-family: "Outfit", sans-serif;
   font-weight: 600;
-  font-size: 32px;
+  font-size: 28px;
   line-height: 130%;
   letter-spacing: 0%;
   color: #1E3EAF;
@@ -3322,12 +3322,6 @@ footer.page-footer .footer-wrapper .footer-navigation h4 {
 @media (min-width: 1024px) {
   .event-promo-full-width.basic .rich-text .rich-text h3 {
     font-size: 45px;
-    line-height: 58.5px;
-  }
-}
-@media (min-width: 1300px) {
-  .event-promo-full-width.basic .rich-text .rich-text h3 {
-    line-height: 130%;
   }
 }
 .event-promo-full-width.basic .rich-text .rich-text h4 {
@@ -3702,7 +3696,7 @@ footer.page-footer .footer-wrapper .footer-navigation h4 {
 .modal-content #modal-body .component-class-richtext .rich-text h5 {
   font-family: "Outfit", sans-serif;
   font-weight: 600;
-  font-size: 32px;
+  font-size: 28px;
   line-height: 130%;
   letter-spacing: 0%;
   color: #1E3EAF;
@@ -3717,12 +3711,6 @@ footer.page-footer .footer-wrapper .footer-navigation h4 {
 @media (min-width: 1024px) {
   .modal-content #modal-body .component-class-richtext .rich-text h5 {
     font-size: 45px;
-    line-height: 58.5px;
-  }
-}
-@media (min-width: 1300px) {
-  .modal-content #modal-body .component-class-richtext .rich-text h5 {
-    line-height: 130%;
   }
 }
 .modal-content #modal-body .component-class-richtext .rich-text p {
@@ -4073,7 +4061,7 @@ ul.stats-main li {
 ul.stats-main li h3 {
   font-family: "Outfit", sans-serif;
   font-weight: 600;
-  font-size: 32px;
+  font-size: 28px;
   line-height: 130%;
   letter-spacing: 0%;
   color: #D2E9FF;
@@ -4087,20 +4075,14 @@ ul.stats-main li h3.hebrew {
 @media (min-width: 1024px) {
   ul.stats-main li h3 {
     font-size: 45px;
-    line-height: 58.5px;
-  }
-}
-@media (min-width: 1300px) {
-  ul.stats-main li h3 {
-    line-height: 130%;
   }
 }
 ul.stats-main li p.large {
   font-family: "Outfit", sans-serif;
   font-weight: 300;
   font-size: 18px;
-  line-height: 26px;
-  letter-spacing: 0%;
+  line-height: 150%;
+  letter-spacing: 0;
   color: #FDFDFD;
 }
 ul.stats-main li p.large strong, ul.stats-main li p.large em, ul.stats-main li p.large b {
@@ -4110,7 +4092,6 @@ ul.stats-main li p.large strong, ul.stats-main li p.large em, ul.stats-main li p
 @media (min-width: 1024px) {
   ul.stats-main li p.large {
     font-size: 24px;
-    line-height: 150%;
   }
 }
 ul.stats-main li p.large.hebrew {
@@ -4165,7 +4146,7 @@ ul.stats-main.col2 li {
 .page-main.error-page p {
   font-family: "Outfit", sans-serif;
   font-weight: 600;
-  font-size: 32px;
+  font-size: 28px;
   line-height: 130%;
   letter-spacing: 0%;
   color: #27277C;
@@ -4179,12 +4160,6 @@ ul.stats-main.col2 li {
 @media (min-width: 1024px) {
   .page-main.error-page p {
     font-size: 45px;
-    line-height: 58.5px;
-  }
-}
-@media (min-width: 1300px) {
-  .page-main.error-page p {
-    line-height: 130%;
   }
 }
 
@@ -4296,7 +4271,7 @@ ul.stats-main.col2 li {
 .bg-primary-blue .rich-text h3 {
   font-family: "Outfit", sans-serif;
   font-weight: 600;
-  font-size: 32px;
+  font-size: 28px;
   line-height: 130%;
   letter-spacing: 0%;
   color: #F5F5F5;
@@ -4310,12 +4285,6 @@ ul.stats-main.col2 li {
 @media (min-width: 1024px) {
   .bg-primary-blue .rich-text h3 {
     font-size: 45px;
-    line-height: 58.5px;
-  }
-}
-@media (min-width: 1300px) {
-  .bg-primary-blue .rich-text h3 {
-    line-height: 130%;
   }
 }
 .bg-primary-blue .rich-text h4 {
@@ -4406,8 +4375,8 @@ ul.stats-main.col2 li {
   font-family: "Outfit", sans-serif;
   font-weight: 300;
   font-size: 18px;
-  line-height: 26px;
-  letter-spacing: 0%;
+  line-height: 150%;
+  letter-spacing: 0;
   color: #F5F5F5;
 }
 .bg-primary-blue .rich-text p.large strong, .bg-primary-blue .rich-text p.large em, .bg-primary-blue .rich-text p.large b {
@@ -4417,7 +4386,6 @@ ul.stats-main.col2 li {
 @media (min-width: 1024px) {
   .bg-primary-blue .rich-text p.large {
     font-size: 24px;
-    line-height: 150%;
   }
 }
 .bg-primary-blue .rich-text p.large.hebrew {
@@ -4470,7 +4438,7 @@ ul.stats-main.col2 li {
 .bg-primary-blue.white-card .rich-text h3 {
   font-family: "Outfit", sans-serif;
   font-weight: 600;
-  font-size: 32px;
+  font-size: 28px;
   line-height: 130%;
   letter-spacing: 0%;
   color: #1E3EAF;
@@ -4484,12 +4452,6 @@ ul.stats-main.col2 li {
 @media (min-width: 1024px) {
   .bg-primary-blue.white-card .rich-text h3 {
     font-size: 45px;
-    line-height: 58.5px;
-  }
-}
-@media (min-width: 1300px) {
-  .bg-primary-blue.white-card .rich-text h3 {
-    line-height: 130%;
   }
 }
 .bg-primary-blue.white-card .rich-text h4 {
@@ -4644,7 +4606,7 @@ ul.stats-main.col2 li {
 .bg-primary-blue.gray-card .rich-text h3 {
   font-family: "Outfit", sans-serif;
   font-weight: 600;
-  font-size: 32px;
+  font-size: 28px;
   line-height: 130%;
   letter-spacing: 0%;
   color: #1E3EAF;
@@ -4658,12 +4620,6 @@ ul.stats-main.col2 li {
 @media (min-width: 1024px) {
   .bg-primary-blue.gray-card .rich-text h3 {
     font-size: 45px;
-    line-height: 58.5px;
-  }
-}
-@media (min-width: 1300px) {
-  .bg-primary-blue.gray-card .rich-text h3 {
-    line-height: 130%;
   }
 }
 .bg-primary-blue.gray-card .rich-text h4 {
@@ -4818,7 +4774,7 @@ ul.stats-main.col2 li {
 .bg-primary-blue.lightblue-card .rich-text h3 {
   font-family: "Outfit", sans-serif;
   font-weight: 600;
-  font-size: 32px;
+  font-size: 28px;
   line-height: 130%;
   letter-spacing: 0%;
   color: #1E3EAF;
@@ -4832,12 +4788,6 @@ ul.stats-main.col2 li {
 @media (min-width: 1024px) {
   .bg-primary-blue.lightblue-card .rich-text h3 {
     font-size: 45px;
-    line-height: 58.5px;
-  }
-}
-@media (min-width: 1300px) {
-  .bg-primary-blue.lightblue-card .rich-text h3 {
-    line-height: 130%;
   }
 }
 .bg-primary-blue.lightblue-card .rich-text h4 {
@@ -5018,7 +4968,7 @@ ul.stats-main.col2 li {
 .bg-medium-blue .rich-text h3 {
   font-family: "Outfit", sans-serif;
   font-weight: 600;
-  font-size: 32px;
+  font-size: 28px;
   line-height: 130%;
   letter-spacing: 0%;
   color: #D2E9FF;
@@ -5032,12 +4982,6 @@ ul.stats-main.col2 li {
 @media (min-width: 1024px) {
   .bg-medium-blue .rich-text h3 {
     font-size: 45px;
-    line-height: 58.5px;
-  }
-}
-@media (min-width: 1300px) {
-  .bg-medium-blue .rich-text h3 {
-    line-height: 130%;
   }
 }
 .bg-medium-blue .rich-text h4 {
@@ -5128,8 +5072,8 @@ ul.stats-main.col2 li {
   font-family: "Outfit", sans-serif;
   font-weight: 300;
   font-size: 18px;
-  line-height: 26px;
-  letter-spacing: 0%;
+  line-height: 150%;
+  letter-spacing: 0;
   color: #F5F5F5;
 }
 .bg-medium-blue .rich-text p.large strong, .bg-medium-blue .rich-text p.large em, .bg-medium-blue .rich-text p.large b {
@@ -5139,7 +5083,6 @@ ul.stats-main.col2 li {
 @media (min-width: 1024px) {
   .bg-medium-blue .rich-text p.large {
     font-size: 24px;
-    line-height: 150%;
   }
 }
 .bg-medium-blue .rich-text p.large.hebrew {
@@ -5192,7 +5135,7 @@ ul.stats-main.col2 li {
 .bg-medium-blue.white-card .rich-text h3 {
   font-family: "Outfit", sans-serif;
   font-weight: 600;
-  font-size: 32px;
+  font-size: 28px;
   line-height: 130%;
   letter-spacing: 0%;
   color: #1E3EAF;
@@ -5206,12 +5149,6 @@ ul.stats-main.col2 li {
 @media (min-width: 1024px) {
   .bg-medium-blue.white-card .rich-text h3 {
     font-size: 45px;
-    line-height: 58.5px;
-  }
-}
-@media (min-width: 1300px) {
-  .bg-medium-blue.white-card .rich-text h3 {
-    line-height: 130%;
   }
 }
 .bg-medium-blue.white-card .rich-text h4 {
@@ -5366,7 +5303,7 @@ ul.stats-main.col2 li {
 .bg-medium-blue.gray-card .rich-text h3 {
   font-family: "Outfit", sans-serif;
   font-weight: 600;
-  font-size: 32px;
+  font-size: 28px;
   line-height: 130%;
   letter-spacing: 0%;
   color: #1E3EAF;
@@ -5380,12 +5317,6 @@ ul.stats-main.col2 li {
 @media (min-width: 1024px) {
   .bg-medium-blue.gray-card .rich-text h3 {
     font-size: 45px;
-    line-height: 58.5px;
-  }
-}
-@media (min-width: 1300px) {
-  .bg-medium-blue.gray-card .rich-text h3 {
-    line-height: 130%;
   }
 }
 .bg-medium-blue.gray-card .rich-text h4 {
@@ -5540,7 +5471,7 @@ ul.stats-main.col2 li {
 .bg-medium-blue.lightblue-card .rich-text h3 {
   font-family: "Outfit", sans-serif;
   font-weight: 600;
-  font-size: 32px;
+  font-size: 28px;
   line-height: 130%;
   letter-spacing: 0%;
   color: #1E3EAF;
@@ -5554,12 +5485,6 @@ ul.stats-main.col2 li {
 @media (min-width: 1024px) {
   .bg-medium-blue.lightblue-card .rich-text h3 {
     font-size: 45px;
-    line-height: 58.5px;
-  }
-}
-@media (min-width: 1300px) {
-  .bg-medium-blue.lightblue-card .rich-text h3 {
-    line-height: 130%;
   }
 }
 .bg-medium-blue.lightblue-card .rich-text h4 {
@@ -5740,7 +5665,7 @@ ul.stats-main.col2 li {
 .bg-navy-blue .rich-text h3 {
   font-family: "Outfit", sans-serif;
   font-weight: 600;
-  font-size: 32px;
+  font-size: 28px;
   line-height: 130%;
   letter-spacing: 0%;
   color: #D2E9FF;
@@ -5754,12 +5679,6 @@ ul.stats-main.col2 li {
 @media (min-width: 1024px) {
   .bg-navy-blue .rich-text h3 {
     font-size: 45px;
-    line-height: 58.5px;
-  }
-}
-@media (min-width: 1300px) {
-  .bg-navy-blue .rich-text h3 {
-    line-height: 130%;
   }
 }
 .bg-navy-blue .rich-text h4 {
@@ -5850,8 +5769,8 @@ ul.stats-main.col2 li {
   font-family: "Outfit", sans-serif;
   font-weight: 300;
   font-size: 18px;
-  line-height: 26px;
-  letter-spacing: 0%;
+  line-height: 150%;
+  letter-spacing: 0;
   color: #F5F5F5;
 }
 .bg-navy-blue .rich-text p.large strong, .bg-navy-blue .rich-text p.large em, .bg-navy-blue .rich-text p.large b {
@@ -5861,7 +5780,6 @@ ul.stats-main.col2 li {
 @media (min-width: 1024px) {
   .bg-navy-blue .rich-text p.large {
     font-size: 24px;
-    line-height: 150%;
   }
 }
 .bg-navy-blue .rich-text p.large.hebrew {
@@ -5914,7 +5832,7 @@ ul.stats-main.col2 li {
 .bg-navy-blue.white-card .rich-text h3 {
   font-family: "Outfit", sans-serif;
   font-weight: 600;
-  font-size: 32px;
+  font-size: 28px;
   line-height: 130%;
   letter-spacing: 0%;
   color: #1E3EAF;
@@ -5928,12 +5846,6 @@ ul.stats-main.col2 li {
 @media (min-width: 1024px) {
   .bg-navy-blue.white-card .rich-text h3 {
     font-size: 45px;
-    line-height: 58.5px;
-  }
-}
-@media (min-width: 1300px) {
-  .bg-navy-blue.white-card .rich-text h3 {
-    line-height: 130%;
   }
 }
 .bg-navy-blue.white-card .rich-text h4 {
@@ -6088,7 +6000,7 @@ ul.stats-main.col2 li {
 .bg-navy-blue.gray-card .rich-text h3 {
   font-family: "Outfit", sans-serif;
   font-weight: 600;
-  font-size: 32px;
+  font-size: 28px;
   line-height: 130%;
   letter-spacing: 0%;
   color: #1E3EAF;
@@ -6102,12 +6014,6 @@ ul.stats-main.col2 li {
 @media (min-width: 1024px) {
   .bg-navy-blue.gray-card .rich-text h3 {
     font-size: 45px;
-    line-height: 58.5px;
-  }
-}
-@media (min-width: 1300px) {
-  .bg-navy-blue.gray-card .rich-text h3 {
-    line-height: 130%;
   }
 }
 .bg-navy-blue.gray-card .rich-text h4 {
@@ -6262,7 +6168,7 @@ ul.stats-main.col2 li {
 .bg-navy-blue.lightblue-card .rich-text h3 {
   font-family: "Outfit", sans-serif;
   font-weight: 600;
-  font-size: 32px;
+  font-size: 28px;
   line-height: 130%;
   letter-spacing: 0%;
   color: #1E3EAF;
@@ -6276,12 +6182,6 @@ ul.stats-main.col2 li {
 @media (min-width: 1024px) {
   .bg-navy-blue.lightblue-card .rich-text h3 {
     font-size: 45px;
-    line-height: 58.5px;
-  }
-}
-@media (min-width: 1300px) {
-  .bg-navy-blue.lightblue-card .rich-text h3 {
-    line-height: 130%;
   }
 }
 .bg-navy-blue.lightblue-card .rich-text h4 {
@@ -6462,7 +6362,7 @@ ul.stats-main.col2 li {
 .bg-light-blue .rich-text h3 {
   font-family: "Outfit", sans-serif;
   font-weight: 600;
-  font-size: 32px;
+  font-size: 28px;
   line-height: 130%;
   letter-spacing: 0%;
   color: #1E3EAF;
@@ -6476,12 +6376,6 @@ ul.stats-main.col2 li {
 @media (min-width: 1024px) {
   .bg-light-blue .rich-text h3 {
     font-size: 45px;
-    line-height: 58.5px;
-  }
-}
-@media (min-width: 1300px) {
-  .bg-light-blue .rich-text h3 {
-    line-height: 130%;
   }
 }
 .bg-light-blue .rich-text h4 {
@@ -6572,8 +6466,8 @@ ul.stats-main.col2 li {
   font-family: "Outfit", sans-serif;
   font-weight: 300;
   font-size: 18px;
-  line-height: 26px;
-  letter-spacing: 0%;
+  line-height: 150%;
+  letter-spacing: 0;
   color: #2A2A2A;
 }
 .bg-light-blue .rich-text p.large strong, .bg-light-blue .rich-text p.large em, .bg-light-blue .rich-text p.large b {
@@ -6583,7 +6477,6 @@ ul.stats-main.col2 li {
 @media (min-width: 1024px) {
   .bg-light-blue .rich-text p.large {
     font-size: 24px;
-    line-height: 150%;
   }
 }
 .bg-light-blue .rich-text p.large.hebrew {
@@ -6662,7 +6555,7 @@ ul.stats-main.col2 li {
 .bg-pale-blue .rich-text h3 {
   font-family: "Outfit", sans-serif;
   font-weight: 600;
-  font-size: 32px;
+  font-size: 28px;
   line-height: 130%;
   letter-spacing: 0%;
   color: #27277C;
@@ -6676,12 +6569,6 @@ ul.stats-main.col2 li {
 @media (min-width: 1024px) {
   .bg-pale-blue .rich-text h3 {
     font-size: 45px;
-    line-height: 58.5px;
-  }
-}
-@media (min-width: 1300px) {
-  .bg-pale-blue .rich-text h3 {
-    line-height: 130%;
   }
 }
 .bg-pale-blue .rich-text h4 {
@@ -6772,8 +6659,8 @@ ul.stats-main.col2 li {
   font-family: "Outfit", sans-serif;
   font-weight: 300;
   font-size: 18px;
-  line-height: 26px;
-  letter-spacing: 0%;
+  line-height: 150%;
+  letter-spacing: 0;
   color: #2A2A2A;
 }
 .bg-pale-blue .rich-text p.large strong, .bg-pale-blue .rich-text p.large em, .bg-pale-blue .rich-text p.large b {
@@ -6783,7 +6670,6 @@ ul.stats-main.col2 li {
 @media (min-width: 1024px) {
   .bg-pale-blue .rich-text p.large {
     font-size: 24px;
-    line-height: 150%;
   }
 }
 .bg-pale-blue .rich-text p.large.hebrew {
@@ -6862,7 +6748,7 @@ ul.stats-main.col2 li {
 .bg-light .rich-text h3 {
   font-family: "Outfit", sans-serif;
   font-weight: 600;
-  font-size: 32px;
+  font-size: 28px;
   line-height: 130%;
   letter-spacing: 0%;
   color: #1E3EAF;
@@ -6876,12 +6762,6 @@ ul.stats-main.col2 li {
 @media (min-width: 1024px) {
   .bg-light .rich-text h3 {
     font-size: 45px;
-    line-height: 58.5px;
-  }
-}
-@media (min-width: 1300px) {
-  .bg-light .rich-text h3 {
-    line-height: 130%;
   }
 }
 .bg-light .rich-text h4 {
@@ -6972,8 +6852,8 @@ ul.stats-main.col2 li {
   font-family: "Outfit", sans-serif;
   font-weight: 300;
   font-size: 18px;
-  line-height: 26px;
-  letter-spacing: 0%;
+  line-height: 150%;
+  letter-spacing: 0;
   color: #2A2A2A;
 }
 .bg-light .rich-text p.large strong, .bg-light .rich-text p.large em, .bg-light .rich-text p.large b {
@@ -6983,7 +6863,6 @@ ul.stats-main.col2 li {
 @media (min-width: 1024px) {
   .bg-light .rich-text p.large {
     font-size: 24px;
-    line-height: 150%;
   }
 }
 .bg-light .rich-text p.large.hebrew {
@@ -7086,7 +6965,7 @@ ul.stats-main.col2 li {
 .bg-white .rich-text h3 {
   font-family: "Outfit", sans-serif;
   font-weight: 600;
-  font-size: 32px;
+  font-size: 28px;
   line-height: 130%;
   letter-spacing: 0%;
   color: #1E3EAF;
@@ -7100,12 +6979,6 @@ ul.stats-main.col2 li {
 @media (min-width: 1024px) {
   .bg-white .rich-text h3 {
     font-size: 45px;
-    line-height: 58.5px;
-  }
-}
-@media (min-width: 1300px) {
-  .bg-white .rich-text h3 {
-    line-height: 130%;
   }
 }
 .bg-white .rich-text h4 {
@@ -7196,8 +7069,8 @@ ul.stats-main.col2 li {
   font-family: "Outfit", sans-serif;
   font-weight: 300;
   font-size: 18px;
-  line-height: 26px;
-  letter-spacing: 0%;
+  line-height: 150%;
+  letter-spacing: 0;
   color: #2A2A2A;
 }
 .bg-white .rich-text p.large strong, .bg-white .rich-text p.large em, .bg-white .rich-text p.large b {
@@ -7207,7 +7080,6 @@ ul.stats-main.col2 li {
 @media (min-width: 1024px) {
   .bg-white .rich-text p.large {
     font-size: 24px;
-    line-height: 150%;
   }
 }
 .bg-white .rich-text p.large.hebrew {
@@ -7310,7 +7182,7 @@ ul.stats-main.col2 li {
 .bg-gray .rich-text h3 {
   font-family: "Outfit", sans-serif;
   font-weight: 600;
-  font-size: 32px;
+  font-size: 28px;
   line-height: 130%;
   letter-spacing: 0%;
   color: #1E3EAF;
@@ -7324,12 +7196,6 @@ ul.stats-main.col2 li {
 @media (min-width: 1024px) {
   .bg-gray .rich-text h3 {
     font-size: 45px;
-    line-height: 58.5px;
-  }
-}
-@media (min-width: 1300px) {
-  .bg-gray .rich-text h3 {
-    line-height: 130%;
   }
 }
 .bg-gray .rich-text h4 {
@@ -7420,8 +7286,8 @@ ul.stats-main.col2 li {
   font-family: "Outfit", sans-serif;
   font-weight: 300;
   font-size: 18px;
-  line-height: 26px;
-  letter-spacing: 0%;
+  line-height: 150%;
+  letter-spacing: 0;
   color: #2A2A2A;
 }
 .bg-gray .rich-text p.large strong, .bg-gray .rich-text p.large em, .bg-gray .rich-text p.large b {
@@ -7431,7 +7297,6 @@ ul.stats-main.col2 li {
 @media (min-width: 1024px) {
   .bg-gray .rich-text p.large {
     font-size: 24px;
-    line-height: 150%;
   }
 }
 .bg-gray .rich-text p.large.hebrew {
@@ -7534,7 +7399,7 @@ ul.stats-main.col2 li {
 .bg-light-gray .rich-text h3 {
   font-family: "Outfit", sans-serif;
   font-weight: 600;
-  font-size: 32px;
+  font-size: 28px;
   line-height: 130%;
   letter-spacing: 0%;
   color: #1E3EAF;
@@ -7548,12 +7413,6 @@ ul.stats-main.col2 li {
 @media (min-width: 1024px) {
   .bg-light-gray .rich-text h3 {
     font-size: 45px;
-    line-height: 58.5px;
-  }
-}
-@media (min-width: 1300px) {
-  .bg-light-gray .rich-text h3 {
-    line-height: 130%;
   }
 }
 .bg-light-gray .rich-text h4 {
@@ -7644,8 +7503,8 @@ ul.stats-main.col2 li {
   font-family: "Outfit", sans-serif;
   font-weight: 300;
   font-size: 18px;
-  line-height: 26px;
-  letter-spacing: 0%;
+  line-height: 150%;
+  letter-spacing: 0;
   color: #2A2A2A;
 }
 .bg-light-gray .rich-text p.large strong, .bg-light-gray .rich-text p.large em, .bg-light-gray .rich-text p.large b {
@@ -7655,7 +7514,6 @@ ul.stats-main.col2 li {
 @media (min-width: 1024px) {
   .bg-light-gray .rich-text p.large {
     font-size: 24px;
-    line-height: 150%;
   }
 }
 .bg-light-gray .rich-text p.large.hebrew {
@@ -7758,7 +7616,7 @@ ul.stats-main.col2 li {
 .bg-footer-gray .rich-text h3 {
   font-family: "Outfit", sans-serif;
   font-weight: 600;
-  font-size: 32px;
+  font-size: 28px;
   line-height: 130%;
   letter-spacing: 0%;
   color: #1E3EAF;
@@ -7772,12 +7630,6 @@ ul.stats-main.col2 li {
 @media (min-width: 1024px) {
   .bg-footer-gray .rich-text h3 {
     font-size: 45px;
-    line-height: 58.5px;
-  }
-}
-@media (min-width: 1300px) {
-  .bg-footer-gray .rich-text h3 {
-    line-height: 130%;
   }
 }
 .bg-footer-gray .rich-text h4 {
@@ -7868,8 +7720,8 @@ ul.stats-main.col2 li {
   font-family: "Outfit", sans-serif;
   font-weight: 300;
   font-size: 18px;
-  line-height: 26px;
-  letter-spacing: 0%;
+  line-height: 150%;
+  letter-spacing: 0;
   color: #2A2A2A;
 }
 .bg-footer-gray .rich-text p.large strong, .bg-footer-gray .rich-text p.large em, .bg-footer-gray .rich-text p.large b {
@@ -7879,7 +7731,6 @@ ul.stats-main.col2 li {
 @media (min-width: 1024px) {
   .bg-footer-gray .rich-text p.large {
     font-size: 24px;
-    line-height: 150%;
   }
 }
 .bg-footer-gray .rich-text p.large.hebrew {
@@ -8417,7 +8268,7 @@ ul.stats-main.col2 li {
 .component-icon-row .icon-row-item .text h4 {
   font-family: "Outfit", sans-serif;
   font-weight: 600;
-  font-size: 32px;
+  font-size: 28px;
   line-height: 130%;
   letter-spacing: 0%;
   color: #F5F5F5;
@@ -8431,12 +8282,6 @@ ul.stats-main.col2 li {
 @media (min-width: 1024px) {
   .component-icon-row .icon-row-item .text h4 {
     font-size: 45px;
-    line-height: 58.5px;
-  }
-}
-@media (min-width: 1300px) {
-  .component-icon-row .icon-row-item .text h4 {
-    line-height: 130%;
   }
 }
 @media (min-width: 1024px) {
@@ -10840,7 +10685,7 @@ div.two-videos {
 .callout .rich-text h3 {
   font-family: "Outfit", sans-serif;
   font-weight: 600;
-  font-size: 32px;
+  font-size: 28px;
   line-height: 130%;
   letter-spacing: 0%;
   color: #F5F5F5;
@@ -10854,12 +10699,6 @@ div.two-videos {
 @media (min-width: 1024px) {
   .callout .rich-text h3 {
     font-size: 45px;
-    line-height: 58.5px;
-  }
-}
-@media (min-width: 1300px) {
-  .callout .rich-text h3 {
-    line-height: 130%;
   }
 }
 .callout .rich-text h4 {
@@ -10950,8 +10789,8 @@ div.two-videos {
   font-family: "Outfit", sans-serif;
   font-weight: 300;
   font-size: 18px;
-  line-height: 26px;
-  letter-spacing: 0%;
+  line-height: 150%;
+  letter-spacing: 0;
   color: #F5F5F5;
 }
 .callout .rich-text p.large strong, .callout .rich-text p.large em, .callout .rich-text p.large b {
@@ -10961,7 +10800,6 @@ div.two-videos {
 @media (min-width: 1024px) {
   .callout .rich-text p.large {
     font-size: 24px;
-    line-height: 150%;
   }
 }
 .callout .rich-text p.large.hebrew {
@@ -11014,7 +10852,7 @@ div.two-videos {
 .callout.white-card .rich-text h3 {
   font-family: "Outfit", sans-serif;
   font-weight: 600;
-  font-size: 32px;
+  font-size: 28px;
   line-height: 130%;
   letter-spacing: 0%;
   color: #1E3EAF;
@@ -11028,12 +10866,6 @@ div.two-videos {
 @media (min-width: 1024px) {
   .callout.white-card .rich-text h3 {
     font-size: 45px;
-    line-height: 58.5px;
-  }
-}
-@media (min-width: 1300px) {
-  .callout.white-card .rich-text h3 {
-    line-height: 130%;
   }
 }
 .callout.white-card .rich-text h4 {
@@ -11188,7 +11020,7 @@ div.two-videos {
 .callout.gray-card .rich-text h3 {
   font-family: "Outfit", sans-serif;
   font-weight: 600;
-  font-size: 32px;
+  font-size: 28px;
   line-height: 130%;
   letter-spacing: 0%;
   color: #1E3EAF;
@@ -11202,12 +11034,6 @@ div.two-videos {
 @media (min-width: 1024px) {
   .callout.gray-card .rich-text h3 {
     font-size: 45px;
-    line-height: 58.5px;
-  }
-}
-@media (min-width: 1300px) {
-  .callout.gray-card .rich-text h3 {
-    line-height: 130%;
   }
 }
 .callout.gray-card .rich-text h4 {
@@ -11362,7 +11188,7 @@ div.two-videos {
 .callout.lightblue-card .rich-text h3 {
   font-family: "Outfit", sans-serif;
   font-weight: 600;
-  font-size: 32px;
+  font-size: 28px;
   line-height: 130%;
   letter-spacing: 0%;
   color: #1E3EAF;
@@ -11376,12 +11202,6 @@ div.two-videos {
 @media (min-width: 1024px) {
   .callout.lightblue-card .rich-text h3 {
     font-size: 45px;
-    line-height: 58.5px;
-  }
-}
-@media (min-width: 1300px) {
-  .callout.lightblue-card .rich-text h3 {
-    line-height: 130%;
   }
 }
 .callout.lightblue-card .rich-text h4 {
@@ -11659,7 +11479,7 @@ div.two-videos {
 .callout.reverse .rich-text h3 {
   font-family: "Outfit", sans-serif;
   font-weight: 600;
-  font-size: 32px;
+  font-size: 28px;
   line-height: 130%;
   letter-spacing: 0%;
   color: #F5F5F5;
@@ -11673,12 +11493,6 @@ div.two-videos {
 @media (min-width: 1024px) {
   .callout.reverse .rich-text h3 {
     font-size: 45px;
-    line-height: 58.5px;
-  }
-}
-@media (min-width: 1300px) {
-  .callout.reverse .rich-text h3 {
-    line-height: 130%;
   }
 }
 .callout.reverse .rich-text h4 {
@@ -11769,8 +11583,8 @@ div.two-videos {
   font-family: "Outfit", sans-serif;
   font-weight: 300;
   font-size: 18px;
-  line-height: 26px;
-  letter-spacing: 0%;
+  line-height: 150%;
+  letter-spacing: 0;
   color: #F5F5F5;
 }
 .callout.reverse .rich-text p.large strong, .callout.reverse .rich-text p.large em, .callout.reverse .rich-text p.large b {
@@ -11780,7 +11594,6 @@ div.two-videos {
 @media (min-width: 1024px) {
   .callout.reverse .rich-text p.large {
     font-size: 24px;
-    line-height: 150%;
   }
 }
 .callout.reverse .rich-text p.large.hebrew {
@@ -11833,7 +11646,7 @@ div.two-videos {
 .callout.reverse.white-card .rich-text h3 {
   font-family: "Outfit", sans-serif;
   font-weight: 600;
-  font-size: 32px;
+  font-size: 28px;
   line-height: 130%;
   letter-spacing: 0%;
   color: #1E3EAF;
@@ -11847,12 +11660,6 @@ div.two-videos {
 @media (min-width: 1024px) {
   .callout.reverse.white-card .rich-text h3 {
     font-size: 45px;
-    line-height: 58.5px;
-  }
-}
-@media (min-width: 1300px) {
-  .callout.reverse.white-card .rich-text h3 {
-    line-height: 130%;
   }
 }
 .callout.reverse.white-card .rich-text h4 {
@@ -12007,7 +11814,7 @@ div.two-videos {
 .callout.reverse.gray-card .rich-text h3 {
   font-family: "Outfit", sans-serif;
   font-weight: 600;
-  font-size: 32px;
+  font-size: 28px;
   line-height: 130%;
   letter-spacing: 0%;
   color: #1E3EAF;
@@ -12021,12 +11828,6 @@ div.two-videos {
 @media (min-width: 1024px) {
   .callout.reverse.gray-card .rich-text h3 {
     font-size: 45px;
-    line-height: 58.5px;
-  }
-}
-@media (min-width: 1300px) {
-  .callout.reverse.gray-card .rich-text h3 {
-    line-height: 130%;
   }
 }
 .callout.reverse.gray-card .rich-text h4 {
@@ -12181,7 +11982,7 @@ div.two-videos {
 .callout.reverse.lightblue-card .rich-text h3 {
   font-family: "Outfit", sans-serif;
   font-weight: 600;
-  font-size: 32px;
+  font-size: 28px;
   line-height: 130%;
   letter-spacing: 0%;
   color: #1E3EAF;
@@ -12195,12 +11996,6 @@ div.two-videos {
 @media (min-width: 1024px) {
   .callout.reverse.lightblue-card .rich-text h3 {
     font-size: 45px;
-    line-height: 58.5px;
-  }
-}
-@media (min-width: 1300px) {
-  .callout.reverse.lightblue-card .rich-text h3 {
-    line-height: 130%;
   }
 }
 .callout.reverse.lightblue-card .rich-text h4 {
@@ -12477,7 +12272,7 @@ div.two-videos {
 .callout.bg-pale-blue .rich-text h3 {
   font-family: "Outfit", sans-serif;
   font-weight: 600;
-  font-size: 32px;
+  font-size: 28px;
   line-height: 130%;
   letter-spacing: 0%;
   color: #27277C;
@@ -12491,12 +12286,6 @@ div.two-videos {
 @media (min-width: 1024px) {
   .callout.bg-pale-blue .rich-text h3 {
     font-size: 45px;
-    line-height: 58.5px;
-  }
-}
-@media (min-width: 1300px) {
-  .callout.bg-pale-blue .rich-text h3 {
-    line-height: 130%;
   }
 }
 .callout.bg-pale-blue .rich-text h4 {
@@ -12587,8 +12376,8 @@ div.two-videos {
   font-family: "Outfit", sans-serif;
   font-weight: 300;
   font-size: 18px;
-  line-height: 26px;
-  letter-spacing: 0%;
+  line-height: 150%;
+  letter-spacing: 0;
   color: #2A2A2A;
 }
 .callout.bg-pale-blue .rich-text p.large strong, .callout.bg-pale-blue .rich-text p.large em, .callout.bg-pale-blue .rich-text p.large b {
@@ -12598,7 +12387,6 @@ div.two-videos {
 @media (min-width: 1024px) {
   .callout.bg-pale-blue .rich-text p.large {
     font-size: 24px;
-    line-height: 150%;
   }
 }
 .callout.bg-pale-blue .rich-text p.large.hebrew {
@@ -12679,7 +12467,7 @@ div.two-videos {
 .callout.dark .rich-text h3 {
   font-family: "Outfit", sans-serif;
   font-weight: 600;
-  font-size: 32px;
+  font-size: 28px;
   line-height: 130%;
   letter-spacing: 0%;
   color: #D2E9FF;
@@ -12693,12 +12481,6 @@ div.two-videos {
 @media (min-width: 1024px) {
   .callout.dark .rich-text h3 {
     font-size: 45px;
-    line-height: 58.5px;
-  }
-}
-@media (min-width: 1300px) {
-  .callout.dark .rich-text h3 {
-    line-height: 130%;
   }
 }
 .callout.dark .rich-text h4 {
@@ -12789,8 +12571,8 @@ div.two-videos {
   font-family: "Outfit", sans-serif;
   font-weight: 300;
   font-size: 18px;
-  line-height: 26px;
-  letter-spacing: 0%;
+  line-height: 150%;
+  letter-spacing: 0;
   color: #F5F5F5;
 }
 .callout.dark .rich-text p.large strong, .callout.dark .rich-text p.large em, .callout.dark .rich-text p.large b {
@@ -12800,7 +12582,6 @@ div.two-videos {
 @media (min-width: 1024px) {
   .callout.dark .rich-text p.large {
     font-size: 24px;
-    line-height: 150%;
   }
 }
 .callout.dark .rich-text p.large.hebrew {
@@ -12853,7 +12634,7 @@ div.two-videos {
 .callout.dark.white-card .rich-text h3 {
   font-family: "Outfit", sans-serif;
   font-weight: 600;
-  font-size: 32px;
+  font-size: 28px;
   line-height: 130%;
   letter-spacing: 0%;
   color: #1E3EAF;
@@ -12867,12 +12648,6 @@ div.two-videos {
 @media (min-width: 1024px) {
   .callout.dark.white-card .rich-text h3 {
     font-size: 45px;
-    line-height: 58.5px;
-  }
-}
-@media (min-width: 1300px) {
-  .callout.dark.white-card .rich-text h3 {
-    line-height: 130%;
   }
 }
 .callout.dark.white-card .rich-text h4 {
@@ -13027,7 +12802,7 @@ div.two-videos {
 .callout.dark.gray-card .rich-text h3 {
   font-family: "Outfit", sans-serif;
   font-weight: 600;
-  font-size: 32px;
+  font-size: 28px;
   line-height: 130%;
   letter-spacing: 0%;
   color: #1E3EAF;
@@ -13041,12 +12816,6 @@ div.two-videos {
 @media (min-width: 1024px) {
   .callout.dark.gray-card .rich-text h3 {
     font-size: 45px;
-    line-height: 58.5px;
-  }
-}
-@media (min-width: 1300px) {
-  .callout.dark.gray-card .rich-text h3 {
-    line-height: 130%;
   }
 }
 .callout.dark.gray-card .rich-text h4 {
@@ -13201,7 +12970,7 @@ div.two-videos {
 .callout.dark.lightblue-card .rich-text h3 {
   font-family: "Outfit", sans-serif;
   font-weight: 600;
-  font-size: 32px;
+  font-size: 28px;
   line-height: 130%;
   letter-spacing: 0%;
   color: #1E3EAF;
@@ -13215,12 +12984,6 @@ div.two-videos {
 @media (min-width: 1024px) {
   .callout.dark.lightblue-card .rich-text h3 {
     font-size: 45px;
-    line-height: 58.5px;
-  }
-}
-@media (min-width: 1300px) {
-  .callout.dark.lightblue-card .rich-text h3 {
-    line-height: 130%;
   }
 }
 .callout.dark.lightblue-card .rich-text h4 {
@@ -13403,7 +13166,7 @@ div.two-videos {
 .callout.darknavy .rich-text h3 {
   font-family: "Outfit", sans-serif;
   font-weight: 600;
-  font-size: 32px;
+  font-size: 28px;
   line-height: 130%;
   letter-spacing: 0%;
   color: #D2E9FF;
@@ -13417,12 +13180,6 @@ div.two-videos {
 @media (min-width: 1024px) {
   .callout.darknavy .rich-text h3 {
     font-size: 45px;
-    line-height: 58.5px;
-  }
-}
-@media (min-width: 1300px) {
-  .callout.darknavy .rich-text h3 {
-    line-height: 130%;
   }
 }
 .callout.darknavy .rich-text h4 {
@@ -13513,8 +13270,8 @@ div.two-videos {
   font-family: "Outfit", sans-serif;
   font-weight: 300;
   font-size: 18px;
-  line-height: 26px;
-  letter-spacing: 0%;
+  line-height: 150%;
+  letter-spacing: 0;
   color: #F5F5F5;
 }
 .callout.darknavy .rich-text p.large strong, .callout.darknavy .rich-text p.large em, .callout.darknavy .rich-text p.large b {
@@ -13524,7 +13281,6 @@ div.two-videos {
 @media (min-width: 1024px) {
   .callout.darknavy .rich-text p.large {
     font-size: 24px;
-    line-height: 150%;
   }
 }
 .callout.darknavy .rich-text p.large.hebrew {
@@ -13577,7 +13333,7 @@ div.two-videos {
 .callout.darknavy.white-card .rich-text h3 {
   font-family: "Outfit", sans-serif;
   font-weight: 600;
-  font-size: 32px;
+  font-size: 28px;
   line-height: 130%;
   letter-spacing: 0%;
   color: #1E3EAF;
@@ -13591,12 +13347,6 @@ div.two-videos {
 @media (min-width: 1024px) {
   .callout.darknavy.white-card .rich-text h3 {
     font-size: 45px;
-    line-height: 58.5px;
-  }
-}
-@media (min-width: 1300px) {
-  .callout.darknavy.white-card .rich-text h3 {
-    line-height: 130%;
   }
 }
 .callout.darknavy.white-card .rich-text h4 {
@@ -13751,7 +13501,7 @@ div.two-videos {
 .callout.darknavy.gray-card .rich-text h3 {
   font-family: "Outfit", sans-serif;
   font-weight: 600;
-  font-size: 32px;
+  font-size: 28px;
   line-height: 130%;
   letter-spacing: 0%;
   color: #1E3EAF;
@@ -13765,12 +13515,6 @@ div.two-videos {
 @media (min-width: 1024px) {
   .callout.darknavy.gray-card .rich-text h3 {
     font-size: 45px;
-    line-height: 58.5px;
-  }
-}
-@media (min-width: 1300px) {
-  .callout.darknavy.gray-card .rich-text h3 {
-    line-height: 130%;
   }
 }
 .callout.darknavy.gray-card .rich-text h4 {
@@ -13925,7 +13669,7 @@ div.two-videos {
 .callout.darknavy.lightblue-card .rich-text h3 {
   font-family: "Outfit", sans-serif;
   font-weight: 600;
-  font-size: 32px;
+  font-size: 28px;
   line-height: 130%;
   letter-spacing: 0%;
   color: #1E3EAF;
@@ -13939,12 +13683,6 @@ div.two-videos {
 @media (min-width: 1024px) {
   .callout.darknavy.lightblue-card .rich-text h3 {
     font-size: 45px;
-    line-height: 58.5px;
-  }
-}
-@media (min-width: 1300px) {
-  .callout.darknavy.lightblue-card .rich-text h3 {
-    line-height: 130%;
   }
 }
 .callout.darknavy.lightblue-card .rich-text h4 {
@@ -14246,8 +13984,8 @@ div.two-videos {
   font-family: "Outfit", sans-serif;
   font-weight: 300;
   font-size: 18px;
-  line-height: 26px;
-  letter-spacing: 0%;
+  line-height: 150%;
+  letter-spacing: 0;
   color: #2A2A2A;
 }
 .inspo-block.gray .text-side p.large strong, .inspo-block.gray .text-side p.large em, .inspo-block.gray .text-side p.large b {
@@ -14257,7 +13995,6 @@ div.two-videos {
 @media (min-width: 1024px) {
   .inspo-block.gray .text-side p.large {
     font-size: 24px;
-    line-height: 150%;
   }
 }
 .inspo-block.gray .text-side p.large.hebrew {
@@ -14799,7 +14536,7 @@ div.two-videos {
 .basic h3 {
   font-family: "Outfit", sans-serif;
   font-weight: 600;
-  font-size: 32px;
+  font-size: 28px;
   line-height: 130%;
   letter-spacing: 0%;
   color: #1E3EAF;
@@ -14813,12 +14550,6 @@ div.two-videos {
 @media (min-width: 1024px) {
   .basic h3 {
     font-size: 45px;
-    line-height: 58.5px;
-  }
-}
-@media (min-width: 1300px) {
-  .basic h3 {
-    line-height: 130%;
   }
 }
 .basic h4 {
@@ -14933,8 +14664,8 @@ div.two-videos {
   font-family: "Outfit", sans-serif;
   font-weight: 300;
   font-size: 18px;
-  line-height: 26px;
-  letter-spacing: 0%;
+  line-height: 150%;
+  letter-spacing: 0;
   color: #2A2A2A;
 }
 .basic p.large strong, .basic p.large em, .basic p.large b {
@@ -14944,7 +14675,6 @@ div.two-videos {
 @media (min-width: 1024px) {
   .basic p.large {
     font-size: 24px;
-    line-height: 150%;
   }
 }
 .basic p.large.hebrew {
@@ -14957,8 +14687,8 @@ div.two-videos {
   font-family: "Outfit", sans-serif;
   font-weight: 300;
   font-size: 18px;
-  line-height: 26px;
-  letter-spacing: 0%;
+  line-height: 150%;
+  letter-spacing: 0;
   color: #1E3EAF;
   font-weight: 600;
 }
@@ -14969,7 +14699,6 @@ div.two-videos {
 @media (min-width: 1024px) {
   .basic p.large b {
     font-size: 24px;
-    line-height: 150%;
   }
 }
 .basic p.large b.hebrew {
@@ -15022,7 +14751,7 @@ div.two-videos {
 .basic .rich-text h3 {
   font-family: "Outfit", sans-serif;
   font-weight: 600;
-  font-size: 32px;
+  font-size: 28px;
   line-height: 130%;
   letter-spacing: 0%;
   color: #27277C;
@@ -15036,12 +14765,6 @@ div.two-videos {
 @media (min-width: 1024px) {
   .basic .rich-text h3 {
     font-size: 45px;
-    line-height: 58.5px;
-  }
-}
-@media (min-width: 1300px) {
-  .basic .rich-text h3 {
-    line-height: 130%;
   }
 }
 .basic .rich-text h4 {
@@ -15156,8 +14879,8 @@ div.two-videos {
   font-family: "Outfit", sans-serif;
   font-weight: 300;
   font-size: 18px;
-  line-height: 26px;
-  letter-spacing: 0%;
+  line-height: 150%;
+  letter-spacing: 0;
   color: #2A2A2A;
 }
 .basic .rich-text p.large strong, .basic .rich-text p.large em, .basic .rich-text p.large b {
@@ -15167,7 +14890,6 @@ div.two-videos {
 @media (min-width: 1024px) {
   .basic .rich-text p.large {
     font-size: 24px;
-    line-height: 150%;
   }
 }
 .basic .rich-text p.large.hebrew {
@@ -15180,8 +14902,8 @@ div.two-videos {
   font-family: "Outfit", sans-serif;
   font-weight: 300;
   font-size: 18px;
-  line-height: 26px;
-  letter-spacing: 0%;
+  line-height: 150%;
+  letter-spacing: 0;
   color: #1E3EAF;
   font-weight: 600;
 }
@@ -15192,7 +14914,6 @@ div.two-videos {
 @media (min-width: 1024px) {
   .basic .rich-text p.large b {
     font-size: 24px;
-    line-height: 150%;
   }
 }
 .basic .rich-text p.large b.hebrew {
@@ -15272,7 +14993,7 @@ div.two-videos {
 .basic.bg-primary-blue h3 {
   font-family: "Outfit", sans-serif;
   font-weight: 600;
-  font-size: 32px;
+  font-size: 28px;
   line-height: 130%;
   letter-spacing: 0%;
   color: #F5F5F5;
@@ -15286,12 +15007,6 @@ div.two-videos {
 @media (min-width: 1024px) {
   .basic.bg-primary-blue h3 {
     font-size: 45px;
-    line-height: 58.5px;
-  }
-}
-@media (min-width: 1300px) {
-  .basic.bg-primary-blue h3 {
-    line-height: 130%;
   }
 }
 .basic.bg-primary-blue h4 {
@@ -15406,8 +15121,8 @@ div.two-videos {
   font-family: "Outfit", sans-serif;
   font-weight: 300;
   font-size: 18px;
-  line-height: 26px;
-  letter-spacing: 0%;
+  line-height: 150%;
+  letter-spacing: 0;
   color: #F5F5F5;
 }
 .basic.bg-primary-blue p.large strong, .basic.bg-primary-blue p.large em, .basic.bg-primary-blue p.large b {
@@ -15417,7 +15132,6 @@ div.two-videos {
 @media (min-width: 1024px) {
   .basic.bg-primary-blue p.large {
     font-size: 24px;
-    line-height: 150%;
   }
 }
 .basic.bg-primary-blue p.large.hebrew {
@@ -15430,8 +15144,8 @@ div.two-videos {
   font-family: "Outfit", sans-serif;
   font-weight: 300;
   font-size: 18px;
-  line-height: 26px;
-  letter-spacing: 0%;
+  line-height: 150%;
+  letter-spacing: 0;
   color: #F5F5F5;
   font-weight: 500;
 }
@@ -15442,7 +15156,6 @@ div.two-videos {
 @media (min-width: 1024px) {
   .basic.bg-primary-blue p.large b {
     font-size: 24px;
-    line-height: 150%;
   }
 }
 .basic.bg-primary-blue p.large b.hebrew {
@@ -15495,7 +15208,7 @@ div.two-videos {
 .basic.bg-navy-blue h3 {
   font-family: "Outfit", sans-serif;
   font-weight: 600;
-  font-size: 32px;
+  font-size: 28px;
   line-height: 130%;
   letter-spacing: 0%;
   color: #F5F5F5;
@@ -15509,12 +15222,6 @@ div.two-videos {
 @media (min-width: 1024px) {
   .basic.bg-navy-blue h3 {
     font-size: 45px;
-    line-height: 58.5px;
-  }
-}
-@media (min-width: 1300px) {
-  .basic.bg-navy-blue h3 {
-    line-height: 130%;
   }
 }
 .basic.bg-navy-blue h4 {
@@ -15629,8 +15336,8 @@ div.two-videos {
   font-family: "Outfit", sans-serif;
   font-weight: 300;
   font-size: 18px;
-  line-height: 26px;
-  letter-spacing: 0%;
+  line-height: 150%;
+  letter-spacing: 0;
   color: #F5F5F5;
 }
 .basic.bg-navy-blue p.large strong, .basic.bg-navy-blue p.large em, .basic.bg-navy-blue p.large b {
@@ -15640,7 +15347,6 @@ div.two-videos {
 @media (min-width: 1024px) {
   .basic.bg-navy-blue p.large {
     font-size: 24px;
-    line-height: 150%;
   }
 }
 .basic.bg-navy-blue p.large.hebrew {
@@ -15653,8 +15359,8 @@ div.two-videos {
   font-family: "Outfit", sans-serif;
   font-weight: 300;
   font-size: 18px;
-  line-height: 26px;
-  letter-spacing: 0%;
+  line-height: 150%;
+  letter-spacing: 0;
   color: #F5F5F5;
   font-weight: 500;
 }
@@ -15665,7 +15371,6 @@ div.two-videos {
 @media (min-width: 1024px) {
   .basic.bg-navy-blue p.large b {
     font-size: 24px;
-    line-height: 150%;
   }
 }
 .basic.bg-navy-blue p.large b.hebrew {
@@ -16057,7 +15762,7 @@ div.two-videos {
 .basic.light-card .row .rich-text h3 {
   font-family: "Outfit", sans-serif;
   font-weight: 600;
-  font-size: 32px;
+  font-size: 28px;
   line-height: 130%;
   letter-spacing: 0%;
   color: #1E3EAF;
@@ -16071,12 +15776,6 @@ div.two-videos {
 @media (min-width: 1024px) {
   .basic.light-card .row .rich-text h3 {
     font-size: 45px;
-    line-height: 58.5px;
-  }
-}
-@media (min-width: 1300px) {
-  .basic.light-card .row .rich-text h3 {
-    line-height: 130%;
   }
 }
 .basic.light-card.narrow .row .rich-text {

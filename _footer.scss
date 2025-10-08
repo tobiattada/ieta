@@ -14,9 +14,19 @@ footer.page-footer{
 	.footer-section{ // wraps the bottom section
 
 		display: grid;
-		grid-template-columns: 1fr;
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas:
+	        "quicklinks quicklinks"
+	        "join contact"
+	        "info info";
+
+	    section.flex-item:first-child{grid-area: quicklinks;}
+	    section.flex-item:nth-child(2){grid-area: join;}
+	    section.flex-item:nth-child(3){grid-area: contact;}
+	    section.flex-item:nth-child(4){grid-area: info;}
 
 		@include desktop {
+			grid-template-areas: "quicklinks join contact info";
 			grid-template-columns: 4fr 3fr 3fr 4fr;
 		}
 

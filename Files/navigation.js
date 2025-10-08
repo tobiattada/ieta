@@ -1,7 +1,7 @@
 // wait for page to load before executing
 window.addEventListener('load', function () {
 
-  const toggleButton = document.querySelector('.navbar__toggle .hamburger');
+  const toggleButton = document.querySelector('.navbar__toggle .menu-trigger');
   const toggleBar = document.querySelector('.navbar__toggle');
   const toggleBack = document.querySelector('.navbar__toggle .back-button');
   const navMenu = document.querySelector('.nav-menu');
@@ -44,17 +44,17 @@ window.addEventListener('load', function () {
   }
 
   // Set active nav link
-  if (window.location.href.includes("work")) {
-    document.getElementById("work-link").classList.add("active");
+  if (window.location.href.includes("research")) {
+    document.getElementById("research-link").classList.add("active");
   }
-  if (window.location.href.includes("about")) {
-    document.getElementById("about-link").classList.add("active");
+  if (window.location.href.includes("trip")) {
+    document.getElementById("trip-link").classList.add("active");
   }
-  if (window.location.href.includes("contact")) {
-    document.getElementById("contact-link").classList.add("active");
+  if (window.location.href.includes("news")) {
+    document.getElementById("news-events-link").classList.add("active");
   }
-  if (window.location.href.includes("involved")) {
-    document.getElementById("involved-link").classList.add("active");
+  if (window.location.href.includes("who")) {
+    document.getElementById("who-link").classList.add("active");
   }
 
 
