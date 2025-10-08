@@ -3545,6 +3545,7 @@ footer.page-footer .footer-wrapper .footer-navigation h4 {
 .modals.two-up .row {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 10px;
 }
 @media (min-width: 768px) {
   .modals.two-up .row {
