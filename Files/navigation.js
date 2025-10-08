@@ -1,7 +1,7 @@
 // wait for page to load before executing
 window.addEventListener('load', function () {
 
-  const toggleButton = document.querySelector('.navbar__toggle .menu-trigger');
+  const toggleButton = document.querySelector('.navbar__toggle .nav-trigger');
   const toggleBar = document.querySelector('.navbar__toggle');
   const toggleBack = document.querySelector('.navbar__toggle .back-button');
   const navMenu = document.querySelector('.nav-menu');
@@ -19,7 +19,7 @@ window.addEventListener('load', function () {
       document.body.style.overflow = 'hidden';
     } else {
       document.body.style.overflow = '';
-    }
+    } 
   });
 
   // Optional: toggle dropdowns individually on mobile
@@ -42,21 +42,6 @@ window.addEventListener('load', function () {
       toggleBack.classList.remove('visible');
     });
   }
-
-  // Set active nav link
-  if (window.location.href.includes("research")) {
-    document.getElementById("research-link").classList.add("active");
-  }
-  if (window.location.href.includes("trip")) {
-    document.getElementById("trip-link").classList.add("active");
-  }
-  if (window.location.href.includes("news")) {
-    document.getElementById("news-events-link").classList.add("active");
-  }
-  if (window.location.href.includes("who")) {
-    document.getElementById("who-link").classList.add("active");
-  }
-
 
 
   document.querySelector('.search-toggle').addEventListener('click', () => {

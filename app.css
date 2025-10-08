@@ -2892,7 +2892,7 @@ footer.page-footer .footer-wrapper .footer-navigation h4 {
     direction: rtl;
   }
 }
-.menu-trigger {
+.nav-trigger {
   position: absolute;
   top: 25px;
   right: 13px;
