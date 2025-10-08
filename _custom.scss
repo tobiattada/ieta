@@ -935,6 +935,11 @@ div.two-videos{
 		grid-template-columns: 1fr 1fr;
 		gap: 20px 10px;
 
+		@include tablet{
+			gap: 20px 10px;
+			grid-template-columns: 1fr 1fr 1fr;
+		}
+
 		@include desktop{
 			gap: 50px 20px;
 			grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
