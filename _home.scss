@@ -20,9 +20,6 @@
 			background: linear-gradient(180deg, rgba(9, 14, 32, 0) 27.83%, rgba(9, 14, 32, 0.8) 98.31%);
 		    pointer-events: none; // Ensures overlay doesn't interfere with interactions
 
-		    @include tablet{
-		    	background: none;
-		    }
 		}
 	}
 
@@ -127,6 +124,7 @@
 		.col-6:nth-child(1){ 
 
 			z-index:2;
+
 			&::after {
 			    content: "";
 			    position: absolute;
@@ -137,6 +135,10 @@
 				background: linear-gradient(180deg, #ffffff00 24.1%, $navy-blue 39.31%);
 			    pointer-events: none; // Ensures overlay doesn't interfere with interactions
 			    z-index:-1;
+
+			    @include tablet{
+			    	background: none;
+			    }
 			}
 		}
 
