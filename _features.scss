@@ -59,122 +59,122 @@
 
 //// THESE ARE THE FULL IMAGE FEATURES THAT ARE MANUAL LINKS
 .features-4-up, .features-2-up, .features-3-up, .features{
-.component-class-featuremanual {
-	.component-feature {
-		height: 100%;
-	}
-
-	.home-boxes{
-		position: relative;
-		border-radius: 10px;
-		overflow: hidden;
-		transition: .3s;
-		top: 0px;
-		box-shadow: $shadow;
-		height: 260px;
-
-		@include desktop{
-			height: 344px;
+	.component-class-featuremanual {
+		.component-feature {
+			height: 100%;
 		}
 
+		.home-boxes{
+			position: relative;
+			border-radius: 10px;
+			overflow: hidden;
+			transition: .3s;
+			top: 0px;
+			box-shadow: $shadow;
+			height: 260px;
 
-		&::after {
-			@include gradient();
-		} 
+			@include desktop{
+				height: 344px;
+			}
 
-		.box{
-			margin: 0px;
-			width: 100%;
-			height: 100%;
 
-			ul{
+			&::after {
+				@include gradient();
+			} 
+
+			.box{
+				margin: 0px;
+				width: 100%;
 				height: 100%;
-				
-				li:first-child {
-					height: 100%;
 
-					div.image{
+				ul{
+					height: 100%;
+					
+					li:first-child {
 						height: 100%;
-						div.has-ratio{
+
+						div.image{
+							height: 100%;
+							div.has-ratio{
+								height: 100%;
+							}
+						}
+
+						img{
+							object-fit: cover;
 							height: 100%;
 						}
 					}
-
-					img{
-						object-fit: cover;
-						height: 100%;
-					}
 				}
-			}
 
-			.body-item{
-				position: absolute;
-				bottom: 0;
-				z-index: 2;
-				min-height: auto;
-
-				.body{
+				.body-item{
+					position: absolute;
+					bottom: 0;
+					z-index: 2;
 					min-height: auto;
-					padding: 25px;
-					hyphens: none;
 
-					*{color:$light;}
+					.body{
+						min-height: auto;
+						padding: 25px;
+						hyphens: none;
 
-					h4{ 
-						text-transform: none;
+						*{color:$light;}
 
-						a:hover{
-							text-decoration:none;
+						h4{ 
+							text-transform: none;
+
+							a:hover{
+								text-decoration:none;
+							}
+						}
+
+						&::after{
+							@include arrow($light-blue);
+						}
+
+						.text{
+							display: block !important;
+							min-height: 55px;
+							width: 100%;
+						}
+
+						.button-container a.button{
+							position: absolute;
+						    top: 0;
+						    left: 0;
+						    right: 0;
+						    bottom: 0;
+						    height: 100%;
+						    width: 100%;
+						    background: transparent;
+							box-sizing: border-box;
+	    					z-index: 2000;
+			        
+			        		span{display: none;}
 						}
 					}
-
-					&::after{
-						@include arrow($light-blue);
-					}
-
-					.text{
-						display: block !important;
-						min-height: 55px;
-						width: 100%;
-					}
-
-					.button-container a.button{
-						position: absolute;
-					    top: 0;
-					    left: 0;
-					    right: 0;
-					    bottom: 0;
-					    height: 100%;
-					    width: 100%;
-					    background: transparent;
-						box-sizing: border-box;
-    					z-index: 2000;
-		        
-		        		span{display: none;}
-					}
 				}
 			}
-		}
 
-		&:hover{
-			box-shadow: $hover-shadow;
-		    transition: .3s;
-		    cursor: pointer;
+			&:hover{
+				box-shadow: $hover-shadow;
+			    transition: .3s;
+			    cursor: pointer;
 
-		  &::after{@include gradient-hover()}
+			  &::after{@include gradient-hover()}
 
-		  .box .body-item .body{
-		  	&::after{
-					@include arrow($medium-blue);
+			  .box .body-item .body{
+			  	&::after{
+						@include arrow($medium-blue);
+					}
+
+				h4{
+					color: $light-blue;
 				}
-
-			h4{
-				color: $light-blue;
+			  }
 			}
-		  }
 		}
 	}
-}
 }
 
 
@@ -504,6 +504,10 @@
 
 .feature-posts{
 	@include responsive-padding;
+
+	.col-12 .component-feature.-alignment-side-by-side[data-row-size="3"] .box{
+		width: auto !important;
+	}
  	.row{
 
 		.col-4{
@@ -544,6 +548,7 @@
 			padding: 15px;
 			box-shadow: $shadow;
 			transition: .3s;
+			width: auto;
 
 			@include desktop{
 				padding: 20px;

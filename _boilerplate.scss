@@ -87,6 +87,13 @@ a{
 	}
 }
 
+.mobile-hide{
+	display: none;
+	@include tablet {
+		display: inherit;
+	}
+}
+
 .mobile-hide-btn{
 	.row .col-12 .component-button .button.btn-black{
 		display: none !important;
