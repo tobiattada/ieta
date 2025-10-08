@@ -416,9 +416,16 @@
     bottom: 0;
     background: white;
     z-index: 4000;
-    padding: 15% 20px;
+    padding: 25% 20px;
     box-sizing: border-box;
-    justify-content: space-between;
+
+    justify-content: flex-start;
+    gap: 20px;
+
+    .subscribe, .search{
+      display:none;
+    }
+
   }
 
   .nav-menu .nav-item.open .dropdown{
