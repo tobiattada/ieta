@@ -3920,6 +3920,10 @@ footer.page-footer .footer-wrapper .footer-navigation h4 {
   cursor: pointer;
 }
 
+.subscribe-link {
+  display: flex !important;
+}
+
 .our-work-header {
   width: 100%;
   box-sizing: border-box;

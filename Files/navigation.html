@@ -114,23 +114,3 @@
     </div>
   </div>
 </div>
-
-<script>
-  const modal = document.getElementById("modal-subscribe");
-  const modalBody = document.getElementById("modal-body-subscribe");
-  const closeBtn = modal.querySelector(".close");
-
-  // When any .modal-trigger is clicked
-  document.querySelectorAll(".subscribe-link").forEach(trigger => {
-    trigger.addEventListener("click", () => {
-      console.log("clicked");
-      modal.style.display = "flex"; // show modal
-    });
-  });
-
-  // Close modal
-  closeBtn.onclick = () => modal.style.display = "none";
-  window.onclick = (e) => {
-    if (e.target === modal) modal.style.display = "none";
-  };
-</script>
