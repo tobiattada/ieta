@@ -16022,7 +16022,9 @@ div.two-videos {
 .basic .component-image .has-ratio-image {
   border-radius: 24px;
 }
-
+.basic.text-image .row {
+  flex-direction: column-reverse;
+}
 .basic.event-promo-full-width .component-image {
   max-height: none;
   overflow: hidden;

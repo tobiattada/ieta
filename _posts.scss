@@ -371,6 +371,18 @@
 
     	.has-ratio-image{ border-radius: 24px; }
 	}
+
+
+	&.text-image{
+		.row{
+			flex-direction: column-reverse;
+		}
+	}
+
+	&.image-text{
+		
+	}
+
 }
 
 
