@@ -583,6 +583,10 @@ div.two-videos{
 ////// CONTACT US FORM
 
 .jotform-form{
+
+	    display: grid;
+    gap: 10px;
+
 	ul {
 		list-style:none;
 	}
@@ -618,6 +622,8 @@ div.two-videos{
 				font-weight: 500;
 				font-size: 16px;
 				line-height: 150%;
+
+				@include label($navy-blue);
 			}
 
 
@@ -634,13 +640,17 @@ div.two-videos{
 				max-width: 100%;
     			box-sizing: border-box;
     			margin-top: 10px;
+			}
 
-    // 		max-width: none;
+			input[type=checkbox]{
+				width: auto !important;
+				margin-right: 10px;
+			}
 
-				// @include desktop{
-				// 	min-width: 280px;
-				// 	max-width: 280px;
-				// }
+			.check{
+				display: flex;
+				justify-content: flex-start;
+    align-items: center;
 			}
 
 	button{
