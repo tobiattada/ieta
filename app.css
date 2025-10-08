@@ -3543,6 +3543,7 @@ footer.page-footer .footer-wrapper .footer-navigation h4 {
   }
 }
 .modals.two-up .row {
+  display: grid;
   grid-template-columns: 1fr 1fr;
 }
 @media (min-width: 768px) {
