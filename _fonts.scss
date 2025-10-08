@@ -238,18 +238,18 @@
 	@mixin caption($color){ //caption
 		font-family: $outfit;
 		font-weight: 400;
-		font-size: 12px;
-		line-height: 12px;
+		font-size: 15px;
+		line-height: 150%;
 		letter-spacing: 0%;
 		color: $color;
 
-		margin-top: 3px; // for nav specifically?
+		margin-top: 3px;
 		
 		@include desktop {
 			font-size: 15px;
 			line-height: 150%;
-
 		}
+
 
 		&.hebrew{
 			font-family: $hebrew !important;

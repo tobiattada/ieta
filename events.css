@@ -185,8 +185,8 @@ p.large.hebrew {
 p.caption {
   font-family: "Outfit", sans-serif;
   font-weight: 400;
-  font-size: 12px;
-  line-height: 12px;
+  font-size: 15px;
+  line-height: 150%;
   letter-spacing: 0%;
   color: #2A2A2A;
   margin-top: 3px;
@@ -374,8 +374,8 @@ p.caption.hebrew {
 .rich-text p.caption, .page.page-main p.caption {
   font-family: "Outfit", sans-serif;
   font-weight: 400;
-  font-size: 12px;
-  line-height: 12px;
+  font-size: 15px;
+  line-height: 150%;
   letter-spacing: 0%;
   color: #2A2A2A;
   margin-top: 3px;
@@ -2673,8 +2673,8 @@ section.tabs-content .calendar table .event {
 section.tabs-content .calendar table .event p {
   font-family: "Outfit", sans-serif;
   font-weight: 400;
-  font-size: 12px;
-  line-height: 12px;
+  font-size: 15px;
+  line-height: 150%;
   letter-spacing: 0%;
   color: #F5F5F5;
   margin-top: 3px;
@@ -3165,8 +3165,8 @@ section.tabs-content .calendar table .event {
 section.tabs-content .calendar table .event p {
   font-family: "Outfit", sans-serif;
   font-weight: 400;
-  font-size: 12px;
-  line-height: 12px;
+  font-size: 15px;
+  line-height: 150%;
   letter-spacing: 0%;
   color: #F5F5F5;
   margin-top: 3px;
@@ -3630,8 +3630,8 @@ section.page-main.calendar-event .shell .row:nth-child(2) .widget .headers {
 section.page-main.calendar-event .shell .row:nth-child(2) .widget .headers li a {
   font-family: "Outfit", sans-serif;
   font-weight: 400;
-  font-size: 12px;
-  line-height: 12px;
+  font-size: 15px;
+  line-height: 150%;
   letter-spacing: 0%;
   color: #2A2A2A;
   margin-top: 3px;
