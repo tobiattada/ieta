@@ -3649,7 +3649,7 @@ a.search-toggle {
   position: fixed;
   inset: 0;
   background: rgba(0, 0, 0, 0.6);
-  z-index: 1000;
+  z-index: 10001;
   align-items: center;
   justify-content: center;
   left: 0;
