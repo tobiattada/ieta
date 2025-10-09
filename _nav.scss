@@ -203,7 +203,7 @@
 
     &.search{
       a:hover{
-        border-bottom: 1px solid $primary-blue;
+        border-bottom: 0px solid $primary-blue;
       }
     }
 
@@ -479,7 +479,7 @@ a.search-toggle{
      }
   }
 
-  
+
 .search-container {
   position: relative;
   display: flex;

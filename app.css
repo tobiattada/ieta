@@ -2574,7 +2574,7 @@ footer.page-footer .footer-wrapper .footer-navigation h4 {
   border-bottom: 8px solid #1E3EAF;
 }
 .nav-menu .nav-item.search a:hover {
-  border-bottom: 1px solid #1E3EAF;
+  border-bottom: 0px solid #1E3EAF;
 }
 .nav-menu .nav-item.has-dropdown a:hover {
   color: #1E3EAF;
