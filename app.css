@@ -1804,7 +1804,7 @@ b mark, mark b {
   color: #FDFDFD !important;
   border: none;
   display: inline-block;
-  margin-top: 30px;
+  margin-top: 10px;
   height: auto;
   min-height: 10px;
   line-height: inherit;
@@ -1857,7 +1857,7 @@ b mark, mark b {
   color: #1E3EAF !important;
   border: 3px solid #1E3EAF;
   display: inline-block;
-  margin-top: 30px;
+  margin-top: 10px;
   height: auto;
   min-height: 10px;
   line-height: inherit;
@@ -1957,7 +1957,7 @@ b mark, mark b {
   color: #F5F5F5 !important;
   border: 3px solid #F5F5F5;
   display: inline-block;
-  margin-top: 30px;
+  margin-top: 10px;
   height: auto;
   min-height: 10px;
   line-height: inherit;
@@ -2010,7 +2010,7 @@ b mark, mark b {
   color: #1E3EAF !important;
   border: none;
   display: inline-block;
-  margin-top: 30px;
+  margin-top: 10px;
   height: auto;
   min-height: 10px;
   line-height: inherit;
