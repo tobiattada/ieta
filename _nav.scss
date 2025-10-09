@@ -69,7 +69,7 @@
       }
     }
 
-    .search-link, .subscribe-link{
+    .search-wrap, .subscribe-link{
       opacity: 1;
     }
 }
@@ -425,7 +425,7 @@
     justify-content: flex-start;
     gap: 40px;
 
-    .subscribe, .search{
+    .subscribe, .search-wrap{
       display:none;
     }
 

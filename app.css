@@ -2388,7 +2388,7 @@ footer.page-footer .footer-wrapper .footer-navigation h4 {
 .navbar__toggle .back-button svg path {
   fill: #27277C;
 }
-.navbar__toggle .search-link, .navbar__toggle .subscribe-link {
+.navbar__toggle .search-wrap, .navbar__toggle .subscribe-link {
   opacity: 1;
 }
 
@@ -2856,7 +2856,7 @@ footer.page-footer .footer-wrapper .footer-navigation h4 {
     justify-content: flex-start;
     gap: 40px;
   }
-  .nav-menu.open .subscribe, .nav-menu.open .search {
+  .nav-menu.open .subscribe, .nav-menu.open .search-wrap {
     display: none;
   }
 
