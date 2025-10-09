@@ -3262,18 +3262,22 @@ a.search-toggle {
 .home-hero .component-promo:not(.btn-anchored).overlay-horizontal-position-middle.overlay-vertical-position-middle .bg-type-image {
   top: none;
 }
-.home-hero .component-promo .mobile-image, .home-hero .component-promo .tablet-image, .home-hero .component-promo .desktop-image {
+.home-hero .component-promo .mobile-image, .home-hero .component-promo .tablet-image {
   height: 100%;
   width: auto;
   display: flex;
   justify-content: center;
 }
-.home-hero .component-promo .mobile-image img, .home-hero .component-promo .tablet-image img, .home-hero .component-promo .desktop-image img {
+.home-hero .component-promo .mobile-image img, .home-hero .component-promo .tablet-image img {
   height: 100%;
   width: auto;
 }
 .home-hero h1 br {
   display: none;
+}
+.home-hero .component-promo .desktop-image {
+  min-height: 100%;
+  min-width: auto;
 }
 
 .row-has-promo, .row-has-promo:not(.row-full-width) {

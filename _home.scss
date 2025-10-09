@@ -30,7 +30,7 @@
 		top: none;
 	}
 
-	.component-promo .mobile-image, .component-promo .tablet-image, , .component-promo .desktop-image {
+	.component-promo .mobile-image, .component-promo .tablet-image, {
 		height: 100%;
 	    width: auto;
 	    display: flex;
@@ -44,6 +44,11 @@
 
 	h1 br{
 		display: none;
+	}
+
+	.component-promo .desktop-image {
+		min-height: 100%;
+    	min-width: auto;
 	}
 
 }
