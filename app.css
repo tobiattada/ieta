@@ -2575,6 +2575,7 @@ footer.page-footer .footer-wrapper .footer-navigation h4 {
 }
 .nav-menu .nav-item.search a:hover {
   border-bottom: 0px solid #1E3EAF;
+  cursor: pointer;
 }
 .nav-menu .nav-item.has-dropdown a:hover {
   color: #1E3EAF;
@@ -3524,24 +3525,20 @@ a.search-toggle {
 }
 .modals .row {
   display: grid;
-  gap: 5px;
   grid-template-columns: 1fr;
 }
 @media (min-width: 768px) {
   .modals .row {
     grid-template-columns: 1fr 1fr;
-    gap: 30px;
   }
 }
 @media (min-width: 1024px) {
   .modals .row {
-    gap: 40px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 @media (min-width: 1300px) {
   .modals .row {
-    gap: 60px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
