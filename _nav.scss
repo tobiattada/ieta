@@ -466,7 +466,20 @@
 
 
 
+a.search-toggle{
+    background: none;
+    border: none;
+    position: relative;
+    left: 7px;
 
+    z-index: 300000;
+
+     @include desktop {
+      left: 0px;
+     }
+  }
+
+  
 .search-container {
   position: relative;
   display: flex;
@@ -479,19 +492,6 @@
 
   .submit-button{
     display:none;
-  }
-
-  a.search-toggle{
-    background: none;
-    border: none;
-    position: relative;
-    left: 7px;
-
-    z-index: 300000;
-
-     @include desktop {
-      left: 0px;
-     }
   }
 }
 

@@ -2912,6 +2912,19 @@ footer.page-footer .footer-wrapper .footer-navigation h4 {
   border: 0px solid red;
 }
 
+a.search-toggle {
+  background: none;
+  border: none;
+  position: relative;
+  left: 7px;
+  z-index: 300000;
+}
+@media (min-width: 1024px) {
+  a.search-toggle {
+    left: 0px;
+  }
+}
+
 .search-container {
   position: relative;
   display: flex;
@@ -2925,18 +2938,6 @@ footer.page-footer .footer-wrapper .footer-navigation h4 {
 }
 .search-container .submit-button {
   display: none;
-}
-.search-container a.search-toggle {
-  background: none;
-  border: none;
-  position: relative;
-  left: 7px;
-  z-index: 300000;
-}
-@media (min-width: 1024px) {
-  .search-container a.search-toggle {
-    left: 0px;
-  }
 }
 
 .search-input {
