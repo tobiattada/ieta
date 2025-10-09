@@ -2917,6 +2917,15 @@ footer.page-footer .footer-wrapper .footer-navigation h4 {
   border: 0px solid red;
 }
 
+.search-wrap {
+  margin-left: auto;
+}
+@media (min-width: 1024px) {
+  .search-wrap {
+    margin-left: 0px;
+  }
+}
+
 a.search-toggle {
   background: none;
   border: none;
@@ -2928,8 +2937,8 @@ a.search-toggle {
 }
 @media (min-width: 1024px) {
   a.search-toggle {
-    margin-left: auto;
-    margin-right: 15px;
+    margin-right: 0px;
+    margin-left: 20px;
   }
 }
 
