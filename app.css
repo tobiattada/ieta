@@ -3777,7 +3777,7 @@ a.search-toggle {
   padding-bottom: 0px;
 }
 
-.modal-content {
+#modal-subscribe .modal-content, #modal-contact .modal-content {
   background: #fff;
   box-sizing: border-box;
   padding: 30px 20px;
@@ -3788,85 +3788,85 @@ a.search-toggle {
   position: relative;
 }
 @media (min-width: 768px) {
-  .modal-content {
+  #modal-subscribe .modal-content, #modal-contact .modal-content {
     padding: 30px 20px;
   }
 }
 @media (min-width: 1024px) {
-  .modal-content {
+  #modal-subscribe .modal-content, #modal-contact .modal-content {
     padding: 50px 60px;
   }
 }
 @media (min-width: 1300px) {
-  .modal-content {
+  #modal-subscribe .modal-content, #modal-contact .modal-content {
     padding: 60px 80px;
   }
 }
 @media (min-width: 1500px) {
-  .modal-content {
+  #modal-subscribe .modal-content, #modal-contact .modal-content {
     padding: 60px 10%;
   }
 }
 @media (min-width: 768px) {
-  .modal-content {
+  #modal-subscribe .modal-content, #modal-contact .modal-content {
     width: 70%;
   }
 }
 @media (min-width: 1024px) {
-  .modal-content {
+  #modal-subscribe .modal-content, #modal-contact .modal-content {
     width: 60%;
   }
 }
-.modal-content #modal-body-subscribe, .modal-content #modal-body-contact {
+#modal-subscribe .modal-content #modal-body-subscribe, #modal-subscribe .modal-content #modal-body-contact, #modal-contact .modal-content #modal-body-subscribe, #modal-contact .modal-content #modal-body-contact {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 10px;
 }
 @media (min-width: 1024px) {
-  .modal-content #modal-body-subscribe, .modal-content #modal-body-contact {
+  #modal-subscribe .modal-content #modal-body-subscribe, #modal-subscribe .modal-content #modal-body-contact, #modal-contact .modal-content #modal-body-subscribe, #modal-contact .modal-content #modal-body-contact {
     grid-gap: 15px;
   }
 }
-.modal-content #modal-body-subscribe .modal-logo, .modal-content #modal-body-contact .modal-logo {
+#modal-subscribe .modal-content #modal-body-subscribe .modal-logo, #modal-subscribe .modal-content #modal-body-contact .modal-logo, #modal-contact .modal-content #modal-body-subscribe .modal-logo, #modal-contact .modal-content #modal-body-contact .modal-logo {
   text-align: center;
 }
-.modal-content #modal-body-subscribe .modal-logo img, .modal-content #modal-body-contact .modal-logo img {
+#modal-subscribe .modal-content #modal-body-subscribe .modal-logo img, #modal-subscribe .modal-content #modal-body-contact .modal-logo img, #modal-contact .modal-content #modal-body-subscribe .modal-logo img, #modal-contact .modal-content #modal-body-contact .modal-logo img {
   width: 220px;
   text-align: center;
   margin: 0 auto;
 }
-.modal-content #modal-body-subscribe h3, .modal-content #modal-body-subscribe p, .modal-content #modal-body-contact h3, .modal-content #modal-body-contact p {
+#modal-subscribe .modal-content #modal-body-subscribe h3, #modal-subscribe .modal-content #modal-body-subscribe p, #modal-subscribe .modal-content #modal-body-contact h3, #modal-subscribe .modal-content #modal-body-contact p, #modal-contact .modal-content #modal-body-subscribe h3, #modal-contact .modal-content #modal-body-subscribe p, #modal-contact .modal-content #modal-body-contact h3, #modal-contact .modal-content #modal-body-contact p {
   text-align: center;
   width: 90%;
   margin: 0 auto;
 }
 @media (min-width: 768px) {
-  .modal-content #modal-body-subscribe h3, .modal-content #modal-body-subscribe p, .modal-content #modal-body-contact h3, .modal-content #modal-body-contact p {
+  #modal-subscribe .modal-content #modal-body-subscribe h3, #modal-subscribe .modal-content #modal-body-subscribe p, #modal-subscribe .modal-content #modal-body-contact h3, #modal-subscribe .modal-content #modal-body-contact p, #modal-contact .modal-content #modal-body-subscribe h3, #modal-contact .modal-content #modal-body-subscribe p, #modal-contact .modal-content #modal-body-contact h3, #modal-contact .modal-content #modal-body-contact p {
     width: 80%;
   }
 }
-.modal-content #modal-body-subscribe h3, .modal-content #modal-body-contact h3 {
+#modal-subscribe .modal-content #modal-body-subscribe h3, #modal-subscribe .modal-content #modal-body-contact h3, #modal-contact .modal-content #modal-body-subscribe h3, #modal-contact .modal-content #modal-body-contact h3 {
   color: #1E3EAF;
 }
-.modal-content #modal-body-subscribe .component-class-richtext, .modal-content #modal-body-contact .component-class-richtext {
+#modal-subscribe .modal-content #modal-body-subscribe .component-class-richtext, #modal-subscribe .modal-content #modal-body-contact .component-class-richtext, #modal-contact .modal-content #modal-body-subscribe .component-class-richtext, #modal-contact .modal-content #modal-body-contact .component-class-richtext {
   grid-area: title;
 }
-.modal-content #modal-body-subscribe .component-class-richtext .rich-text, .modal-content #modal-body-contact .component-class-richtext .rich-text {
+#modal-subscribe .modal-content #modal-body-subscribe .component-class-richtext .rich-text, #modal-subscribe .modal-content #modal-body-contact .component-class-richtext .rich-text, #modal-contact .modal-content #modal-body-subscribe .component-class-richtext .rich-text, #modal-contact .modal-content #modal-body-contact .component-class-richtext .rich-text {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   height: 100%;
 }
-.modal-content #modal-body-subscribe .component-class-richtext .rich-text *, .modal-content #modal-body-contact .component-class-richtext .rich-text * {
+#modal-subscribe .modal-content #modal-body-subscribe .component-class-richtext .rich-text *, #modal-subscribe .modal-content #modal-body-contact .component-class-richtext .rich-text *, #modal-contact .modal-content #modal-body-subscribe .component-class-richtext .rich-text *, #modal-contact .modal-content #modal-body-contact .component-class-richtext .rich-text * {
   margin: 0px;
 }
 @media (min-width: 1024px) {
-  .modal-content #modal-body-subscribe .component-class-richtext .rich-text, .modal-content #modal-body-contact .component-class-richtext .rich-text {
+  #modal-subscribe .modal-content #modal-body-subscribe .component-class-richtext .rich-text, #modal-subscribe .modal-content #modal-body-contact .component-class-richtext .rich-text, #modal-contact .modal-content #modal-body-subscribe .component-class-richtext .rich-text, #modal-contact .modal-content #modal-body-contact .component-class-richtext .rich-text {
     gap: 10px;
   }
 }
-.modal-content #modal-body-subscribe .component-class-richtext .rich-text h5, .modal-content #modal-body-contact .component-class-richtext .rich-text h5 {
+#modal-subscribe .modal-content #modal-body-subscribe .component-class-richtext .rich-text h5, #modal-subscribe .modal-content #modal-body-contact .component-class-richtext .rich-text h5, #modal-contact .modal-content #modal-body-subscribe .component-class-richtext .rich-text h5, #modal-contact .modal-content #modal-body-contact .component-class-richtext .rich-text h5 {
   font-family: "Outfit", sans-serif;
   font-weight: 600;
   font-size: 28px;
@@ -3875,18 +3875,18 @@ a.search-toggle {
   color: #1E3EAF;
   margin-bottom: 10px;
 }
-.modal-content #modal-body-subscribe .component-class-richtext .rich-text h5.hebrew, .modal-content #modal-body-contact .component-class-richtext .rich-text h5.hebrew {
+#modal-subscribe .modal-content #modal-body-subscribe .component-class-richtext .rich-text h5.hebrew, #modal-subscribe .modal-content #modal-body-contact .component-class-richtext .rich-text h5.hebrew, #modal-contact .modal-content #modal-body-subscribe .component-class-richtext .rich-text h5.hebrew, #modal-contact .modal-content #modal-body-contact .component-class-richtext .rich-text h5.hebrew {
   font-family: "Noto Sans Hebrew", sans-serif !important;
   font-weight: 600;
   text-align: right;
   direction: rtl;
 }
 @media (min-width: 1024px) {
-  .modal-content #modal-body-subscribe .component-class-richtext .rich-text h5, .modal-content #modal-body-contact .component-class-richtext .rich-text h5 {
+  #modal-subscribe .modal-content #modal-body-subscribe .component-class-richtext .rich-text h5, #modal-subscribe .modal-content #modal-body-contact .component-class-richtext .rich-text h5, #modal-contact .modal-content #modal-body-subscribe .component-class-richtext .rich-text h5, #modal-contact .modal-content #modal-body-contact .component-class-richtext .rich-text h5 {
     font-size: 45px;
   }
 }
-.modal-content #modal-body-subscribe .component-class-richtext .rich-text p, .modal-content #modal-body-contact .component-class-richtext .rich-text p {
+#modal-subscribe .modal-content #modal-body-subscribe .component-class-richtext .rich-text p, #modal-subscribe .modal-content #modal-body-contact .component-class-richtext .rich-text p, #modal-contact .modal-content #modal-body-subscribe .component-class-richtext .rich-text p, #modal-contact .modal-content #modal-body-contact .component-class-richtext .rich-text p {
   font-family: "Outfit", sans-serif;
   font-weight: 600;
   font-size: 20px;
@@ -3895,24 +3895,24 @@ a.search-toggle {
   color: #2A2A2A;
 }
 @media (min-width: 1024px) {
-  .modal-content #modal-body-subscribe .component-class-richtext .rich-text p, .modal-content #modal-body-contact .component-class-richtext .rich-text p {
+  #modal-subscribe .modal-content #modal-body-subscribe .component-class-richtext .rich-text p, #modal-subscribe .modal-content #modal-body-contact .component-class-richtext .rich-text p, #modal-contact .modal-content #modal-body-subscribe .component-class-richtext .rich-text p, #modal-contact .modal-content #modal-body-contact .component-class-richtext .rich-text p {
     font-size: 24px;
     line-height: 32px;
   }
 }
-.modal-content #modal-body-subscribe .component-class-richtext .rich-text p.hebrew, .modal-content #modal-body-contact .component-class-richtext .rich-text p.hebrew {
+#modal-subscribe .modal-content #modal-body-subscribe .component-class-richtext .rich-text p.hebrew, #modal-subscribe .modal-content #modal-body-contact .component-class-richtext .rich-text p.hebrew, #modal-contact .modal-content #modal-body-subscribe .component-class-richtext .rich-text p.hebrew, #modal-contact .modal-content #modal-body-contact .component-class-richtext .rich-text p.hebrew {
   font-family: "Noto Sans Hebrew", sans-serif !important;
   font-weight: 600;
   text-align: right;
   direction: rtl;
 }
-.modal-content #modal-body-subscribe .component-class-wysiwyg, .modal-content #modal-body-contact .component-class-wysiwyg {
+#modal-subscribe .modal-content #modal-body-subscribe .component-class-wysiwyg, #modal-subscribe .modal-content #modal-body-contact .component-class-wysiwyg, #modal-contact .modal-content #modal-body-subscribe .component-class-wysiwyg, #modal-contact .modal-content #modal-body-contact .component-class-wysiwyg {
   grid-area: bio;
 }
-.modal-content #modal-body-subscribe .component-class-wysiwyg .editor-copy, .modal-content #modal-body-contact .component-class-wysiwyg .editor-copy {
+#modal-subscribe .modal-content #modal-body-subscribe .component-class-wysiwyg .editor-copy, #modal-subscribe .modal-content #modal-body-contact .component-class-wysiwyg .editor-copy, #modal-contact .modal-content #modal-body-subscribe .component-class-wysiwyg .editor-copy, #modal-contact .modal-content #modal-body-contact .component-class-wysiwyg .editor-copy {
   margin-bottom: 0px;
 }
-.modal-content #modal-body-subscribe .component-class-wysiwyg .editor-copy p:last-child, .modal-content #modal-body-contact .component-class-wysiwyg .editor-copy p:last-child {
+#modal-subscribe .modal-content #modal-body-subscribe .component-class-wysiwyg .editor-copy p:last-child, #modal-subscribe .modal-content #modal-body-contact .component-class-wysiwyg .editor-copy p:last-child, #modal-contact .modal-content #modal-body-subscribe .component-class-wysiwyg .editor-copy p:last-child, #modal-contact .modal-content #modal-body-contact .component-class-wysiwyg .editor-copy p:last-child {
   padding-bottom: 0px;
 }
 

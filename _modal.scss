@@ -218,7 +218,7 @@
 
 
 
-.modal-content {
+#modal-subscribe .modal-content, #modal-contact .modal-content {
   background: #fff;
   @include responsive-padding;
 
