@@ -53,7 +53,11 @@ document.addEventListener('DOMContentLoaded', function() {
     if (toggleButton && searchContainer) {
       toggleButton.addEventListener('click', () => {
         searchContainer.classList.toggle('active');
+
+        console.log('Elements found!');
       });
+
+
     } else {
       console.error('Elements not found!');
     }

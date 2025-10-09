@@ -2913,315 +2913,36 @@ footer.page-footer .footer-wrapper .footer-navigation h4 {
 }
 
 .search-container {
-  position: relative;
-  display: flex;
-  align-items: center;
-  margin: 10px 0px;
-}
-@media (min-width: 1024px) {
-  .search-container {
-    margin: 0px 0px;
-  }
-}
-.search-container .submit-button {
   display: none;
-}
-.search-container button.search-toggle {
-  background: none;
-  border: none;
-  position: relative;
-  left: 7px;
-  z-index: 300000;
-}
-@media (min-width: 1024px) {
-  .search-container button.search-toggle {
-    left: 0px;
-  }
-}
-
-.search-input {
-  width: 230px;
-  height: 100%;
-  position: absolute;
-  top: -12px;
-  left: -3px;
-  opacity: 1;
-  border-radius: 4px;
-  z-index: 10000;
-  border-radius: 100px;
-  border: 2px solid #1E3EAF;
-  font-family: "Outfit", sans-serif;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0%;
-  color: #2A2A2A;
-  padding: 8px 10px 8px 40px;
-}
-@media (min-width: 1024px) {
-  .search-input {
-    font-size: 18px;
-    line-height: 27px;
-  }
-}
-.search-input strong, .search-input em, .search-input b {
-  font-weight: 600;
-  color: #2A2A2A;
-}
-.search-input.hebrew {
-  font-family: "Noto Sans Hebrew", sans-serif !important;
-  font-weight: 600;
-  text-align: right;
-  direction: rtl;
-}
-@media (min-width: 1024px) {
-  .search-input {
-    width: 0;
-    opacity: 0;
-    padding: 5px 10px;
-    transition: width 0.3s ease;
-    border: 0px solid #ccc;
-    border-radius: 4px;
-    z-index: 10000;
-    position: absolute;
-    top: -12px;
-    left: -20px;
-  }
-}
-
-.search-container.active .search-input {
-  opacity: 1;
-  padding: 5px 10px;
-  transition: width 0.3s ease;
-  position: absolute;
-  top: -12px;
-  left: -13px;
-  width: 320px;
-  z-index: 30000;
-  height: 100%;
-  padding: 10px 10px 10px 40px;
-  border-radius: 100px;
-  border: 2px solid #1E3EAF;
-  font-family: "Outfit", sans-serif;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0%;
-  color: #2A2A2A;
-}
-@media (min-width: 1024px) {
-  .search-container.active .search-input {
-    font-size: 18px;
-    line-height: 27px;
-  }
-}
-.search-container.active .search-input strong, .search-container.active .search-input em, .search-container.active .search-input b {
-  font-weight: 600;
-  color: #2A2A2A;
-}
-.search-container.active .search-input.hebrew {
-  font-family: "Noto Sans Hebrew", sans-serif !important;
-  font-weight: 600;
-  text-align: right;
-  direction: rtl;
-}
-
-#emergency-bar {
-  background: #490E0A;
-  position: relative;
-  background: linear-gradient(90deg, #490e0a 0%, #9c1b13 80%);
-  display: grid;
-  align-items: center;
-  grid-template-columns: 1fr;
-  gap: 20px;
-  padding: 20px 20px;
-}
-@media (min-width: 768px) {
-  #emergency-bar {
-    padding: 20px 20px;
-  }
-}
-@media (min-width: 1024px) {
-  #emergency-bar {
-    padding: 20px 60px;
-  }
-}
-@media (min-width: 1300px) {
-  #emergency-bar {
-    padding: 20px 60px;
-  }
-}
-@media (min-width: 1500px) {
-  #emergency-bar {
-    padding: 20px 10%;
-  }
-}
-@media (min-width: 768px) {
-  #emergency-bar {
-    grid-template-columns: 1fr 5fr;
-  }
-}
-#emergency-bar h6 {
-  font-family: "Outfit", sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 130%;
-  letter-spacing: 0%;
-  color: #FDFDFD;
-  font-weight: 500;
-  margin-bottom: 10px;
-}
-@media (min-width: 1024px) {
-  #emergency-bar h6 {
-    font-size: 20px;
-    line-height: 26px;
-  }
-}
-#emergency-bar h6.hebrew {
-  font-family: "Noto Sans Hebrew", sans-serif !important;
-  font-weight: 700;
-  text-align: right;
-  direction: rtl;
-}
-#emergency-bar p {
-  font-family: "Outfit", sans-serif;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0%;
-  color: #FDFDFD;
-}
-@media (min-width: 1024px) {
-  #emergency-bar p {
-    font-size: 18px;
-    line-height: 27px;
-  }
-}
-#emergency-bar p strong, #emergency-bar p em, #emergency-bar p b {
-  font-weight: 600;
-  color: #FDFDFD;
-}
-#emergency-bar p.hebrew {
-  font-family: "Noto Sans Hebrew", sans-serif !important;
-  font-weight: 600;
-  text-align: right;
-  direction: rtl;
-}
-#emergency-bar div img {
-  max-width: 100%;
-  border-radius: 20px;
-}
-#emergency-bar a.button {
   margin-top: 10px;
-  padding: 12px 24px;
-  border-radius: 30px;
-  height: auto;
-  font-family: "Outfit", sans-serif;
-  font-weight: 600 !important;
-  font-size: 18px;
-  line-height: 27px;
-  text-align: center;
-  display: inline-block;
-  margin-right: auto;
-  white-space: nowrap;
-  display: flex;
-  width: auto;
-  align-items: center;
-  gap: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  width: 200px;
+}
+
+/* Show when active */
+.search-container.active {
+  display: block;
+}
+
+/* Optional: make SVG not block clicks */
+.search-toggle svg {
+  pointer-events: none;
+  vertical-align: middle;
+}
+
+/* Button style */
+.search-toggle {
   cursor: pointer;
-  transition: all 0.2s ease;
-  background: #D2E9FF;
-  color: #1E3EAF !important;
+  background: #007BFF;
   border: none;
-}
-#emergency-bar a.button span, #emergency-bar a.button p {
-  font-family: "Outfit", sans-serif;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 27px;
-  text-align: center;
-  color: #1E3EAF;
-  transition: 0.3s;
-}
-#emergency-bar a.button span:hover, #emergency-bar a.button p:hover {
-  transition: 0.3s;
-}
-#emergency-bar a.button a, #emergency-bar a.button span {
-  color: #1E3EAF !important;
-}
-#emergency-bar a.button:hover {
-  background: #1c88ed;
-  color: #F5F5F5 !important;
-}
-#emergency-bar a.button:hover a, #emergency-bar a.button:hover span {
-  color: #F5F5F5 !important;
-}
-#emergency-bar a.button:active {
-  background: #27277C;
-}
-#emergency-bar a.button:hover {
-  padding: 12px 24px;
-  border-radius: 30px;
-  height: auto;
-  font-family: "Outfit", sans-serif;
-  font-weight: 600 !important;
-  font-size: 18px;
-  line-height: 27px;
-  text-align: center;
-  display: inline-block;
-  margin-right: auto;
-  white-space: nowrap;
-  display: flex;
-  width: auto;
-  align-items: center;
-  gap: 10px;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  background: #FDFDFD;
-  color: #1E3EAF !important;
-  border: none;
-  background-color: #FDFDFD !important;
-}
-#emergency-bar a.button:hover span, #emergency-bar a.button:hover p {
-  font-family: "Outfit", sans-serif;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 27px;
-  text-align: center;
-  color: #1E3EAF;
-  transition: 0.3s;
-}
-#emergency-bar a.button:hover span:hover, #emergency-bar a.button:hover p:hover {
-  transition: 0.3s;
-}
-#emergency-bar a.button:hover a, #emergency-bar a.button:hover span {
-  color: #1E3EAF !important;
-}
-#emergency-bar a.button:hover:hover {
-  background: #1c88ed;
-  color: #F5F5F5 !important;
-}
-#emergency-bar a.button:hover:hover a, #emergency-bar a.button:hover:hover span {
-  color: #F5F5F5 !important;
-}
-#emergency-bar a.button:hover:active {
-  background: #27277C;
-}
-#emergency-bar #close-btn {
-  position: absolute;
-  top: 20px;
-  right: 25px;
-  border: none;
-  background: transparent;
-  font-size: 1.2em;
-  cursor: pointer;
   color: white;
-}
-@media (min-width: 768px) {
-  #emergency-bar #close-btn {
-    top: 35px;
-    right: 50px;
-  }
+  padding: 8px 12px;
+  font-size: 16px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  border-radius: 4px;
 }
 
 .subscribe-link {
