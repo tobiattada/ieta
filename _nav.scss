@@ -467,120 +467,161 @@
 
 
 
-//   button.search-toggle{
-//     // background: none;
-//     // border: none;
-//     // position: relative;
-//     // left: 7px;
+.search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 10px 0px;
 
-//     // z-index: 300000;
+  @include desktop {
+    margin: 0px 0px;
+  }
 
-//      @include desktop {
-//       // left: 0px;
-//      }
-//   }
+  .submit-button{
+    display:none;
+  }
 
-// .search-container {
-//   position: relative;
-//   display: flex;
-//   align-items: center;
-//   margin: 10px 0px;
+  a.search-toggle{
+    background: none;
+    border: none;
+    position: relative;
+    left: 7px;
 
-//   @include desktop {
-//     margin: 0px 0px;
-//   }
+    z-index: 300000;
 
-//   .submit-button{
-//     display:none;
-//   }
-// }
-
-
-
-
-// .search-input {
-//     width: 230px;
-//     height: 100%;
-//     position: absolute;
-//     top: -12px;
-//     // padding: 10px 10px 10px 40px;
-//     left: -3px;
-//     opacity: 1;
-//     border-radius: 4px;
-//     z-index: 10000;
-//     border-radius: 100px;
-//     border: 2px solid $primary-blue;
-//     @include p($dark-gray);
-
-//     padding: 8px 10px 8px 40px;
-
-//   @include desktop {
-//     width: 0;
-//     opacity: 0;
-//     padding: 5px 10px;
-//     transition: width 0.3s ease;
-//     border: 0px solid #ccc;
-//     border-radius: 4px;
-//     z-index: 10000;
-//     position: absolute;
-//     top: -12px;
-//     left: -20px;
-//   }
-// } 
-
-// .search-container.active .search-input {
-//     opacity: 1;
-//     padding: 5px 10px;
-//     transition: width 0.3s ease;
-//     position: absolute;
-//     top: -12px;
-//     left: -13px;
-
-//     width: 320px;
-//     z-index: 30000;
-//     height: 100%;
-//     padding: 10px 10px 10px 40px;
-//     border-radius: 100px;
-//     border: 2px solid $primary-blue;
-
-//     @include p($dark-gray);
-// }
+     @include desktop {
+      left: 0px;
+     }
+  }
+}
 
 
 
+
+.search-input {
+    width: 230px;
+    height: 100%;
+    position: absolute;
+    top: -12px;
+    // padding: 10px 10px 10px 40px;
+    left: -3px;
+    opacity: 1;
+    border-radius: 4px;
+    z-index: 10000;
+    border-radius: 100px;
+    border: 2px solid $primary-blue;
+    @include p($dark-gray);
+
+    padding: 8px 10px 8px 40px;
+
+  @include desktop {
+    width: 0;
+    opacity: 0;
+    padding: 5px 10px;
+    transition: width 0.3s ease;
+    border: 0px solid #ccc;
+    border-radius: 4px;
+    z-index: 10000;
+    position: absolute;
+    top: -12px;
+    left: -20px;
+  }
+} 
+
+.search-container.active .search-input {
+    opacity: 1;
+    padding: 5px 10px;
+    transition: width 0.3s ease;
+    position: absolute;
+    top: -12px;
+    left: -13px;
+
+    width: 320px;
+    z-index: 30000;
+    height: 100%;
+    padding: 10px 10px 10px 40px;
+    border-radius: 100px;
+    border: 2px solid $primary-blue;
+
+    @include p($dark-gray);
+}
+
+
+
+#emergency-bar {
+  background: #490E0A;
+  position: relative;
+  background: linear-gradient(90deg, rgba(73, 14, 10, 1) 0%, rgba(156, 27, 19, 1) 80%);
+
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr;
+  gap:20px;
+  padding: 20px $sidepad-mob;
+ 
+  @include tablet {
+    padding: 20px $sidepad-mob;
+  }
+
+  @include desktop {
+    padding: 20px $sidepad-desk;
+  }
+
+  @include largedesktop {
+     padding: 20px $sidepad-desk;
+  }
   
-    .search-container {
-      display: none;
-      margin-top: 10px;
-      padding: 10px;
-      border: 1px solid #ccc;
-      width: 200px;
-    }
+  @include xlargedesktop {
+     padding: 20px 10%;
+  }
 
-    /* Show when active */
-    .search-container.active {
-      display: block;
-    }
+  @include tablet{
+    grid-template-columns: 1fr 5fr;
+  }
+ 
+  h6{
+    @include h6($white);
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
 
-    /* Optional: make SVG not block clicks */
-    .search-toggle svg {
-      pointer-events: none;
-      vertical-align: middle;
-    }
+  p{
+    @include p($white);
+  }
 
-    /* Button style */
-    .search-toggle {
-      cursor: pointer;
-      background: #007BFF;
-      border: none;
-      color: white;
-      padding: 8px 12px;
-      font-size: 16px;
-      display: inline-flex;
-      align-items: center;
-      gap: 5px;
-      border-radius: 4px;
+  div img{
+    max-width: 100%;
+    border-radius:20px;
+  }
+
+  a.button{
+    margin-top: 10px;
+    @include button($light-blue, $primary-blue, solid);
+
+    &:hover{
+      @include button($white, $primary-blue, solid);
+      background-color: $white !important;
     }
+  }
+
+  #close-btn {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    border: none;
+    background: transparent;
+    font-size: 1.2em;
+    cursor: pointer;
+    color: white;
+
+    @include tablet{
+      top: 35px;
+      right: 50px;
+    }
+  }
+}
+
+
 
 
 
