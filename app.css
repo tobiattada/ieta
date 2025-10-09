@@ -2581,6 +2581,9 @@ footer.page-footer .footer-wrapper .footer-navigation h4 {
   color: #1E3EAF;
   border-bottom: 0px solid #1E3EAF;
 }
+.nav-menu .nav-item.hidden {
+  display: none;
+}
 
 .nav-menu .nav-item.has-dropdown .dropdown {
   display: none;

@@ -214,6 +214,10 @@
         border-bottom: 0px solid $primary-blue;
       }
     }
+
+    &.hidden{
+      display:none;
+    }
   }
 }
 
@@ -468,17 +472,17 @@
 
 
 a.search-toggle{
-    background: none;
-    border: none;
-    position: relative;
-    left: 7px;
+  background: none;
+  border: none;
+  position: relative;
+  left: 7px;
 
-    z-index: 300000;
+  z-index: 300000;
 
-     @include desktop {
-      left: 0px;
-     }
-  }
+   @include desktop {
+    left: 0px;
+   }
+}
 
 
 .search-container {
@@ -504,7 +508,6 @@ a.search-toggle{
     height: 100%;
     position: absolute;
     top: -12px;
-    // padding: 10px 10px 10px 40px;
     left: -3px;
     opacity: 1;
     border-radius: 4px;
@@ -536,7 +539,6 @@ a.search-toggle{
     position: absolute;
     top: -12px;
     left: -13px;
-
     width: 320px;
     z-index: 30000;
     height: 100%;
