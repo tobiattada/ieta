@@ -1,3 +1,24 @@
+document.addEventListener("DOMContentLoaded", function() {
+  const path = window.location.pathname;
+
+  const linkMap = {
+    "/our-research": "research-link",
+    "/trip-planning-resources": "trip-link",
+    "/news-and-events": "news-events-link",
+    "/who-we-are": "who-link"
+  };
+
+  for (const [urlPath, id] of Object.entries(linkMap)) {
+    if (path.includes(urlPath)) {
+      const el = document.getElementById(id);
+      if (el) el.classList.add("active");
+      break; // stop after finding the first match
+    }
+  }
+});
+
+
+
 // wait for page to load before executing
 window.addEventListener('load', function () {
 
@@ -22,30 +43,18 @@ window.addEventListener('load', function () {
     } 
   });
 
-  // Optional: toggle dropdowns individually on mobile
-  document.querySelectorAll('.has-dropdown > a').forEach(link => {
-    link.addEventListener('click', e => {
-      if (window.innerWidth <= 768) {
-        e.preventDefault();
-        link.parentElement.classList.toggle('open');
-        toggleBack.classList.add('visible');
-      }
-    });
-  });
-
-  if (toggleBack) {
-    toggleBack.addEventListener('click', e => {
-      document.querySelectorAll('.has-dropdown').forEach(dropdown => {
-        dropdown.classList.remove('open');
-      });
-
-      toggleBack.classList.remove('visible');
-    });
-  }
-
-
-  document.querySelector('.search-toggle').addEventListener('click', () => {
-    document.querySelector('.search-container').classList.toggle('active');
-  });
-
 });
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const toggleButton = document.querySelector('.search-toggle');
+    const searchContainer = document.querySelector('.search-container');
+
+    if (toggleButton && searchContainer) {
+      toggleButton.addEventListener('click', () => {
+        searchContainer.classList.toggle('active');
+      });
+    } else {
+      console.error('Elements not found!');
+    }
+  });

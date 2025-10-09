@@ -70,11 +70,8 @@
     }
 
     .search-link, .subscribe-link{
-            opacity: 1;
-          }
-
-
-
+      opacity: 1;
+    }
 }
 
         .navbar__toggle .hamburger {
@@ -206,7 +203,7 @@
 
     &.search{
       a:hover{
-        border-bottom: 0px solid $primary-blue;
+        border-bottom: 1px solid $primary-blue;
       }
     }
 
@@ -460,10 +457,10 @@
 
 .nav-trigger{
   position: absolute;
-      top: 25px;
-    right: 13px;
-    width: 37px;
-    height: 25px;
+  top: 18px;
+  right: 13px;
+  width: 37px;
+  height: 25px;
   border: 0px solid red;
 }
 
@@ -550,7 +547,7 @@
 
 #emergency-bar {
   background: #490E0A;
-      position: relative;
+  position: relative;
   background: linear-gradient(90deg, rgba(73, 14, 10, 1) 0%, rgba(156, 27, 19, 1) 80%);
 
   display: grid;
