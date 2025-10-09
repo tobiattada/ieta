@@ -2457,7 +2457,7 @@ footer.page-footer .footer-wrapper .footer-navigation h4 {
 }
 @media (min-width: 1024px) {
   .nav-menu {
-    gap: 20px;
+    gap: 25px;
   }
 }
 @media (min-width: 1300px) {
@@ -3262,13 +3262,13 @@ a.search-toggle {
 .home-hero .component-promo:not(.btn-anchored).overlay-horizontal-position-middle.overlay-vertical-position-middle .bg-type-image {
   top: none;
 }
-.home-hero .component-promo .mobile-image, .home-hero .component-promo .tablet-image {
+.home-hero .component-promo .mobile-image, .home-hero .component-promo .tablet-image, .home-hero .component-promo .desktop-image {
   height: 100%;
   width: auto;
   display: flex;
   justify-content: center;
 }
-.home-hero .component-promo .mobile-image img, .home-hero .component-promo .tablet-image img {
+.home-hero .component-promo .mobile-image img, .home-hero .component-promo .tablet-image img, .home-hero .component-promo .desktop-image img {
   height: 100%;
   width: auto;
 }
