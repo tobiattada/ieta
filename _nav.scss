@@ -150,6 +150,7 @@
 
   @include desktop{
     gap: 25px;
+        margin-left: auto;
   }
 
   @include largedesktop {
@@ -475,12 +476,15 @@ a.search-toggle{
   background: none;
   border: none;
   position: relative;
-  left: 7px;
-
   z-index: 300000;
 
+  margin-left: auto;
+  margin-right:15px;
+      margin-top: 8px;
+
    @include desktop {
-    left: 0px;
+     margin-left: auto;
+      margin-right:15px;
    }
 }
 
@@ -504,21 +508,6 @@ a.search-toggle{
 
 
 .search-input {
-    width: 230px;
-    height: 100%;
-    position: absolute;
-    top: -12px;
-    left: -3px;
-    opacity: 1;
-    border-radius: 4px;
-    z-index: 10000;
-    border-radius: 100px;
-    border: 2px solid $primary-blue;
-    @include p($dark-gray);
-
-    padding: 8px 10px 8px 40px;
-
-  @include desktop {
     width: 0;
     opacity: 0;
     padding: 5px 10px;
@@ -529,7 +518,6 @@ a.search-toggle{
     position: absolute;
     top: -12px;
     left: -20px;
-  }
 } 
 
 .search-container.active .search-input {
@@ -545,7 +533,7 @@ a.search-toggle{
     padding: 10px 40px 10px 20px;
     border-radius: 100px;
     background: $light-gray;
-    // border: 2px solid $primary-blue;
+
 
     @include p($dark-gray);
 }

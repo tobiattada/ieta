@@ -2458,6 +2458,7 @@ footer.page-footer .footer-wrapper .footer-navigation h4 {
 @media (min-width: 1024px) {
   .nav-menu {
     gap: 25px;
+    margin-left: auto;
   }
 }
 @media (min-width: 1300px) {
@@ -2920,12 +2921,15 @@ a.search-toggle {
   background: none;
   border: none;
   position: relative;
-  left: 7px;
   z-index: 300000;
+  margin-left: auto;
+  margin-right: 15px;
+  margin-top: 8px;
 }
 @media (min-width: 1024px) {
   a.search-toggle {
-    left: 0px;
+    margin-left: auto;
+    margin-right: 15px;
   }
 }
 
@@ -2945,53 +2949,16 @@ a.search-toggle {
 }
 
 .search-input {
-  width: 230px;
-  height: 100%;
-  position: absolute;
-  top: -12px;
-  left: -3px;
-  opacity: 1;
+  width: 0;
+  opacity: 0;
+  padding: 5px 10px;
+  transition: width 0.3s ease;
+  border: 0px solid #ccc;
   border-radius: 4px;
   z-index: 10000;
-  border-radius: 100px;
-  border: 2px solid #1E3EAF;
-  font-family: "Outfit", sans-serif;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0%;
-  color: #2A2A2A;
-  padding: 8px 10px 8px 40px;
-}
-@media (min-width: 1024px) {
-  .search-input {
-    font-size: 18px;
-    line-height: 27px;
-  }
-}
-.search-input strong, .search-input em, .search-input b {
-  font-weight: 600;
-  color: #2A2A2A;
-}
-.search-input.hebrew {
-  font-family: "Noto Sans Hebrew", sans-serif !important;
-  font-weight: 600;
-  text-align: right;
-  direction: rtl;
-}
-@media (min-width: 1024px) {
-  .search-input {
-    width: 0;
-    opacity: 0;
-    padding: 5px 10px;
-    transition: width 0.3s ease;
-    border: 0px solid #ccc;
-    border-radius: 4px;
-    z-index: 10000;
-    position: absolute;
-    top: -12px;
-    left: -20px;
-  }
+  position: absolute;
+  top: -12px;
+  left: -20px;
 }
 
 .search-container.active .search-input {
