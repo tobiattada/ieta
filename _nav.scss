@@ -537,14 +537,15 @@ a.search-toggle{
     padding: 5px 10px;
     transition: width 0.3s ease;
     position: absolute;
-    top: -12px;
-    left: -13px;
+    right: -15px;
+    left: auto;
     width: 320px;
     z-index: 30000;
     height: 100%;
-    padding: 10px 10px 10px 40px;
+    padding: 10px 40px 10px 20px;
     border-radius: 100px;
-    border: 2px solid $primary-blue;
+    background: $light-gray;
+    // border: 2px solid $primary-blue;
 
     @include p($dark-gray);
 }
