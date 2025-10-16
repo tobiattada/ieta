@@ -3241,7 +3241,6 @@ a.search-toggle {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(180deg, rgba(9, 14, 32, 0) 27.83%, rgba(9, 14, 32, 0.8) 98.31%);
   pointer-events: none;
 }
 .home-hero .component-promo:not(.btn-anchored).overlay-horizontal-position-middle.overlay-vertical-position-middle .bg-type-image {
