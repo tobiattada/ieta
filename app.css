@@ -2388,7 +2388,7 @@ footer.page-footer .footer-wrapper .footer-navigation h4 {
 .navbar__toggle .back-button svg path {
   fill: #27277C;
 }
-.navbar__toggle .search-wrap, .navbar__toggle .subscribe-link {
+.navbar__toggle .subscribe-link {
   opacity: 1;
 }
 
@@ -2447,6 +2447,14 @@ footer.page-footer .footer-wrapper .footer-navigation h4 {
 }
 .navbar__toggle.open-menu .back-button.visible svg path {
   fill: #27277C;
+}
+
+.nav-menu.open + .search-wrap {
+  opacity: 0 !important;
+}
+
+.nav-menu.open + .search-wrap {
+  opacity: 1;
 }
 
 .nav-menu {
@@ -3232,7 +3240,6 @@ a.search-toggle {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(180deg, rgba(9, 14, 32, 0) 27.83%, rgba(9, 14, 32, 0.8) 98.31%);
   pointer-events: none;
 }
 .home-hero .component-promo:not(.btn-anchored).overlay-horizontal-position-middle.overlay-vertical-position-middle .bg-type-image {
