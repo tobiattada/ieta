@@ -200,6 +200,10 @@
 	 	.promo-text h1{
 	 		@include h1($light);
 	 		text-align: left;
+
+	 		br{
+	 			display:none;
+	 		}
 	 	}
 
 		.promo-title p strong{
@@ -651,6 +655,10 @@ div.two-videos{
 				display: flex;
 				justify-content: flex-start;
     		align-items: center;
+
+    		label{
+    			color: $dark-gray;
+    		}
 			}
 
 	button{
@@ -859,6 +867,7 @@ div.two-videos{
 					&:hover{
 						 &:after{
 						 	@include document($medium-blue);
+							left: auto;
 						 }
 					}
 				}
