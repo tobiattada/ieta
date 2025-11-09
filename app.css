@@ -16451,6 +16451,7 @@ div.two-videos {
   }
 }
 .basic .component-image {
+  overflow: hidden;
   border-radius: 24px;
 }
 .basic .component-image .has-ratio-image {
