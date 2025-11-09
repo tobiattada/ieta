@@ -210,7 +210,7 @@ p.caption.hebrew {
   font-size: 40px;
   line-height: 44px;
   letter-spacing: 0%;
-  color: #F5F5F5;
+  color: #f2f2f2;
   text-align: center;
 }
 @media (min-width: 1024px) {
@@ -1339,10 +1339,10 @@ b mark, mark b {
 }
 .button:hover, a.button:hover {
   background: #1c88ed;
-  color: #F5F5F5 !important;
+  color: #f2f2f2 !important;
 }
 .button:hover a, .button:hover span, a.button:hover a, a.button:hover span {
-  color: #F5F5F5 !important;
+  color: #f2f2f2 !important;
 }
 .button:active, a.button:active {
   background: #27277C;
@@ -1388,10 +1388,10 @@ b mark, mark b {
 }
 .button-primary:hover {
   background: #1c88ed;
-  color: #F5F5F5 !important;
+  color: #f2f2f2 !important;
 }
 .button-primary:hover a, .button-primary:hover span {
-  color: #F5F5F5 !important;
+  color: #f2f2f2 !important;
 }
 .button-primary:active {
   background: #27277C;
@@ -1486,10 +1486,10 @@ b mark, mark b {
 }
 .button-secondary:hover {
   background: #1c88ed;
-  color: #F5F5F5 !important;
+  color: #f2f2f2 !important;
 }
 .button-secondary:hover a, .button-secondary:hover span {
-  color: #F5F5F5 !important;
+  color: #f2f2f2 !important;
 }
 .button-secondary:active {
   background: #27277C;
@@ -1584,10 +1584,10 @@ b mark, mark b {
 }
 .button-white:hover {
   background: #1c88ed;
-  color: #F5F5F5 !important;
+  color: #f2f2f2 !important;
 }
 .button-white:hover a, .button-white:hover span {
-  color: #F5F5F5 !important;
+  color: #f2f2f2 !important;
 }
 .button-white:active {
   background: #27277C;
@@ -1686,10 +1686,10 @@ b mark, mark b {
 }
 .component-promo .button-container .button.btn-blue:hover, .component-button .button-container .button.btn-blue:hover, a.button.btn-blue:hover {
   background: #1c88ed;
-  color: #F5F5F5 !important;
+  color: #f2f2f2 !important;
 }
 .component-promo .button-container .button.btn-blue:hover a, .component-promo .button-container .button.btn-blue:hover span, .component-button .button-container .button.btn-blue:hover a, .component-button .button-container .button.btn-blue:hover span, a.button.btn-blue:hover a, a.button.btn-blue:hover span {
-  color: #F5F5F5 !important;
+  color: #f2f2f2 !important;
 }
 .component-promo .button-container .button.btn-blue:active, .component-button .button-container .button.btn-blue:active, a.button.btn-blue:active {
   background: #27277C;
@@ -1814,8 +1814,8 @@ b mark, mark b {
   cursor: pointer;
   transition: all 0.2s ease;
   background: transparent;
-  color: #F5F5F5 !important;
-  border: 3px solid #F5F5F5;
+  color: #f2f2f2 !important;
+  border: 3px solid #f2f2f2;
   display: inline-block;
   margin-top: 10px;
   height: auto;
@@ -1828,14 +1828,14 @@ b mark, mark b {
   font-size: 18px;
   line-height: 27px;
   text-align: center;
-  color: #F5F5F5;
+  color: #f2f2f2;
   transition: 0.3s;
 }
 .component-promo .button-container .button.btn-red span:hover, .component-promo .button-container .button.btn-red p:hover, .component-button .button-container .button.btn-red span:hover, .component-button .button-container .button.btn-red p:hover, a.button.btn-red span:hover, a.button.btn-red p:hover {
   transition: 0.3s;
 }
 .component-promo .button-container .button.btn-red a, .component-promo .button-container .button.btn-red span, .component-button .button-container .button.btn-red a, .component-button .button-container .button.btn-red span, a.button.btn-red a, a.button.btn-red span {
-  color: #F5F5F5 !important;
+  color: #f2f2f2 !important;
 }
 .component-promo .button-container .button.btn-red:hover, .component-button .button-container .button.btn-red:hover, a.button.btn-red:hover {
   color: #1c88ed !important;
@@ -1892,10 +1892,10 @@ b mark, mark b {
 }
 .component-promo .button-container .button.btn-green:hover, .component-button .button-container .button.btn-green:hover, a.button.btn-green:hover {
   background: #1c88ed;
-  color: #F5F5F5 !important;
+  color: #f2f2f2 !important;
 }
 .component-promo .button-container .button.btn-green:hover a, .component-promo .button-container .button.btn-green:hover span, .component-button .button-container .button.btn-green:hover a, .component-button .button-container .button.btn-green:hover span, a.button.btn-green:hover a, a.button.btn-green:hover span {
-  color: #F5F5F5 !important;
+  color: #f2f2f2 !important;
 }
 .component-promo .button-container .button.btn-green:active, .component-button .button-container .button.btn-green:active, a.button.btn-green:active {
   background: #27277C;
@@ -1909,7 +1909,7 @@ section.page-wrapper section.page-top {
 }
 
 section.page-main {
-  background: #F5F5F5;
+  background: #f2f2f2;
 }
 section.page-main .section-template-rows > .row:last-child .navbar {
   position: absolute;
@@ -2084,10 +2084,10 @@ section.page-main .shell > .row:nth-child(2) .col-8 .section-template-items .xl\
 }
 section.page-main .shell > .row:nth-child(2) .col-8 .section-template-items .xl\:grid-cols-12 .search .submit-button:hover {
   background: #1c88ed;
-  color: #F5F5F5 !important;
+  color: #f2f2f2 !important;
 }
 section.page-main .shell > .row:nth-child(2) .col-8 .section-template-items .xl\:grid-cols-12 .search .submit-button:hover a, section.page-main .shell > .row:nth-child(2) .col-8 .section-template-items .xl\:grid-cols-12 .search .submit-button:hover span {
-  color: #F5F5F5 !important;
+  color: #f2f2f2 !important;
 }
 section.page-main .shell > .row:nth-child(2) .col-8 .section-template-items .xl\:grid-cols-12 .search .submit-button:active {
   background: #27277C;
@@ -2305,10 +2305,10 @@ section.page-main .shell > .row:nth-child(2) .col-8 .section-template-items .sub
 }
 section.page-main .shell > .row:nth-child(2) .col-8 .section-template-items .submit-button:hover {
   background: #1c88ed;
-  color: #F5F5F5 !important;
+  color: #f2f2f2 !important;
 }
 section.page-main .shell > .row:nth-child(2) .col-8 .section-template-items .submit-button:hover a, section.page-main .shell > .row:nth-child(2) .col-8 .section-template-items .submit-button:hover span {
-  color: #F5F5F5 !important;
+  color: #f2f2f2 !important;
 }
 section.page-main .shell > .row:nth-child(2) .col-8 .section-template-items .submit-button:active {
   background: #27277C;
@@ -2377,7 +2377,7 @@ section.page-main .shell > .row:nth-child(2) .col-3 .widget .headers li a i {
   display: none;
 }
 section.page-main .shell > .row:nth-child(2) .col-3 .widget ul.tags li a {
-  background: #F5F5F5;
+  background: #f2f2f2;
   padding: 10px 25px;
   border: 1px solid #c9c9c9;
   border-radius: 24px;
@@ -2449,7 +2449,7 @@ section.page-main .shell > .row:nth-child(2) .col-3 .widget ul.tags li a .num {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0%;
-  color: #F5F5F5;
+  color: #f2f2f2;
 }
 @media (min-width: 1024px) {
   .section-template-rows .component-container .component-promo .promo-text p {
@@ -2459,7 +2459,7 @@ section.page-main .shell > .row:nth-child(2) .col-3 .widget ul.tags li a .num {
 }
 .section-template-rows .component-container .component-promo .promo-text p strong, .section-template-rows .component-container .component-promo .promo-text p em, .section-template-rows .component-container .component-promo .promo-text p b {
   font-weight: 600;
-  color: #F5F5F5;
+  color: #f2f2f2;
 }
 .section-template-rows .component-container .component-promo .promo-text p.hebrew {
   font-family: "Noto Sans Hebrew", sans-serif !important;
@@ -2473,7 +2473,7 @@ section.page-main .shell > .row:nth-child(2) .col-3 .widget ul.tags li a .num {
   font-size: 40px;
   line-height: 44px;
   letter-spacing: 0%;
-  color: #F5F5F5;
+  color: #f2f2f2;
   text-align: center;
   text-align: left;
 }
@@ -2495,7 +2495,7 @@ section.page-main .shell > .row:nth-child(2) .col-3 .widget ul.tags li a .num {
   font-size: 32px;
   line-height: 42px;
   letter-spacing: 0%;
-  color: #F5F5F5;
+  color: #f2f2f2;
   text-align: left;
 }
 @media (min-width: 1024px) {
@@ -2516,7 +2516,7 @@ section.page-main .shell > .row:nth-child(2) .col-3 .widget ul.tags li a .num {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0%;
-  color: #F5F5F5;
+  color: #f2f2f2;
 }
 @media (min-width: 1024px) {
   .section-template-rows .component-container .component-promo .promo-title p strong {
@@ -2526,7 +2526,7 @@ section.page-main .shell > .row:nth-child(2) .col-3 .widget ul.tags li a .num {
 }
 .section-template-rows .component-container .component-promo .promo-title p strong strong, .section-template-rows .component-container .component-promo .promo-title p strong em, .section-template-rows .component-container .component-promo .promo-title p strong b {
   font-weight: 600;
-  color: #F5F5F5;
+  color: #f2f2f2;
 }
 .section-template-rows .component-container .component-promo .promo-title p strong.hebrew {
   font-family: "Noto Sans Hebrew", sans-serif !important;
@@ -3004,10 +3004,10 @@ section.career-center-listing .col-3 .widget .cta-btn.blue a, section.career-cen
 }
 section.career-center-listing .col-3 .widget .cta-btn.blue:hover {
   background: #1c88ed;
-  color: #F5F5F5 !important;
+  color: #f2f2f2 !important;
 }
 section.career-center-listing .col-3 .widget .cta-btn.blue:hover a, section.career-center-listing .col-3 .widget .cta-btn.blue:hover span {
-  color: #F5F5F5 !important;
+  color: #f2f2f2 !important;
 }
 section.career-center-listing .col-3 .widget .cta-btn.blue:active {
   background: #27277C;
@@ -3187,7 +3187,7 @@ section.career-center-listing .widget .contact p.hebrew, section.career-center-l
 }
 
 section.page-main.career-center-listing {
-  background: #F5F5F5;
+  background: #f2f2f2;
 }
 section.page-main.career-center-listing .shell > .row:first-of-type {
   margin-top: 75px;

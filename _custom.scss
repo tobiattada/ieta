@@ -61,6 +61,7 @@
 .bg-gray{ @include bg-color($gray);}
 .bg-light-gray{ @include bg-color($light-gray);}
 .bg-footer-gray{ @include bg-color($text);}
+.bg-ieta{ @include bg-color($ieta);}
 
 
 // .bg-navy-blue.gray-card .rich-text{
