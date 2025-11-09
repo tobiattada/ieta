@@ -9654,6 +9654,55 @@ div.two-videos {
   padding: 5px 0px;
 }
 
+.feature-posts .component-feature.dynamic .section-type-resourcecenter .title .resource-meta a.resource-type-icon {
+  display: none;
+}
+.feature-posts .component-feature.dynamic .section-type-resourcecenter .title .resource-meta .resource-topics-list {
+  margin-top: 0px;
+}
+.feature-posts .component-feature.dynamic .section-type-resourcecenter .title .resource-meta .resource-topics-list a.resource-topic-badge {
+  border: 0px;
+  padding: 0px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: #1c88ed;
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0%;
+  color: #1c88ed;
+  margin: 0px;
+  line-height: inherit;
+}
+@media (min-width: 1024px) {
+  .feature-posts .component-feature.dynamic .section-type-resourcecenter .title .resource-meta .resource-topics-list a.resource-topic-badge {
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
+.feature-posts .component-feature.dynamic .section-type-resourcecenter .title .resource-meta .resource-topics-list a.resource-topic-badge strong, .feature-posts .component-feature.dynamic .section-type-resourcecenter .title .resource-meta .resource-topics-list a.resource-topic-badge em, .feature-posts .component-feature.dynamic .section-type-resourcecenter .title .resource-meta .resource-topics-list a.resource-topic-badge b {
+  font-weight: 600;
+  color: #1c88ed;
+}
+.feature-posts .component-feature.dynamic .section-type-resourcecenter .title .resource-meta .resource-topics-list a.resource-topic-badge.hebrew {
+  font-family: "Noto Sans Hebrew", sans-serif !important;
+  font-weight: 600;
+  text-align: right;
+  direction: rtl;
+}
+.feature-posts .component-feature.dynamic .section-type-resourcecenter .title .resource-meta .resource-topics-list a.resource-topic-badge strong, .feature-posts .component-feature.dynamic .section-type-resourcecenter .title .resource-meta .resource-topics-list a.resource-topic-badge em, .feature-posts .component-feature.dynamic .section-type-resourcecenter .title .resource-meta .resource-topics-list a.resource-topic-badge b {
+  font-weight: 600;
+  color: #1c88ed;
+}
+.feature-posts .component-feature.dynamic .section-type-resourcecenter .title .resource-meta .resource-topics-list a.resource-topic-badge.hebrew {
+  font-family: "Noto Sans Hebrew", sans-serif !important;
+  font-weight: 600;
+  text-align: right;
+  direction: rtl;
+}
+
 .features-4-up {
   box-sizing: border-box;
   padding: 30px 20px;

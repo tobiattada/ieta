@@ -942,3 +942,40 @@ div.two-videos{
 
 
 
+
+
+//// Resource center related
+
+
+.feature-posts  .component-feature.dynamic .section-type-resourcecenter {
+
+	.title{
+		.resource-meta{
+			a.resource-type-icon{
+				display:none;
+			}
+
+			.resource-topics-list{
+				margin-top: 0px;
+
+				a.resource-topic-badge{
+					border: 0px;
+					padding: 0px;
+					@include p($medium-blue);
+					@include p-bold($medium-blue);
+					margin: 0px;
+					line-height: inherit;
+				}
+			}
+		}
+	}
+
+}
+
+
+
+
+
+
+
+
