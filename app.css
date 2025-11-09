@@ -16451,11 +16451,7 @@ div.two-videos {
   }
 }
 .basic .component-image {
-  max-height: 530px;
-  overflow: hidden;
   border-radius: 24px;
-  display: flex;
-  align-items: center;
 }
 .basic .component-image .has-ratio-image {
   border-radius: 24px;
