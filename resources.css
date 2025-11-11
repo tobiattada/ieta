@@ -1900,3 +1900,7 @@ b mark, mark b {
 .component-promo .button-container .button.btn-green:active, .component-button .button-container .button.btn-green:active, a.button.btn-green:active {
   background: #27277C;
 }
+
+header.page-header {
+  display: block;
+}
