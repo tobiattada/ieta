@@ -1902,5 +1902,5 @@ b mark, mark b {
 }
 
 header.page-header {
-  display: block !important;
+  display: inline-block !important;
 }
