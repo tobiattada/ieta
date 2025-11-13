@@ -164,6 +164,14 @@
 		.component-image{
 			border-radius: 0px !important;
 		}
+
+		@include desktop{
+			padding: 120px 60px;
+		}
+
+		@include desktop{
+			padding: 160px 80px;
+		}
 }
  
 

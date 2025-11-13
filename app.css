@@ -3513,6 +3513,16 @@ a.search-toggle {
 .event-promo-full-width.basic .component-image {
   border-radius: 0px !important;
 }
+@media (min-width: 1024px) {
+  .event-promo-full-width.basic {
+    padding: 120px 60px;
+  }
+}
+@media (min-width: 1024px) {
+  .event-promo-full-width.basic {
+    padding: 160px 80px;
+  }
+}
 
 .modals {
   padding-top: 0px !important;
@@ -10494,12 +10504,12 @@ div.two-videos {
 .feature-posts .home-boxes .box {
   flex: 1;
   border-radius: 24px;
-  border: 1px solid #c9c9c9;
   background: white;
   padding: 15px;
   box-shadow: 0px 1.541px 4.141px 0px rgba(0, 0, 0, 0.04), 0px 0.326px 1.059px 0px rgba(0, 0, 0, 0.02);
   transition: 0.3s;
   width: auto;
+  margin-top: 0px;
 }
 @media (min-width: 1024px) {
   .feature-posts .home-boxes .box {

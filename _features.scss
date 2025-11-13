@@ -528,12 +528,15 @@
 		.box{
 			flex: 1;
 			border-radius: 24px;
-			border: 1px solid $gray;
+			// border: 1px solid $gray;
 			background: white;
 			padding: 15px;
 			box-shadow: $shadow;
 			transition: .3s;
 			width: auto;
+
+			//new 
+			margin-top: 0px;
 
 			@include desktop{
 				padding: 20px;
