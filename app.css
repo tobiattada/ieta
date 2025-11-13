@@ -3519,6 +3519,7 @@ a.search-toggle {
   border-radius: 0px !important;
   display: inline-block !important;
   height: 100%;
+  width: 100%;
 }
 .event-promo-full-width.basic .component-image .has-ratio-image {
   height: 100%;
