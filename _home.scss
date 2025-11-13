@@ -114,6 +114,10 @@
 		    display: inline-block;
 		        margin-top: 150px;
 
+		       @include tablet{
+		       	margin-top: 250px;
+		       }
+
 		    @include white-card-text();
 
 		    h4, p strong {

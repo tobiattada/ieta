@@ -3304,6 +3304,11 @@ a.search-toggle {
   display: inline-block;
   margin-top: 150px;
 }
+@media (min-width: 768px) {
+  .event-promo-full-width.basic .rich-text {
+    margin-top: 250px;
+  }
+}
 .event-promo-full-width.basic .rich-text .rich-text h1 {
   font-family: "Outfit", sans-serif;
   font-weight: 600;
