@@ -1901,6 +1901,9 @@ b mark, mark b {
   background: #27277C;
 }
 
+.section-resource-center.section-resource-center-main header.page-header {
+  display: inline-block !important;
+}
 .section-resource-center.section-resource-center-main .component-promo .bg-overlay {
   width: 100%;
   box-sizing: border-box;
