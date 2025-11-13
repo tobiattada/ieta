@@ -172,11 +172,13 @@
 			display: inline-block !important;
 			height: 100%;
 
-			.aspect-ratio{
-				height: 100%;
-
-				img{
+			.has-ratio-image{
+				.aspect-ratio{
 					height: 100%;
+
+					img{
+						height: 100%;
+					}
 				}
 			}
 		}

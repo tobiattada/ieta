@@ -3520,10 +3520,10 @@ a.search-toggle {
   display: inline-block !important;
   height: 100%;
 }
-.event-promo-full-width.basic .component-image .aspect-ratio {
+.event-promo-full-width.basic .component-image .has-ratio-image .aspect-ratio {
   height: 100%;
 }
-.event-promo-full-width.basic .component-image .aspect-ratio img {
+.event-promo-full-width.basic .component-image .has-ratio-image .aspect-ratio img {
   height: 100%;
 }
 @media (min-width: 1024px) {
