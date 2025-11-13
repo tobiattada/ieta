@@ -827,37 +827,37 @@
 
 
 
-//// CALENDAT ICON IN POSTS
-.section-type-calendar{
-	.title-container{margin-bottom: 10px;}
-	.date-box{
-		width: 40px; 
+// //// CALENDAT ICON IN POSTS
+// .section-type-calendar{
+// 	.title-container{margin-bottom: 10px;}
+// 	.date-box{
+// 		width: 40px; 
 
-		@include desktop {
-			width: 70px;
-		}
-		.month{
-			border: 0px;
-			background: $light-blue;
-			text-transform: capitalize;
-			@include h6($primary-blue);
-			font-weight:600;
-			padding: 3px;
-			border-radius: 10px 10px 0px 0px;
-		}
+// 		@include desktop {
+// 			width: 70px;
+// 		}
+// 		.month{
+// 			border: 0px;
+// 			background: $light-blue;
+// 			text-transform: capitalize;
+// 			@include h6($primary-blue);
+// 			font-weight:600;
+// 			padding: 3px;
+// 			border-radius: 10px 10px 0px 0px;
+// 		}
 
-		p {
-			background: $light;
-			border: 0px;
-			border-radius: 0px 0px 10px 10px;
-			padding: 5px 0px;
+// 		p {
+// 			background: $light;
+// 			border: 0px;
+// 			border-radius: 0px 0px 10px 10px;
+// 			padding: 5px 0px;
 
-			span.day{
-				@include h5($dark-gray);
-			}
-		}
-	}
-}
+// 			span.day{
+// 				@include h5($dark-gray);
+// 			}
+// 		}
+// 	}
+// }
 
 
 

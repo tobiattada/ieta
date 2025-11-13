@@ -1901,6 +1901,131 @@ b mark, mark b {
   background: #27277C;
 }
 
-header.page-header {
-  display: inline-block !important;
+.section-resource-center.section-resource-center-main .component-promo .bg-overlay {
+  width: 100%;
+  box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 30px 20px;
+}
+@media (min-width: 768px) {
+  .section-resource-center.section-resource-center-main .component-promo .bg-overlay {
+    padding: 30px 20px;
+  }
+}
+@media (min-width: 1024px) {
+  .section-resource-center.section-resource-center-main .component-promo .bg-overlay {
+    padding: 50px 60px;
+  }
+}
+@media (min-width: 1300px) {
+  .section-resource-center.section-resource-center-main .component-promo .bg-overlay {
+    padding: 60px 80px;
+  }
+}
+@media (min-width: 1500px) {
+  .section-resource-center.section-resource-center-main .component-promo .bg-overlay {
+    padding: 60px 10%;
+  }
+}
+.section-resource-center.section-resource-center-main .component-promo .component-promo {
+  position: relative;
+  display: inline-block;
+  height: 320px;
+  margin-bottom: -6px !important;
+}
+@media (min-width: 1024px) {
+  .section-resource-center.section-resource-center-main .component-promo .component-promo {
+    height: 520px;
+  }
+}
+.section-resource-center.section-resource-center-main .component-promo .component-promo div.has-ratio {
+  height: 100%;
+}
+.section-resource-center.section-resource-center-main .component-promo .component-promo img {
+  object-fit: cover;
+  object-position: center !important;
+  min-height: 100%;
+  min-width: 100%;
+  position: relative;
+  transform: none;
+  translate: -50% -50%;
+  z-index: -1;
+}
+.section-resource-center.section-resource-center-main .component-promo .component-promo .promo-text p {
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0%;
+  color: #f2f2f2;
+}
+.section-resource-center.section-resource-center-main .component-promo .component-promo .promo-text p strong, .section-resource-center.section-resource-center-main .component-promo .component-promo .promo-text p em, .section-resource-center.section-resource-center-main .component-promo .component-promo .promo-text p b {
+  font-weight: 600;
+  color: #f2f2f2;
+}
+.section-resource-center.section-resource-center-main .component-promo .component-promo .promo-text p.hebrew {
+  font-family: "Noto Sans Hebrew", sans-serif !important;
+  font-weight: 600;
+  text-align: right;
+  direction: rtl;
+}
+.section-resource-center.section-resource-center-main .component-promo .component-promo .promo-text h1 {
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 44px;
+  letter-spacing: 0%;
+  color: #f2f2f2;
+  text-align: center;
+  text-align: left;
+}
+@media (min-width: 1024px) {
+  .section-resource-center.section-resource-center-main .component-promo .component-promo .promo-text h1 {
+    font-size: 70px;
+    line-height: 91px;
+  }
+}
+.section-resource-center.section-resource-center-main .component-promo .component-promo .promo-text h1.hebrew {
+  font-family: "Noto Sans Hebrew", sans-serif !important;
+  font-weight: 600;
+  text-align: right;
+  direction: rtl;
+}
+.section-resource-center.section-resource-center-main .component-promo .component-promo .promo-text h1 br {
+  display: none;
+}
+.section-resource-center.section-resource-center-main .component-promo .component-promo .promo-title p strong {
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0%;
+  color: #f2f2f2;
+}
+.section-resource-center.section-resource-center-main .component-promo .component-promo .promo-title p strong strong, .section-resource-center.section-resource-center-main .component-promo .component-promo .promo-title p strong em, .section-resource-center.section-resource-center-main .component-promo .component-promo .promo-title p strong b {
+  font-weight: 600;
+  color: #f2f2f2;
+}
+.section-resource-center.section-resource-center-main .component-promo .component-promo .promo-title p strong.hebrew {
+  font-family: "Noto Sans Hebrew", sans-serif !important;
+  font-weight: 600;
+  text-align: right;
+  direction: rtl;
+}
+.section-resource-center.section-resource-center-main .component-promo .component-promo .promo-title h2 br {
+  display: none;
+}
+.section-resource-center.section-resource-center-main .component-promo .component-promo::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(9, 14, 32, 0) 17.76%, rgba(9, 14, 32, 0.18) 34.21%, rgba(9, 14, 32, 0.6) 54.77%, rgba(9, 14, 32, 0.8) 100%);
+  pointer-events: none;
+}
+@media (min-width: 768px) {
+  .section-resource-center.section-resource-center-main .component-promo.pushdown .component-promo img {
+    translate: -50% -42%;
+  }
+  .section-resource-center.section-resource-center-main .component-promo.pushup .component-promo img {
+    translate: -50% -62%;
+  }
 }
