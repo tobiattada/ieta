@@ -3288,7 +3288,7 @@ a.search-toggle {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
-.featured-posts .home-boxes .box .image img {
+.featured-posts .row .home-boxes .box .image img {
   height: auto;
   aspect-ratio: 3/2;
 }
