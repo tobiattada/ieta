@@ -91,6 +91,12 @@
 			grid-template-columns: 1fr 1fr 1fr;
 		}
 	}
+
+
+	.home-boxes .box .image img {
+		height: auto;
+		    aspect-ratio: 3 / 2;
+	}
 }
 
 
