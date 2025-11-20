@@ -1,3 +1,4 @@
+<script>
 document.addEventListener('DOMContentLoaded', () => {
 
   function wrapRows(selector = 'section.row', wrapperTag = 'div', classCallback) {
@@ -24,8 +25,8 @@ document.addEventListener('DOMContentLoaded', () => {
     wrapper.classList.add('wrapper');
 
     // Add per-row custom classes
-    //if (index === 0) wrapper.classList.add('first-row');
-    if (index === 1) wrapper.classList.add('pushdown');
+
+    if (index === 1) wrapper.classList.add("about-us-header', 'pushdown');
     if (index === 3) wrapper.classList.add('white-card', 'bg-light');
 
     // You can also run arbitrary code for this row here
@@ -33,3 +34,5 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 });
+
+</script>

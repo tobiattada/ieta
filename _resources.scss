@@ -13,94 +13,118 @@
 		display: inline-block !important;
 	}
 
-	// #component-977341.component-container{
-	// 	.bg-overlay{
-	// 		width: 100%;
-	// 	    box-sizing: border-box;
-	// 	    @include responsive-padding();
-	// 	}
 
-	// 	.component-promo{
-	//   		position: relative;
-	// 	  	display: inline-block;
-		  	
-	// 	  	height: 320px;
+//// TITLE AND SEARCH AREA
+	.page-top{
+		background: transparent;
 
-	// 	  	    margin-bottom: -6px !important;
+		@include bg-color($white);
 
-	// 	  	@include desktop {
-	// 	  		height: 520px;
-	// 	  	}
-
-	// 	  	div.has-ratio{
-	// 	  		height:100%;
-	// 	  	}
-	// 		// img {
-	// 		//   object-fit:cover;
-	// 		//   object-position: center !important;
-	// 		//   min-height:100%;
-	// 		//    min-width:100%;
-
-	// 		//    position: relative;
-	// 		//     transform: none;
-	// 		//     translate: -50% -50%;
-	// 		//     z-index: -1;
-	// 		// }
-
-	// 		.promo-text p{
-	// 	 		@include p-bold($light);
-	// 	 	}
-
-	// 	 	.promo-text h1{
-	// 	 		@include h1($light);
-	// 	 		text-align: left;
-
-	// 	 		br{
-	// 	 			display:none;
-	// 	 		}
-	// 	 	}
-
-	// 		.promo-title p strong{
-	// 			@include p-bold($light);
-	// 		}
-
-	// 		.promo-title h2{
-	// 			br{   display: none;}
-	// 		}
-
-	// 		 &::after {
-	// 		    content: "";
-	// 		    position: absolute;
-	// 		    top: 0;
-	// 		    left: 0;
-	// 		    width: 100%;
-	// 		    height: 100%;
-	// 		    background: linear-gradient(180deg, rgba(9, 14, 32, 0.00) 17.76%, rgba(9, 14, 32, 0.18) 34.21%, rgba(9, 14, 32, 0.60) 54.77%, rgba(9, 14, 32, 0.80) 100%);
-	// 		    pointer-events: none; // Ensures overlay doesn't interfere with interactions
-	// 		}
-	// 	}
+		.page-title{
+			h2{
+				@include h2($primary-blue);
+				text-align:center;
+			}
+		}
 
 
-	// 	@include tablet {
-	// 		&.pushdown{
-	// 			.component-promo{
-	// 				img {
-	// 				    translate: -50% -42%;
-	// 				}
-	// 			}
-	// 		}
+		#resource-center-controls{
+			// THIS IS GRID AND LIST ICONS
+			ul#display-buttons{
+				display: flex;
+				background: $light;
 
-	// 		&.pushup{
-	// 			.component-promo{
-	// 				img {
-	// 				    translate: -50% -62%;
-	// 				}
-	// 			}
-	// 		}
-	// 	}
-	// }
+				li:first-child, li:nth-child(2){ //grid and list icon
+					margin-left: 0;
+
+					a{
+						margin-left: 0;
+						display: flex;
+						align-items: center;
+						gap: 8px;
+						padding: 10px 20px;
+					    border: 1px solid $gray;
+
+					    @include label($dark-gray);
+
+						.ico-grid, .ico-list, .ico-map{
+							background: none;
+							height: 11px;
+						    margin-top: 0px;
+						    margin-bottom: 0px;
+						    width: 11px;
+						    background-size: cover;
+						}
+
+						&.active{
+							background: $light-blue;
+						}
+
+						&:hover{
+							background: $light-gray;
+						}
+					}
+				}
+
+				li:first-child{ // list icon
+					a{
+						border-radius: 10px 0px 0px 10px;
+						.ico-list{
+		  					content: url("data:image/svg+xml,%3Csvg%20width%3D%2214%22%20height%3D%2212%22%20viewBox%3D%220%200%2014%2012%22%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath%20d%3D%22M13.75%2011.25H0.25V9.75H13.75V11.25ZM13.75%208.25H0.25V6.75H13.75V8.25ZM13.75%205.25H0.25V3.75H13.75V5.25ZM13.75%202.25H0.25V0.75H13.75V2.25Z%22%20fill%3D%22%232E3A59%22/%3E%3C/svg%3E");
+						}
+					}
+				}
+
+				li:nth-child(2){ // grid icon
+					a{
+						border-radius: 0px 10px 10px 0px;
+						.ico-grid{
+							content: url("data:image/svg+xml,%3Csvg%20width%3D%2212%22%20height%3D%2212%22%20viewBox%3D%220%200%2012%2012%22%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath%20d%3D%22M11.25%2011.25H6.75V6.75H11.25V11.25ZM5.25%2011.25H0.75V6.75H5.25V11.25ZM11.25%205.25H6.75V0.75H11.25V5.25ZM5.25%205.25H0.75V0.75H5.25V5.25Z%22%20fill%3D%22%232E3A59%22/%3E%3C/svg%3E");
+						}
+					}
+				}
+			}
+		}
+	}
 
 
+//// THE LISTINGS
 
+	.page-main{
+		.shell.resource-center-grid.resource-center-style{
+			.wrapper{
+				@include bg-color($white);
+				.row{
+					.positions{
+						.listing-container{
+							.entry.resource-entry{
+								a div.resource-thumbnail img{
+
+								}
+
+								.resource-content{
+									.resource-button{
+
+									}
+
+									.resource-type{
+
+									}
+
+									h3{
+
+									}
+
+									.resource-topics{
+
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 
 }
