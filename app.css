@@ -3530,10 +3530,15 @@ a.search-toggle {
   height: 100%;
 }
 .event-promo-full-width.basic .component-image .has-ratio-image .aspect-ratio {
-  height: 100%;
+  height: 50%;
 }
 .event-promo-full-width.basic .component-image .has-ratio-image .aspect-ratio img {
   height: 100%;
+}
+@media (min-width: 768px) {
+  .event-promo-full-width.basic .component-image .has-ratio-image .aspect-ratio {
+    height: 100%;
+  }
 }
 @media (min-width: 1024px) {
   .event-promo-full-width.basic {
