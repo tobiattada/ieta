@@ -2172,12 +2172,18 @@ b mark, mark b {
   gap: 8px;
   padding: 10px 20px;
   border: 1px solid #c9c9c9;
+  font-size: 0px !important;
   font-family: "Outfit", sans-serif;
   font-weight: 600;
   font-size: 12px;
   line-height: 150%;
   letter-spacing: 0%;
   color: #2A2A2A;
+}
+@media (min-width: 768px) {
+  .section-resource-center.section-resource-center-main .page-top #resource-center-controls ul#display-buttons li:first-child a, .section-resource-center.section-resource-center-main .page-top #resource-center-controls ul#display-buttons li:nth-child(2) a {
+    font-size: initial !important;
+  }
 }
 @media (min-width: 1024px) {
   .section-resource-center.section-resource-center-main .page-top #resource-center-controls ul#display-buttons li:first-child a, .section-resource-center.section-resource-center-main .page-top #resource-center-controls ul#display-buttons li:nth-child(2) a {

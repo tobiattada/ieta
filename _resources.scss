@@ -52,6 +52,13 @@
 						padding: 10px 20px;
 					    border: 1px solid $gray;
 
+					    font-size:0px !important;
+
+					    @include tablet{
+  							font-size: initial !important;
+					    }
+
+
 					    @include label($dark-gray);
 
 						.ico-grid, .ico-list, .ico-map{
@@ -143,68 +150,8 @@
 												@include document($medium-blue);
 											}
 										}		
-							
-
-									// 	.button-container {
-									// 		margin-top:0px;
-									// 		a.button{
-									// 			position: absolute;
-									// 	    top: 0;
-									// 	    left: 0;
-									// 	    right: 0;
-									// 	    bottom: 0;
-									// 	    height: 100%;
-									// 	    width: 100%;
-									// 	    background: transparent;
-									// 			box-sizing: border-box;
-						   //  				z-index: 2000;
-
-									// 	        span{
-									// 	        	display: none;
-									// 	        }
-									// 		}
-									// 	}
-									// }
-
-									// .image img{
-									// 	height: 130px;
-									// 	border-radius: 24px;
-									// 	overflow: hidden;
-									// 	object-fit: cover;
-
-									// 	@include desktop {
-									// 		height: 250px;
-									// 	}
-									// }
-
-									// h4.title, h4.title a{
-									// 		@include h4($navy-blue);
-
-									// 		margin-bottom:15px;
-									// 		text-transform: none !important;
-									// 	}
-
-									// p{
-									// 	@include p($dark-gray);
-									// }	
-
-									// .text-container .text{
-									// 	br{display: none;} // CHECK IF THS IS CAUSING ISSUES
-									// 	p a{ @include p($dark-gray);}
-									// }
-
-									// &:hover{
-									// 	box-shadow: $hover-shadow;
-									// 	transition: .3s;
-
-									// 	.body{
-									// 		&:after{
-									// 			@include document($medium-blue);
-									// 		}
-									// 	}
-									// }		
 						
-
+					
 
 								a div.resource-thumbnail img{
 
