@@ -2335,6 +2335,8 @@ footer.page-footer .footer-wrapper .footer-navigation h4 {
   padding: 8px 0px;
   z-index: 10000;
   margin-right: auto;
+  display: flex;
+  align-items: center;
 }
 .navbar__brand img {
   max-width: 120px;
