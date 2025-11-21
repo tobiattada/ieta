@@ -2948,7 +2948,7 @@ footer.page-footer .footer-wrapper .footer-navigation h4 {
 .search-wrap {
   margin-left: auto;
 }
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
   .search-wrap {
     margin-left: 0px;
   }
