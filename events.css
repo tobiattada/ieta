@@ -1933,7 +1933,7 @@ section.page-main .shell > .row {
     padding: 50px 60px;
   }
 }
-@media (min-width: 1300px) {
+@media (min-width: 1200px) {
   section.page-main .shell > .row {
     padding: 60px 80px;
   }
@@ -1959,7 +1959,7 @@ section.page-main .shell > .row section, section.page-main .shell > .row aside {
     padding: 50px 60px;
   }
 }
-@media (min-width: 1300px) {
+@media (min-width: 1200px) {
   section.page-main .shell > .row section, section.page-main .shell > .row aside {
     padding: 60px 80px;
   }
@@ -2307,7 +2307,7 @@ section.page-main nav.paging ul.right li a.prev::before {
     padding: 50px 60px;
   }
 }
-@media (min-width: 1300px) {
+@media (min-width: 1200px) {
   .shell.calendar-top .section-template-rows .component-container .bg-overlay {
     padding: 60px 80px;
   }
@@ -2459,7 +2459,7 @@ section.tabs {
     padding: 50px 60px;
   }
 }
-@media (min-width: 1300px) {
+@media (min-width: 1200px) {
   section.tabs {
     padding: 60px 80px;
   }
@@ -3375,7 +3375,7 @@ section.page-main.calendar-event .shell .row:first-of-type header.page-title {
     padding: 50px 60px;
   }
 }
-@media (min-width: 1300px) {
+@media (min-width: 1200px) {
   section.page-main.calendar-event .shell .row:first-of-type header.page-title {
     padding: 60px 80px;
   }
@@ -3547,7 +3547,7 @@ section.page-main.calendar-event .shell .row:nth-child(2) .col-3 {
     padding: 50px 60px;
   }
 }
-@media (min-width: 1300px) {
+@media (min-width: 1200px) {
   section.page-main.calendar-event .shell .row:nth-child(2) .col-3 {
     padding: 60px 80px;
   }

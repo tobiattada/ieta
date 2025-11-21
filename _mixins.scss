@@ -3,7 +3,7 @@
 $small-tablet: 667px;
 $tablet-width: 768px;
 $desktop-width: 1024px;
-$large-desktop: 1300px;
+$large-desktop: 1200px;
 $xlarge: 1500px; 
 
 
@@ -283,7 +283,7 @@ $hebrew: "Noto Sans Hebrew", sans-serif;
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100%; 
   height: 100%;
   transition: .3s;
   background: linear-gradient(180deg, rgba(9, 14, 32, 0.00) 17.76%, rgba(9, 14, 32, 0.18) 34.21%, rgba(9, 14, 32, 0.60) 54.77%, rgba(9, 14, 32, 0.80) 100%);
