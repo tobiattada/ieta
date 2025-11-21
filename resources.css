@@ -1912,6 +1912,12 @@ b mark, mark b {
 .section-resource-center.section-resource-center-main .page-above-title, .section-resource-center.section-resource-center-main .page-main {
   padding: 0px !important;
 }
+.section-resource-center.section-resource-center-main .wrapper.divider {
+  padding-top: 0px;
+}
+.section-resource-center.section-resource-center-main .wrapper.divider .component-divider {
+  padding-top: 0px;
+}
 .section-resource-center.section-resource-center-main header.page-header {
   display: inline-block !important;
 }
