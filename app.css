@@ -2965,6 +2965,12 @@ a.search-toggle {
 }
 @media (min-width: 1024px) {
   a.search-toggle {
+    margin-right: 15px;
+    margin-left: 20px;
+  }
+}
+@media (min-width: 1300px) {
+  a.search-toggle {
     margin-right: 0px;
     margin-left: 20px;
   }

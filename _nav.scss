@@ -505,6 +505,11 @@ a.search-toggle{
       margin-top: 8px;
 
    @include desktop {
+      margin-right:15px;
+      margin-left: 20px;
+   }
+
+   @include largedesktop {
       margin-right:0px;
       margin-left: 20px;
    }
