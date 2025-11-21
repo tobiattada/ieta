@@ -26,8 +26,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Add per-row custom classes
 
-    if (index === 1) wrapper.classList.add("about-us-header', 'pushdown');
-    if (index === 3) wrapper.classList.add('white-card', 'bg-light');
+    if (index === 1) wrapper.classList.add('about-us-header', 'pushdown');
+    if (index === 2) wrapper.classList.add('white-card', 'bg-light');
+    if (index === 3) wrapper.classList.add('bg-white', 'basic', 'text-image');
+    if (index === 4) wrapper.classList.add('bg-white', 'basic', 'image-text');
 
     // You can also run arbitrary code for this row here
     // e.g., row.style.backgroundColor = '#f9f9f9';

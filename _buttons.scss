@@ -795,6 +795,18 @@
 	height: auto;
 	min-height: 10px;
 	line-height: inherit;
+
+  svg path{
+    transition:.3s;
+    fill: $primary-blue;
+  }
+
+  &:hover{
+    svg path{
+      transition:.3s;
+      fill: $white;
+    }
+  }
 }
 
 

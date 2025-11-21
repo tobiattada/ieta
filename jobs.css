@@ -1900,6 +1900,14 @@ b mark, mark b {
 .component-promo .button-container .button.btn-green:active, .component-button .button-container .button.btn-green:active, a.button.btn-green:active {
   background: #27277C;
 }
+.component-promo .button-container .button.btn-green svg path, .component-button .button-container .button.btn-green svg path, a.button.btn-green svg path {
+  transition: 0.3s;
+  fill: #1E3EAF;
+}
+.component-promo .button-container .button.btn-green:hover svg path, .component-button .button-container .button.btn-green:hover svg path, a.button.btn-green:hover svg path {
+  transition: 0.3s;
+  fill: #FDFDFD;
+}
 
 section.page-wrapper header.page-header {
   display: none;

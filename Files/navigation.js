@@ -1,3 +1,4 @@
+<script>
 document.addEventListener("DOMContentLoaded", function() {
   const path = window.location.pathname;
 
@@ -16,7 +17,6 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   }
 });
-
 
 
 // wait for page to load before executing
@@ -43,22 +43,19 @@ window.addEventListener('load', function () {
     } 
   });
 
+  const searchToggle = document.querySelector('.search-toggle');
+  const searchContainer = document.querySelector('.search-container');
+  const navItems = document.querySelectorAll('.nav-item'); // select all nav items
+
+
+  console.log('Toggle button:', searchToggle);
+  console.log('Search container:', searchContainer);
+
+  searchToggle.addEventListener('click', () => {
+      searchContainer.classList.toggle('active');
+          // toggle visibility of all nav items
+      navItems.forEach(item => item.classList.toggle('hidden')); // add/remove a 'hidden' class
+
+    });
 });
-
-
-document.addEventListener('DOMContentLoaded', function() {
-    const toggleButton = document.querySelector('.search-toggle');
-    const searchContainer = document.querySelector('.search-container');
-
-    if (toggleButton && searchContainer) {
-      toggleButton.addEventListener('click', () => {
-        searchContainer.classList.toggle('active');
-
-        console.log('Elements found!');
-      });
-
-
-    } else {
-      console.error('Elements not found!');
-    }
-  });
+</script>
