@@ -2926,17 +2926,29 @@ footer.page-footer .footer-wrapper .footer-navigation h4 {
 }
 .nav-trigger {
   position: absolute;
-  top: 18px;
-  right: 13px;
+  top: 20px;
+  right: 9px;
   width: 37px;
   height: 25px;
   border: 0px solid red;
+}
+@media (min-width: 768px) {
+  .nav-trigger {
+    top: 21px;
+    right: 7px;
+  }
+}
+@media (min-width: 1024px) {
+  .nav-trigger {
+    top: 31px;
+    right: 47px;
+  }
 }
 
 .search-wrap {
   margin-left: auto;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1300px) {
   .search-wrap {
     margin-left: 0px;
   }

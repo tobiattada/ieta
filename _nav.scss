@@ -466,20 +466,34 @@
 
 .nav-trigger{
   position: absolute;
-  top: 18px;
-  right: 13px;
-  width: 37px;
-  height: 25px;
+  top: 20px;
+    right: 9px;
+    width: 37px;
+    height: 25px;
+
   border: 0px solid red;
+
+  @include tablet {
+        top: 21px;
+    right: 7px;
+  }
+
+  @include desktop {
+    top: 31px;
+    right: 47px;
+  }
 }
 
 
 .search-wrap{
   margin-left:auto;
-  @include desktop{
+  
+  @include largedesktop{
     margin-left:0px;
   }
 }
+
+
 a.search-toggle{
   background: none;
   border: none;
