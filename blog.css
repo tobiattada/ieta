@@ -1968,7 +1968,7 @@ section.page-main .shell > .row {
     padding: 50px 60px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1300px) {
   section.page-main .shell > .row {
     padding: 60px 80px;
   }
@@ -1994,7 +1994,7 @@ section.page-main .shell > .row section, section.page-main .shell > .row aside {
     padding: 50px 60px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1300px) {
   section.page-main .shell > .row section, section.page-main .shell > .row aside {
     padding: 60px 80px;
   }
@@ -2466,7 +2466,7 @@ section.page-main .row header.page-title {
     padding: 50px 60px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1300px) {
   section.page-main .row header.page-title {
     padding: 60px 80px;
   }
@@ -2529,7 +2529,7 @@ section.page-main .shell > .row {
     padding: 50px 60px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1300px) {
   section.page-main .shell > .row {
     padding: 60px 80px;
   }
@@ -2690,7 +2690,7 @@ section.page-main .shell > .row:nth-child(2) .col-8 .section-template-items {
     padding: 50px 60px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1300px) {
   section.page-main .shell > .row:nth-child(2) .col-8 .section-template-items {
     padding: 60px 80px;
   }
@@ -2718,7 +2718,7 @@ section.page-main .shell > .row:nth-child(2) .col-3 {
     padding: 50px 60px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1300px) {
   section.page-main .shell > .row:nth-child(2) .col-3 {
     padding: 60px 80px;
   }
@@ -2910,7 +2910,7 @@ nav.post-nav {
     padding: 50px 60px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1300px) {
   .tag-page section.page-main .shell > .row:nth-child(2) .col-8 {
     padding: 60px 80px;
   }

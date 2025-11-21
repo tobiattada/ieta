@@ -1937,7 +1937,7 @@ b mark, mark b {
     padding: 50px 60px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1300px) {
   .section-resource-center.section-resource-center-main .page-top {
     padding: 60px 80px;
   }
@@ -2232,7 +2232,7 @@ b mark, mark b {
     padding: 50px 60px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1300px) {
   .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style .wrapper {
     padding: 60px 80px;
   }

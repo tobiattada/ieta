@@ -1945,7 +1945,7 @@ section.page-main .row header.page-title {
     padding: 50px 60px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1300px) {
   section.page-main .row header.page-title {
     padding: 60px 80px;
   }
@@ -1998,7 +1998,7 @@ section.page-main .shell > .row {
     padding: 50px 60px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1300px) {
   section.page-main .shell > .row {
     padding: 60px 80px;
   }
@@ -2170,7 +2170,7 @@ section.page-main .shell > .row:nth-child(2) .col-8 .section-template-items .sel
     height: 50px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1300px) {
   section.page-main .shell > .row:nth-child(2) .col-8 .section-template-items .select-wrapper .chzn-container-single .chzn-single {
     height: 50px;
   }
@@ -2339,7 +2339,7 @@ section.page-main .shell > .row:nth-child(2) .col-3 {
     padding: 50px 60px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1300px) {
   section.page-main .shell > .row:nth-child(2) .col-3 {
     padding: 60px 80px;
   }
@@ -2422,7 +2422,7 @@ section.page-main .shell > .row:nth-child(2) .col-3 .widget ul.tags li a .num {
     padding: 50px 60px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1300px) {
   .section-template-rows .component-container .bg-overlay {
     padding: 60px 80px;
   }
@@ -2781,7 +2781,7 @@ section.career-center-listing .col-8 {
     padding: 50px 60px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1300px) {
   section.career-center-listing .col-8 {
     padding: 60px 80px;
   }
@@ -2808,7 +2808,7 @@ section.career-center-listing .col-8 .post {
     padding: 50px 60px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1300px) {
   section.career-center-listing .col-8 .post {
     padding: 60px 80px;
   }
@@ -2905,7 +2905,7 @@ section.career-center-listing .col-8 .utility {
     padding: 50px 60px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1300px) {
   section.career-center-listing .col-8 .utility {
     padding: 60px 80px;
   }
@@ -2931,7 +2931,7 @@ section.career-center-listing .col-8 .section-template-items {
     padding: 50px 60px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1300px) {
   section.career-center-listing .col-8 .section-template-items {
     padding: 60px 80px;
   }
@@ -2957,7 +2957,7 @@ section.career-center-listing .col-3 {
     padding: 50px 60px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1300px) {
   section.career-center-listing .col-3 {
     padding: 60px 80px;
   }
@@ -3069,7 +3069,7 @@ section.career-center-listing .post-heading {
     padding: 50px 60px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1300px) {
   section.career-center-listing .post-heading {
     padding: 60px 80px;
   }
@@ -3095,7 +3095,7 @@ section.career-center-listing .post-heading > * {
     padding: 50px 60px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1300px) {
   section.career-center-listing .post-heading > * {
     padding: 60px 80px;
   }
@@ -3152,7 +3152,7 @@ section.career-center-listing .post-heading span.label.hebrew {
     padding: 50px 60px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1300px) {
   section.career-center-listing .post-heading span.label {
     padding: 60px 80px;
   }
