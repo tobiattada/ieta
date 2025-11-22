@@ -2159,6 +2159,21 @@ b mark, mark b {
   text-align: right;
   direction: rtl;
 }
+.section-resource-center.section-resource-center-main .page-top #resource-center-controls .grid {
+  display: flex;
+}
+.section-resource-center.section-resource-center-main .page-top #resource-center-controls .grid .col-span-2:first-child {
+  order: 4;
+}
+.section-resource-center.section-resource-center-main .page-top #resource-center-controls .grid .col-span-2:nth-child(2) {
+  order: 1;
+}
+.section-resource-center.section-resource-center-main .page-top #resource-center-controls .grid .col-span-2:nth-child(3) {
+  order: 2;
+}
+.section-resource-center.section-resource-center-main .page-top #resource-center-controls .grid .col-span-2:nth-child(4) {
+  order: 3;
+}
 .section-resource-center.section-resource-center-main .page-top #resource-center-controls .grid .select-wrapper .chzn-container {
   border: 1px solid #c9c9c9;
   border-radius: 24px;
@@ -2224,6 +2239,10 @@ b mark, mark b {
   background: red;
   border: 1px solid #c9c9c9;
   border-radius: 24px;
+}
+.section-resource-center.section-resource-center-main .page-top #resource-center-controls .reset-search {
+  float: none;
+  color: #ECECEC;
 }
 .section-resource-center.section-resource-center-main .page-top #resource-center-controls ul#display-buttons {
   display: flex;
