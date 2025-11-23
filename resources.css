@@ -2286,6 +2286,11 @@ b mark, mark b {
     /* hides the placeholder text */
     font-size: inherit;
   }
+  .section-resource-center.section-resource-center-main .page-top #resource-center-controls input[name=keyword]:focus::placeholder {
+    color: #c9c9c9 !important;
+    /* hides the placeholder text */
+    font-size: inherit;
+  }
 }
 .section-resource-center.section-resource-center-main .page-top #resource-center-controls select[name=type] {
   background: red;
@@ -2415,32 +2420,32 @@ b mark, mark b {
   background: #D2E9FF;
   color: #27277C;
 }
-.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_card_default] .wrapper {
+.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_card_default] .wrapper {
   box-sizing: border-box;
   padding: 30px 20px;
   background-color: #FDFDFD;
 }
 @media (min-width: 768px) {
-  .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_card_default] .wrapper {
+  .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_card_default] .wrapper {
     padding: 30px 30px;
   }
 }
 @media (min-width: 1024px) {
-  .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_card_default] .wrapper {
+  .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_card_default] .wrapper {
     padding: 50px 60px;
   }
 }
 @media (min-width: 1300px) {
-  .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_card_default] .wrapper {
+  .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_card_default] .wrapper {
     padding: 60px 80px;
   }
 }
 @media (min-width: 1500px) {
-  .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_card_default] .wrapper {
+  .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_card_default] .wrapper {
     padding: 60px 10%;
   }
 }
-.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_card_default] .wrapper .rich-text h1 {
+.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_card_default] .wrapper .rich-text h1 {
   font-family: "Outfit", sans-serif;
   font-weight: 600;
   font-size: 40px;
@@ -2450,18 +2455,18 @@ b mark, mark b {
   text-align: center;
 }
 @media (min-width: 1024px) {
-  .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_card_default] .wrapper .rich-text h1 {
+  .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_card_default] .wrapper .rich-text h1 {
     font-size: 70px;
     line-height: 91px;
   }
 }
-.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_card_default] .wrapper .rich-text h1.hebrew {
+.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_card_default] .wrapper .rich-text h1.hebrew {
   font-family: "Noto Sans Hebrew", sans-serif !important;
   font-weight: 600;
   text-align: right;
   direction: rtl;
 }
-.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_card_default] .wrapper .rich-text h2 {
+.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_card_default] .wrapper .rich-text h2 {
   font-family: "Outfit", sans-serif;
   font-weight: 600;
   font-size: 32px;
@@ -2470,18 +2475,18 @@ b mark, mark b {
   color: #1E3EAF;
 }
 @media (min-width: 1024px) {
-  .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_card_default] .wrapper .rich-text h2 {
+  .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_card_default] .wrapper .rich-text h2 {
     font-size: 60px;
     line-height: 78px;
   }
 }
-.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_card_default] .wrapper .rich-text h2.hebrew {
+.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_card_default] .wrapper .rich-text h2.hebrew {
   font-family: "Noto Sans Hebrew", sans-serif !important;
   font-weight: 600;
   text-align: right;
   direction: rtl;
 }
-.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_card_default] .wrapper .rich-text h3 {
+.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_card_default] .wrapper .rich-text h3 {
   font-family: "Outfit", sans-serif;
   font-weight: 600;
   font-size: 28px;
@@ -2489,18 +2494,18 @@ b mark, mark b {
   letter-spacing: 0%;
   color: #1E3EAF;
 }
-.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_card_default] .wrapper .rich-text h3.hebrew {
+.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_card_default] .wrapper .rich-text h3.hebrew {
   font-family: "Noto Sans Hebrew", sans-serif !important;
   font-weight: 600;
   text-align: right;
   direction: rtl;
 }
 @media (min-width: 1024px) {
-  .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_card_default] .wrapper .rich-text h3 {
+  .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_card_default] .wrapper .rich-text h3 {
     font-size: 45px;
   }
 }
-.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_card_default] .wrapper .rich-text h4 {
+.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_card_default] .wrapper .rich-text h4 {
   font-family: "Outfit", sans-serif;
   font-weight: 600;
   font-size: 22px;
@@ -2509,18 +2514,18 @@ b mark, mark b {
   color: #1E3EAF;
 }
 @media (min-width: 1024px) {
-  .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_card_default] .wrapper .rich-text h4 {
+  .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_card_default] .wrapper .rich-text h4 {
     font-size: 32px;
     line-height: 42px;
   }
 }
-.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_card_default] .wrapper .rich-text h4.hebrew {
+.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_card_default] .wrapper .rich-text h4.hebrew {
   font-family: "Noto Sans Hebrew", sans-serif !important;
   font-weight: 600;
   text-align: right;
   direction: rtl;
 }
-.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_card_default] .wrapper .rich-text h5 {
+.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_card_default] .wrapper .rich-text h5 {
   font-family: "Outfit", sans-serif;
   font-weight: 600;
   font-size: 20px;
@@ -2529,18 +2534,18 @@ b mark, mark b {
   color: #27277C;
 }
 @media (min-width: 1024px) {
-  .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_card_default] .wrapper .rich-text h5 {
+  .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_card_default] .wrapper .rich-text h5 {
     font-size: 24px;
     line-height: 32px;
   }
 }
-.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_card_default] .wrapper .rich-text h5.hebrew {
+.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_card_default] .wrapper .rich-text h5.hebrew {
   font-family: "Noto Sans Hebrew", sans-serif !important;
   font-weight: 600;
   text-align: right;
   direction: rtl;
 }
-.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_card_default] .wrapper .rich-text h6 {
+.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_card_default] .wrapper .rich-text h6 {
   font-family: "Outfit", sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -2549,18 +2554,18 @@ b mark, mark b {
   color: #27277C;
 }
 @media (min-width: 1024px) {
-  .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_card_default] .wrapper .rich-text h6 {
+  .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_card_default] .wrapper .rich-text h6 {
     font-size: 20px;
     line-height: 26px;
   }
 }
-.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_card_default] .wrapper .rich-text h6.hebrew {
+.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_card_default] .wrapper .rich-text h6.hebrew {
   font-family: "Noto Sans Hebrew", sans-serif !important;
   font-weight: 700;
   text-align: right;
   direction: rtl;
 }
-.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_card_default] .wrapper .rich-text p {
+.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_card_default] .wrapper .rich-text p {
   font-family: "Outfit", sans-serif;
   font-weight: 300;
   font-size: 16px;
@@ -2569,22 +2574,22 @@ b mark, mark b {
   color: #2A2A2A;
 }
 @media (min-width: 1024px) {
-  .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_card_default] .wrapper .rich-text p {
+  .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_card_default] .wrapper .rich-text p {
     font-size: 18px;
     line-height: 27px;
   }
 }
-.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_card_default] .wrapper .rich-text p strong, .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_card_default] .wrapper .rich-text p em, .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_card_default] .wrapper .rich-text p b {
+.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_card_default] .wrapper .rich-text p strong, .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_card_default] .wrapper .rich-text p em, .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_card_default] .wrapper .rich-text p b {
   font-weight: 600;
   color: #2A2A2A;
 }
-.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_card_default] .wrapper .rich-text p.hebrew {
+.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_card_default] .wrapper .rich-text p.hebrew {
   font-family: "Noto Sans Hebrew", sans-serif !important;
   font-weight: 600;
   text-align: right;
   direction: rtl;
 }
-.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_card_default] .wrapper .rich-text p.large {
+.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_card_default] .wrapper .rich-text p.large {
   font-family: "Outfit", sans-serif;
   font-weight: 300;
   font-size: 18px;
@@ -2592,22 +2597,22 @@ b mark, mark b {
   letter-spacing: 0;
   color: #2A2A2A;
 }
-.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_card_default] .wrapper .rich-text p.large strong, .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_card_default] .wrapper .rich-text p.large em, .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_card_default] .wrapper .rich-text p.large b {
+.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_card_default] .wrapper .rich-text p.large strong, .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_card_default] .wrapper .rich-text p.large em, .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_card_default] .wrapper .rich-text p.large b {
   font-weight: 600;
   color: #1E3EAF;
 }
 @media (min-width: 1024px) {
-  .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_card_default] .wrapper .rich-text p.large {
+  .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_card_default] .wrapper .rich-text p.large {
     font-size: 24px;
   }
 }
-.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_card_default] .wrapper .rich-text p.large.hebrew {
+.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_card_default] .wrapper .rich-text p.large.hebrew {
   font-family: "Noto Sans Hebrew", sans-serif !important;
   font-weight: 400;
   text-align: right;
   direction: rtl;
 }
-.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_card_default] .wrapper .rich-text p.eyebrow {
+.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_card_default] .wrapper .rich-text p.eyebrow {
   font-family: "Outfit", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -2616,22 +2621,22 @@ b mark, mark b {
   color: #1E3EAF;
 }
 @media (min-width: 1024px) {
-  .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_card_default] .wrapper .rich-text p.eyebrow {
+  .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_card_default] .wrapper .rich-text p.eyebrow {
     font-size: 18px;
     line-height: 27px;
   }
 }
-.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_card_default] .wrapper .rich-text p.eyebrow strong, .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_card_default] .wrapper .rich-text p.eyebrow em, .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_card_default] .wrapper .rich-text p.eyebrow b {
+.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_card_default] .wrapper .rich-text p.eyebrow strong, .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_card_default] .wrapper .rich-text p.eyebrow em, .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_card_default] .wrapper .rich-text p.eyebrow b {
   font-weight: 600;
   color: #1E3EAF;
 }
-.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_card_default] .wrapper .rich-text p.eyebrow.hebrew {
+.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_card_default] .wrapper .rich-text p.eyebrow.hebrew {
   font-family: "Noto Sans Hebrew", sans-serif !important;
   font-weight: 600;
   text-align: right;
   direction: rtl;
 }
-.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_card_default] .wrapper .row .positions .listing-container .entry.resource-entry {
+.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_card_default] .wrapper .row .positions .listing-container .entry.resource-entry {
   flex: 1;
   border-radius: 24px;
   border: 1px solid #c9c9c9 !important;
@@ -2643,11 +2648,11 @@ b mark, mark b {
   margin-top: 0px;
 }
 @media (min-width: 1024px) {
-  .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_card_default] .wrapper .row .positions .listing-container .entry.resource-entry {
+  .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_card_default] .wrapper .row .positions .listing-container .entry.resource-entry {
     padding: 20px;
   }
 }
-.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_card_default] .wrapper .row .positions .listing-container .entry.resource-entry:after {
+.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_card_default] .wrapper .row .positions .listing-container .entry.resource-entry:after {
   margin-top: 20px;
   position: relative;
   content: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='22' height='23' viewBox='0 0 22 23' fill='none'><path d='M21.1595 21.3396H19.0166V18.9551L15.8557 22.116L14.3563 20.5894L17.5162 17.4285H15.1055V15.2856H21.1595V21.3396Z' fill='%231E3EAF'/><path d='M17.5706 6.71422V13.1428H15.4277V7.78565H10.0706V2.4285H2.57059V19.5714H12.2134V21.7142H2.57059C1.98131 21.7142 1.47726 21.504 1.05762 21.0843C0.637974 20.6647 0.427734 20.1606 0.427734 19.5714V2.4285C0.427734 1.83922 0.637974 1.33517 1.05762 0.915527C1.47726 0.495884 1.98131 0.285645 2.57059 0.285645H11.142L17.5706 6.71422Z' fill='%231E3EAF'/></svg>");
@@ -2662,15 +2667,15 @@ b mark, mark b {
   transition: 0.3s;
   content: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='22' height='23' viewBox='0 0 22 23' fill='none'><path d='M21.1595 21.3396H19.0166V18.9551L15.8557 22.116L14.3563 20.5894L17.5162 17.4285H15.1055V15.2856H21.1595V21.3396Z' fill='%23f5f5f5'/><path d='M17.5706 6.71422V13.1428H15.4277V7.78565H10.0706V2.4285H2.57059V19.5714H12.2134V21.7142H2.57059C1.98131 21.7142 1.47726 21.504 1.05762 21.0843C0.637974 20.6647 0.427734 20.1606 0.427734 19.5714V2.4285C0.427734 1.83922 0.637974 1.33517 1.05762 0.915527C1.47726 0.495884 1.98131 0.285645 2.57059 0.285645H11.142L17.5706 6.71422Z' fill='%23f5f5f5'/></svg>");
 }
-.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_card_default] .wrapper .row .positions .listing-container .entry.resource-entry:after:hover {
+.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_card_default] .wrapper .row .positions .listing-container .entry.resource-entry:after:hover {
   content: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='22' height='23' viewBox='0 0 22 23' fill='none'><path d='M21.1595 21.3396H19.0166V18.9551L15.8557 22.116L14.3563 20.5894L17.5162 17.4285H15.1055V15.2856H21.1595V21.3396Z' fill='%23D2E9FF'/><path d='M17.5706 6.71422V13.1428H15.4277V7.78565H10.0706V2.4285H2.57059V19.5714H12.2134V21.7142H2.57059C1.98131 21.7142 1.47726 21.504 1.05762 21.0843C0.637974 20.6647 0.427734 20.1606 0.427734 19.5714V2.4285C0.427734 1.83922 0.637974 1.33517 1.05762 0.915527C1.47726 0.495884 1.98131 0.285645 2.57059 0.285645H11.142L17.5706 6.71422Z' fill='%23D2E9FF'/></svg>");
   background: #1c88ed;
 }
-.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_card_default] .wrapper .row .positions .listing-container .entry.resource-entry:hover {
+.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_card_default] .wrapper .row .positions .listing-container .entry.resource-entry:hover {
   box-shadow: 0px 0px 15px 9px rgba(0, 0, 0, 0.08), 0px 0.326px 1.059px 0px rgba(0, 0, 0, 0.04);
   transition: 0.3s;
 }
-.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_card_default] .wrapper .row .positions .listing-container .entry.resource-entry:hover:after {
+.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_card_default] .wrapper .row .positions .listing-container .entry.resource-entry:hover:after {
   margin-top: 20px;
   position: relative;
   content: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='22' height='23' viewBox='0 0 22 23' fill='none'><path d='M21.1595 21.3396H19.0166V18.9551L15.8557 22.116L14.3563 20.5894L17.5162 17.4285H15.1055V15.2856H21.1595V21.3396Z' fill='%231E3EAF'/><path d='M17.5706 6.71422V13.1428H15.4277V7.78565H10.0706V2.4285H2.57059V19.5714H12.2134V21.7142H2.57059C1.98131 21.7142 1.47726 21.504 1.05762 21.0843C0.637974 20.6647 0.427734 20.1606 0.427734 19.5714V2.4285C0.427734 1.83922 0.637974 1.33517 1.05762 0.915527C1.47726 0.495884 1.98131 0.285645 2.57059 0.285645H11.142L17.5706 6.71422Z' fill='%231E3EAF'/></svg>");
@@ -2685,14 +2690,14 @@ b mark, mark b {
   transition: 0.3s;
   content: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='22' height='23' viewBox='0 0 22 23' fill='none'><path d='M21.1595 21.3396H19.0166V18.9551L15.8557 22.116L14.3563 20.5894L17.5162 17.4285H15.1055V15.2856H21.1595V21.3396Z' fill='%23f5f5f5'/><path d='M17.5706 6.71422V13.1428H15.4277V7.78565H10.0706V2.4285H2.57059V19.5714H12.2134V21.7142H2.57059C1.98131 21.7142 1.47726 21.504 1.05762 21.0843C0.637974 20.6647 0.427734 20.1606 0.427734 19.5714V2.4285C0.427734 1.83922 0.637974 1.33517 1.05762 0.915527C1.47726 0.495884 1.98131 0.285645 2.57059 0.285645H11.142L17.5706 6.71422Z' fill='%23f5f5f5'/></svg>");
 }
-.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_card_default] .wrapper .row .positions .listing-container .entry.resource-entry:hover:after:hover {
+.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_card_default] .wrapper .row .positions .listing-container .entry.resource-entry:hover:after:hover {
   content: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='22' height='23' viewBox='0 0 22 23' fill='none'><path d='M21.1595 21.3396H19.0166V18.9551L15.8557 22.116L14.3563 20.5894L17.5162 17.4285H15.1055V15.2856H21.1595V21.3396Z' fill='%23D2E9FF'/><path d='M17.5706 6.71422V13.1428H15.4277V7.78565H10.0706V2.4285H2.57059V19.5714H12.2134V21.7142H2.57059C1.98131 21.7142 1.47726 21.504 1.05762 21.0843C0.637974 20.6647 0.427734 20.1606 0.427734 19.5714V2.4285C0.427734 1.83922 0.637974 1.33517 1.05762 0.915527C1.47726 0.495884 1.98131 0.285645 2.57059 0.285645H11.142L17.5706 6.71422Z' fill='%23D2E9FF'/></svg>");
   background: #1c88ed;
 }
-.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_card_default] .wrapper .row .positions .listing-container .entry.resource-entry .resource-content .resource-type {
+.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_card_default] .wrapper .row .positions .listing-container .entry.resource-entry .resource-content .resource-type {
   display: none;
 }
-.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_card_default] .wrapper .row .positions .listing-container .entry.resource-entry .resource-content h3 {
+.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_card_default] .wrapper .row .positions .listing-container .entry.resource-entry .resource-content h3 {
   order: 2 !important;
   font-family: "Outfit", sans-serif;
   font-weight: 600;
@@ -2702,21 +2707,21 @@ b mark, mark b {
   color: #27277C;
 }
 @media (min-width: 1024px) {
-  .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_card_default] .wrapper .row .positions .listing-container .entry.resource-entry .resource-content h3 {
+  .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_card_default] .wrapper .row .positions .listing-container .entry.resource-entry .resource-content h3 {
     font-size: 32px;
     line-height: 42px;
   }
 }
-.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_card_default] .wrapper .row .positions .listing-container .entry.resource-entry .resource-content h3.hebrew {
+.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_card_default] .wrapper .row .positions .listing-container .entry.resource-entry .resource-content h3.hebrew {
   font-family: "Noto Sans Hebrew", sans-serif !important;
   font-weight: 600;
   text-align: right;
   direction: rtl;
 }
-.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_card_default] .wrapper .row .positions .listing-container .entry.resource-entry .resource-content .resource-topics {
+.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_card_default] .wrapper .row .positions .listing-container .entry.resource-entry .resource-content .resource-topics {
   order: 1 !important;
 }
-.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_card_default] .wrapper .row .positions .listing-container .entry.resource-entry .resource-content .resource-topics a {
+.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_card_default] .wrapper .row .positions .listing-container .entry.resource-entry .resource-content .resource-topics a {
   font-family: "Outfit", sans-serif;
   font-weight: 300;
   font-size: 16px;
@@ -2731,57 +2736,57 @@ b mark, mark b {
   padding: 0px !important;
 }
 @media (min-width: 1024px) {
-  .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_card_default] .wrapper .row .positions .listing-container .entry.resource-entry .resource-content .resource-topics a {
+  .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_card_default] .wrapper .row .positions .listing-container .entry.resource-entry .resource-content .resource-topics a {
     font-size: 18px;
     line-height: 27px;
   }
 }
-.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_card_default] .wrapper .row .positions .listing-container .entry.resource-entry .resource-content .resource-topics a strong, .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_card_default] .wrapper .row .positions .listing-container .entry.resource-entry .resource-content .resource-topics a em, .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_card_default] .wrapper .row .positions .listing-container .entry.resource-entry .resource-content .resource-topics a b {
+.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_card_default] .wrapper .row .positions .listing-container .entry.resource-entry .resource-content .resource-topics a strong, .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_card_default] .wrapper .row .positions .listing-container .entry.resource-entry .resource-content .resource-topics a em, .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_card_default] .wrapper .row .positions .listing-container .entry.resource-entry .resource-content .resource-topics a b {
   font-weight: 600;
   color: #1c88ed;
 }
-.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_card_default] .wrapper .row .positions .listing-container .entry.resource-entry .resource-content .resource-topics a.hebrew {
+.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_card_default] .wrapper .row .positions .listing-container .entry.resource-entry .resource-content .resource-topics a.hebrew {
   font-family: "Noto Sans Hebrew", sans-serif !important;
   font-weight: 600;
   text-align: right;
   direction: rtl;
 }
-.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_card_default] .wrapper .row .positions .listing-container .entry.resource-entry .resource-content .resource-topics a strong, .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_card_default] .wrapper .row .positions .listing-container .entry.resource-entry .resource-content .resource-topics a em, .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_card_default] .wrapper .row .positions .listing-container .entry.resource-entry .resource-content .resource-topics a b {
+.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_card_default] .wrapper .row .positions .listing-container .entry.resource-entry .resource-content .resource-topics a strong, .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_card_default] .wrapper .row .positions .listing-container .entry.resource-entry .resource-content .resource-topics a em, .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_card_default] .wrapper .row .positions .listing-container .entry.resource-entry .resource-content .resource-topics a b {
   font-weight: 600;
   color: #1c88ed;
 }
-.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_card_default] .wrapper .row .positions .listing-container .entry.resource-entry .resource-content .resource-topics a.hebrew {
+.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_card_default] .wrapper .row .positions .listing-container .entry.resource-entry .resource-content .resource-topics a.hebrew {
   font-family: "Noto Sans Hebrew", sans-serif !important;
   font-weight: 600;
   text-align: right;
   direction: rtl;
 }
-.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_list_default] .wrapper {
+.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_list_default] .wrapper {
   box-sizing: border-box;
   padding: 30px 20px;
   background-color: #FDFDFD;
 }
 @media (min-width: 768px) {
-  .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_list_default] .wrapper {
+  .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_list_default] .wrapper {
     padding: 30px 30px;
   }
 }
 @media (min-width: 1024px) {
-  .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_list_default] .wrapper {
+  .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_list_default] .wrapper {
     padding: 50px 60px;
   }
 }
 @media (min-width: 1300px) {
-  .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_list_default] .wrapper {
+  .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_list_default] .wrapper {
     padding: 60px 80px;
   }
 }
 @media (min-width: 1500px) {
-  .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_list_default] .wrapper {
+  .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_list_default] .wrapper {
     padding: 60px 10%;
   }
 }
-.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_list_default] .wrapper .rich-text h1 {
+.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_list_default] .wrapper .rich-text h1 {
   font-family: "Outfit", sans-serif;
   font-weight: 600;
   font-size: 40px;
@@ -2791,18 +2796,18 @@ b mark, mark b {
   text-align: center;
 }
 @media (min-width: 1024px) {
-  .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_list_default] .wrapper .rich-text h1 {
+  .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_list_default] .wrapper .rich-text h1 {
     font-size: 70px;
     line-height: 91px;
   }
 }
-.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_list_default] .wrapper .rich-text h1.hebrew {
+.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_list_default] .wrapper .rich-text h1.hebrew {
   font-family: "Noto Sans Hebrew", sans-serif !important;
   font-weight: 600;
   text-align: right;
   direction: rtl;
 }
-.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_list_default] .wrapper .rich-text h2 {
+.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_list_default] .wrapper .rich-text h2 {
   font-family: "Outfit", sans-serif;
   font-weight: 600;
   font-size: 32px;
@@ -2811,18 +2816,18 @@ b mark, mark b {
   color: #1E3EAF;
 }
 @media (min-width: 1024px) {
-  .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_list_default] .wrapper .rich-text h2 {
+  .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_list_default] .wrapper .rich-text h2 {
     font-size: 60px;
     line-height: 78px;
   }
 }
-.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_list_default] .wrapper .rich-text h2.hebrew {
+.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_list_default] .wrapper .rich-text h2.hebrew {
   font-family: "Noto Sans Hebrew", sans-serif !important;
   font-weight: 600;
   text-align: right;
   direction: rtl;
 }
-.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_list_default] .wrapper .rich-text h3 {
+.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_list_default] .wrapper .rich-text h3 {
   font-family: "Outfit", sans-serif;
   font-weight: 600;
   font-size: 28px;
@@ -2830,18 +2835,18 @@ b mark, mark b {
   letter-spacing: 0%;
   color: #1E3EAF;
 }
-.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_list_default] .wrapper .rich-text h3.hebrew {
+.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_list_default] .wrapper .rich-text h3.hebrew {
   font-family: "Noto Sans Hebrew", sans-serif !important;
   font-weight: 600;
   text-align: right;
   direction: rtl;
 }
 @media (min-width: 1024px) {
-  .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_list_default] .wrapper .rich-text h3 {
+  .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_list_default] .wrapper .rich-text h3 {
     font-size: 45px;
   }
 }
-.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_list_default] .wrapper .rich-text h4 {
+.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_list_default] .wrapper .rich-text h4 {
   font-family: "Outfit", sans-serif;
   font-weight: 600;
   font-size: 22px;
@@ -2850,18 +2855,18 @@ b mark, mark b {
   color: #1E3EAF;
 }
 @media (min-width: 1024px) {
-  .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_list_default] .wrapper .rich-text h4 {
+  .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_list_default] .wrapper .rich-text h4 {
     font-size: 32px;
     line-height: 42px;
   }
 }
-.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_list_default] .wrapper .rich-text h4.hebrew {
+.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_list_default] .wrapper .rich-text h4.hebrew {
   font-family: "Noto Sans Hebrew", sans-serif !important;
   font-weight: 600;
   text-align: right;
   direction: rtl;
 }
-.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_list_default] .wrapper .rich-text h5 {
+.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_list_default] .wrapper .rich-text h5 {
   font-family: "Outfit", sans-serif;
   font-weight: 600;
   font-size: 20px;
@@ -2870,18 +2875,18 @@ b mark, mark b {
   color: #27277C;
 }
 @media (min-width: 1024px) {
-  .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_list_default] .wrapper .rich-text h5 {
+  .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_list_default] .wrapper .rich-text h5 {
     font-size: 24px;
     line-height: 32px;
   }
 }
-.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_list_default] .wrapper .rich-text h5.hebrew {
+.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_list_default] .wrapper .rich-text h5.hebrew {
   font-family: "Noto Sans Hebrew", sans-serif !important;
   font-weight: 600;
   text-align: right;
   direction: rtl;
 }
-.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_list_default] .wrapper .rich-text h6 {
+.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_list_default] .wrapper .rich-text h6 {
   font-family: "Outfit", sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -2890,18 +2895,18 @@ b mark, mark b {
   color: #27277C;
 }
 @media (min-width: 1024px) {
-  .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_list_default] .wrapper .rich-text h6 {
+  .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_list_default] .wrapper .rich-text h6 {
     font-size: 20px;
     line-height: 26px;
   }
 }
-.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_list_default] .wrapper .rich-text h6.hebrew {
+.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_list_default] .wrapper .rich-text h6.hebrew {
   font-family: "Noto Sans Hebrew", sans-serif !important;
   font-weight: 700;
   text-align: right;
   direction: rtl;
 }
-.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_list_default] .wrapper .rich-text p {
+.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_list_default] .wrapper .rich-text p {
   font-family: "Outfit", sans-serif;
   font-weight: 300;
   font-size: 16px;
@@ -2910,22 +2915,22 @@ b mark, mark b {
   color: #2A2A2A;
 }
 @media (min-width: 1024px) {
-  .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_list_default] .wrapper .rich-text p {
+  .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_list_default] .wrapper .rich-text p {
     font-size: 18px;
     line-height: 27px;
   }
 }
-.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_list_default] .wrapper .rich-text p strong, .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_list_default] .wrapper .rich-text p em, .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_list_default] .wrapper .rich-text p b {
+.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_list_default] .wrapper .rich-text p strong, .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_list_default] .wrapper .rich-text p em, .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_list_default] .wrapper .rich-text p b {
   font-weight: 600;
   color: #2A2A2A;
 }
-.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_list_default] .wrapper .rich-text p.hebrew {
+.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_list_default] .wrapper .rich-text p.hebrew {
   font-family: "Noto Sans Hebrew", sans-serif !important;
   font-weight: 600;
   text-align: right;
   direction: rtl;
 }
-.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_list_default] .wrapper .rich-text p.large {
+.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_list_default] .wrapper .rich-text p.large {
   font-family: "Outfit", sans-serif;
   font-weight: 300;
   font-size: 18px;
@@ -2933,22 +2938,22 @@ b mark, mark b {
   letter-spacing: 0;
   color: #2A2A2A;
 }
-.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_list_default] .wrapper .rich-text p.large strong, .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_list_default] .wrapper .rich-text p.large em, .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_list_default] .wrapper .rich-text p.large b {
+.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_list_default] .wrapper .rich-text p.large strong, .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_list_default] .wrapper .rich-text p.large em, .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_list_default] .wrapper .rich-text p.large b {
   font-weight: 600;
   color: #1E3EAF;
 }
 @media (min-width: 1024px) {
-  .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_list_default] .wrapper .rich-text p.large {
+  .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_list_default] .wrapper .rich-text p.large {
     font-size: 24px;
   }
 }
-.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_list_default] .wrapper .rich-text p.large.hebrew {
+.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_list_default] .wrapper .rich-text p.large.hebrew {
   font-family: "Noto Sans Hebrew", sans-serif !important;
   font-weight: 400;
   text-align: right;
   direction: rtl;
 }
-.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_list_default] .wrapper .rich-text p.eyebrow {
+.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_list_default] .wrapper .rich-text p.eyebrow {
   font-family: "Outfit", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -2957,22 +2962,23 @@ b mark, mark b {
   color: #1E3EAF;
 }
 @media (min-width: 1024px) {
-  .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_list_default] .wrapper .rich-text p.eyebrow {
+  .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_list_default] .wrapper .rich-text p.eyebrow {
     font-size: 18px;
     line-height: 27px;
   }
 }
-.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_list_default] .wrapper .rich-text p.eyebrow strong, .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_list_default] .wrapper .rich-text p.eyebrow em, .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_list_default] .wrapper .rich-text p.eyebrow b {
+.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_list_default] .wrapper .rich-text p.eyebrow strong, .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_list_default] .wrapper .rich-text p.eyebrow em, .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_list_default] .wrapper .rich-text p.eyebrow b {
   font-weight: 600;
   color: #1E3EAF;
 }
-.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_list_default] .wrapper .rich-text p.eyebrow.hebrew {
+.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_list_default] .wrapper .rich-text p.eyebrow.hebrew {
   font-family: "Noto Sans Hebrew", sans-serif !important;
   font-weight: 600;
   text-align: right;
   direction: rtl;
 }
-.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_list_default] .wrapper .row .positions .listing-container .entry.resource-entry {
+.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_list_default] .wrapper .row .positions .listing-container .entry.resource-entry {
+  display: flex;
   flex: 1;
   border-radius: 0px;
   border: 0px solid #c9c9c9;
@@ -2983,17 +2989,71 @@ b mark, mark b {
   transition: 0.3s;
   width: auto;
   margin-top: 0px;
-  display: grid !important;
-  grid-template-areas: "image text" "image button";
 }
 @media (min-width: 1024px) {
-  .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_list_default] .wrapper .row .positions .listing-container .entry.resource-entry {
+  .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_list_default] .wrapper .row .positions .listing-container .entry.resource-entry {
     padding: 20px;
   }
 }
-.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_list_default] .wrapper .row .positions .listing-container .entry.resource-entry:after {
+.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_list_default] .wrapper .row .positions .listing-container .entry.resource-entry:hover {
+  box-shadow: none;
+  transition: 0.3s;
+}
+.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_list_default] .wrapper .row .positions .listing-container .entry.resource-entry:hover h3:after {
   margin-top: 20px;
-  grid-area: button;
+  position: relative;
+  content: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='22' height='23' viewBox='0 0 22 23' fill='none'><path d='M21.1595 21.3396H19.0166V18.9551L15.8557 22.116L14.3563 20.5894L17.5162 17.4285H15.1055V15.2856H21.1595V21.3396Z' fill='%231E3EAF'/><path d='M17.5706 6.71422V13.1428H15.4277V7.78565H10.0706V2.4285H2.57059V19.5714H12.2134V21.7142H2.57059C1.98131 21.7142 1.47726 21.504 1.05762 21.0843C0.637974 20.6647 0.427734 20.1606 0.427734 19.5714V2.4285C0.427734 1.83922 0.637974 1.33517 1.05762 0.915527C1.47726 0.495884 1.98131 0.285645 2.57059 0.285645H11.142L17.5706 6.71422Z' fill='%231E3EAF'/></svg>");
+  height: 40px;
+  width: 40px;
+  background: #1c88ed;
+  border-radius: 100%;
+  left: 0px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  transition: 0.3s;
+  content: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='22' height='23' viewBox='0 0 22 23' fill='none'><path d='M21.1595 21.3396H19.0166V18.9551L15.8557 22.116L14.3563 20.5894L17.5162 17.4285H15.1055V15.2856H21.1595V21.3396Z' fill='%23f5f5f5'/><path d='M17.5706 6.71422V13.1428H15.4277V7.78565H10.0706V2.4285H2.57059V19.5714H12.2134V21.7142H2.57059C1.98131 21.7142 1.47726 21.504 1.05762 21.0843C0.637974 20.6647 0.427734 20.1606 0.427734 19.5714V2.4285C0.427734 1.83922 0.637974 1.33517 1.05762 0.915527C1.47726 0.495884 1.98131 0.285645 2.57059 0.285645H11.142L17.5706 6.71422Z' fill='%23f5f5f5'/></svg>");
+}
+.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_list_default] .wrapper .row .positions .listing-container .entry.resource-entry:hover h3:after:hover {
+  content: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='22' height='23' viewBox='0 0 22 23' fill='none'><path d='M21.1595 21.3396H19.0166V18.9551L15.8557 22.116L14.3563 20.5894L17.5162 17.4285H15.1055V15.2856H21.1595V21.3396Z' fill='%23D2E9FF'/><path d='M17.5706 6.71422V13.1428H15.4277V7.78565H10.0706V2.4285H2.57059V19.5714H12.2134V21.7142H2.57059C1.98131 21.7142 1.47726 21.504 1.05762 21.0843C0.637974 20.6647 0.427734 20.1606 0.427734 19.5714V2.4285C0.427734 1.83922 0.637974 1.33517 1.05762 0.915527C1.47726 0.495884 1.98131 0.285645 2.57059 0.285645H11.142L17.5706 6.71422Z' fill='%23D2E9FF'/></svg>");
+  background: #1c88ed;
+}
+.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_list_default] .wrapper .row .positions .listing-container .entry.resource-entry a div.resource-thumbnail img {
+  width: auto !important;
+  height: auto !important;
+  border-radius: 24px;
+  aspect-ratio: 3/2;
+}
+.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_list_default] .wrapper .row .positions .listing-container .entry.resource-entry .resource-content {
+  display: flex;
+  flex-direction: column;
+}
+.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_list_default] .wrapper .row .positions .listing-container .entry.resource-entry .resource-content .resource-type {
+  display: none;
+}
+.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_list_default] .wrapper .row .positions .listing-container .entry.resource-entry .resource-content h3 {
+  order: 2 !important;
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 28px;
+  letter-spacing: 0%;
+  color: #27277C;
+}
+@media (min-width: 1024px) {
+  .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_list_default] .wrapper .row .positions .listing-container .entry.resource-entry .resource-content h3 {
+    font-size: 32px;
+    line-height: 42px;
+  }
+}
+.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_list_default] .wrapper .row .positions .listing-container .entry.resource-entry .resource-content h3.hebrew {
+  font-family: "Noto Sans Hebrew", sans-serif !important;
+  font-weight: 600;
+  text-align: right;
+  direction: rtl;
+}
+.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_list_default] .wrapper .row .positions .listing-container .entry.resource-entry .resource-content h3:after {
+  margin-top: 20px;
   position: relative;
   content: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='22' height='23' viewBox='0 0 22 23' fill='none'><path d='M21.1595 21.3396H19.0166V18.9551L15.8557 22.116L14.3563 20.5894L17.5162 17.4285H15.1055V15.2856H21.1595V21.3396Z' fill='%231E3EAF'/><path d='M17.5706 6.71422V13.1428H15.4277V7.78565H10.0706V2.4285H2.57059V19.5714H12.2134V21.7142H2.57059C1.98131 21.7142 1.47726 21.504 1.05762 21.0843C0.637974 20.6647 0.427734 20.1606 0.427734 19.5714V2.4285C0.427734 1.83922 0.637974 1.33517 1.05762 0.915527C1.47726 0.495884 1.98131 0.285645 2.57059 0.285645H11.142L17.5706 6.71422Z' fill='%231E3EAF'/></svg>");
   height: 40px;
@@ -3007,74 +3067,14 @@ b mark, mark b {
   transition: 0.3s;
   content: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='22' height='23' viewBox='0 0 22 23' fill='none'><path d='M21.1595 21.3396H19.0166V18.9551L15.8557 22.116L14.3563 20.5894L17.5162 17.4285H15.1055V15.2856H21.1595V21.3396Z' fill='%23f5f5f5'/><path d='M17.5706 6.71422V13.1428H15.4277V7.78565H10.0706V2.4285H2.57059V19.5714H12.2134V21.7142H2.57059C1.98131 21.7142 1.47726 21.504 1.05762 21.0843C0.637974 20.6647 0.427734 20.1606 0.427734 19.5714V2.4285C0.427734 1.83922 0.637974 1.33517 1.05762 0.915527C1.47726 0.495884 1.98131 0.285645 2.57059 0.285645H11.142L17.5706 6.71422Z' fill='%23f5f5f5'/></svg>");
 }
-.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_list_default] .wrapper .row .positions .listing-container .entry.resource-entry:after:hover {
+.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_list_default] .wrapper .row .positions .listing-container .entry.resource-entry .resource-content h3:after:hover {
   content: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='22' height='23' viewBox='0 0 22 23' fill='none'><path d='M21.1595 21.3396H19.0166V18.9551L15.8557 22.116L14.3563 20.5894L17.5162 17.4285H15.1055V15.2856H21.1595V21.3396Z' fill='%23D2E9FF'/><path d='M17.5706 6.71422V13.1428H15.4277V7.78565H10.0706V2.4285H2.57059V19.5714H12.2134V21.7142H2.57059C1.98131 21.7142 1.47726 21.504 1.05762 21.0843C0.637974 20.6647 0.427734 20.1606 0.427734 19.5714V2.4285C0.427734 1.83922 0.637974 1.33517 1.05762 0.915527C1.47726 0.495884 1.98131 0.285645 2.57059 0.285645H11.142L17.5706 6.71422Z' fill='%23D2E9FF'/></svg>");
   background: #1c88ed;
 }
-.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_list_default] .wrapper .row .positions .listing-container .entry.resource-entry:hover {
-  box-shadow: none;
-  transition: 0.3s;
-}
-.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_list_default] .wrapper .row .positions .listing-container .entry.resource-entry:hover:after {
-  margin-top: 20px;
-  position: relative;
-  content: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='22' height='23' viewBox='0 0 22 23' fill='none'><path d='M21.1595 21.3396H19.0166V18.9551L15.8557 22.116L14.3563 20.5894L17.5162 17.4285H15.1055V15.2856H21.1595V21.3396Z' fill='%231E3EAF'/><path d='M17.5706 6.71422V13.1428H15.4277V7.78565H10.0706V2.4285H2.57059V19.5714H12.2134V21.7142H2.57059C1.98131 21.7142 1.47726 21.504 1.05762 21.0843C0.637974 20.6647 0.427734 20.1606 0.427734 19.5714V2.4285C0.427734 1.83922 0.637974 1.33517 1.05762 0.915527C1.47726 0.495884 1.98131 0.285645 2.57059 0.285645H11.142L17.5706 6.71422Z' fill='%231E3EAF'/></svg>");
-  height: 40px;
-  width: 40px;
-  background: #1c88ed;
-  border-radius: 100%;
-  left: 0px;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  transition: 0.3s;
-  content: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='22' height='23' viewBox='0 0 22 23' fill='none'><path d='M21.1595 21.3396H19.0166V18.9551L15.8557 22.116L14.3563 20.5894L17.5162 17.4285H15.1055V15.2856H21.1595V21.3396Z' fill='%23f5f5f5'/><path d='M17.5706 6.71422V13.1428H15.4277V7.78565H10.0706V2.4285H2.57059V19.5714H12.2134V21.7142H2.57059C1.98131 21.7142 1.47726 21.504 1.05762 21.0843C0.637974 20.6647 0.427734 20.1606 0.427734 19.5714V2.4285C0.427734 1.83922 0.637974 1.33517 1.05762 0.915527C1.47726 0.495884 1.98131 0.285645 2.57059 0.285645H11.142L17.5706 6.71422Z' fill='%23f5f5f5'/></svg>");
-}
-.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_list_default] .wrapper .row .positions .listing-container .entry.resource-entry:hover:after:hover {
-  content: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='22' height='23' viewBox='0 0 22 23' fill='none'><path d='M21.1595 21.3396H19.0166V18.9551L15.8557 22.116L14.3563 20.5894L17.5162 17.4285H15.1055V15.2856H21.1595V21.3396Z' fill='%23D2E9FF'/><path d='M17.5706 6.71422V13.1428H15.4277V7.78565H10.0706V2.4285H2.57059V19.5714H12.2134V21.7142H2.57059C1.98131 21.7142 1.47726 21.504 1.05762 21.0843C0.637974 20.6647 0.427734 20.1606 0.427734 19.5714V2.4285C0.427734 1.83922 0.637974 1.33517 1.05762 0.915527C1.47726 0.495884 1.98131 0.285645 2.57059 0.285645H11.142L17.5706 6.71422Z' fill='%23D2E9FF'/></svg>");
-  background: #1c88ed;
-}
-.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_list_default] .wrapper .row .positions .listing-container .entry.resource-entry a {
-  grid-area: image;
-}
-.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_list_default] .wrapper .row .positions .listing-container .entry.resource-entry a div.resource-thumbnail img {
-  width: auto !important;
-  height: auto !important;
-  border-radius: 24px;
-}
-.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_list_default] .wrapper .row .positions .listing-container .entry.resource-entry .resource-content {
-  display: flex;
-  flex-direction: column;
-  grid-area: text;
-}
-.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_list_default] .wrapper .row .positions .listing-container .entry.resource-entry .resource-content .resource-type {
-  display: none;
-}
-.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_list_default] .wrapper .row .positions .listing-container .entry.resource-entry .resource-content h3 {
-  order: 2 !important;
-  font-family: "Outfit", sans-serif;
-  font-weight: 600;
-  font-size: 22px;
-  line-height: 28px;
-  letter-spacing: 0%;
-  color: #27277C;
-}
-@media (min-width: 1024px) {
-  .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_list_default] .wrapper .row .positions .listing-container .entry.resource-entry .resource-content h3 {
-    font-size: 32px;
-    line-height: 42px;
-  }
-}
-.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_list_default] .wrapper .row .positions .listing-container .entry.resource-entry .resource-content h3.hebrew {
-  font-family: "Noto Sans Hebrew", sans-serif !important;
-  font-weight: 600;
-  text-align: right;
-  direction: rtl;
-}
-.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_list_default] .wrapper .row .positions .listing-container .entry.resource-entry .resource-content .resource-topics {
+.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_list_default] .wrapper .row .positions .listing-container .entry.resource-entry .resource-content .resource-topics {
   order: 1 !important;
 }
-.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_list_default] .wrapper .row .positions .listing-container .entry.resource-entry .resource-content .resource-topics a {
+.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_list_default] .wrapper .row .positions .listing-container .entry.resource-entry .resource-content .resource-topics a {
   font-family: "Outfit", sans-serif;
   font-weight: 300;
   font-size: 16px;
@@ -3089,26 +3089,26 @@ b mark, mark b {
   padding: 0px !important;
 }
 @media (min-width: 1024px) {
-  .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_list_default] .wrapper .row .positions .listing-container .entry.resource-entry .resource-content .resource-topics a {
+  .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_list_default] .wrapper .row .positions .listing-container .entry.resource-entry .resource-content .resource-topics a {
     font-size: 18px;
     line-height: 27px;
   }
 }
-.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_list_default] .wrapper .row .positions .listing-container .entry.resource-entry .resource-content .resource-topics a strong, .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_list_default] .wrapper .row .positions .listing-container .entry.resource-entry .resource-content .resource-topics a em, .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_list_default] .wrapper .row .positions .listing-container .entry.resource-entry .resource-content .resource-topics a b {
+.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_list_default] .wrapper .row .positions .listing-container .entry.resource-entry .resource-content .resource-topics a strong, .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_list_default] .wrapper .row .positions .listing-container .entry.resource-entry .resource-content .resource-topics a em, .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_list_default] .wrapper .row .positions .listing-container .entry.resource-entry .resource-content .resource-topics a b {
   font-weight: 600;
   color: #1c88ed;
 }
-.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_list_default] .wrapper .row .positions .listing-container .entry.resource-entry .resource-content .resource-topics a.hebrew {
+.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_list_default] .wrapper .row .positions .listing-container .entry.resource-entry .resource-content .resource-topics a.hebrew {
   font-family: "Noto Sans Hebrew", sans-serif !important;
   font-weight: 600;
   text-align: right;
   direction: rtl;
 }
-.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_list_default] .wrapper .row .positions .listing-container .entry.resource-entry .resource-content .resource-topics a strong, .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_list_default] .wrapper .row .positions .listing-container .entry.resource-entry .resource-content .resource-topics a em, .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_list_default] .wrapper .row .positions .listing-container .entry.resource-entry .resource-content .resource-topics a b {
+.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_list_default] .wrapper .row .positions .listing-container .entry.resource-entry .resource-content .resource-topics a strong, .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_list_default] .wrapper .row .positions .listing-container .entry.resource-entry .resource-content .resource-topics a em, .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_list_default] .wrapper .row .positions .listing-container .entry.resource-entry .resource-content .resource-topics a b {
   font-weight: 600;
   color: #1c88ed;
 }
-.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style[data-display-type=card_and_list_view_list_default] .wrapper .row .positions .listing-container .entry.resource-entry .resource-content .resource-topics a.hebrew {
+.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_list_default] .wrapper .row .positions .listing-container .entry.resource-entry .resource-content .resource-topics a.hebrew {
   font-family: "Noto Sans Hebrew", sans-serif !important;
   font-weight: 600;
   text-align: right;

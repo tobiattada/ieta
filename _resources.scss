@@ -168,6 +168,11 @@
 						color: $gray !important;  /* hides the placeholder text */
 						font-size: inherit;
 					}
+
+					&:focus::placeholder {
+						color: $gray !important;  /* hides the placeholder text */
+						font-size: inherit;
+					}
 				}
 
 		
@@ -325,7 +330,7 @@
 //// THE LISTINGS
 
 	.page-main{
-		.shell.resource-center-grid.resource-center-style{
+		.shell.resource-center-grid.resource-center-style#resource-center-listing{
 
 			&[data-display-type="card_and_list_view_card_default"]{
 				.wrapper{
@@ -409,9 +414,10 @@
 						.positions{
 							.listing-container{
 								.entry.resource-entry{
+									display: flex;
 									flex: 1;
 									border-radius: 0px;
-									border: 0px solid $gray;;
+									border: 0px solid $gray;
 									border-bottom: 1px solid $gray !important;
 
 									background: transparent;
@@ -421,49 +427,37 @@
 									width: auto;
 									margin-top: 0px;
 
-
-									display: grid !important;
-									grid-template-areas: 
-									"image text"
-									"image button";
-
 									@include desktop{
 										padding: 20px;
-									}
-
-									&:after{
-										margin-top: 20px;
-										grid-area: button;
-										@include document($primary-blue);
 									}
 
 									&:hover{
 										box-shadow: none;
 										transition: .3s;
 
-										&:after{
+										h3:after{
 											margin-top: 20px;
 											@include document($medium-blue);
 										}
 									}		
 						
 									a {
-										grid-area: image;
-
 										div.resource-thumbnail {
+						
+						
 											img{
 												width: auto !important;
 												height: auto !important;
 												border-radius: 24px;
+												aspect-ratio: 3 / 2;
 											}
 										}
 									}
 
+
 									.resource-content{
 										display: flex;
 										flex-direction: column;
-
-										grid-area: text;
 
 										.resource-button{
 
@@ -476,6 +470,11 @@
 										h3{
 											order: 2 !important;
 											@include h4($navy-blue);
+
+											&:after{
+												margin-top: 20px;
+												@include document($primary-blue);
+											}
 										}
 
 										.resource-topics{
@@ -496,7 +495,6 @@
 			}
 		}
 	}
-
 }
 
 
