@@ -142,6 +142,13 @@
    	 			border-radius: 24px;
 			}
 
+
+			input[type="submit"] {
+				display:none;
+			}
+
+
+
 			.reset-search{
 				float: none;
 				color: $gray;

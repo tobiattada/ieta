@@ -2240,6 +2240,9 @@ b mark, mark b {
   border: 1px solid #c9c9c9;
   border-radius: 24px;
 }
+.section-resource-center.section-resource-center-main .page-top #resource-center-controls input[type=submit] {
+  display: none;
+}
 .section-resource-center.section-resource-center-main .page-top #resource-center-controls .reset-search {
   float: none;
   color: #c9c9c9;
