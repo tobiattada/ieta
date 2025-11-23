@@ -2187,6 +2187,7 @@ b mark, mark b {
   display: flex;
   max-width: none !important;
   grid-gap: 15px;
+  flex-wrap: wrap;
 }
 .section-resource-center.section-resource-center-main .page-top #resource-center-controls .grid .col-span-2:first-child {
   order: 4;

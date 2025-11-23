@@ -46,6 +46,9 @@
 				display: flex;
 				max-width: none !important;
 				grid-gap: 15px;
+				    flex-wrap: wrap;
+
+				    
 
 				.col-span-2:first-child{
 					order:4;
