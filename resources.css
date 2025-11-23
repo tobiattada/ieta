@@ -2164,6 +2164,7 @@ b mark, mark b {
 }
 .section-resource-center.section-resource-center-main .page-top #resource-center-controls .grid .col-span-2:first-child {
   order: 4;
+  margin-left: auto;
 }
 .section-resource-center.section-resource-center-main .page-top #resource-center-controls .grid .col-span-2:nth-child(2) {
   order: 1;
@@ -2223,7 +2224,6 @@ b mark, mark b {
   background-repeat: no-repeat;
   background-position: center;
   transition: 0.3s;
-  margin-left: auto;
 }
 .section-resource-center.section-resource-center-main .page-top #resource-center-controls input[name=keyword]::placeholder {
   color: transparent !important;

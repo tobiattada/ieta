@@ -43,6 +43,7 @@
 
 				.col-span-2:first-child{
 					order:4;
+					margin-left: auto;
 				}
 
 				.col-span-2:nth-child(2){
@@ -123,7 +124,7 @@
 				background-position: center;
 				transition: .3s;
 
-				margin-left: auto;
+
 
 				&::placeholder {
 					color: transparent !important;  /* hides the placeholder text */
