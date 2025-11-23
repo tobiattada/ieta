@@ -2497,7 +2497,7 @@ footer.page-footer .footer-wrapper .footer-navigation h4 {
 }
 .nav-menu .nav-item a {
   text-decoration: none;
-  padding: 26px 0px;
+  padding: 22px 0px;
   font-family: "Outfit", sans-serif;
   font-weight: 600;
   letter-spacing: 0%;
@@ -2505,7 +2505,7 @@ footer.page-footer .footer-wrapper .footer-navigation h4 {
 }
 @media (min-width: 1300px) {
   .nav-menu .nav-item a {
-    padding: 26px 15px;
+    padding: 22px 15px;
   }
 }
 .nav-menu .nav-item a strong, .nav-menu .nav-item a em, .nav-menu .nav-item a b {

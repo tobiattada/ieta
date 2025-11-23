@@ -1912,6 +1912,30 @@ b mark, mark b {
 .section-resource-center.section-resource-center-main .page-above-title, .section-resource-center.section-resource-center-main .page-main {
   padding: 0px !important;
 }
+.section-resource-center.section-resource-center-main .page-above-title ul li, .section-resource-center.section-resource-center-main .page-main ul li {
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: #2A2A2A;
+}
+@media (min-width: 1024px) {
+  .section-resource-center.section-resource-center-main .page-above-title ul li, .section-resource-center.section-resource-center-main .page-main ul li {
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
+.section-resource-center.section-resource-center-main .page-above-title ul li strong, .section-resource-center.section-resource-center-main .page-above-title ul li em, .section-resource-center.section-resource-center-main .page-above-title ul li b, .section-resource-center.section-resource-center-main .page-main ul li strong, .section-resource-center.section-resource-center-main .page-main ul li em, .section-resource-center.section-resource-center-main .page-main ul li b {
+  font-weight: 600;
+  color: #2A2A2A;
+}
+.section-resource-center.section-resource-center-main .page-above-title ul li.hebrew, .section-resource-center.section-resource-center-main .page-main ul li.hebrew {
+  font-family: "Noto Sans Hebrew", sans-serif !important;
+  font-weight: 600;
+  text-align: right;
+  direction: rtl;
+}
 .section-resource-center.section-resource-center-main .wrapper.divider {
   padding-top: 0px;
 }

@@ -5,6 +5,10 @@
 
 	.page-above-title, .page-main {
 		padding: 0px !important;
+
+		ul li {
+		  	@include p($dark-gray);
+		  }
 	}
 
 	.wrapper.divider{
