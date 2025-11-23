@@ -48,7 +48,7 @@
 				grid-gap: 15px;
 				    flex-wrap: wrap;
 
-				    
+
 
 				.col-span-2:first-child{
 					order:4;
@@ -85,6 +85,14 @@
 				background: transparent;
 				width: auto !important;
 				box-shadow: none;
+
+				height: 35px;
+    			line-height: 35px;
+
+    			@include tablet{
+    				height: 45px;
+    				line-height: 45px;
+    			}
 
 				/* Add dropdown arrow via ::before */
 					&::after {
@@ -318,78 +326,166 @@
 
 	.page-main{
 		.shell.resource-center-grid.resource-center-style{
-			.wrapper{
-				@include bg-color($white);
-				.row{
-					.positions{
-						.listing-container{
-							.entry.resource-entry{
 
+			&[data-display-type="card_and_list_view_card_default"]{
+				.wrapper{
+					@include bg-color($white);
+					.row{
+						.positions{
+							.listing-container{
+								.entry.resource-entry{
+						
+										flex: 1;
+										border-radius: 24px;
+										border: 1px solid $gray !important;;
+										background: white;
+										padding: 15px;
+										box-shadow: $shadow;
+										transition: .3s;
+										width: auto;
+										margin-top: 0px;
+
+										@include desktop{
+											padding: 20px;
+										}
+
+											&:after{
+												margin-top: 20px;
+												@include document($primary-blue);
+											}
+
+											&:hover{
+												box-shadow: $hover-shadow;
+												transition: .3s;
+
+												&:after{
+													margin-top: 20px;
+													@include document($medium-blue);
+												}
+											}		
 							
+						
+
+									a div.resource-thumbnail img{
+
+									}
+
+									.resource-content{
+										.resource-button{
+
+										}
+
+										.resource-type{
+											display: none;
+										}
+
+										h3{
+											order: 2 !important;
+											@include h4($navy-blue);
+										}
+
+										.resource-topics{
+											order: 1 !important;
+											a{
+												@include p($medium-blue);
+												@include p-bold($medium-blue);
+												border: 0px;
+												padding: 0px !important;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+
+
+			&[data-display-type="card_and_list_view_list_default"]{
+				.wrapper{
+					@include bg-color($white);
+					.row{
+						.positions{
+							.listing-container{
+								.entry.resource-entry{
 									flex: 1;
-									border-radius: 24px;
-									border: 1px solid $gray !important;;
-									background: white;
+									border-radius: 0px;
+									border: 0px solid $gray;;
+									border-bottom: 1px solid $gray !important;
+
+									background: transparent;
 									padding: 15px;
-									box-shadow: $shadow;
+									box-shadow: none;
 									transition: .3s;
 									width: auto;
-
-									//new 
 									margin-top: 0px;
+
+
+									display: grid !important;
+									grid-template-areas: 
+									"image text"
+									"image button";
 
 									@include desktop{
 										padding: 20px;
 									}
 
-									// .body{
-									// 	padding: 0px;
-									// 	padding-top: 2px;
-									// 	min-height: auto;
-									// 	margin-top: 20px;
+									&:after{
+										margin-top: 20px;
+										grid-area: button;
+										@include document($primary-blue);
+									}
+
+									&:hover{
+										box-shadow: none;
+										transition: .3s;
 
 										&:after{
 											margin-top: 20px;
-											@include document($primary-blue);
+											@include document($medium-blue);
+										}
+									}		
+						
+									a {
+										grid-area: image;
+
+										div.resource-thumbnail {
+											img{
+												width: auto !important;
+												height: auto !important;
+												border-radius: 24px;
+											}
+										}
+									}
+
+									.resource-content{
+										display: flex;
+										flex-direction: column;
+
+										grid-area: text;
+
+										.resource-button{
+
 										}
 
-										&:hover{
-											box-shadow: $hover-shadow;
-											transition: .3s;
+										.resource-type{
+											display: none;
+										}
 
-											&:after{
-												margin-top: 20px;
-												@include document($medium-blue);
+										h3{
+											order: 2 !important;
+											@include h4($navy-blue);
+										}
+
+										.resource-topics{
+											order: 1 !important;
+											a{
+												@include p($medium-blue);
+												@include p-bold($medium-blue);
+												border: 0px;
+												padding: 0px !important;
 											}
-										}		
-						
-					
-
-								a div.resource-thumbnail img{
-
-								}
-
-								.resource-content{
-									.resource-button{
-
-									}
-
-									.resource-type{
-										display: none;
-									}
-
-									h3{
-										order: 2 !important;
-										@include h4($navy-blue);
-									}
-
-									.resource-topics{
-										order: 1 !important;
-										a{
-											@include p($medium-blue);
-											@include p-bold($medium-blue);
-											border: 0px;
-											padding: 0px !important;
 										}
 									}
 								}
