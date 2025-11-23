@@ -122,20 +122,34 @@
 				background-image: url("data:image/svg+xml,%3Csvg%20width='18'%20height='18'%20viewBox='0%200%2018%2018'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3E%3Cpath%20d='M16.455%2018L10.2262%2011.7796C9.7357%2012.1551%209.17166%2012.4571%208.53406%2012.6857C7.89646%2012.9143%207.21798%2013.0286%206.49864%2013.0286C4.68392%2013.0286%203.14714%2012.3958%201.88828%2011.1301C0.629428%209.86514%200%208.32653%200%206.51429C0%204.70204%200.629428%203.1631%201.88828%201.89747C3.14714%200.63249%204.68392%200%206.49864%200C8.31335%200%209.85439%200.63249%2011.1217%201.89747C12.3884%203.1631%2013.0218%204.70204%2013.0218%206.51429C13.0218%207.23265%2012.9116%207.9102%2012.6912%208.54694C12.4702%209.18367%2012.1717%209.73878%2011.7956%2010.2122L18%2016.4327L16.455%2018ZM6.49864%2010.7755C7.6921%2010.7755%208.70572%2010.3631%209.53951%209.53829C10.3733%208.71412%2010.7902%207.70612%2010.7902%206.51429C10.7902%205.32245%2010.3733%204.31412%209.53951%203.48931C8.70572%202.66514%207.6921%202.25306%206.49864%202.25306C5.30518%202.25306%204.2958%202.66514%203.47052%203.48931C2.64458%204.31412%202.23161%205.32245%202.23161%206.51429C2.23161%207.70612%202.64458%208.71412%203.47052%209.53829C4.2958%2010.3631%205.30518%2010.7755%206.49864%2010.7755Z'%20fill='%2327277C'/%3E%3C/svg%3E");
 
 				background-repeat: no-repeat;
-				background-position: 7% center;
-					background-size: 7%;
+				background-position: 47% center;
+				background-size: 37%;
+				padding: 10px;
+				transition: .3s;
+				margin-right: 0px;
+
+				    width: 40px;
+
+				    &::placeholder {
+						color: transparent !important;  /* hides the placeholder text */
+						font-size: 0px;
+					}
+
+				@include tablet{
+					width: auto;
 					padding: 14px 20px 14px 45px;
 
-				transition: .3s;
+					background-position: 7% center;
+					background-size: 7%;
+					padding: 14px 20px 14px 20px;
 
+					&::placeholder {
+						color: $gray !important;  /* hides the placeholder text */
+						font-size: inherit;
+					}
+				}
 
-				    margin-right: 0px;
-
-
-				// &::placeholder {
-				// 	color: transparent !important;  /* hides the placeholder text */
-				// 	font-size: 0px;
-				// }
+		
 
 				// &:focus{
 				// 	transition: .3s;
