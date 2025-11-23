@@ -9710,6 +9710,9 @@ div.two-videos {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   }
 }
+.sponsor-gallery .col-12 .component-image {
+  transition: 0.3s;
+}
 .sponsor-gallery .col-12 .component-image .has-ratio-image {
   border: 1px solid #c9c9c9;
   background: white;
@@ -9720,6 +9723,11 @@ div.two-videos {
   align-items: center;
   justify-content: center;
   padding: 10px;
+}
+.sponsor-gallery .col-12 .component-image:hover {
+  transform: scale(1.03);
+  transform-origin: center center;
+  transition: 0.3s;
 }
 .sponsor-gallery .col-12 .component-image .caption {
   background: none;

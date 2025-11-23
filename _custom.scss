@@ -931,6 +931,14 @@ div.two-videos{
 		    padding: 10px;
 			}
 
+			transition: .3s;
+
+			&:hover{
+				transform: scale(1.03);
+				transform-origin: center center;
+				transition: .3s;
+			}
+
 			.caption{
 				  background: none;
 			    font-size: inherit;
