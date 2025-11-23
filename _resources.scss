@@ -181,7 +181,11 @@
 
 
 			input[type="submit"] {
-				display:none;
+				background: none;
+				@include label($text);
+			    font-size: 16px;
+			    padding: 0px;
+    			width: auto;
 			}
 
 
