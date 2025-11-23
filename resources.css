@@ -2162,6 +2162,7 @@ b mark, mark b {
 .section-resource-center.section-resource-center-main .page-top #resource-center-controls .grid {
   display: flex;
   max-width: none !important;
+  grid-gap: 15px;
 }
 .section-resource-center.section-resource-center-main .page-top #resource-center-controls .grid .col-span-2:first-child {
   order: 4;
@@ -2273,6 +2274,7 @@ b mark, mark b {
   color: #2A2A2A;
   font-size: 16px;
   padding: 0px;
+  line-height: 50px !important;
   width: auto;
 }
 @media (min-width: 1024px) {

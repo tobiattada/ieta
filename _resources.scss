@@ -41,6 +41,7 @@
 			.grid{
 				display: flex;
 				max-width: none !important;
+				grid-gap: 15px;
 
 				.col-span-2:first-child{
 					order:4;
@@ -185,6 +186,7 @@
 				@include label($text);
 			    font-size: 16px;
 			    padding: 0px;
+				line-height: 50px !important;
     			width: auto;
 			}
 

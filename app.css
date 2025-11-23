@@ -10500,7 +10500,6 @@ div.two-videos {
   flex: 1;
 }
 .feature-posts .row .col-4 .component-image img {
-  height: 250px;
   border-radius: 24px;
   overflow: hidden;
   object-fit: cover;
@@ -10620,15 +10619,9 @@ div.two-videos {
   display: none;
 }
 .feature-posts .home-boxes .box .image img {
-  height: 130px;
   border-radius: 24px;
   overflow: hidden;
   object-fit: cover;
-}
-@media (min-width: 1024px) {
-  .feature-posts .home-boxes .box .image img {
-    height: 250px;
-  }
 }
 .feature-posts .home-boxes .box h4.title, .feature-posts .home-boxes .box h4.title a {
   font-family: "Outfit", sans-serif;
@@ -10789,7 +10782,6 @@ div.two-videos {
   }
 }
 .feature-posts-manual .row .col-4 .component-image img {
-  height: 250px;
   border-radius: 24px;
   overflow: hidden;
   object-fit: cover;
@@ -10907,15 +10899,9 @@ div.two-videos {
   display: none;
 }
 .feature-posts-manual .home-boxes .box .image img {
-  height: 130px;
   border-radius: 24px;
   overflow: hidden;
   object-fit: cover;
-}
-@media (min-width: 1024px) {
-  .feature-posts-manual .home-boxes .box .image img {
-    height: 250px;
-  }
 }
 .feature-posts-manual .home-boxes .box h4.title, .feature-posts-manual .home-boxes .box h4.title a {
   font-family: "Outfit", sans-serif;
