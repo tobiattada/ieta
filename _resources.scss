@@ -40,6 +40,7 @@
 
 			.grid{
 				display: flex;
+				max-width: none !important;
 
 				.col-span-2:first-child{
 					order:4;
@@ -58,25 +59,31 @@
 				.col-span-2:nth-child(4){
 					order:3;
 				}
+
+				.select-wrapper{
+					margin: 0px;
+
+					.chzn-container{
+						border: 1px solid $gray;
+		   	 			border-radius: 24px;
+		   	 			width: auto !important;
+					}
+				}
 			}
 
-			.grid .select-wrapper .chzn-container{
-				border: 1px solid $gray;
-   	 			border-radius: 24px;
-   	 			    width: auto !important;
-			}
+
 
 			.select-wrapper .chzn-container-single .chzn-single{
 				background: transparent;
-
 				width: auto !important;
+				box-shadow: none;
 
 				/* Add dropdown arrow via ::before */
 					&::after {
 					  	content: url("data:image/svg+xml,%3Csvg%20width%3D%2212%22%20height%3D%228%22%20viewBox%3D%220%200%2012%208%22%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath%20d%3D%22M0%206L6%200L12%206L10.6%207.4L6%202.8L1.4%207.4L0%206Z%22%20fill%3D%22black%22/%3E%3C/svg%3E");
 						position:absolute;
 						right: 25px;
-						    top: 0px;
+						top: 0px;
 		    			transform: rotate(180deg);
 					  	transition: transform 0.3s ease;
 					}
@@ -126,6 +133,7 @@
 				margin: 0px;
 			    width: 40px;
 			    height: 40px;
+			    padding: 14px 20px 14px 20px;
 
 			    &::placeholder {
 					color: transparent !important;  /* hides the placeholder text */
@@ -135,11 +143,10 @@
 				@include tablet{
 					width: auto;
 					height: auto;
-					padding: 14px 20px 14px 45px;
+					padding: 14px 20px 14px 40px;
 
 					background-position: 7% center;
 					background-size: 7%;
-					padding: 14px 20px 14px 20px;
 
 					&::placeholder {
 						color: $gray !important;  /* hides the placeholder text */
