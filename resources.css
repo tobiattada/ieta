@@ -2830,3 +2830,11 @@ b mark, mark b {
   margin: 0px;
   padding: 0px;
 }
+.section-resource-center.section-resource-center-listing .wrapper.feature-posts h4 {
+  margin-bottom: 30px;
+}
+@media (min-width: 1024px) {
+  .section-resource-center.section-resource-center-listing .wrapper.feature-posts h4 {
+    margin-bottom: 50px;
+  }
+}

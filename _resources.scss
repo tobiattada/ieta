@@ -447,6 +447,17 @@
 		}
 	}
 
+
+	.wrapper.feature-posts{
+		h4{
+			margin-bottom: $toppad-mob;
+
+			@include desktop{
+				margin-bottom: $toppad-desk;
+			}
+		}
+	}
+
 }
 
 
