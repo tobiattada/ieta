@@ -2789,7 +2789,29 @@ b mark, mark b {
   display: none;
 }
 .section-resource-center.section-resource-center-listing .post-heading .resource-topics {
-  float: right;
+  margin-left: auto;
+}
+.section-resource-center.section-resource-center-listing .post-heading .resource-topics a {
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: #2A2A2A;
+  padding: 8px 16px !important;
+  background: #FDFDFD;
+  border: 1px solid #c9c9c9;
+}
+@media (min-width: 1024px) {
+  .section-resource-center.section-resource-center-listing .post-heading .resource-topics a {
+    font-size: 16px;
+    line-height: 150%;
+  }
+}
+.section-resource-center.section-resource-center-listing .post-heading .resource-middle-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .section-resource-center.section-resource-center-listing .post-heading .resource-action-button a {
   position: relative;

@@ -101,4 +101,58 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+
+document.addEventListener("DOMContentLoaded", () => {
+
+  // Add your keyword → text mappings here
+  const mappings = [
+    { keyword: "our-research", text: "Our Research" },
+    { keyword: "trip-planning", text: "Trip Planning Resources" },
+    { keyword: "news-and-events", text: "News and Events" }
+  ];
+
+  // Loop through all mappings
+  mappings.forEach(({ keyword, text }) => {
+    if (window.location.href.includes(keyword)) {
+      document.querySelectorAll("h2").forEach(h2 => {
+        const span = document.createElement("h5");
+        span.textContent = text;
+        h2.parentNode.insertBefore(span, h2);
+      });
+    }
+  });
+
+});
+
+
+document.addEventListener("DOMContentLoaded", () => {
+
+
+  const button = document.querySelector(".resource-action-button");
+  const header = document.querySelector(".resource-header-content");
+
+  if (button && header) {
+    header.appendChild(button);
+  }
+
+  const topics = document.querySelector(".resource-topics");
+  const dates = document.querySelector(".headers");
+
+  if (button && topics) {
+    // Create wrapper
+    const wrapper = document.createElement("div");
+    wrapper.classList.add("resource-middle-wrapper"); // optional class
+
+    // Insert wrapper **after** the action button
+    button.parentNode.insertBefore(wrapper, button.nextSibling);
+
+    // Move both elements inside the wrapper in order
+    wrapper.appendChild(dates);
+    wrapper.appendChild(topics);
+    wrapper.appendChild(button);
+  }
+});
+
+
+
 </script>
