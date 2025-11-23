@@ -1929,7 +1929,7 @@ b mark, mark b {
 }
 @media (min-width: 768px) {
   .section-resource-center.section-resource-center-main .page-top {
-    padding: 30px 20px;
+    padding: 30px 30px;
   }
 }
 @media (min-width: 1024px) {
@@ -2389,7 +2389,7 @@ b mark, mark b {
 }
 @media (min-width: 768px) {
   .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style .wrapper {
-    padding: 30px 20px;
+    padding: 30px 30px;
   }
 }
 @media (min-width: 1024px) {
@@ -2738,7 +2738,7 @@ b mark, mark b {
 }
 @media (min-width: 768px) {
   .section-resource-center.section-resource-center-listing .post-heading {
-    padding: 30px 20px;
+    padding: 30px 30px;
   }
 }
 @media (min-width: 1024px) {
@@ -2766,7 +2766,7 @@ b mark, mark b {
 }
 @media (min-width: 768px) and (min-width: 768px) {
   .section-resource-center.section-resource-center-listing .post-heading .resource-header-content {
-    padding: 30px 20px;
+    padding: 30px 30px;
   }
 }
 @media (min-width: 768px) and (min-width: 1024px) {
@@ -2910,7 +2910,7 @@ b mark, mark b {
 }
 @media (min-width: 768px) {
   .section-resource-center.section-resource-center-listing article.post {
-    padding: 30px 20px;
+    padding: 30px 30px;
   }
 }
 @media (min-width: 1024px) {
@@ -2938,7 +2938,7 @@ b mark, mark b {
 }
 @media (min-width: 768px) and (min-width: 768px) {
   .section-resource-center.section-resource-center-listing article.post .resource-article-content {
-    padding: 30px 20px;
+    padding: 30px 30px;
   }
 }
 @media (min-width: 768px) and (min-width: 1024px) {

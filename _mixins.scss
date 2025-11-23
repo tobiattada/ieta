@@ -43,9 +43,11 @@ $xlarge: 1500px;
 ///////////////////////////////////
 
 $sidepad-mob: 20px;
+$sidepad-tab: 30px;
 $sidepad-desk: 60px;
 
 $toppad-mob: 30px;
+$toppad-tab: 30px;
 $toppad-desk: 50px;
 
 @mixin responsive-padding{
@@ -53,7 +55,7 @@ $toppad-desk: 50px;
   padding: 30px 20px;
  
   @include tablet {
-    padding: 30px 20px;
+    padding: 30px 30px;
   }
 
   @include desktop {
