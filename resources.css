@@ -2814,9 +2814,9 @@ b mark, mark b {
   align-items: center;
 }
 .section-resource-center.section-resource-center-listing .post-heading .resource-action-button {
-  height: auto;
-  width: auto;
-  left: inherit;
+  height: auto !important;
+  width: auto !important;
+  left: auto;
 }
 .section-resource-center.section-resource-center-listing .post-heading .resource-action-button a {
   position: relative;
@@ -2855,6 +2855,7 @@ b mark, mark b {
   align-items: end;
   border: 2px solid #c9c9c9;
   background: #FDFDFD;
+  border-radius: 100%;
 }
 .section-resource-center.section-resource-center-listing .post-heading .resource-action-button a i.fa {
   display: none !important;

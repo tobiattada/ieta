@@ -445,9 +445,9 @@
 
 		.resource-action-button{
 			@include download-btn($primary-blue);
-			height: auto;
-    		width: auto;
-    		left: inherit;
+			height: auto !important;
+    		width: auto  !important;
+    		left: auto;
 
 
 			a{
@@ -462,6 +462,7 @@
 			    align-items: end;
 			    border: 2px solid $gray;
 			    background: $white;
+			        border-radius: 100%;
 
 				i.fa{
 					display: none !important;
