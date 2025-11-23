@@ -2808,6 +2808,10 @@ b mark, mark b {
     line-height: 150%;
   }
 }
+.section-resource-center.section-resource-center-listing .post-heading .resource-topics a:hover {
+  background: #E9E9F2;
+  box-shadow: 0px 0px 15px 9px rgba(0, 0, 0, 0.08), 0px 0.326px 1.059px 0px rgba(0, 0, 0, 0.04);
+}
 .section-resource-center.section-resource-center-listing .post-heading .resource-middle-wrapper {
   display: flex;
   justify-content: space-between;
@@ -2847,6 +2851,10 @@ b mark, mark b {
   align-items: center;
   justify-content: center;
 }
+.section-resource-center.section-resource-center-listing .post-heading .resource-action-button a:hover {
+  background: #E9E9F2;
+  box-shadow: 0px 0px 15px 9px rgba(0, 0, 0, 0.08), 0px 0.326px 1.059px 0px rgba(0, 0, 0, 0.04);
+}
 .section-resource-center.section-resource-center-listing .post-heading ul.headers li a {
   font-family: "Outfit", sans-serif;
   font-weight: 700;
@@ -2869,6 +2877,9 @@ b mark, mark b {
 }
 .section-resource-center.section-resource-center-listing .post-heading ul.headers li a i {
   display: none;
+}
+.section-resource-center.section-resource-center-listing .post-heading ul.headers li a:hover {
+  text-decoration: underline;
 }
 .section-resource-center.section-resource-center-listing article.post {
   box-sizing: border-box;

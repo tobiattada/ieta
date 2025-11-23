@@ -434,6 +434,11 @@
 				//border-radius: 16px;
 				background: $white;
 				border: 2px solid $gray;
+
+				&:hover{
+					background: $ieta;
+					box-shadow:$hover-shadow;
+				}
 			}
 		}
 
@@ -482,6 +487,11 @@
 				    justify-content: center;
 
 				}
+
+				&:hover{
+					background: $ieta;
+					box-shadow:$hover-shadow;
+				}
 				
 			}
 		}
@@ -490,6 +500,10 @@
 			@include h6($text);
 			i{
 				display: none;
+			}
+
+			&:hover{
+				text-decoration: underline;
 			}
 		}
 	}
