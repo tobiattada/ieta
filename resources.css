@@ -2873,6 +2873,7 @@ b mark, mark b {
 .section-resource-center.section-resource-center-listing article.post {
   box-sizing: border-box;
   padding: 30px 20px;
+  padding-bottom: 0px !important;
 }
 @media (min-width: 768px) {
   .section-resource-center.section-resource-center-listing article.post {
@@ -2898,7 +2899,7 @@ b mark, mark b {
   box-sizing: border-box;
   padding: 30px 20px;
   padding-top: 0px;
-  padding-bottom: 0px;
+  padding-bottom: 0px !important;
 }
 @media (min-width: 768px) {
   .section-resource-center.section-resource-center-listing article.post .resource-article-content {
@@ -2934,6 +2935,10 @@ b mark, mark b {
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
+}
+.section-resource-center.section-resource-center-listing .wrapper.article-back {
+  max-width: 70%;
+  margin: 0 auto;
 }
 .section-resource-center.section-resource-center-listing .wrapper.feature-posts h4 {
   margin-bottom: 30px;

@@ -496,11 +496,13 @@
 
 	article.post{
 		@include responsive-padding;
+		padding-bottom: 0px !important;
 
 		.resource-article-content{
 			@include responsive-padding;
 			padding-top: 0px;
-			padding-bottom: 0px;
+			padding-bottom: 0px !important;
+
 		}
 
 		img{
@@ -520,6 +522,11 @@
 				padding: 0px;
 			}
 		}
+	}
+
+	.wrapper.article-back{
+		max-width: 70%;
+			margin: 0 auto;
 	}
 
 
