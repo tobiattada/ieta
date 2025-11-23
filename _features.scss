@@ -536,7 +536,7 @@
 			width: auto;
 
 			//new 
-			margin-top: 0px;
+			margin-top: 0px !important;
 
 			@include desktop{
 				padding: 20px;
@@ -579,6 +579,7 @@
 				border-radius: 24px;
 				overflow: hidden;
 				object-fit: cover;
+				aspect-ratio: 3 / 2;
 
 				// @include desktop {
 				// 	height: 250px;

@@ -10568,7 +10568,7 @@ div.two-videos {
   box-shadow: 0px 1.541px 4.141px 0px rgba(0, 0, 0, 0.04), 0px 0.326px 1.059px 0px rgba(0, 0, 0, 0.02);
   transition: 0.3s;
   width: auto;
-  margin-top: 0px;
+  margin-top: 0px !important;
 }
 @media (min-width: 1024px) {
   .feature-posts .home-boxes .box {
@@ -10622,6 +10622,7 @@ div.two-videos {
   border-radius: 24px;
   overflow: hidden;
   object-fit: cover;
+  aspect-ratio: 3/2;
 }
 .feature-posts .home-boxes .box h4.title, .feature-posts .home-boxes .box h4.title a {
   font-family: "Outfit", sans-serif;
