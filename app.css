@@ -147,6 +147,10 @@ footer, footer section {
   background-color: #545454;
 }
 
+.breadcrumbs {
+  display: none;
+}
+
 h1 {
   font-family: "Outfit", sans-serif;
   font-weight: 600;
