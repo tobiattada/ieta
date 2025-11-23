@@ -2788,6 +2788,9 @@ b mark, mark b {
 .section-resource-center.section-resource-center-listing .post-heading .resource-type {
   display: none;
 }
+.section-resource-center.section-resource-center-listing .post-heading .resource-topics {
+  float: right;
+}
 .section-resource-center.section-resource-center-listing .post-heading .resource-action-button a {
   position: relative;
   display: flex;
@@ -2816,11 +2819,34 @@ b mark, mark b {
 }
 .section-resource-center.section-resource-center-listing .post-heading .resource-action-button a {
   font-size: 0px;
-  background: #FDFDFD;
-  Border: 1px solid #c9c9c9;
+  background: transparent;
+  border: 0px;
 }
 .section-resource-center.section-resource-center-listing .post-heading .resource-action-button a i.fa {
   display: none !important;
+}
+.section-resource-center.section-resource-center-listing .post-heading ul.headers li a {
+  font-family: "Outfit", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 130%;
+  letter-spacing: 0%;
+  color: #2A2A2A;
+}
+@media (min-width: 1024px) {
+  .section-resource-center.section-resource-center-listing .post-heading ul.headers li a {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+.section-resource-center.section-resource-center-listing .post-heading ul.headers li a.hebrew {
+  font-family: "Noto Sans Hebrew", sans-serif !important;
+  font-weight: 700;
+  text-align: right;
+  direction: rtl;
+}
+.section-resource-center.section-resource-center-listing .post-heading ul.headers li a i {
+  display: none;
 }
 .section-resource-center.section-resource-center-listing article.post {
   box-sizing: border-box;

@@ -426,16 +426,28 @@
 			display: none;
 		}
 
+		.resource-topics{
+			float: right;
+		}
+
 		.resource-action-button{
 			@include download-btn($primary-blue);
 			a{
 				font-size: 0px;
-				background: $white;
-				Border: 1px solid $gray;
+				background: transparent;
+				border: 0px;
+
 				i.fa{
 					display: none !important;
 				}
 				
+			}
+		}
+
+		ul.headers li a{
+			@include h6($text);
+			i{
+				display: none;
 			}
 		}
 	}
