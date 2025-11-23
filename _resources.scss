@@ -417,6 +417,27 @@
 			padding-top: 0px;
 			padding-bottom: 0px;
 		}
+
+		h5{
+			@include h5($medium-blue);
+		}
+
+		.resource-type{
+			display: none;
+		}
+
+		.resource-action-button{
+			@include download-btn($primary-blue);
+			a{
+				font-size: 0px;
+				background: $white;
+				Border: 1px solid $gray;
+				i.fa{
+					display: none !important;
+				}
+				
+			}
+		}
 	}
 
 	article.post{
