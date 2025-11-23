@@ -2812,6 +2812,13 @@ b mark, mark b {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 10px;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .section-resource-center.section-resource-center-listing .post-heading .resource-middle-wrapper {
+    flex-direction: row;
+  }
 }
 .section-resource-center.section-resource-center-listing .post-heading .resource-action-button a {
   font-size: 0px;
@@ -2820,8 +2827,9 @@ b mark, mark b {
   height: 40px;
   width: 40px;
   padding: 0px;
+  display: flex;
   justify-content: center;
-  align-items: end;
+  align-items: flex-end;
   border: 2px solid #c9c9c9;
   background: #FDFDFD;
   border-radius: 100%;
