@@ -2224,8 +2224,9 @@ b mark, mark b {
   background-size: 37%;
   padding: 10px;
   transition: 0.3s;
-  margin-right: 0px;
+  margin: 0px;
   width: 40px;
+  height: 40px;
 }
 .section-resource-center.section-resource-center-main .page-top #resource-center-controls input[name=keyword]::placeholder {
   color: transparent !important;
@@ -2235,6 +2236,7 @@ b mark, mark b {
 @media (min-width: 768px) {
   .section-resource-center.section-resource-center-main .page-top #resource-center-controls input[name=keyword] {
     width: auto;
+    height: auto;
     padding: 14px 20px 14px 45px;
     background-position: 7% center;
     background-size: 7%;
@@ -2319,12 +2321,18 @@ b mark, mark b {
 }
 .section-resource-center.section-resource-center-main .page-top #resource-center-controls ul#display-buttons li:first-child a i.ico-grid, .section-resource-center.section-resource-center-main .page-top #resource-center-controls ul#display-buttons li:first-child a i.ico-list, .section-resource-center.section-resource-center-main .page-top #resource-center-controls ul#display-buttons li:first-child a i.ico-map, .section-resource-center.section-resource-center-main .page-top #resource-center-controls ul#display-buttons li:nth-child(2) a i.ico-grid, .section-resource-center.section-resource-center-main .page-top #resource-center-controls ul#display-buttons li:nth-child(2) a i.ico-list, .section-resource-center.section-resource-center-main .page-top #resource-center-controls ul#display-buttons li:nth-child(2) a i.ico-map {
   background: none;
-  height: 11px;
+  height: 14px;
+  width: 14px;
   margin-top: 0px;
   margin-bottom: 0px;
-  width: 11px;
   background-size: cover;
   filter: none !important;
+}
+@media (min-width: 768px) {
+  .section-resource-center.section-resource-center-main .page-top #resource-center-controls ul#display-buttons li:first-child a i.ico-grid, .section-resource-center.section-resource-center-main .page-top #resource-center-controls ul#display-buttons li:first-child a i.ico-list, .section-resource-center.section-resource-center-main .page-top #resource-center-controls ul#display-buttons li:first-child a i.ico-map, .section-resource-center.section-resource-center-main .page-top #resource-center-controls ul#display-buttons li:nth-child(2) a i.ico-grid, .section-resource-center.section-resource-center-main .page-top #resource-center-controls ul#display-buttons li:nth-child(2) a i.ico-list, .section-resource-center.section-resource-center-main .page-top #resource-center-controls ul#display-buttons li:nth-child(2) a i.ico-map {
+    height: 11px;
+    width: 11px;
+  }
 }
 .section-resource-center.section-resource-center-main .page-top #resource-center-controls ul#display-buttons li:first-child a.active, .section-resource-center.section-resource-center-main .page-top #resource-center-controls ul#display-buttons li:nth-child(2) a.active {
   background: #D2E9FF;
