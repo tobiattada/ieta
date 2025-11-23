@@ -2739,28 +2739,30 @@ b mark, mark b {
     padding: 60px 10%;
   }
 }
-.section-resource-center.section-resource-center-listing .post-heading .resource-header-content {
-  box-sizing: border-box;
-  padding: 30px 20px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-}
 @media (min-width: 768px) {
+  .section-resource-center.section-resource-center-listing .post-heading .resource-header-content {
+    box-sizing: border-box;
+    padding: 30px 20px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+}
+@media (min-width: 768px) and (min-width: 768px) {
   .section-resource-center.section-resource-center-listing .post-heading .resource-header-content {
     padding: 30px 20px;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) and (min-width: 1024px) {
   .section-resource-center.section-resource-center-listing .post-heading .resource-header-content {
     padding: 50px 60px;
   }
 }
-@media (min-width: 1300px) {
+@media (min-width: 768px) and (min-width: 1300px) {
   .section-resource-center.section-resource-center-listing .post-heading .resource-header-content {
     padding: 60px 80px;
   }
 }
-@media (min-width: 1500px) {
+@media (min-width: 768px) and (min-width: 1500px) {
   .section-resource-center.section-resource-center-listing .post-heading .resource-header-content {
     padding: 60px 10%;
   }
@@ -2788,9 +2790,6 @@ b mark, mark b {
 .section-resource-center.section-resource-center-listing .post-heading .resource-type {
   display: none;
 }
-.section-resource-center.section-resource-center-listing .post-heading .resource-topics {
-  margin-left: auto;
-}
 .section-resource-center.section-resource-center-listing .post-heading .resource-topics a {
   font-family: "Outfit", sans-serif;
   font-weight: 600;
@@ -2812,15 +2811,21 @@ b mark, mark b {
   background: #E9E9F2;
   box-shadow: 0px 0px 15px 9px rgba(0, 0, 0, 0.08), 0px 0.326px 1.059px 0px rgba(0, 0, 0, 0.04);
 }
+@media (min-width: 768px) {
+  .section-resource-center.section-resource-center-listing .post-heading .resource-topics {
+    margin-left: auto;
+  }
+}
 .section-resource-center.section-resource-center-listing .post-heading .resource-middle-wrapper {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   gap: 10px;
   flex-direction: column;
 }
 @media (min-width: 768px) {
   .section-resource-center.section-resource-center-listing .post-heading .resource-middle-wrapper {
+    align-items: center;
     flex-direction: row;
   }
 }
@@ -2906,28 +2911,30 @@ b mark, mark b {
     padding: 60px 10%;
   }
 }
-.section-resource-center.section-resource-center-listing article.post .resource-article-content {
-  box-sizing: border-box;
-  padding: 30px 20px;
-  padding-top: 0px;
-  padding-bottom: 0px !important;
-}
 @media (min-width: 768px) {
+  .section-resource-center.section-resource-center-listing article.post .resource-article-content {
+    box-sizing: border-box;
+    padding: 30px 20px;
+    padding-top: 0px;
+    padding-bottom: 0px !important;
+  }
+}
+@media (min-width: 768px) and (min-width: 768px) {
   .section-resource-center.section-resource-center-listing article.post .resource-article-content {
     padding: 30px 20px;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) and (min-width: 1024px) {
   .section-resource-center.section-resource-center-listing article.post .resource-article-content {
     padding: 50px 60px;
   }
 }
-@media (min-width: 1300px) {
+@media (min-width: 768px) and (min-width: 1300px) {
   .section-resource-center.section-resource-center-listing article.post .resource-article-content {
     padding: 60px 80px;
   }
 }
-@media (min-width: 1500px) {
+@media (min-width: 768px) and (min-width: 1500px) {
   .section-resource-center.section-resource-center-listing article.post .resource-article-content {
     padding: 60px 10%;
   }
@@ -2937,9 +2944,11 @@ b mark, mark b {
   border-radius: 24px;
   background: #1E3EAF;
 }
-.section-resource-center.section-resource-center-listing article.post div.editor-copy {
-  max-width: 70%;
-  margin: 0 auto;
+@media (min-width: 768px) {
+  .section-resource-center.section-resource-center-listing article.post div.editor-copy {
+    max-width: 70%;
+    margin: 0 auto;
+  }
 }
 .section-resource-center.section-resource-center-listing article.post div.editor-copy img {
   border-radius: 24px;
@@ -2947,9 +2956,11 @@ b mark, mark b {
   margin: 0px;
   padding: 0px;
 }
-.section-resource-center.section-resource-center-listing .wrapper.article-back {
-  max-width: 70%;
-  margin: 0 auto;
+@media (min-width: 768px) {
+  .section-resource-center.section-resource-center-listing .wrapper.article-back {
+    max-width: 70%;
+    margin: 0 auto;
+  }
 }
 .section-resource-center.section-resource-center-listing .wrapper.feature-posts h4 {
   margin-bottom: 30px;
