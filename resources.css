@@ -2180,6 +2180,7 @@ b mark, mark b {
 }
 .section-resource-center.section-resource-center-main .page-top #resource-center-controls .select-wrapper .chzn-container-single .chzn-single {
   background: transparent;
+  width: auto !important;
   /* Add dropdown arrow via ::before */
 }
 .section-resource-center.section-resource-center-main .page-top #resource-center-controls .select-wrapper .chzn-container-single .chzn-single::after {
@@ -2257,8 +2258,7 @@ b mark, mark b {
   margin-left: 0;
   display: flex;
   align-items: center;
-  gap: 8px;
-  padding: 10px 20px;
+  padding: 10px;
   border: 1px solid #c9c9c9;
   font-size: 0px !important;
   font-family: "Outfit", sans-serif;
@@ -2271,6 +2271,8 @@ b mark, mark b {
 @media (min-width: 768px) {
   .section-resource-center.section-resource-center-main .page-top #resource-center-controls ul#display-buttons li:first-child a, .section-resource-center.section-resource-center-main .page-top #resource-center-controls ul#display-buttons li:nth-child(2) a {
     font-size: initial !important;
+    padding: 10px 20px;
+    gap: 8px;
   }
 }
 @media (min-width: 1024px) {
