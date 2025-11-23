@@ -105,6 +105,10 @@
 
 			}
 
+			form{
+				width: 100%;
+			}
+
 			input[name="keyword"] {
 				background: $light-gray;
 				border-radius: 100px;
@@ -118,6 +122,8 @@
 				background-repeat: no-repeat;
 				background-position: center;
 				transition: .3s;
+
+				margin-left: auto;
 
 				&::placeholder {
 					color: transparent !important;  /* hides the placeholder text */
@@ -155,7 +161,10 @@
 
 			.reset-search{
 				float: none;
-				color: $gray;
+				@include caption($text);
+				line-height: 50px;
+				font-weight: 300;
+				text-decoration: underline;
 			}
 
 
