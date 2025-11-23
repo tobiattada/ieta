@@ -429,11 +429,11 @@
 		.resource-topics{
 			margin-left: auto;
 			a{
-				@include label($text);
+				@include label($medium-gray);
 				padding: 8px 16px !important;
 				//border-radius: 16px;
 				background: $white;
-				border: 1px solid $gray;
+				border: 2px solid $gray;
 			}
 		}
 
@@ -445,10 +445,23 @@
 
 		.resource-action-button{
 			@include download-btn($primary-blue);
+			height: auto;
+    		width: auto;
+    		left: inherit;
+
+
 			a{
 				font-size: 0px;
 				background: transparent;
 				border: 0px;
+
+				height: 40px;
+			    width: 40px;
+			    padding: 0px;
+			    justify-content: center;
+			    align-items: end;
+			    border: 2px solid $gray;
+			    background: $white;
 
 				i.fa{
 					display: none !important;
