@@ -44,6 +44,7 @@
 				.col-span-2:first-child{
 					order:4;
 					margin-left: auto;
+					margin-right: 15px;
 				}
 
 				.col-span-2:nth-child(2){
@@ -123,7 +124,9 @@
 				background-repeat: no-repeat;
 				background-position: center;
 				transition: .3s;
+				    transform-origin: right center !important;
 
+				    margin-right: 0px;
 
 
 				&::placeholder {
@@ -137,6 +140,7 @@
 					background-position: 7% center;
 					background-size: 7%;
 					padding: 14px 20px 14px 45px;
+					    transform-origin: right center !important;
 
 				}
 			}
@@ -163,7 +167,7 @@
 			.reset-search{
 				float: none;
 				@include caption($text);
-				line-height: 50px;
+				line-height: 50px !important;
 				font-weight: 300;
 				text-decoration: underline;
 			}

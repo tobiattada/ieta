@@ -2165,6 +2165,7 @@ b mark, mark b {
 .section-resource-center.section-resource-center-main .page-top #resource-center-controls .grid .col-span-2:first-child {
   order: 4;
   margin-left: auto;
+  margin-right: 15px;
 }
 .section-resource-center.section-resource-center-main .page-top #resource-center-controls .grid .col-span-2:nth-child(2) {
   order: 1;
@@ -2224,6 +2225,8 @@ b mark, mark b {
   background-repeat: no-repeat;
   background-position: center;
   transition: 0.3s;
+  transform-origin: right center !important;
+  margin-right: 0px;
 }
 .section-resource-center.section-resource-center-main .page-top #resource-center-controls input[name=keyword]::placeholder {
   color: transparent !important;
@@ -2236,6 +2239,7 @@ b mark, mark b {
   background-position: 7% center;
   background-size: 7%;
   padding: 14px 20px 14px 45px;
+  transform-origin: right center !important;
 }
 .section-resource-center.section-resource-center-main .page-top #resource-center-controls select[name=type] {
   background: red;
@@ -2259,7 +2263,7 @@ b mark, mark b {
   letter-spacing: 0%;
   color: #2A2A2A;
   margin-top: 3px;
-  line-height: 50px;
+  line-height: 50px !important;
   font-weight: 300;
   text-decoration: underline;
 }
