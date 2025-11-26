@@ -1912,26 +1912,83 @@ b mark, mark b {
 .section-resource-center.section-resource-center-main nav.paging {
   display: none;
 }
+.section-resource-center.section-resource-center-main .load-more {
+  text-align: center;
+  position: relative;
+}
+.section-resource-center.section-resource-center-main .load-more button#load-more-btn {
+  background: transparent;
+  border: 0px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 130%;
+  letter-spacing: 0%;
+  color: #27277C;
+  text-transform: uppercase;
+}
+@media (min-width: 1024px) {
+  .section-resource-center.section-resource-center-main .load-more button#load-more-btn {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+.section-resource-center.section-resource-center-main .load-more button#load-more-btn.hebrew {
+  font-family: "Noto Sans Hebrew", sans-serif !important;
+  font-weight: 700;
+  text-align: right;
+  direction: rtl;
+}
+.section-resource-center.section-resource-center-main .load-more:after a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: #D2E9FF;
+  transition: 0.3s;
+  color: #1E3EAF;
+}
+.section-resource-center.section-resource-center-main .load-more:after a::after {
+  position: relative;
+  content: url('data:image/svg+xml;charset=UTF-8,<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="Icon"><path id="icon" d="M17.3938 14.0287L13.5799 17.8533L15.082 19.3554L21.474 12.9633L15.082 6.57129L13.5799 8.07342L17.3938 11.898H4.42859V14.0287H17.3938Z" fill="%231E3EAF"/></g></svg>');
+  height: 40px;
+  width: 40px;
+  background: #D2E9FF;
+  border-radius: 100%;
+  left: 12px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  transition: 0.3s;
+  flex: none;
+}
+.section-resource-center.section-resource-center-main .load-more:after a:hover::after {
+  transition: 0.3s;
+  background: #D2E9FF;
+}
+.section-resource-center.section-resource-center-main .load-more:after a::after {
+  background: #D2E9FF;
+}
+.section-resource-center.section-resource-center-main .load-more:after a:hover::after {
+  content: url('data:image/svg+xml;charset=UTF-8,<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="Icon"><path id="icon" d="M17.3938 14.0287L13.5799 17.8533L15.082 19.3554L21.474 12.9633L15.082 6.57129L13.5799 8.07342L17.3938 11.898H4.42859V14.0287H17.3938Z" fill="%23f5f5f5"/></g></svg>');
+  background: #1c88ed;
+}
 .section-resource-center.section-resource-center-main .page-above-title, .section-resource-center.section-resource-center-main .page-main {
   padding: 0px !important;
 }
 .section-resource-center.section-resource-center-main .page-above-title ul li, .section-resource-center.section-resource-center-main .page-main ul li {
   font-family: "Outfit", sans-serif;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 24px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 26px;
   letter-spacing: 0%;
   color: #2A2A2A;
 }
 @media (min-width: 1024px) {
   .section-resource-center.section-resource-center-main .page-above-title ul li, .section-resource-center.section-resource-center-main .page-main ul li {
-    font-size: 18px;
-    line-height: 27px;
+    font-size: 24px;
+    line-height: 32px;
   }
-}
-.section-resource-center.section-resource-center-main .page-above-title ul li strong, .section-resource-center.section-resource-center-main .page-above-title ul li em, .section-resource-center.section-resource-center-main .page-above-title ul li b, .section-resource-center.section-resource-center-main .page-main ul li strong, .section-resource-center.section-resource-center-main .page-main ul li em, .section-resource-center.section-resource-center-main .page-main ul li b {
-  font-weight: 600;
-  color: #2A2A2A;
 }
 .section-resource-center.section-resource-center-main .page-above-title ul li.hebrew, .section-resource-center.section-resource-center-main .page-main ul li.hebrew {
   font-family: "Noto Sans Hebrew", sans-serif !important;

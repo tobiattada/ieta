@@ -6,12 +6,30 @@
 	nav.paging{
 		display: none;
 	}
+	
+	.load-more{
+		text-align: center;
+		
+		button#load-more-btn{
+			background: transparent;
+    		border: 0px;
+    		@include h6($navy-blue);
+    		text-transform: uppercase;
+		}
+
+		position: relative;
+
+    		&:after{
+    			@include arrow-btn($light-blue);
+    		}
+	}	
+
 
 	.page-above-title, .page-main {
 		padding: 0px !important;
 
 		ul li {
-		  	@include p($dark-gray);
+		  	@include h5($dark-gray);
 		  }
 	}
 
