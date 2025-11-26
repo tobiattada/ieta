@@ -2761,6 +2761,9 @@ b mark, mark b {
   text-align: right;
   direction: rtl;
 }
+.section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_card_default] .wrapper .row .positions .listing-container .entry.resource-entry .resource-content .resource-description {
+  order: 3;
+}
 .section-resource-center.section-resource-center-main .page-main .shell.resource-center-grid.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_list_default] .wrapper {
   box-sizing: border-box;
   padding: 30px 20px;
