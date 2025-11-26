@@ -1909,6 +1909,9 @@ b mark, mark b {
   fill: #FDFDFD;
 }
 
+.section-resource-center.section-resource-center-main nav.paging {
+  display: none;
+}
 .section-resource-center.section-resource-center-main .page-above-title, .section-resource-center.section-resource-center-main .page-main {
   padding: 0px !important;
 }
