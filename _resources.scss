@@ -455,6 +455,7 @@
 									}
 
 
+
 									.resource-content{
 										display: flex;
 										flex-direction: column;
@@ -485,6 +486,10 @@
 												border: 0px;
 												padding: 0px !important;
 											}
+										}
+
+										.resource-description{
+											order: 3;
 										}
 									}
 								}
