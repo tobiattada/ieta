@@ -167,6 +167,8 @@
 			    padding: 14px 20px 14px 30px;
 
 			    @include caption($text);
+			    line-height: 100%;
+			    margin-top: 0px;
 
 			    &::placeholder {
 					color: transparent !important;  /* hides the placeholder text */

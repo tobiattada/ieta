@@ -2304,6 +2304,8 @@ b mark, mark b {
   letter-spacing: 0%;
   color: #2A2A2A;
   margin-top: 3px;
+  line-height: 100%;
+  margin-top: 0px;
 }
 @media (min-width: 1024px) {
   .section-resource-center.section-resource-center-main .page-top #resource-center-controls input[name=keyword] {
