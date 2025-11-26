@@ -90,9 +90,17 @@
 				height: 35px;
     			line-height: 35px;
 
+    			    display: flex;
+   					 align-items: center;
+
     			@include tablet{
     				height: 45px;
     				line-height: 45px;
+    			}
+
+    			span{
+    				@include caption($text);
+    				margin-top:0px;
     			}
 
 				/* Add dropdown arrow via ::before */
@@ -157,6 +165,7 @@
 			    &::placeholder {
 					color: transparent !important;  /* hides the placeholder text */
 					font-size: 0px;
+					@include caption($text);
 				}
 
 				@include tablet{
@@ -168,13 +177,11 @@
 					background-size: 7%;
 
 					&::placeholder {
-						color: $gray !important;  /* hides the placeholder text */
-						font-size: inherit;
+						
 					}
 
 					&:focus::placeholder {
-						color: $gray !important;  /* hides the placeholder text */
-						font-size: inherit;
+					
 					}
 				}
 
@@ -214,6 +221,7 @@
     			width: auto;
     			// border-radius: 16px;
     			margin-right:10px;
+				font-weight: 300 !important;
 			}
 
 

@@ -2217,6 +2217,8 @@ b mark, mark b {
   box-shadow: none;
   height: 35px;
   line-height: 35px;
+  display: flex;
+  align-items: center;
   /* Add dropdown arrow via ::before */
 }
 @media (min-width: 768px) {
@@ -2224,6 +2226,28 @@ b mark, mark b {
     height: 45px;
     line-height: 45px;
   }
+}
+.section-resource-center.section-resource-center-main .page-top #resource-center-controls .select-wrapper .chzn-container-single .chzn-single span {
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: #2A2A2A;
+  margin-top: 3px;
+  margin-top: 0px;
+}
+@media (min-width: 1024px) {
+  .section-resource-center.section-resource-center-main .page-top #resource-center-controls .select-wrapper .chzn-container-single .chzn-single span {
+    font-size: 15px;
+    line-height: 150%;
+  }
+}
+.section-resource-center.section-resource-center-main .page-top #resource-center-controls .select-wrapper .chzn-container-single .chzn-single span.hebrew {
+  font-family: "Noto Sans Hebrew", sans-serif !important;
+  font-weight: 600;
+  text-align: right;
+  direction: rtl;
 }
 .section-resource-center.section-resource-center-main .page-top #resource-center-controls .select-wrapper .chzn-container-single .chzn-single::after {
   content: url("data:image/svg+xml,%3Csvg%20width%3D%2212%22%20height%3D%228%22%20viewBox%3D%220%200%2012%208%22%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath%20d%3D%22M0%206L6%200L12%206L10.6%207.4L6%202.8L1.4%207.4L0%206Z%22%20fill%3D%22black%22/%3E%3C/svg%3E");
@@ -2272,6 +2296,25 @@ b mark, mark b {
   color: transparent !important;
   /* hides the placeholder text */
   font-size: 0px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: #2A2A2A;
+  margin-top: 3px;
+}
+@media (min-width: 1024px) {
+  .section-resource-center.section-resource-center-main .page-top #resource-center-controls input[name=keyword]::placeholder {
+    font-size: 15px;
+    line-height: 150%;
+  }
+}
+.section-resource-center.section-resource-center-main .page-top #resource-center-controls input[name=keyword]::placeholder.hebrew {
+  font-family: "Noto Sans Hebrew", sans-serif !important;
+  font-weight: 600;
+  text-align: right;
+  direction: rtl;
 }
 @media (min-width: 768px) {
   .section-resource-center.section-resource-center-main .page-top #resource-center-controls input[name=keyword] {
@@ -2280,16 +2323,6 @@ b mark, mark b {
     padding: 14px 20px 14px 40px;
     background-position: 7% center;
     background-size: 7%;
-  }
-  .section-resource-center.section-resource-center-main .page-top #resource-center-controls input[name=keyword]::placeholder {
-    color: #c9c9c9 !important;
-    /* hides the placeholder text */
-    font-size: inherit;
-  }
-  .section-resource-center.section-resource-center-main .page-top #resource-center-controls input[name=keyword]:focus::placeholder {
-    color: #c9c9c9 !important;
-    /* hides the placeholder text */
-    font-size: inherit;
   }
 }
 .section-resource-center.section-resource-center-main .page-top #resource-center-controls select[name=type] {
@@ -2331,6 +2364,7 @@ b mark, mark b {
   color: #2A2A2A;
   width: auto;
   margin-right: 10px;
+  font-weight: 300 !important;
 }
 .section-resource-center.section-resource-center-main .page-top #resource-center-controls input[type=submit] span, .section-resource-center.section-resource-center-main .page-top #resource-center-controls input[type=submit] p {
   font-family: "Outfit", sans-serif;
