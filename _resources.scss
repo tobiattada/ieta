@@ -167,16 +167,15 @@
 			    padding: 14px 20px 14px 30px;
 
 			    @include caption($text);
-			    line-height: 100%;
-			    margin-top: 0px;
+			    line-height: 15px !important;
+			   			 margin-top: 0px !important;
 
 			    &::placeholder {
 					color: transparent !important;  /* hides the placeholder text */
 					font-size: 0px;
 					@include caption($text);
-					line-height: 100%;
-			    margin-top: 0px;
-
+					line-height: 15px !important;
+			   			 margin-top: 0px !important;
 				}
 
 				@include tablet{
@@ -195,8 +194,8 @@
 
 					&:focus::placeholder {
 						@include caption($text);
-						line-height: 100%;
-			    margin-top: 0px;
+						line-height: 15px !important;
+			   			 margin-top: 0px !important;
 
 					}
 				}
