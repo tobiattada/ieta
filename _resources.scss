@@ -70,7 +70,7 @@
 	.page-above-title, .page-main {
 		padding: 0px !important;
 
-		ul li:not(.nav-link) {
+		ul li:not(.nav-item) {
 		  	@include h5($dark-gray);
 		  }
 	}
