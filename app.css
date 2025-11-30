@@ -2491,6 +2491,20 @@ footer.page-footer .footer-wrapper .footer-navigation h4 {
 }
 .nav-menu .nav-item {
   position: relative;
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0%;
+  color: #2A2A2A;
+}
+.nav-menu .nav-item strong, .nav-menu .nav-item em, .nav-menu .nav-item b {
+  font-weight: 600;
+  color: #2A2A2A;
+}
+.nav-menu .nav-item.hebrew {
+  font-family: "Noto Sans Hebrew", sans-serif !important;
+  font-weight: 600;
+  text-align: right;
+  direction: rtl;
 }
 .nav-menu .nav-item.has-button {
   padding: 0px 0px;

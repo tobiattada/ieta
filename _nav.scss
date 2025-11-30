@@ -168,6 +168,8 @@
   .nav-item {
     position: relative;
 
+     @include p-bold($dark-gray);
+
     &.has-button{
         padding: 0px 0px;
     }
