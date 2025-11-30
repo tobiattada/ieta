@@ -1971,7 +1971,7 @@ b mark, mark b {
 .section-resource-center.section-resource-center-main .page-above-title, .section-resource-center.section-resource-center-main .page-main {
   padding: 0px !important;
 }
-.section-resource-center.section-resource-center-main .page-above-title ul li, .section-resource-center.section-resource-center-main .page-main ul li {
+.section-resource-center.section-resource-center-main .page-above-title ul li:not(.nav-link), .section-resource-center.section-resource-center-main .page-main ul li:not(.nav-link) {
   font-family: "Outfit", sans-serif;
   font-weight: 600;
   font-size: 20px;
@@ -1980,12 +1980,12 @@ b mark, mark b {
   color: #2A2A2A;
 }
 @media (min-width: 1024px) {
-  .section-resource-center.section-resource-center-main .page-above-title ul li, .section-resource-center.section-resource-center-main .page-main ul li {
+  .section-resource-center.section-resource-center-main .page-above-title ul li:not(.nav-link), .section-resource-center.section-resource-center-main .page-main ul li:not(.nav-link) {
     font-size: 24px;
     line-height: 32px;
   }
 }
-.section-resource-center.section-resource-center-main .page-above-title ul li.hebrew, .section-resource-center.section-resource-center-main .page-main ul li.hebrew {
+.section-resource-center.section-resource-center-main .page-above-title ul li:not(.nav-link).hebrew, .section-resource-center.section-resource-center-main .page-main ul li:not(.nav-link).hebrew {
   font-family: "Noto Sans Hebrew", sans-serif !important;
   font-weight: 600;
   text-align: right;
