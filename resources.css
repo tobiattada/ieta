@@ -3570,3 +3570,7 @@ b mark, mark b {
     margin-bottom: 50px;
   }
 }
+
+.display-buttons {
+  display: none !important;
+}
