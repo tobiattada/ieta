@@ -15,19 +15,51 @@ document.addEventListener("DOMContentLoaded", () => {
     if (index >= 6) article.style.display = "none";
   });
 
+  // Hide Load More button if <=6 articles on first page
+  if (allInitialArticles.length <= 6) {
+    loadBtn.style.display = "none";
+  }
+
   // Track hidden first-page articles
   let hiddenArticles = allInitialArticles.slice(6);
 
-  // --- LOAD MORE HANDLER ---
+  // --- LOAD MORE / SHOW LESS HANDLER ---
   loadBtn.addEventListener("click", () => {
-    // 1️⃣ Reveal next 3 hidden items from first page
+    // --- SHOW LESS MODE ---
+    if (loadBtn.dataset.mode === "show-less") {
+      const visibleArticles = Array.from(
+        container.querySelectorAll("div.entry.resource-entry")
+      ).filter(a => a.style.display !== "none");
+
+      // Don't hide below the initial 6
+      if (visibleArticles.length <= 6) {
+        loadBtn.textContent = "Load More";
+        delete loadBtn.dataset.mode; // back to normal mode
+        return;
+      }
+
+      // Hide the last 3 visible articles
+      const toHide = visibleArticles.slice(-3);
+      toHide.forEach(article => (article.style.display = "none"));
+
+      // If after hiding, only 6 left, switch back to Load More
+      const remaining = visibleArticles.length - 3;
+      if (remaining <= 6) {
+        loadBtn.textContent = "Load More";
+        delete loadBtn.dataset.mode;
+      }
+
+      return; // Prevent further loading
+    }
+
+    // --- REVEAL NEXT 3 HIDDEN ITEMS FROM FIRST PAGE ---
     if (hiddenArticles.length > 0) {
       const toShow = hiddenArticles.splice(0, 3);
       toShow.forEach(item => (item.style.display = ""));
       return;
     }
 
-    // 2️⃣ Otherwise fetch next paginated page
+    // --- FETCH NEXT PAGINATED PAGE ---
     currentPage++;
 
     fetch(`https://israeledtravelalliance.fedwebpreview.org/news-and-events?page=${currentPage}`)
@@ -41,8 +73,10 @@ document.addEventListener("DOMContentLoaded", () => {
         );
 
         if (newArticles.length === 0) {
-          loadBtn.textContent = "No more articles";
-          loadBtn.disabled = true;
+          // No more articles → switch to SHOW LESS mode
+          loadBtn.textContent = "Show Less";
+          loadBtn.dataset.mode = "show-less";
+          loadBtn.classList.add("arrow-reverse"); 
           return;
         }
 

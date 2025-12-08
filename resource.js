@@ -66,7 +66,8 @@ document.addEventListener('DOMContentLoaded', () => {
     wrapper.classList.add('wrapper');
 
     // Add per-row custom classes
-    if (index === 2) wrapper.classList.add('bg-light', 'feature-posts');
+    if (index === 2) wrapper.classList.add('bg-white', 'article-back');
+    if (index === 3) wrapper.classList.add('bg-light', 'feature-posts');
 
     // You can also run arbitrary code for this row here
     // e.g., row.style.backgroundColor = '#f9f9f9';
@@ -104,6 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 document.addEventListener("DOMContentLoaded", () => {
 
+  if (!document.body.classList.contains('section-resource-center-listing')) return;
   // Add your keyword → text mappings here
   const mappings = [
     { keyword: "our-research", text: "Our Research" },
@@ -127,6 +129,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 document.addEventListener("DOMContentLoaded", () => {
 
+  if (!document.body.classList.contains('section-resource-center-listing')) return;
 
   const button = document.querySelector(".resource-action-button");
   const header = document.querySelector(".resource-header-content");
