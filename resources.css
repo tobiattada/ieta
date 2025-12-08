@@ -1954,7 +1954,8 @@ b mark, mark b {
   transform: rotate(180deg);
   transition: transform 0.3s ease;
   width: 40px;
-  height: 40px;
+  height: 35px;
+  padding-bottom: 5px;
   background: #D2E9FF;
   border-radius: 100%;
   text-align: center;
