@@ -3632,13 +3632,13 @@ a.search-toggle {
 }
 @media (min-width: 768px) {
   .modals.two-up .row {
-    gap: 20px;
+    gap: 20px 20px;
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 @media (min-width: 1024px) {
   .modals.two-up .row {
-    gap: 40px;
+    gap: 40px 40px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
