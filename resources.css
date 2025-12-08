@@ -3571,6 +3571,6 @@ b mark, mark b {
   }
 }
 
-.display-buttons {
+.section-resource-center.section-resource-center-main .page-top #resource-center-controls ul#display-buttons {
   display: none !important;
 }
