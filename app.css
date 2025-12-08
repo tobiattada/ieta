@@ -2330,6 +2330,10 @@ footer.page-footer .footer-wrapper .footer-navigation h4 {
   direction: rtl;
 }
 
+footer.page-footer .footer-section .flex-item a:hover {
+  opacity: 1;
+}
+
 .navbar {
   background-color: #ffffff;
   color: #1E3EAF;

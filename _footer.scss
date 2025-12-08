@@ -209,3 +209,7 @@ footer.page-footer{
 .footer-navigation .flex-item .flex-item a, .page-footer .jobs a:hover, .page-footer .upcoming a:hover, .page-footer ul.links li a{
 	@include p($light);
 }
+
+footer.page-footer .footer-section .flex-item a:hover{
+	opacity: 1;
+}
