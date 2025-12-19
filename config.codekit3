@@ -663,6 +663,14 @@
       "oAP" : "\/Files\/map.html",
       "oF" : 0
     },
+    "\/Files\/nav-new.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/Files\/nav-new.html",
+      "oF" : 0
+    },
     "\/Files\/navigation-min.js" : {
       "bF" : 0,
       "ft" : 64,
@@ -700,6 +708,17 @@
       "oA" : 0,
       "oAP" : "\/Files\/our-history.html",
       "oF" : 0
+    },
+    "\/Files\/trip-planning.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/Files\/trip-planning-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
     },
     "\/Files\/video-loader-min.js" : {
       "bF" : 0,
@@ -900,6 +919,17 @@
       "pME" : 1,
       "rFN" : 0,
       "uCM" : 0
+    },
+    "\/research.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/research-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
     },
     "\/resource.js" : {
       "bF" : 0,

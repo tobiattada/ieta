@@ -141,5 +141,22 @@ footer, footer section{
 }
 
 
+.hide-for-mobile{
+	display: none;
+@include desktop{
+		display: block;
+	}
+}
+
+.hide-for-desktop{
+	@include desktop{
+		display: none;
+	}
+}
+
+.hide-for-all{
+	display:none;
+}
+
 
 

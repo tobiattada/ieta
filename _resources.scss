@@ -10,9 +10,6 @@
 	.load-more{
 		text-align: center;
 		position: relative;
-		// display: flex;
-  //  		flex-direction: column-reverse;
-  //  		gap: 10px;
 
 		button#load-more-btn{
 			background: transparent;
@@ -270,9 +267,6 @@
 					}
 				}
 
-
-		
-
 				// &:focus{
 				// 	transition: .3s;
 				// 	width: 100%;
@@ -299,13 +293,8 @@
 
 			input[type="submit"] {
 				@include button($light-gray, $text);
-				//background: $light-gray;
 				@include label($text);
-			    // font-size: 16px;
-			    // padding: 0px;
-				// line-height: 50px !important;
     			width: auto;
-    			// border-radius: 16px;
     			margin-right:10px;
 				font-weight: 300 !important;
 			}
@@ -430,7 +419,7 @@
 //// THE LISTINGS
 
 	.page-main{
-		.shell.resource-center-grid.resource-center-style#resource-center-listing{
+		.shell.resource-center-style#resource-center-listing{
 
 			&[data-display-type="card_and_list_view_card_default"], &[data-display-type="card_view_only"]{
 				.wrapper{
