@@ -15,7 +15,8 @@
 			background: transparent;
     		border: 0px;
     		@include label($navy-blue);
-    		    font-weight: 600;
+			
+			font-weight: 600;
     		text-transform: uppercase;
     		transition: .3s;
 
@@ -23,14 +24,13 @@
     			cursor: pointer;
     			color: $medium-blue;
     			transition: .3s;
+    			text-decoration: none !important;
 
     			&::before {
     				background: $medium-blue;
     				transition: .3s;
 					content: url("data:image/svg+xml,%3Csvg%20width%3D%2212%22%20height%3D%228%22%20viewBox%3D%220%200%2012%208%22%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath%20d%3D%22M0%206L6%200L12%206L10.6%207.4L6%202.8L1.4%207.4L0%206Z%22%20fill%3D%22%23FDFDFD%22/%3E%3C/svg%3E");
-
     			}
-
     		}
 
     		&:disabled{
@@ -44,18 +44,18 @@
 			transform: rotate(180deg);
 		  	transition: transform 0.3s ease;
 
-		  	        width: 40px;
-				    height: 35px;
-				    padding-bottom: 5px;
+	  	    width: 40px;
+			height: 35px;
+			padding-bottom: 5px;
 
-			    background: $light-blue;
-			    border-radius: 100%;
-			    text-align: center;
-			    display: flex;
-			    align-items: center;
-			    justify-content: center;
-			    margin: 0 auto;
-			        margin-bottom: 10px;
+		    background: $light-blue;
+		    border-radius: 100%;
+		    text-align: center;
+		    display: flex;
+		    align-items: center;
+		    justify-content: center;
+		    margin: 0 auto;
+			margin-bottom: 10px;
 		}
 
 		button#load-more-btn:disabled::before {
@@ -96,8 +96,10 @@
 //// TITLE AND SEARCH AREA
 	.page-top{
 		background: transparent;
-
 		@include bg-color($white);
+		padding-top: 10px;
+		padding-bottom: 10px;
+
 
 		.page-title{
 			h2{
@@ -122,7 +124,7 @@
 
 				.col-span-2:first-child{
 					order:2;
-					margin-left: 0;
+					margin-left: auto;
 					margin-right: 0;
 
 				}
@@ -217,19 +219,26 @@
 				//background: $light-gray;
 				border-radius: 100px;
 				position: relative;
-				border: 1px solid $gray;
+				border: 1px solid $light-gray;
 
 				background-image: url("data:image/svg+xml,%3Csvg%20width='18'%20height='18'%20viewBox='0%200%2018%2018'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3E%3Cpath%20d='M16.455%2018L10.2262%2011.7796C9.7357%2012.1551%209.17166%2012.4571%208.53406%2012.6857C7.89646%2012.9143%207.21798%2013.0286%206.49864%2013.0286C4.68392%2013.0286%203.14714%2012.3958%201.88828%2011.1301C0.629428%209.86514%200%208.32653%200%206.51429C0%204.70204%200.629428%203.1631%201.88828%201.89747C3.14714%200.63249%204.68392%200%206.49864%200C8.31335%200%209.85439%200.63249%2011.1217%201.89747C12.3884%203.1631%2013.0218%204.70204%2013.0218%206.51429C13.0218%207.23265%2012.9116%207.9102%2012.6912%208.54694C12.4702%209.18367%2012.1717%209.73878%2011.7956%2010.2122L18%2016.4327L16.455%2018ZM6.49864%2010.7755C7.6921%2010.7755%208.70572%2010.3631%209.53951%209.53829C10.3733%208.71412%2010.7902%207.70612%2010.7902%206.51429C10.7902%205.32245%2010.3733%204.31412%209.53951%203.48931C8.70572%202.66514%207.6921%202.25306%206.49864%202.25306C5.30518%202.25306%204.2958%202.66514%203.47052%203.48931C2.64458%204.31412%202.23161%205.32245%202.23161%206.51429C2.23161%207.70612%202.64458%208.71412%203.47052%209.53829C4.2958%2010.3631%205.30518%2010.7755%206.49864%2010.7755Z'%20fill='%2327277C'/%3E%3C/svg%3E");
-
 				background-repeat: no-repeat;
-				background-position: 4% center;
-				background-size: 7%;
-				padding: 10px;
-				transition: .3s;
-				margin: 0px;
-			    width: 40px;
-			    height: 40px;
-			    padding: 14px 20px 14px 30px;
+				// background-position: 4% center;
+				// background-size: 7%;
+				// padding: 10px;
+				// transition: .3s;
+				// margin: 0px;
+			 //    width: 40px;
+			 //    height: 40px;
+			    // padding: 14px 20px 14px 30px;
+
+			    /// SETS TO CLOSE
+				width: 0px;
+		        height: auto;
+		        padding: 14px 10px 14px 40px;
+		        background-position: 47% center;
+		        background-size: 36%;
+		        background-color: $light-gray;
 
 			    @include caption($text);
 			    line-height: 15px !important;
@@ -244,11 +253,11 @@
 				}
 
 				@include tablet{
-					width: auto;
-					height: auto;
-					padding: 14px 20px 14px 40px;
-					background-position: 6% center;
-					background-size: 8%;
+					// width: auto;
+					// height: auto;
+					// padding: 14px 20px 14px 40px;
+					// background-position: 6% center;
+					// background-size: 8%;
 
 					&::placeholder {
 						
@@ -257,20 +266,18 @@
 					&:focus::placeholder {
 						@include caption($text);
 						line-height: 15px !important;
-			   			 margin-top: 0px !important;
-
+			   			margin-top: 0px !important;
 					}
 				}
 
-				// &:focus{
-				// 	transition: .3s;
-				// 	width: 100%;
-					// background-position: 7% center;
-					// background-size: 7%;
-					// padding: 14px 20px 14px 45px;
-					//    transform-origin: right center !important;
-
-				// }
+				&:focus{
+					transition: .3s;
+					width: 100%;
+					background-position: 7% center;
+					background-size: 7%;
+					padding: 14px 20px 14px 45px;
+					transform-origin: right center !important;
+				}
 			}
 
 			select[name="type"] {
@@ -459,6 +466,10 @@
 										aspect-ratio: 3 / 2;
 										background: green;
 										overflow: hidden;
+
+										img{
+											height: 100%;
+										}
 									}
 
 									.resource-content{
@@ -492,8 +503,7 @@
 								}
 							}
 
-							.entry {
-
+							.entry:not(.resource-entry) {
 								border: 0px solid $gray;
 								padding: 0px;
 
