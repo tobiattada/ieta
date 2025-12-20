@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dropdown Filtered Data</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h1 {
+      margin-bottom: 16px;
+    }
+
+    .filters {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+
+    .filters select {
+      padding: 8px;
+      font-size: 14px;
+    }
+
+    #data-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    #data-list li {
+      padding: 14px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      margin-bottom: 12px;
+    }
+
+    .item-name {
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .no-results {
+      color: #888;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Filterable Data</h1>
+
+<div class="filters">
+  <select id="nameFilter">
+    <option value="">All Names</option>
+  </select>
+
+  <select id="categoryFilter">
+    <option value="">All Categories</option>
+  </select>
+
+  <select id="priceFilter">
+    <option value="">All Prices</option>
+    <option value="0-10">$0–$10</option>
+    <option value="10-50">$10–$50</option>
+    <option value="50-100">$50–$100</option>
+    <option value="100+">$100+</option>
+  </select>
+
+  <select id="ratingFilter">
+    <option value="">All Ratings</option>
+    <option value="4">4+</option>
+    <option value="4.5">4.5+</option>
+  </select>
+
+  <select id="popularityFilter">
+    <option value="">All Popularity</option>
+    <option value="0-200">0–200</option>
+    <option value="200-500">200–500</option>
+    <option value="500+">500+</option>
+  </select>
+</div>
+
+<ul id="data-list"></ul>
+
+<script>
+  const data = [
+    { name: "Item A", category: "Books", price: 12.99, rating: 4.5, popularity: 230 },
+    { name: "Item B", category: "Games", price: 39.99, rating: 4.9, popularity: 510 },
+    { name: "Item C", category: "Books", price: 8.5, rating: 4.1, popularity: 120 },
+    { name: "Item D", category: "Electronics", price: 199.99, rating: 4.7, popularity: 890 }
+  ];
+
+  const filters = {
+    name: document.getElementById("nameFilter"),
+    category: document.getElementById("categoryFilter"),
+    price: document.getElementById("priceFilter"),
+    rating: document.getElementById("ratingFilter"),
+    popularity: document.getElementById("popularityFilter")
+  };
+
+  const list = document.getElementById("data-list");
+
+  function populateDropdown(select, values, label) {
+    const current = select.value;
+    select.innerHTML = `<option value="">${label}</option>`;
+    [...new Set(values)].sort().forEach(value => {
+      const option = document.createElement("option");
+      option.value = value;
+      option.textContent = value;
+      select.appendChild(option);
+    });
+    select.value = current;
+  }
+
+  function applyFilters() {
+    let filtered = data.filter(item => {
+      if (filters.name.value && item.name !== filters.name.value) return false;
+      if (filters.category.value && item.category !== filters.category.value) return false;
+
+      if (filters.price.value) {
+        if (filters.price.value === "100+" && item.price < 100) return false;
+        if (filters.price.value.includes("-")) {
+          const [min, max] = filters.price.value.split("-").map(Number);
+          if (item.price < min || item.price > max) return false;
+        }
+      }
+
+      if (filters.rating.value && item.rating < Number(filters.rating.value)) return false;
+
+      if (filters.popularity.value) {
+        if (filters.popularity.value === "500+" && item.popularity < 500) return false;
+        if (filters.popularity.value.includes("-")) {
+          const [min, max] = filters.popularity.value.split("-").map(Number);
+          if (item.popularity < min || item.popularity > max) return false;
+        }
+      }
+
+      return true;
+    });
+
+    updateDropdowns(filtered);
+    renderData(filtered);
+  }
+
+  function updateDropdowns(filtered) {
+    populateDropdown(filters.name, filtered.map(i => i.name), "All Names");
+    populateDropdown(filters.category, filtered.map(i => i.category), "All Categories");
+  }
+
+  function renderData(items) {
+    list.innerHTML = "";
+
+    if (items.length === 0) {
+      list.innerHTML = `<li class="no-results">No matching results</li>`;
+      return;
+    }
+
+    items.forEach(item => {
+      const li = document.createElement("li");
+      li.innerHTML = `
+        <div class="item-name">${item.name}</div>
+        Category: ${item.category}<br>
+        Price: $${item.price}<br>
+        Rating: ${item.rating}<br>
+        Popularity: ${item.popularity}
+      `;
+      list.appendChild(li);
+    });
+  }
+
+  // Initialize
+  populateDropdown(filters.name, data.map(i => i.name), "All Names");
+  populateDropdown(filters.category, data.map(i => i.category), "All Categories");
+  renderData(data);
+
+  Object.values(filters).forEach(select =>
+    select.addEventListener("change", applyFilters)
+  );
+</script>
+
+</body>
+</html>
