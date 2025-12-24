@@ -12884,6 +12884,15 @@ div.two-videos {
   }
 }
 
+@media (min-width: 768px) {
+  #modal-body-contact .jotform-form {
+    grid-template-columns: 1fr 1fr;
+  }
+  #modal-body-contact .jotform-form > *:nth-child(n+3) {
+    grid-column: 1/-1;
+  }
+}
+
 .form-sub-label-container {
   width: 100%;
 }

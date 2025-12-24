@@ -681,6 +681,19 @@ div.two-videos{
 	}
 }
 
+#modal-body-contact{
+	@include tablet{
+			.jotform-form{
+	  	grid-template-columns: 1fr 1fr;
+	  }
+	  
+		.jotform-form > *:nth-child(n + 3) {
+		  grid-column: 1 / -1;
+		}
+	}
+
+}
+
 
 
 
