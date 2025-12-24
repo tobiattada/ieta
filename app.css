@@ -12888,7 +12888,7 @@ div.two-videos {
   #modal-body-contact .jotform-form {
     grid-template-columns: 1fr 1fr;
   }
-  #modal-body-contact .jotform-form > *:nth-child(n+3) {
+  #modal-body-contact .jotform-form > *:nth-child(n+4) {
     grid-column: 1/-1;
   }
 }
