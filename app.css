@@ -12865,6 +12865,25 @@ div.two-videos {
   background: #27277C;
 }
 
+#modal-body-contact, #modal-body-subscribe {
+  max-width: 95%;
+}
+@media (min-width: 768px) {
+  #modal-body-contact, #modal-body-subscribe {
+    max-width: 90%;
+  }
+}
+@media (min-width: 1024px) {
+  #modal-body-contact, #modal-body-subscribe {
+    max-width: 80%;
+  }
+}
+@media (min-width: 1300px) {
+  #modal-body-contact, #modal-body-subscribe {
+    max-width: 70%;
+  }
+}
+
 .form-sub-label-container {
   width: 100%;
 }
