@@ -144,17 +144,17 @@
 				.select-wrapper{
 					margin: 0px;
 
-					.chzn-container{
-						border: 1px solid $gray;
-		   	 			border-radius: 24px;
-		   	 			width: auto !important;
-					}
+
+						// border: 1px solid $gray;
+		   	//  			border-radius: 24px;
+		   	//  			width: auto !important;
+					
 				}
 			}
 
 
 
-			.select-wrapper .chzn-container-single .chzn-single{
+			.select-wrapper select{
 				background: transparent;
 				width: auto !important;
 				box-shadow: none;
@@ -287,7 +287,7 @@
 			}
 
 			select[name="topic"] {
-				background: red;
+				// background: red;
 				border: 1px solid $gray;
    	 			border-radius: 24px;
 			}
