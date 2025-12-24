@@ -129,6 +129,8 @@ footer, footer section{
 
 .page-wrapper{
 	margin: 0 auto;
+	/// JUST ADDED 12-23
+	    min-height: auto !important;
 }
 
 .component-divider .line, .component-divider[data-line-color=dark] .line{
@@ -157,6 +159,8 @@ footer, footer section{
 .hide-for-all{
 	display:none;
 }
+
+
 
 
 
