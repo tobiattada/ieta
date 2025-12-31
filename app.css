@@ -4048,6 +4048,8 @@ a.search-toggle {
 }
 #modal-subscribe .modal-content #modal-body-subscribe .jotform-form input, #modal-subscribe .modal-content #modal-body-subscribe .jotform-form textarea, #modal-subscribe .modal-content #modal-body-contact .jotform-form input, #modal-subscribe .modal-content #modal-body-contact .jotform-form textarea, #modal-contact .modal-content #modal-body-subscribe .jotform-form input, #modal-contact .modal-content #modal-body-subscribe .jotform-form textarea, #modal-contact .modal-content #modal-body-contact .jotform-form input, #modal-contact .modal-content #modal-body-contact .jotform-form textarea {
   margin-top: 2px;
+  font-size: 16px;
+  padding: 8px 8px;
 }
 #modal-subscribe .modal-content #modal-body-subscribe .component-class-wysiwyg, #modal-subscribe .modal-content #modal-body-contact .component-class-wysiwyg, #modal-contact .modal-content #modal-body-subscribe .component-class-wysiwyg, #modal-contact .modal-content #modal-body-contact .component-class-wysiwyg {
   grid-area: bio;
