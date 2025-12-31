@@ -4085,6 +4085,21 @@ a.search-toggle {
   right: 20px;
   font-size: 30px;
   cursor: pointer;
+  position: fixed;
+  top: 13%;
+  right: 14%;
+}
+@media (min-width: 768px) {
+  .close {
+    top: 13%;
+    right: 10%;
+  }
+}
+@media (min-width: 1024px) {
+  .close {
+    top: 13%;
+    right: 10%;
+  }
 }
 
 /* Just for visual demo */
