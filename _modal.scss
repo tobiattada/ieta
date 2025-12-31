@@ -248,11 +248,13 @@
         justify-content: center;
 
   @include tablet{
-  	 // width: 70%;
+  	 width: 80%;
+        height: 80%;
   }
 
   @include desktop{
-  	 // width: 60%;
+  	width: 70%;
+        height: 70%;
   }
 
 	#modal-body-subscribe, #modal-body-contact{
@@ -349,9 +351,9 @@
 
 .close {
   position: absolute;
-  top: 30px;
-  right: 30px;
-  font-size: 40px;
+  top: 15px;
+	right: 20px;
+	font-size: 30px;
   cursor: pointer;
 
 }

@@ -3927,6 +3927,18 @@ a.search-toggle {
     padding: 60px 10%;
   }
 }
+@media (min-width: 768px) {
+  #modal-subscribe .modal-content, #modal-contact .modal-content {
+    width: 80%;
+    height: 80%;
+  }
+}
+@media (min-width: 1024px) {
+  #modal-subscribe .modal-content, #modal-contact .modal-content {
+    width: 70%;
+    height: 70%;
+  }
+}
 #modal-subscribe .modal-content #modal-body-subscribe, #modal-subscribe .modal-content #modal-body-contact, #modal-contact .modal-content #modal-body-subscribe, #modal-contact .modal-content #modal-body-contact {
   display: grid;
   grid-template-columns: 1fr;
@@ -4063,9 +4075,9 @@ a.search-toggle {
 
 .close {
   position: absolute;
-  top: 30px;
-  right: 30px;
-  font-size: 40px;
+  top: 15px;
+  right: 20px;
+  font-size: 30px;
   cursor: pointer;
 }
 
