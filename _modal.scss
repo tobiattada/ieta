@@ -277,6 +277,14 @@
 
 #modal-subscribe, #modal-contact{
 	z-index: 310001;
+
+	.close {
+	  position: absolute;
+	  top: 15px;
+		right: 20px;
+		font-size: 30px;
+	  cursor: pointer;
+	}
 }
 
 #modal-subscribe .modal-content, #modal-contact .modal-content {
