@@ -242,19 +242,24 @@
         height: 100%;
         margin: 0px;
         max-height: 100%;
-        border-radius: 0px;
+        border-radius: 20px;
         display: flex;
         align-items: center;
         justify-content: center;
 
   @include tablet{
-  	 width: 80%;
-        height: 80%;
+  	 width: 90%;
+        height: 90%;
   }
 
   @include desktop{
-  	width: 70%;
-        height: 70%;
+  	width: 90%;
+        height: 90%;
+  }
+
+  @include largedesktop{
+  	width: 80%;
+        height: 85%;
   }
 
 	#modal-body-subscribe, #modal-body-contact{

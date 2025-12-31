@@ -3902,7 +3902,7 @@ a.search-toggle {
   height: 100%;
   margin: 0px;
   max-height: 100%;
-  border-radius: 0px;
+  border-radius: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -3929,14 +3929,20 @@ a.search-toggle {
 }
 @media (min-width: 768px) {
   #modal-subscribe .modal-content, #modal-contact .modal-content {
-    width: 80%;
-    height: 80%;
+    width: 90%;
+    height: 90%;
   }
 }
 @media (min-width: 1024px) {
   #modal-subscribe .modal-content, #modal-contact .modal-content {
-    width: 70%;
-    height: 70%;
+    width: 90%;
+    height: 90%;
+  }
+}
+@media (min-width: 1300px) {
+  #modal-subscribe .modal-content, #modal-contact .modal-content {
+    width: 80%;
+    height: 85%;
   }
 }
 #modal-subscribe .modal-content #modal-body-subscribe, #modal-subscribe .modal-content #modal-body-contact, #modal-contact .modal-content #modal-body-subscribe, #modal-contact .modal-content #modal-body-contact {
