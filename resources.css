@@ -2895,6 +2895,9 @@ b mark, mark b {
   height: 100%;
   border-radius: 10px;
 }
+.section-resource-center.section-resource-center-main .page-main .shell.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_card_default] .row .positions .listing-container .entry.resource-entry a div.resource-thumbnail.has-ratio, .section-resource-center.section-resource-center-main .page-main .shell.resource-center-style#resource-center-listing[data-display-type=card_view_only] .row .positions .listing-container .entry.resource-entry a div.resource-thumbnail.has-ratio {
+  padding-bottom: 0px !important;
+}
 .section-resource-center.section-resource-center-main .page-main .shell.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_card_default] .row .positions .listing-container .entry.resource-entry .resource-content .resource-type, .section-resource-center.section-resource-center-main .page-main .shell.resource-center-style#resource-center-listing[data-display-type=card_view_only] .row .positions .listing-container .entry.resource-entry .resource-content .resource-type {
   display: none;
 }
