@@ -27,6 +27,7 @@
 
 	&.two-up .row{
 		display: grid;
+		align-items: start;
 		grid-template-columns: 1fr 1fr;
 		gap: 30px 10px;
 
