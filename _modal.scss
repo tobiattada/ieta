@@ -289,6 +289,11 @@
 				padding: 0px;
 			}
 
+			.jotform-form button{
+				@include p($white);
+				padding: 10px 24px;
+			}
+
 			.component-class-richtext{
 				grid-area: title;
 
@@ -320,7 +325,7 @@
 
 
 			.jotform-form input, .jotform-form textarea{
-				margin-top: 5px;
+				margin-top: 2px;
 			}
 
 			.component-class-wysiwyg{

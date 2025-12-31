@@ -3961,6 +3961,31 @@ a.search-toggle {
 #modal-subscribe .modal-content #modal-body-subscribe p, #modal-subscribe .modal-content #modal-body-contact p, #modal-contact .modal-content #modal-body-subscribe p, #modal-contact .modal-content #modal-body-contact p {
   padding: 0px;
 }
+#modal-subscribe .modal-content #modal-body-subscribe .jotform-form button, #modal-subscribe .modal-content #modal-body-contact .jotform-form button, #modal-contact .modal-content #modal-body-subscribe .jotform-form button, #modal-contact .modal-content #modal-body-contact .jotform-form button {
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: #FDFDFD;
+  padding: 10px 24px;
+}
+@media (min-width: 1024px) {
+  #modal-subscribe .modal-content #modal-body-subscribe .jotform-form button, #modal-subscribe .modal-content #modal-body-contact .jotform-form button, #modal-contact .modal-content #modal-body-subscribe .jotform-form button, #modal-contact .modal-content #modal-body-contact .jotform-form button {
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
+#modal-subscribe .modal-content #modal-body-subscribe .jotform-form button strong, #modal-subscribe .modal-content #modal-body-subscribe .jotform-form button em, #modal-subscribe .modal-content #modal-body-subscribe .jotform-form button b, #modal-subscribe .modal-content #modal-body-contact .jotform-form button strong, #modal-subscribe .modal-content #modal-body-contact .jotform-form button em, #modal-subscribe .modal-content #modal-body-contact .jotform-form button b, #modal-contact .modal-content #modal-body-subscribe .jotform-form button strong, #modal-contact .modal-content #modal-body-subscribe .jotform-form button em, #modal-contact .modal-content #modal-body-subscribe .jotform-form button b, #modal-contact .modal-content #modal-body-contact .jotform-form button strong, #modal-contact .modal-content #modal-body-contact .jotform-form button em, #modal-contact .modal-content #modal-body-contact .jotform-form button b {
+  font-weight: 600;
+  color: #FDFDFD;
+}
+#modal-subscribe .modal-content #modal-body-subscribe .jotform-form button.hebrew, #modal-subscribe .modal-content #modal-body-contact .jotform-form button.hebrew, #modal-contact .modal-content #modal-body-subscribe .jotform-form button.hebrew, #modal-contact .modal-content #modal-body-contact .jotform-form button.hebrew {
+  font-family: "Noto Sans Hebrew", sans-serif !important;
+  font-weight: 600;
+  text-align: right;
+  direction: rtl;
+}
 #modal-subscribe .modal-content #modal-body-subscribe .component-class-richtext, #modal-subscribe .modal-content #modal-body-contact .component-class-richtext, #modal-contact .modal-content #modal-body-subscribe .component-class-richtext, #modal-contact .modal-content #modal-body-contact .component-class-richtext {
   grid-area: title;
 }
@@ -4022,7 +4047,7 @@ a.search-toggle {
   direction: rtl;
 }
 #modal-subscribe .modal-content #modal-body-subscribe .jotform-form input, #modal-subscribe .modal-content #modal-body-subscribe .jotform-form textarea, #modal-subscribe .modal-content #modal-body-contact .jotform-form input, #modal-subscribe .modal-content #modal-body-contact .jotform-form textarea, #modal-contact .modal-content #modal-body-subscribe .jotform-form input, #modal-contact .modal-content #modal-body-subscribe .jotform-form textarea, #modal-contact .modal-content #modal-body-contact .jotform-form input, #modal-contact .modal-content #modal-body-contact .jotform-form textarea {
-  margin-top: 5px;
+  margin-top: 2px;
 }
 #modal-subscribe .modal-content #modal-body-subscribe .component-class-wysiwyg, #modal-subscribe .modal-content #modal-body-contact .component-class-wysiwyg, #modal-contact .modal-content #modal-body-subscribe .component-class-wysiwyg, #modal-contact .modal-content #modal-body-contact .component-class-wysiwyg {
   grid-area: bio;
