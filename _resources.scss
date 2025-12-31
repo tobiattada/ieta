@@ -436,7 +436,8 @@
 
 					@include bg-color($white);
 
-					padding-top: 0px;
+					padding-top: 0px !important;
+					
 					.row{
 						.positions{
 							.listing-container{
