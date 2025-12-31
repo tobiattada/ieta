@@ -2285,7 +2285,7 @@ b mark, mark b {
   line-height: 35px;
   display: flex;
   align-items: center;
-  padding: 0px 15px;
+  padding: 0px 40px 0px 15px;
   appearance: none;
   position: relative;
   font-family: "Outfit", sans-serif;
@@ -2339,8 +2339,8 @@ b mark, mark b {
 .section-resource-center.section-resource-center-main .page-top #resource-center-controls .select-wrapper::after {
   content: url("data:image/svg+xml,%3Csvg%20width%3D%2212%22%20height%3D%228%22%20viewBox%3D%220%200%2012%208%22%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath%20d%3D%22M0%206L6%200L12%206L10.6%207.4L6%202.8L1.4%207.4L0%206Z%22%20fill%3D%22black%22/%3E%3C/svg%3E");
   position: absolute;
-  right: 25px;
-  top: 0px;
+  right: 16px;
+  top: 16px;
   transform: rotate(180deg);
   transition: transform 0.3s ease;
 }
