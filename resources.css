@@ -2282,7 +2282,29 @@ b mark, mark b {
   line-height: 35px;
   display: flex;
   align-items: center;
+  padding: 0px 15px;
+  appearance: none;
+  position: relative;
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: #2A2A2A;
+  margin-top: 3px;
   /* Add dropdown arrow via ::before */
+}
+@media (min-width: 1024px) {
+  .section-resource-center.section-resource-center-main .page-top #resource-center-controls .select-wrapper select {
+    font-size: 15px;
+    line-height: 150%;
+  }
+}
+.section-resource-center.section-resource-center-main .page-top #resource-center-controls .select-wrapper select.hebrew {
+  font-family: "Noto Sans Hebrew", sans-serif !important;
+  font-weight: 600;
+  text-align: right;
+  direction: rtl;
 }
 @media (min-width: 768px) {
   .section-resource-center.section-resource-center-main .page-top #resource-center-controls .select-wrapper select {

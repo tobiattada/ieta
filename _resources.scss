@@ -165,6 +165,11 @@
     			display: flex;
    			 	align-items: center;
 
+   			 	    padding: 0px 15px;
+   					appearance: none;
+   					position: relative;
+   					@include caption($text);
+
     			@include tablet{
     				height: 45px;
     				line-height: 45px;
