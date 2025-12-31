@@ -3954,7 +3954,7 @@ a.search-toggle {
   height: 100%;
   margin: 0px;
   max-height: 100%;
-  border-radius: 20px;
+  border-radius: 0px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -3983,6 +3983,7 @@ a.search-toggle {
   #modal-subscribe .modal-content, #modal-contact .modal-content {
     width: 90%;
     height: 90%;
+    border-radius: 20px;
   }
 }
 @media (min-width: 1024px) {
