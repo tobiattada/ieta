@@ -24,7 +24,7 @@
 		}
 	}
 
-
+	/// I WANT TO DEPRICATE THIS ONE
 	&.two-up .row{
 		display: grid;
 		align-items: start;
@@ -41,6 +41,59 @@
 			grid-template-columns: 1fr 1fr 1fr 1fr;
 		}
 	}
+
+	&.two-up-small .row{
+		display: grid;
+		align-items: start;
+		grid-template-columns: 1fr;
+
+		grid-template-areas:
+		  "first" 
+		  "second";
+
+		  	gap: 10px;
+
+		@include tablet{
+			grid-template-areas:
+		  " first second ";
+			gap: 20px;
+			grid-template-columns: 1fr 1fr;
+		}
+
+		@include desktop{
+			gap: 40px;
+			grid-template-areas:
+		  ". first second .";
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+		}
+
+		.col-6:first-child{
+			grid-area: first;
+		}
+		.col-6:nth-child(2){
+			grid-area: second;
+		}
+	}
+
+
+	&.four-up .row{
+		display: grid;
+		align-items: start;
+		grid-template-columns: 1fr 1fr;
+		gap: 30px 10px;
+
+		@include tablet{
+			gap: 20px 20px;
+			grid-template-columns: 1fr 1fr 1fr;
+		}
+
+		@include desktop{
+			gap: 40px 40px;
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+		}
+	}
+
+
 
 	&.two-modals .row{
 		grid-template-columns: 1fr;
