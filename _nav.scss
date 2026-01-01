@@ -553,18 +553,25 @@ a.search-toggle{
     left: -20px;
 } 
 
+.search-container.active .search-toggle{
+  position: absolute;
+  right: 0px;
+}
+
+
 .search-container.active .search-input {
     opacity: 1;
     padding: 5px 10px;
     transition: width 0.3s ease;
-    position: absolute;
+    position: relative;
     right: -15px;
     left: auto;
-    width: 320px;
+    width: 200px;
     z-index: 30000;
     height: 100%;
     padding: 10px 40px 10px 20px;
     border-radius: 100px;
+    top: 0px;
     background: $light-gray;
 
 
