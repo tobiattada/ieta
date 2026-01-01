@@ -160,8 +160,8 @@
   gap: 10px;
 
   @include desktop{
-    gap: 25px;
-        margin-left: auto;
+    gap: 10px;
+    margin-left: auto;
   }
 
   @include largedesktop {

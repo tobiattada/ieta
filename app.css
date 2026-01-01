@@ -2509,7 +2509,7 @@ footer.page-footer .footer-section .flex-item a:hover {
 }
 @media (min-width: 1024px) {
   .nav-menu {
-    gap: 25px;
+    gap: 10px;
     margin-left: auto;
   }
 }
