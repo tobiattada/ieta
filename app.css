@@ -2371,6 +2371,11 @@ footer.page-footer .footer-section .flex-item a:hover {
 }
 @media (min-width: 1024px) {
   .navbar__brand img {
+    max-width: 150px;
+  }
+}
+@media (min-width: 1300px) {
+  .navbar__brand img {
     max-width: 180px;
   }
 }
@@ -2513,6 +2518,9 @@ footer.page-footer .footer-section .flex-item a:hover {
     gap: 10px;
   }
 }
+.nav-menu.search-open {
+  gap: 0px;
+}
 .nav-menu .nav-item {
   position: relative;
   font-family: "Outfit", sans-serif;
@@ -2535,7 +2543,7 @@ footer.page-footer .footer-section .flex-item a:hover {
 }
 .nav-menu .nav-item a {
   text-decoration: none;
-  padding: 22px 0px;
+  padding: 22px 10px;
   font-family: "Outfit", sans-serif;
   font-weight: 600;
   letter-spacing: 0%;

@@ -15,6 +15,10 @@
     max-width: 120px;
 
     @include desktop{
+      max-width: 150px;
+    }
+
+    @include largedesktop{
       max-width: 180px;
     }
   }
@@ -164,6 +168,9 @@
     gap: 10px;
   }
 
+  &.search-open{
+    gap: 0px;
+  }
 
   .nav-item {
     position: relative;
@@ -176,7 +183,7 @@
 
     a { 
       text-decoration: none;
-      padding: 22px 0px;
+      padding: 22px 10px;
 
       @include largedesktop {
         padding: 22px 15px;
