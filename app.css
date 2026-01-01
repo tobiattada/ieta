@@ -2538,6 +2538,11 @@ footer.page-footer .footer-section .flex-item a:hover {
   text-align: right;
   direction: rtl;
 }
+@media (min-width: 1024px) {
+  .nav-menu .nav-item {
+    font-size: 16px;
+  }
+}
 .nav-menu .nav-item.has-button {
   padding: 0px 0px;
 }
