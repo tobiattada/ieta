@@ -2540,7 +2540,7 @@ footer.page-footer .footer-section .flex-item a:hover {
 }
 @media (min-width: 1024px) {
   .nav-menu .nav-item {
-    font-size: 16px;
+    font-size: 16px !important;
   }
 }
 .nav-menu .nav-item.has-button {

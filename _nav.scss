@@ -178,7 +178,7 @@
      @include p-bold($dark-gray);
 
      @include desktop{
-      font-size:16px;
+      font-size:16px !important;
      }
 
     &.has-button{
