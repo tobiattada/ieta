@@ -464,6 +464,7 @@
 										&:hover{
 											box-shadow: $hover-shadow;
 											transition: .3s;
+											cursor: pointer;
 
 											&:after{
 												margin-top: 20px;
