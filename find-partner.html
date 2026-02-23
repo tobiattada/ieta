@@ -26,6 +26,10 @@
     #data-list {
       list-style: none;
       padding: 0;
+
+          display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-gap: 10px;
     }
 
     #data-list li {
@@ -51,147 +55,185 @@
 <h1>Filterable Data</h1>
 
 <div class="filters">
-<!-- 
-  <fieldset>
-    <legend>Audience</legend>
-    <div id="nameFilter"></div>
-  </fieldset>
 
-  <fieldset>
-    <legend>Demographic</legend>
-    <div id="categoryFilter"></div>
-  </fieldset>
-
-  <fieldset id="priceFilter">
-    <legend>Program Duration</legend>
-    <label><input type="checkbox" value="0-10"> $0–$10</label><br>
-    <label><input type="checkbox" value="10-50"> $10–$50</label><br>
-    <label><input type="checkbox" value="50-100"> $50–$100</label><br>
-    <label><input type="checkbox" value="100+"> $100+</label>
-  </fieldset>
-
-  <fieldset id="ratingFilter">
-    <legend>Program Type</legend>
-    <label><input type="checkbox" value="4"> 4+</label><br>
-    <label><input type="checkbox" value="4.5"> 4.5+</label>
-  </fieldset>
- -->
-
-  <div id="orgFilter" class="filters"></div>
   <div id="audienceFilter" class="filters"></div>
+  <div id="demographicFilter" class="filters"></div>
   <div id="typeFilter" class="filters"></div>
   <div id="durationFilter" class="filters"></div>
 
-  <ul id="data-list"></ul>
 </div>
 
+  <ul id="data-list"></ul>
+
+
+
 <script>
-  let data = [];
-  const list = document.getElementById("data-list");
+let data = [];
+const list = document.getElementById("data-list");
 
-  // Load JSON from GitHub RAW
-  fetch("https://raw.githubusercontent.com/tobiattada/ieta/9ce47413125dbf23d976f8503633f7e6b9c0fbee/trip-platform-org-list.json")
-    .then(res => res.json())
-    .then(json => {
-      data = json;
+// 🔹 Load JSON from GitHub RAW
+fetch("https://raw.githubusercontent.com/tobiattada/ieta/9e4bcbfceb08fa92062cd47d87b3d0e494a070df/trip-platform-org-list.json")
+  .then(res => res.json())
+  .then(json => {
+    data = json;
 
-      createCheckboxes("orgFilter", data.map(i => i["Organization Name"]));
-      createCheckboxes("audienceFilter", getAllValues("Program Audience"));
-      createCheckboxes("typeFilter", getAllValues("Program Type"));
-      createCheckboxes("durationFilter", getAllValues("Program Duration"));
+    // Render all items on load
+    renderData(data);
 
-      renderData(data);
-    })
-    .catch(err => console.error("JSON load error:", err));
+    createCheckboxes("audienceFilter", getValues(["Program Audience 1","Program Audience 2","Program Audience 3","Program Audience 4"]));
+    createCheckboxes("demographicFilter", getValues(["Program Demographic 1","Program Demographic 2","Program Demographic 3"]));
+    createCheckboxes("typeFilter", getValues(["Program Type 1","Program Type 2","Program Type 3"]));
+    createCheckboxes("durationFilter", getValues(["Program Duration 1","Program Duration 2","Program Duration 3"]));
 
-  function getAllValues(prefix) {
-    const values = [];
+    renderData(data);
+  })
+  .catch(err => console.error("JSON load error:", err));
 
-    data.forEach(item => {
-      Object.keys(item).forEach(key => {
-        if (key.startsWith(prefix) && item[key]) {
-          values.push(item[key]);
-        }
-      });
+
+// 🔹 Collect unique values from multiple columns
+// function getValues(columns) {
+//   const values = [];
+
+//   data.forEach(item => {
+//     columns.forEach(col => {
+//       if (item[col]) values.push(item[col]);
+//     });
+//   });
+
+//   return [...new Set(values)].sort();
+// }
+
+
+// 🔹 Collect unique values and normalize for case-insensitive filtering
+function getValues(columns) {
+  const values = [];
+
+  data.forEach(item => {
+    columns.forEach(col => {
+      if (item[col]) values.push(item[col].toString().toLowerCase());
     });
-
-    return [...new Set(values)].sort();
-  }
-
-  function createCheckboxes(containerId, values) {
-    const container = document.getElementById(containerId);
-    container.innerHTML = "";
-
-    [...new Set(values)].sort().forEach(value => {
-      const label = document.createElement("label");
-      label.innerHTML = `<input type="checkbox" value="${value}"> ${value}`;
-      container.appendChild(label);
-      container.appendChild(document.createElement("br"));
-    });
-  }
-
-  function getCheckedValues(containerId) {
-    return [...document.querySelectorAll(`#${containerId} input:checked`)]
-      .map(i => i.value);
-  }
-
-  function matchesMultiColumn(item, prefix, selectedValues) {
-    return selectedValues.some(val =>
-      Object.keys(item).some(key =>
-        key.startsWith(prefix) && item[key] === val
-      )
-    );
-  }
-
-  function applyFilters() {
-    const orgs = getCheckedValues("orgFilter");
-    const audiences = getCheckedValues("audienceFilter");
-    const types = getCheckedValues("typeFilter");
-    const durations = getCheckedValues("durationFilter");
-
-    const filtered = data.filter(item => {
-      if (orgs.length && !orgs.includes(item["Organization Name"])) return false;
-      if (audiences.length && !matchesMultiColumn(item, "Program Audience", audiences)) return false;
-      if (types.length && !matchesMultiColumn(item, "Program Type", types)) return false;
-      if (durations.length && !matchesMultiColumn(item, "Program Duration", durations)) return false;
-      return true;
-    });
-
-    renderData(filtered);
-  }
-
-  function collectValues(item, prefix) {
-    return Object.keys(item)
-      .filter(key => key.startsWith(prefix) && item[key])
-      .map(key => item[key]);
-  }
-
-  function renderData(items) {
-    list.innerHTML = "";
-
-    if (!items.length) {
-      list.innerHTML = `<li class="no-results">No matching results</li>`;
-      return;
-    }
-
-    items.forEach(item => {
-      const li = document.createElement("li");
-      li.innerHTML = `
-        <div class="item-name">${item["Program Name (for Display)"]}</div>
-        Organization: ${item["Organization Name"]}<br>
-        Audience: ${collectValues(item, "Program Audience").join(", ")}<br>
-        Type: ${collectValues(item, "Program Type").join(", ")}<br>
-        Duration: ${collectValues(item, "Program Duration").join(", ")}<br>
-        <a href="${item.Website}" target="_blank">Visit Website</a>
-      `;
-      list.appendChild(li);
-    });
-  }
-
-  // Event listener
-  document.addEventListener("change", function(e) {
-    if (e.target.matches(".filters input")) {
-      applyFilters();
-    }
   });
+
+  // Capitalize first letter for display in checkboxes
+  return [...new Set(values)]
+    .sort()
+    .map(v => v.charAt(0).toUpperCase() + v.slice(1));
+}
+
+// 🔹 Get selected checkbox values
+function getCheckedValues(containerId) {
+  return [...document.querySelectorAll(`#${containerId} input:checked`)]
+    .map(i => i.value.toLowerCase()); // convert to lowercase for filtering
+}
+
+// 🔹 Create checkboxes
+function createCheckboxes(containerId, values) {
+  const container = document.getElementById(containerId);
+  container.innerHTML = "";
+
+  values.forEach(value => {
+    const label = document.createElement("label");
+    label.innerHTML = `<input type="checkbox" value="${value}"> ${value}`;
+    container.appendChild(label);
+    container.appendChild(document.createElement("br"));
+  });
+}
+
+
+// 🔹 Get selected values
+// function getValues(columns) {
+//   const values = [];
+
+//   data.forEach(item => {
+//     columns.forEach(col => {
+//       if (item[col]) values.push(item[col].toString().toLowerCase());
+//     });
+//   });
+
+//   // Capitalize first letter for display
+//   return [...new Set(values)]
+//     .sort()
+//     .map(v => v.charAt(0).toUpperCase() + v.slice(1));
+// }
+
+
+// 🔹 Check if item matches any value in multi-columns (case-insensitive)
+function matchesColumns(item, columns, selectedValues) {
+  return selectedValues.some(val =>
+    columns.some(col => {
+      const itemVal = item[col];
+      return itemVal && itemVal.toString().toLowerCase() === val.toString().toLowerCase();
+    })
+  );
+}
+
+
+// 🔹 Apply Filters
+function applyFilters() {
+  const audiences = getCheckedValues("audienceFilter");
+  const demographics = getCheckedValues("demographicFilter");
+  const types = getCheckedValues("typeFilter");
+  const durations = getCheckedValues("durationFilter");
+
+  const filtered = data.filter(item => {
+
+    // If there are any selected checkboxes in a category, only show matching items
+    if (audiences.length &&
+        !matchesColumns(item,
+          ["Program Audience 1","Program Audience 2","Program Audience 3","Program Audience 4"],
+          audiences)) return false;
+
+    if (demographics.length &&
+        !matchesColumns(item,
+          ["Program Demographic 1","Program Demographic 2","Program Demographic 3"],
+          demographics)) return false;
+
+    if (types.length &&
+        !matchesColumns(item,
+          ["Program Type 1","Program Type 2","Program Type 3"],
+          types)) return false;
+
+    if (durations.length &&
+        !matchesColumns(item,
+          ["Program Duration 1","Program Duration 2","Program Duration 3"],
+          durations)) return false;
+
+    return true;
+  });
+
+  renderData(filtered);
+}
+
+// 🔹 Render Results
+function renderData(items) {
+  list.innerHTML = "";
+
+  if (!items.length) {
+    list.innerHTML = `<li class="no-results">No matching results</li>`;
+    return;
+  }
+
+  items.forEach(item => {
+    const li = document.createElement("li");
+
+    li.innerHTML = `
+      <a href="${item.Website}" target="_blank">
+        <img src="${item.Image || 'https://via.placeholder.com/150'}" alt="${item["Program Name (for Display)"]}">
+        <p class="bold">${item["Program Name (for Display)"]}</p>
+        <p>${item["Organization Name"]}</p>
+      </a>
+    `;
+
+    list.appendChild(li);
+  });
+}
+
+
+// 🔹 Listen for filter changes
+// 🔹 Listen for all checkbox changes
+document.addEventListener("change", function(e) {
+  if (e.target.matches("input[type=checkbox]")) {
+    applyFilters();
+  }
+});
 </script>
