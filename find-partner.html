@@ -71,6 +71,13 @@
 let data = [];
 const list = document.getElementById("data-list");
 
+
+function getLogoUrl(programName) {
+  const encodedName = encodeURIComponent(programName); // spaces and special characters
+  return `https://raw.githubusercontent.com/tobiattada/ieta/9e4bcbfceb08fa92062cd47d87b3d0e494a070df/logos/${encodedName}/logo.png`;
+}
+
+
 // 🔹 Load JSON from GitHub RAW
 fetch("https://raw.githubusercontent.com/tobiattada/ieta/9e4bcbfceb08fa92062cd47d87b3d0e494a070df/trip-platform-org-list.json")
   .then(res => res.json())
@@ -218,7 +225,7 @@ function renderData(items) {
 
     li.innerHTML = `
       <a href="${item.Website}" target="_blank">
-        <img src="${item.Image || 'https://via.placeholder.com/150'}" alt="${item["Program Name (for Display)"]}">
+        <img src="${getLogoUrl(item["Program Name (for Display)"])}" alt="${item["Program Name (for Display)"]}">
         <p class="bold">${item["Program Name (for Display)"]}</p>
         <p>${item["Organization Name"]}</p>
       </a>
