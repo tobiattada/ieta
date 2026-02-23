@@ -742,6 +742,14 @@
       "sC" : 3,
       "tS" : 0
     },
+    "\/find-partner.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/find-partner.html",
+      "oF" : 0
+    },
     "\/jfna sections\/-------jobs.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -986,6 +994,14 @@
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
+    },
+    "\/trip-platform-org-list.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/trip-platform-org-list-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
     }
   },
   "hooks" : [
