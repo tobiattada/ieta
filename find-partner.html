@@ -1,22 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Checkbox Filtered Data</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      padding: 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    h1 {
-      margin-bottom: 16px;
-    }
-
     .filters {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -68,19 +51,19 @@
 <h1>Filterable Data</h1>
 
 <div class="filters">
-
+<!-- 
   <fieldset>
-    <legend>Name</legend>
+    <legend>Audience</legend>
     <div id="nameFilter"></div>
   </fieldset>
 
   <fieldset>
-    <legend>Category</legend>
+    <legend>Demographic</legend>
     <div id="categoryFilter"></div>
   </fieldset>
 
   <fieldset id="priceFilter">
-    <legend>Price</legend>
+    <legend>Program Duration</legend>
     <label><input type="checkbox" value="0-10"> $0–$10</label><br>
     <label><input type="checkbox" value="10-50"> $10–$50</label><br>
     <label><input type="checkbox" value="50-100"> $50–$100</label><br>
@@ -88,31 +71,52 @@
   </fieldset>
 
   <fieldset id="ratingFilter">
-    <legend>Rating</legend>
+    <legend>Program Type</legend>
     <label><input type="checkbox" value="4"> 4+</label><br>
     <label><input type="checkbox" value="4.5"> 4.5+</label>
   </fieldset>
+ -->
 
-  <fieldset id="popularityFilter">
-    <legend>Popularity</legend>
-    <label><input type="checkbox" value="0-200"> 0–200</label><br>
-    <label><input type="checkbox" value="200-500"> 200–500</label><br>
-    <label><input type="checkbox" value="500+"> 500+</label>
-  </fieldset>
+  <div id="orgFilter" class="filters"></div>
+  <div id="audienceFilter" class="filters"></div>
+  <div id="typeFilter" class="filters"></div>
+  <div id="durationFilter" class="filters"></div>
 
+  <ul id="data-list"></ul>
 </div>
 
-<ul id="data-list"></ul>
-
 <script>
-  const data = [
-    { name: "Item A", category: "Books", price: 12.99, rating: 4.5, popularity: 230 },
-    { name: "Item B", category: "Games", price: 39.99, rating: 4.9, popularity: 510 },
-    { name: "Item C", category: "Books", price: 8.5, rating: 4.1, popularity: 120 },
-    { name: "Item D", category: "Electronics", price: 199.99, rating: 4.7, popularity: 890 }
-  ];
-
+  let data = [];
   const list = document.getElementById("data-list");
+
+  // Load JSON from GitHub RAW
+  fetch("https://raw.githubusercontent.com/tobiattada/ieta/9ce47413125dbf23d976f8503633f7e6b9c0fbee/trip-platform-org-list.json")
+    .then(res => res.json())
+    .then(json => {
+      data = json;
+
+      createCheckboxes("orgFilter", data.map(i => i["Organization Name"]));
+      createCheckboxes("audienceFilter", getAllValues("Program Audience"));
+      createCheckboxes("typeFilter", getAllValues("Program Type"));
+      createCheckboxes("durationFilter", getAllValues("Program Duration"));
+
+      renderData(data);
+    })
+    .catch(err => console.error("JSON load error:", err));
+
+  function getAllValues(prefix) {
+    const values = [];
+
+    data.forEach(item => {
+      Object.keys(item).forEach(key => {
+        if (key.startsWith(prefix) && item[key]) {
+          values.push(item[key]);
+        }
+      });
+    });
+
+    return [...new Set(values)].sort();
+  }
 
   function createCheckboxes(containerId, values) {
     const container = document.getElementById(containerId);
@@ -131,31 +135,35 @@
       .map(i => i.value);
   }
 
-  function matchesRange(value, range) {
-    if (range.endsWith("+")) {
-      return value >= Number(range.replace("+", ""));
-    }
-    const [min, max] = range.split("-").map(Number);
-    return value >= min && value <= max;
+  function matchesMultiColumn(item, prefix, selectedValues) {
+    return selectedValues.some(val =>
+      Object.keys(item).some(key =>
+        key.startsWith(prefix) && item[key] === val
+      )
+    );
   }
 
   function applyFilters() {
-    const names = getCheckedValues("nameFilter");
-    const categories = getCheckedValues("categoryFilter");
-    const prices = getCheckedValues("priceFilter");
-    const ratings = getCheckedValues("ratingFilter");
-    const popularities = getCheckedValues("popularityFilter");
+    const orgs = getCheckedValues("orgFilter");
+    const audiences = getCheckedValues("audienceFilter");
+    const types = getCheckedValues("typeFilter");
+    const durations = getCheckedValues("durationFilter");
 
     const filtered = data.filter(item => {
-      if (names.length && !names.includes(item.name)) return false;
-      if (categories.length && !categories.includes(item.category)) return false;
-      if (prices.length && !prices.some(r => matchesRange(item.price, r))) return false;
-      if (ratings.length && !ratings.some(r => item.rating >= Number(r))) return false;
-      if (popularities.length && !popularities.some(r => matchesRange(item.popularity, r))) return false;
+      if (orgs.length && !orgs.includes(item["Organization Name"])) return false;
+      if (audiences.length && !matchesMultiColumn(item, "Program Audience", audiences)) return false;
+      if (types.length && !matchesMultiColumn(item, "Program Type", types)) return false;
+      if (durations.length && !matchesMultiColumn(item, "Program Duration", durations)) return false;
       return true;
     });
 
     renderData(filtered);
+  }
+
+  function collectValues(item, prefix) {
+    return Object.keys(item)
+      .filter(key => key.startsWith(prefix) && item[key])
+      .map(key => item[key]);
   }
 
   function renderData(items) {
@@ -169,217 +177,21 @@
     items.forEach(item => {
       const li = document.createElement("li");
       li.innerHTML = `
-        <div class="item-name">${item.name}</div>
-        Category: ${item.category}<br>
-        Price: $${item.price}<br>
-        Rating: ${item.rating}<br>
-        Popularity: ${item.popularity}
+        <div class="item-name">${item["Program Name (for Display)"]}</div>
+        Organization: ${item["Organization Name"]}<br>
+        Audience: ${collectValues(item, "Program Audience").join(", ")}<br>
+        Type: ${collectValues(item, "Program Type").join(", ")}<br>
+        Duration: ${collectValues(item, "Program Duration").join(", ")}<br>
+        <a href="${item.Website}" target="_blank">Visit Website</a>
       `;
       list.appendChild(li);
     });
   }
 
-  // Initialize
-  createCheckboxes("nameFilter", data.map(i => i.name));
-  createCheckboxes("categoryFilter", data.map(i => i.category));
-
-  document.querySelectorAll(".filters input")
-    .forEach(cb => cb.addEventListener("change", applyFilters));
-
-  renderData(data);
+  // Event listener
+  document.addEventListener("change", function(e) {
+    if (e.target.matches(".filters input")) {
+      applyFilters();
+    }
+  });
 </script>
-
-</body>
-</html>
-
-
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Dropdown Filtered Data</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      padding: 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    h1 {
-      margin-bottom: 16px;
-    }
-
-    .filters {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 12px;
-      margin-bottom: 24px;
-    }
-
-    .filters select {
-      padding: 8px;
-      font-size: 14px;
-    }
-
-    #data-list {
-      list-style: none;
-      padding: 0;
-    }
-
-    #data-list li {
-      padding: 14px;
-      border: 1px solid #ddd;
-      border-radius: 6px;
-      margin-bottom: 12px;
-    }
-
-    .item-name {
-      font-weight: bold;
-      font-size: 18px;
-    }
-
-    .no-results {
-      color: #888;
-      font-style: italic;
-    }
-  </style>
-</head>
-<body>
-
-<h1>Filterable Data</h1>
-
-<div class="filters">
-  <select id="nameFilter">
-    <option value="">All Names</option>
-  </select>
-
-  <select id="categoryFilter">
-    <option value="">All Categories</option>
-  </select>
-
-  <select id="priceFilter">
-    <option value="">All Prices</option>
-    <option value="0-10">$0–$10</option>
-    <option value="10-50">$10–$50</option>
-    <option value="50-100">$50–$100</option>
-    <option value="100+">$100+</option>
-  </select>
-
-  <select id="ratingFilter">
-    <option value="">All Ratings</option>
-    <option value="4">4+</option>
-    <option value="4.5">4.5+</option>
-  </select>
-
-  <select id="popularityFilter">
-    <option value="">All Popularity</option>
-    <option value="0-200">0–200</option>
-    <option value="200-500">200–500</option>
-    <option value="500+">500+</option>
-  </select>
-</div>
-
-<ul id="data-list"></ul>
-
-<script>
-  const data = [
-    { name: "Item A", category: "Books", price: 12.99, rating: 4.5, popularity: 230 },
-    { name: "Item B", category: "Games", price: 39.99, rating: 4.9, popularity: 510 },
-    { name: "Item C", category: "Books", price: 8.5, rating: 4.1, popularity: 120 },
-    { name: "Item D", category: "Electronics", price: 199.99, rating: 4.7, popularity: 890 }
-  ];
-
-  const filters = {
-    name: document.getElementById("nameFilter"),
-    category: document.getElementById("categoryFilter"),
-    price: document.getElementById("priceFilter"),
-    rating: document.getElementById("ratingFilter"),
-    popularity: document.getElementById("popularityFilter")
-  };
-
-  const list = document.getElementById("data-list");
-
-  function populateDropdown(select, values, label) {
-    const current = select.value;
-    select.innerHTML = `<option value="">${label}</option>`;
-    [...new Set(values)].sort().forEach(value => {
-      const option = document.createElement("option");
-      option.value = value;
-      option.textContent = value;
-      select.appendChild(option);
-    });
-    select.value = current;
-  }
-
-  function applyFilters() {
-    let filtered = data.filter(item => {
-      if (filters.name.value && item.name !== filters.name.value) return false;
-      if (filters.category.value && item.category !== filters.category.value) return false;
-
-      if (filters.price.value) {
-        if (filters.price.value === "100+" && item.price < 100) return false;
-        if (filters.price.value.includes("-")) {
-          const [min, max] = filters.price.value.split("-").map(Number);
-          if (item.price < min || item.price > max) return false;
-        }
-      }
-
-      if (filters.rating.value && item.rating < Number(filters.rating.value)) return false;
-
-      if (filters.popularity.value) {
-        if (filters.popularity.value === "500+" && item.popularity < 500) return false;
-        if (filters.popularity.value.includes("-")) {
-          const [min, max] = filters.popularity.value.split("-").map(Number);
-          if (item.popularity < min || item.popularity > max) return false;
-        }
-      }
-
-      return true;
-    });
-
-    updateDropdowns(filtered);
-    renderData(filtered);
-  }
-
-  function updateDropdowns(filtered) {
-    populateDropdown(filters.name, filtered.map(i => i.name), "All Names");
-    populateDropdown(filters.category, filtered.map(i => i.category), "All Categories");
-  }
-
-  function renderData(items) {
-    list.innerHTML = "";
-
-    if (items.length === 0) {
-      list.innerHTML = `<li class="no-results">No matching results</li>`;
-      return;
-    }
-
-    items.forEach(item => {
-      const li = document.createElement("li");
-      li.innerHTML = `
-        <div class="item-name">${item.name}</div>
-        Category: ${item.category}<br>
-        Price: $${item.price}<br>
-        Rating: ${item.rating}<br>
-        Popularity: ${item.popularity}
-      `;
-      list.appendChild(li);
-    });
-  }
-
-  // Initialize
-  populateDropdown(filters.name, data.map(i => i.name), "All Names");
-  populateDropdown(filters.category, data.map(i => i.category), "All Categories");
-  renderData(data);
-
-  Object.values(filters).forEach(select =>
-    select.addEventListener("change", applyFilters)
-  );
-</script>
-
-</body>
-</html>
- -->
