@@ -3378,6 +3378,7 @@ b mark, mark b {
   letter-spacing: 0%;
   color: #2A2A2A;
   margin-top: 3px;
+  padding: 10px 20px;
 }
 @media (min-width: 1024px) {
   #trip-planner-custom-code .filter-wrapper .filters .filter label {
@@ -3392,7 +3393,7 @@ b mark, mark b {
   direction: rtl;
 }
 #trip-planner-custom-code .filter-wrapper .filters .filter label input {
-  visibility: hidden;
+  display: none;
 }
 #trip-planner-custom-code .filter-wrapper .filters .filter label:has(input:checked) {
   background: #1E3EAF;
@@ -3413,7 +3414,7 @@ b mark, mark b {
   border: 1px solid #ddd;
   border-radius: 20px;
 }
-#trip-planner-custom-code #data-list li:hover a {
+#trip-planner-custom-code #data-list li:hover {
   box-shadow: 0px 6px 20px 5px #0000000f;
 }
 #trip-planner-custom-code #data-list li:hover a p {

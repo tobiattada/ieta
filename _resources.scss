@@ -774,9 +774,12 @@
 	      		border-radius: 25px;
 	      		border: 1px solid $light;
 	      		@include caption($dark-gray);
-	      		input{
-	      			visibility: hidden;
 
+	      		    padding: 10px 20px;
+
+	      		    
+	      		input{
+	      			display: none;
 	      			&:checked{
 	      			}
 	      		}
@@ -810,8 +813,8 @@
       border-radius: 20px;
 
       &:hover{
+      	box-shadow: 0px 6px 20px 5px #0000000f;
       	a{
-      		box-shadow: 0px 6px 20px 5px #0000000f;
       		p{text-decoration: none;}
       	}
       }
