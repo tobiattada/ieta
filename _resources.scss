@@ -730,6 +730,7 @@
 	@include responsive-padding;
 
 	.filter-wrapper{
+		@include card($white);
 
 		.filters {
 	      display: grid;
