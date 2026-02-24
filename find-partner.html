@@ -1,69 +1,16 @@
 
-  <style>
-    .filters {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 16px;
-      margin-bottom: 24px;
-    }
+<div id="trip-planner-custom-code">
+  <div class="filters">
 
-    fieldset {
-      border: 1px solid #ddd;
-      border-radius: 6px;
-      padding: 10px;
-    }
+    <div id="audienceFilter" class="filters"></div>
+    <div id="demographicFilter" class="filters"></div>
+    <div id="typeFilter" class="filters"></div>
+    <div id="durationFilter" class="filters"></div>
 
-    legend {
-      font-weight: bold;
-      font-size: 14px;
-    }
-
-    label {
-      font-size: 14px;
-      cursor: pointer;
-    }
-
-    #data-list {
-      list-style: none;
-      padding: 0;
-
-          display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-      grid-gap: 10px;
-    }
-
-    #data-list li {
-      padding: 14px;
-      border: 1px solid #ddd;
-      border-radius: 6px;
-      margin-bottom: 12px;
-    }
-
-    .item-name {
-      font-weight: bold;
-      font-size: 18px;
-    }
-
-    .no-results {
-      color: #888;
-      font-style: italic;
-    }
-  </style>
-</head>
-<body>
-
-<h1>Filterable Data</h1>
-
-<div class="filters">
-
-  <div id="audienceFilter" class="filters"></div>
-  <div id="demographicFilter" class="filters"></div>
-  <div id="typeFilter" class="filters"></div>
-  <div id="durationFilter" class="filters"></div>
-
-</div>
+  </div>
 
   <ul id="data-list"></ul>
+</div>
 
 
 
@@ -74,12 +21,12 @@ const list = document.getElementById("data-list");
 
 function getLogoUrl(programName) {
   const encodedName = encodeURIComponent(programName); // spaces and special characters
-  return `https://raw.githubusercontent.com/tobiattada/ieta/9e4bcbfceb08fa92062cd47d87b3d0e494a070df/logos/${encodedName}/logo.png`;
+  return `https://raw.githubusercontent.com/tobiattada/ieta/9c89562a8444a56a1f20b14abe0dcee53702feab/logos/${encodedName}/logo.png`;
 }
 
 
 // 🔹 Load JSON from GitHub RAW
-fetch("https://raw.githubusercontent.com/tobiattada/ieta/9e4bcbfceb08fa92062cd47d87b3d0e494a070df/trip-platform-org-list.json")
+fetch("https://raw.githubusercontent.com/tobiattada/ieta/9c89562a8444a56a1f20b14abe0dcee53702feab/trip-platform-org-list.json")
   .then(res => res.json())
   .then(json => {
     data = json;

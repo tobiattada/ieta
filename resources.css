@@ -3290,3 +3290,35 @@ b mark, mark b {
 .section-resource-center.section-resource-center-main .page-top #resource-center-controls ul#display-buttons {
   display: none !important;
 }
+
+#trip-planner-custom-code .filters {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+#trip-planner-custom-code label {
+  font-size: 14px;
+  cursor: pointer;
+}
+#trip-planner-custom-code #data-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+#trip-planner-custom-code #data-list li {
+  padding: 14px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+#trip-planner-custom-code .item-name {
+  font-weight: bold;
+  font-size: 18px;
+}
+#trip-planner-custom-code .no-results {
+  color: #888;
+  font-style: italic;
+}

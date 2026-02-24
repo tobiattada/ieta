@@ -725,7 +725,46 @@
 
 
 
+/// THIS IS FOR THE TRIP PLANNER CODE
+#trip-planner-custom-code{
+	.filters {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+      margin-bottom: 24px;
+    }
 
+    label {
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    #data-list {
+      list-style: none;
+      padding: 0;
+
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-gap: 10px;
+    }
+
+    #data-list li {
+      padding: 14px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      margin-bottom: 12px;
+    }
+
+    .item-name {
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .no-results {
+      color: #888;
+      font-style: italic;
+    }
+}
 
 
 
