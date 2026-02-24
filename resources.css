@@ -3305,7 +3305,7 @@ b mark, mark b {
   grid-area: demographic;
 }
 #trip-planner-custom-code .filter-wrapper .filters #typeFilter {
-  type: type;
+  grid-area: type;
 }
 #trip-planner-custom-code .filter-wrapper .filters #durationFilter {
   grid-area: duration;
