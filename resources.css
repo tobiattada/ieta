@@ -3350,8 +3350,11 @@ b mark, mark b {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "audience audience" "demographic duration" "type type";
-  gap: 16px;
+  gap: 25px;
   margin-bottom: 24px;
+}
+#trip-planner-custom-code .filter-wrapper .filters h5 {
+  margin-bottom: 15px;
 }
 #trip-planner-custom-code .filter-wrapper .filters .audienceFilter {
   grid-area: audience;

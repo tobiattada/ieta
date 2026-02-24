@@ -748,8 +748,12 @@
 	      "audience audience"
 	      "demographic duration"
 	      "type type";
-	      gap: 16px;
+	      gap: 25px;
 	      margin-bottom: 24px;
+
+	      h5{
+	      	margin-bottom: 15px;
+	      }
 
 	      .audienceFilter{
 	      	grid-area: audience;
