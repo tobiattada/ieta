@@ -1,11 +1,19 @@
 
 <div id="trip-planner-custom-code">
+  <button id="openPopup">Filters</button>
+
+
   <div class="filter-wrapper">
-    <div class="filters">
-      <div class="audienceFilter"><h5>Audience</h5><div id="audienceFilter" class="filter"></div></div>
-      <div class="demographicFilter"><h5>Demographic</h5><div id="demographicFilter" class="filter"></div></div>
-      <div class="durationFilter"><h5>Program Duration</h5><div id="durationFilter" class="filter"></div></div>
-      <div class="typeFilter"><h5>Program Type</h5><div id="typeFilter" class="filter"></div></div>
+    <div id="popup" class="popup">
+      <div class="popup-content">
+        <button class="close">&times;</button>
+        <div class="filters">
+          <div class="audienceFilter"><h5>Audience</h5><div id="audienceFilter" class="filter"></div></div>
+          <div class="demographicFilter"><h5>Demographic</h5><div id="demographicFilter" class="filter"></div></div>
+          <div class="durationFilter"><h5>Program Duration</h5><div id="durationFilter" class="filter"></div></div>
+          <div class="typeFilter"><h5>Program Type</h5><div id="typeFilter" class="filter"></div></div>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -190,4 +198,27 @@ document.addEventListener("change", function(e) {
     applyFilters();
   }
 });
+</script>
+
+
+<script>
+const popup = document.getElementById("popup");
+const openBtn = document.getElementById("openPopup");
+const closeBtn = document.querySelector(".close");
+
+openBtn.addEventListener("click", () => {
+  popup.classList.add("active");
+  document.body.style.overflow = "hidden"; // prevent background scroll
+});
+
+closeBtn.addEventListener("click", closePopup);
+
+popup.addEventListener("click", (e) => {
+  if (e.target === popup) closePopup(); // close when clicking outside
+});
+
+function closePopup() {
+  popup.classList.remove("active");
+  document.body.style.overflow = "";
+}
 </script>

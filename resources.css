@@ -3476,3 +3476,33 @@ b mark, mark b {
   color: #888;
   font-style: italic;
 }
+#trip-planner-custom-code .popup {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  z-index: 9999;
+}
+#trip-planner-custom-code .popup.active {
+  display: flex;
+}
+#trip-planner-custom-code .popup-content {
+  background: #fff;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+  padding: 1.5rem;
+  position: relative;
+  animation: fadeIn 0.3s ease;
+}
+#trip-planner-custom-code .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+}
