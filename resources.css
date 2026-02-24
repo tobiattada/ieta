@@ -3367,6 +3367,8 @@ b mark, mark b {
 }
 #trip-planner-custom-code .filter-wrapper .filters .filter {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 #trip-planner-custom-code .filter-wrapper .filters .filter label {
   border-radius: 25px;
@@ -3397,6 +3399,25 @@ b mark, mark b {
 }
 #trip-planner-custom-code .filter-wrapper .filters .filter label:has(input:checked) {
   background: #1E3EAF;
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: #f2f2f2;
+  margin-top: 3px;
+}
+@media (min-width: 1024px) {
+  #trip-planner-custom-code .filter-wrapper .filters .filter label:has(input:checked) {
+    font-size: 15px;
+    line-height: 150%;
+  }
+}
+#trip-planner-custom-code .filter-wrapper .filters .filter label:has(input:checked).hebrew {
+  font-family: "Noto Sans Hebrew", sans-serif !important;
+  font-weight: 600;
+  text-align: right;
+  direction: rtl;
 }
 #trip-planner-custom-code label {
   font-size: 10px;

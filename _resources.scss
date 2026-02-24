@@ -769,6 +769,8 @@
 
 	      .filter{
 	      	display: flex;
+			flex-direction: row;
+   			flex-wrap: wrap;
 
 	      	label{
 	      		border-radius: 25px;
@@ -777,7 +779,7 @@
 
 	      		    padding: 10px 20px;
 
-	      		    
+
 	      		input{
 	      			display: none;
 	      			&:checked{
@@ -786,6 +788,7 @@
 
 	      		&:has(input:checked){
 	      			background: $primary-blue;
+	      			@include caption($light);
 	      		}
 	      	}
 	      }
