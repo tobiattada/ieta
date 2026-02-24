@@ -771,8 +771,9 @@
 	      	display: flex;
 
 	      	label{
-	      		border-radius: 25px solid $light;
-	      		@include label($dark-gray);
+	      		border-radius: 25px;
+	      		border: 1px solid $light;
+	      		@include caption($dark-gray);
 	      		input{
 	      			visibility: hidden;
 
