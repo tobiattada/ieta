@@ -741,18 +741,18 @@
 	      gap: 16px;
 	      margin-bottom: 24px;
 
-	      #audienceFilter{
+	      .audienceFilter{
 	      	grid-area: audience;
 	      }
-	      #demographicFilter{
+	      .demographicFilter{
 	      	grid-area: demographic;
 
 	      }
-	      #typeFilter{
+	      .typeFilter{
 	      	grid-area: type;
 
 	      }
-	      #durationFilter{
+	      .durationFilter{
 	      	grid-area: duration;
 
 	      }

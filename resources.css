@@ -3322,16 +3322,16 @@ b mark, mark b {
   gap: 16px;
   margin-bottom: 24px;
 }
-#trip-planner-custom-code .filter-wrapper .filters #audienceFilter {
+#trip-planner-custom-code .filter-wrapper .filters .audienceFilter {
   grid-area: audience;
 }
-#trip-planner-custom-code .filter-wrapper .filters #demographicFilter {
+#trip-planner-custom-code .filter-wrapper .filters .demographicFilter {
   grid-area: demographic;
 }
-#trip-planner-custom-code .filter-wrapper .filters #typeFilter {
+#trip-planner-custom-code .filter-wrapper .filters .typeFilter {
   grid-area: type;
 }
-#trip-planner-custom-code .filter-wrapper .filters #durationFilter {
+#trip-planner-custom-code .filter-wrapper .filters .durationFilter {
   grid-area: duration;
 }
 #trip-planner-custom-code .filter-wrapper .filters .filter {
