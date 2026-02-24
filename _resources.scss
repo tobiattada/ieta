@@ -727,12 +727,36 @@
 
 /// THIS IS FOR THE TRIP PLANNER CODE
 #trip-planner-custom-code{
-	.filters {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 16px;
-      margin-bottom: 24px;
-    }
+	.filter-wrapper{
+
+		.filters {
+	      display: grid;
+	      grid-template-columns: 1fr 1fr;
+	      grid-template-areas:
+	      "audience audience"
+	      "demographic duration"
+	      "type type";
+	      gap: 16px;
+	      margin-bottom: 24px;
+
+	      #audienceFilter{
+	      	grid-area: audience;
+	      }
+	      #demographicFilter{
+	      	grid-area: demographic;
+
+	      }
+	      #typeFilter{
+	      	type: type;
+
+	      }
+	      #durationFilter{
+	      	grid-area: duration;
+
+	      }
+	    }
+	}
+
 
     label {
       font-size: 14px;

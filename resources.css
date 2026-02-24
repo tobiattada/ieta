@@ -3291,11 +3291,24 @@ b mark, mark b {
   display: none !important;
 }
 
-#trip-planner-custom-code .filters {
+#trip-planner-custom-code .filter-wrapper .filters {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "audience audience" "demographic duration" "type type";
   gap: 16px;
   margin-bottom: 24px;
+}
+#trip-planner-custom-code .filter-wrapper .filters #audienceFilter {
+  grid-area: audience;
+}
+#trip-planner-custom-code .filter-wrapper .filters #demographicFilter {
+  grid-area: demographic;
+}
+#trip-planner-custom-code .filter-wrapper .filters #typeFilter {
+  type: type;
+}
+#trip-planner-custom-code .filter-wrapper .filters #durationFilter {
+  grid-area: duration;
 }
 #trip-planner-custom-code label {
   font-size: 14px;
