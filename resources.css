@@ -3404,8 +3404,18 @@ b mark, mark b {
 }
 #trip-planner-custom-code .filter-wrapper .filters #typeFilter.filter {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 10px;
+}
+@media (min-width: 768px) {
+  #trip-planner-custom-code .filter-wrapper .filters #typeFilter.filter {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1024px) {
+  #trip-planner-custom-code .filter-wrapper .filters #typeFilter.filter {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
 #trip-planner-custom-code label {
   font-size: 10px;
@@ -3415,8 +3425,18 @@ b mark, mark b {
   list-style: none;
   padding: 0;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-gap: 10px;
+}
+@media (min-width: 768px) {
+  #trip-planner-custom-code #data-list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (min-width: 1024px) {
+  #trip-planner-custom-code #data-list {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
 }
 #trip-planner-custom-code #data-list li {
   padding: 10px;

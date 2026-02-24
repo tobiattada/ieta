@@ -802,8 +802,16 @@
 
 	      #typeFilter.filter{
 	      	display: grid;
-	      	grid-template-columns: 1fr 1fr 1fr 1fr;
+	      	grid-template-columns: 1fr 1fr;
 	      	gap: 10px;
+
+	      	@include tablet {
+	      		grid-template-columns: 1fr 1fr;
+	      	}
+
+	      	@include desktop{
+	      		grid-template-columns: 1fr 1fr 1fr 1fr;
+	      	}
 	      }
 	    }
 	}
@@ -819,8 +827,16 @@
       padding: 0;
 
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
       grid-gap: 10px;
+
+      @include tablet {
+      	grid-template-columns: 1fr 1fr 1fr;
+      }
+
+      @include desktop{
+      	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      }
     }
 
     #data-list li {
