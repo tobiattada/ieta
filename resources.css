@@ -3323,6 +3323,28 @@ b mark, mark b {
   box-sizing: border-box;
   background: #FDFDFD;
   width: auto;
+  box-sizing: border-box;
+  padding: 30px 20px;
+}
+@media (min-width: 768px) {
+  #trip-planner-custom-code .filter-wrapper {
+    padding: 30px 30px;
+  }
+}
+@media (min-width: 1024px) {
+  #trip-planner-custom-code .filter-wrapper {
+    padding: 50px 60px;
+  }
+}
+@media (min-width: 1300px) {
+  #trip-planner-custom-code .filter-wrapper {
+    padding: 60px 80px;
+  }
+}
+@media (min-width: 1500px) {
+  #trip-planner-custom-code .filter-wrapper {
+    padding: 60px 10%;
+  }
 }
 #trip-planner-custom-code .filter-wrapper .filters {
   display: grid;
@@ -3345,6 +3367,27 @@ b mark, mark b {
 }
 #trip-planner-custom-code .filter-wrapper .filters .filter {
   display: flex;
+}
+#trip-planner-custom-code .filter-wrapper .filters .filter label {
+  border-radius: 25px solid #f2f2f2;
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: #2A2A2A;
+}
+@media (min-width: 1024px) {
+  #trip-planner-custom-code .filter-wrapper .filters .filter label {
+    font-size: 16px;
+    line-height: 150%;
+  }
+}
+#trip-planner-custom-code .filter-wrapper .filters .filter label input {
+  visibility: hidden;
+}
+#trip-planner-custom-code .filter-wrapper .filters .filter label:has(input:checked) {
+  background: #1E3EAF;
 }
 #trip-planner-custom-code label {
   font-size: 14px;

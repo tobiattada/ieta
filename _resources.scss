@@ -738,6 +738,7 @@
 	    box-sizing: border-box;
 	    background: $white;
 	    width: auto;
+	    @include responsive-padding;
 
 
 		.filters {
@@ -768,6 +769,21 @@
 
 	      .filter{
 	      	display: flex;
+
+	      	label{
+	      		border-radius: 25px solid $light;
+	      		@include label($dark-gray);
+	      		input{
+	      			visibility: hidden;
+
+	      			&:checked{
+	      			}
+	      		}
+
+	      		&:has(input:checked){
+	      			background: $primary-blue;
+	      		}
+	      	}
 	      }
 	    }
 	}
