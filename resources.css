@@ -3398,7 +3398,7 @@ b mark, mark b {
   background: #1E3EAF;
 }
 #trip-planner-custom-code label {
-  font-size: 14px;
+  font-size: 10px;
   cursor: pointer;
 }
 #trip-planner-custom-code #data-list {
@@ -3409,10 +3409,15 @@ b mark, mark b {
   grid-gap: 10px;
 }
 #trip-planner-custom-code #data-list li {
-  padding: 14px;
+  padding: 10px;
   border: 1px solid #ddd;
-  border-radius: 6px;
-  margin-bottom: 12px;
+  border-radius: 20px;
+}
+#trip-planner-custom-code #data-list li:hover {
+  box-shadow: 0px 6px 20px 5px #0000000f;
+}
+#trip-planner-custom-code #data-list li:hover p {
+  text-decoration: none;
 }
 #trip-planner-custom-code #data-list li img {
   width: 100%;
