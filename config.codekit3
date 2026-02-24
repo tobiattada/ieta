@@ -924,6 +924,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/logos\/Biluim Israel\/logo.png" : {
+      "ft" : 32768,
+      "iS" : 244843,
+      "oA" : 0,
+      "oAP" : "\/logos\/Biluim Israel\/logo.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/logos\/Birthright Israel Onward\/logo.png" : {
       "ft" : 32768,
       "iS" : 5290,
@@ -963,24 +976,11 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/logos\/Canadian Young Judaea Biluim Israel\/logo.png" : {
-      "ft" : 32768,
-      "iS" : 244843,
-      "oA" : 0,
-      "oAP" : "\/logos\/Canadian Young Judaea Biluim Israel\/logo.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/logos\/CTeen\/CTeen.webp" : {
+    "\/logos\/CTeen Summer Programs\/CTeen.webp" : {
       "ft" : 8388608,
       "iS" : 39038,
       "oA" : 0,
-      "oAP" : "\/logos\/CTeen\/CTeen.webp",
+      "oAP" : "\/logos\/CTeen Summer Programs\/CTeen.webp",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -1000,11 +1000,37 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/logos\/Early J Early Childhood Jewish & Israel Cultural Ambassador Program\/logo.png" : {
+    "\/logos\/Early Childhood Jewish & Israel Cultural Ambassador Program\/logo.png" : {
       "ft" : 32768,
       "iS" : 5056,
       "oA" : 0,
-      "oAP" : "\/logos\/Early J Early Childhood Jewish & Israel Cultural Ambassador Program\/logo.png",
+      "oAP" : "\/logos\/Early Childhood Jewish & Israel Cultural Ambassador Program\/logo.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/logos\/Fact Finders Trip\/logo.png" : {
+      "ft" : 32768,
+      "iS" : 34346,
+      "oA" : 0,
+      "oAP" : "\/logos\/Fact Finders Trip\/logo.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/logos\/Global Experiences\/logo.png" : {
+      "ft" : 32768,
+      "iS" : 280685,
+      "oA" : 0,
+      "oAP" : "\/logos\/Global Experiences\/logo.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -1026,6 +1052,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/logos\/iCenter Israel Experiences\/logo.png" : {
+      "ft" : 32768,
+      "iS" : 13887,
+      "oA" : 0,
+      "oAP" : "\/logos\/iCenter Israel Experiences\/logo.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/logos\/Israel Food Rescue\/logo.png" : {
       "ft" : 32768,
       "iS" : 1041404,
@@ -1039,11 +1078,11 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/logos\/IsraelNow Education Foundation\/logo.png" : {
+    "\/logos\/IsraelNow\/logo.png" : {
       "ft" : 32768,
       "iS" : 3259,
       "oA" : 0,
-      "oAP" : "\/logos\/IsraelNow Education Foundation\/logo.png",
+      "oAP" : "\/logos\/IsraelNow\/logo.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -1078,11 +1117,24 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/logos\/JEWISHcolorado\/logo.png" : {
+    "\/logos\/Journey of Growth\/logo.png" : {
+      "ft" : 32768,
+      "iS" : 43612,
+      "oA" : 0,
+      "oAP" : "\/logos\/Journey of Growth\/logo.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/logos\/Joyce Zeff Israel Study Tour (IST)\/logo.png" : {
       "ft" : 32768,
       "iS" : 50188,
       "oA" : 0,
-      "oAP" : "\/logos\/JEWISHcolorado\/logo.png",
+      "oAP" : "\/logos\/Joyce Zeff Israel Study Tour (IST)\/logo.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -1091,11 +1143,37 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/logos\/Livnot U_Lehibanot Rebuild Israel\/logo.png" : {
+    "\/logos\/Las Vegas Young Adult Mission to Israel\/logo.png" : {
+      "ft" : 32768,
+      "iS" : 26398,
+      "oA" : 0,
+      "oAP" : "\/logos\/Las Vegas Young Adult Mission to Israel\/logo.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/logos\/Leadership Through Service\/logo.png" : {
+      "ft" : 32768,
+      "iS" : 4406,
+      "oA" : 0,
+      "oAP" : "\/logos\/Leadership Through Service\/logo.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/logos\/Livnot Rebuild Israel\/logo.png" : {
       "ft" : 32768,
       "iS" : 61588,
       "oA" : 0,
-      "oAP" : "\/logos\/Livnot U_Lehibanot Rebuild Israel\/logo.png",
+      "oAP" : "\/logos\/Livnot Rebuild Israel\/logo.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -1104,24 +1182,11 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/logos\/Maccabee Task Force Fact Finders Trip\/logo.png" : {
-      "ft" : 32768,
-      "iS" : 34346,
-      "oA" : 0,
-      "oAP" : "\/logos\/Maccabee Task Force Fact Finders Trip\/logo.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/logos\/Maccabi USA Maccabiah\/logo.png" : {
+    "\/logos\/Maccabiah\/logo.png" : {
       "ft" : 32768,
       "iS" : 8408,
       "oA" : 0,
-      "oAP" : "\/logos\/Maccabi USA Maccabiah\/logo.png",
+      "oAP" : "\/logos\/Maccabiah\/logo.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -1182,32 +1247,6 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/logos\/Minneapolis Jewish Federation\/logo.png" : {
-      "ft" : 32768,
-      "iS" : 280685,
-      "oA" : 0,
-      "oAP" : "\/logos\/Minneapolis Jewish Federation\/logo.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/logos\/Momentum Journey of Growth\/logo.png" : {
-      "ft" : 32768,
-      "iS" : 43612,
-      "oA" : 0,
-      "oAP" : "\/logos\/Momentum Journey of Growth\/logo.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
     "\/logos\/NCSY Internship\/logo.png" : {
       "ft" : 32768,
       "iS" : 21013,
@@ -1247,11 +1286,11 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/logos\/Passages America Israel, Inc\/logo.png" : {
+    "\/logos\/Passages Israel\/logo.png" : {
       "ft" : 32768,
       "iS" : 54919,
       "oA" : 0,
-      "oAP" : "\/logos\/Passages America Israel, Inc\/logo.png",
+      "oAP" : "\/logos\/Passages Israel\/logo.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -1291,19 +1330,6 @@
       "iS" : 118507,
       "oA" : 0,
       "oAP" : "\/logos\/Ramah Programs\/logo.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/logos\/Repair the World Leadership Through Service\/logo.png" : {
-      "ft" : 32768,
-      "iS" : 4406,
-      "oA" : 0,
-      "oAP" : "\/logos\/Repair the World Leadership Through Service\/logo.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -1364,37 +1390,11 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/logos\/TAMID Group TAMID Fellowship Program\/logo.png" : {
+    "\/logos\/TAMID Fellowship Program\/logo.png" : {
       "ft" : 32768,
       "iS" : 28938,
       "oA" : 0,
-      "oAP" : "\/logos\/TAMID Group TAMID Fellowship Program\/logo.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/logos\/The Alan H. & Judy L. Bachman Foundation Las Vegas Young Adult Mission to Israel\/logo.png" : {
-      "ft" : 32768,
-      "iS" : 26398,
-      "oA" : 0,
-      "oAP" : "\/logos\/The Alan H. & Judy L. Bachman Foundation Las Vegas Young Adult Mission to Israel\/logo.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/logos\/The iCenter\/logo.png" : {
-      "ft" : 32768,
-      "iS" : 13887,
-      "oA" : 0,
-      "oAP" : "\/logos\/The iCenter\/logo.png",
+      "oAP" : "\/logos\/TAMID Fellowship Program\/logo.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
