@@ -3291,6 +3291,30 @@ b mark, mark b {
   display: none !important;
 }
 
+#trip-planner-custom-code {
+  box-sizing: border-box;
+  padding: 30px 20px;
+}
+@media (min-width: 768px) {
+  #trip-planner-custom-code {
+    padding: 30px 30px;
+  }
+}
+@media (min-width: 1024px) {
+  #trip-planner-custom-code {
+    padding: 50px 60px;
+  }
+}
+@media (min-width: 1300px) {
+  #trip-planner-custom-code {
+    padding: 60px 80px;
+  }
+}
+@media (min-width: 1500px) {
+  #trip-planner-custom-code {
+    padding: 60px 10%;
+  }
+}
 #trip-planner-custom-code .filter-wrapper .filters {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -3329,6 +3353,25 @@ b mark, mark b {
   border: 1px solid #ddd;
   border-radius: 6px;
   margin-bottom: 12px;
+}
+#trip-planner-custom-code #data-list li img {
+  width: 100%;
+}
+#trip-planner-custom-code #data-list li p.bold {
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0%;
+  color: #2A2A2A;
+}
+#trip-planner-custom-code #data-list li p.bold strong, #trip-planner-custom-code #data-list li p.bold em, #trip-planner-custom-code #data-list li p.bold b {
+  font-weight: 600;
+  color: #2A2A2A;
+}
+#trip-planner-custom-code #data-list li p.bold.hebrew {
+  font-family: "Noto Sans Hebrew", sans-serif !important;
+  font-weight: 600;
+  text-align: right;
+  direction: rtl;
 }
 #trip-planner-custom-code .item-name {
   font-weight: bold;

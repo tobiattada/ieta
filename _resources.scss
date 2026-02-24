@@ -727,6 +727,8 @@
 
 /// THIS IS FOR THE TRIP PLANNER CODE
 #trip-planner-custom-code{
+	@include responsive-padding;
+
 	.filter-wrapper{
 
 		.filters {
@@ -781,6 +783,14 @@
       border: 1px solid #ddd;
       border-radius: 6px;
       margin-bottom: 12px;
+
+      img{
+      	width: 100%;
+      }
+
+      p.bold{
+      	@include p-bold($dark-gray);
+      }
     }
 
     .item-name {
