@@ -237,12 +237,12 @@ accordionItems.forEach(item => {
     // Close all other accordions
     accordionItems.forEach(el => {
       if (el !== item) {
-        el.classList.remove("active");
+        el.classList.remove("open-filter");
       }
     });
 
     // Toggle current one
-    item.classList.toggle("active");
+    item.classList.toggle("open-filter");
 
   });
 });

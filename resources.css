@@ -3550,7 +3550,7 @@ b mark, mark b {
   overflow: hidden;
   transition: max-height 0.3s ease;
 }
-#trip-planner-custom-code .active .filter {
+#trip-planner-custom-code .open-filter .filter {
   max-height: 500px;
   /* large enough to fit content */
 }
