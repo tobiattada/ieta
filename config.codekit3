@@ -976,15 +976,30 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/logos\/CTeen Summer Programs\/CTeen.webp" : {
-      "ft" : 8388608,
-      "iS" : 39038,
+    "\/logos\/CTeen Summer Programs\/CTeen.png" : {
+      "ft" : 32768,
+      "iS" : 65868,
       "oA" : 0,
-      "oAP" : "\/logos\/CTeen Summer Programs\/CTeen.webp",
+      "oAP" : "\/logos\/CTeen Summer Programs\/CTeen.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
-      "ou" : "lpckwebp-default",
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/logos\/CTeen Summer Programs\/logo.png" : {
+      "ft" : 32768,
+      "iS" : 65868,
+      "oA" : 0,
+      "oAP" : "\/logos\/CTeen Summer Programs\/logo.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
       "rq" : 75
     },
     "\/logos\/CUFI Israel Tours\/logo.png" : {
