@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Hebrew:wght@100..900&family=Outfit:wght@100..900&display=swap");
 @keyframes fadeInAnimation {
   0% {
@@ -3294,6 +3295,11 @@ b mark, mark b {
 #trip-planner-custom-code {
   box-sizing: border-box;
   padding: 30px 20px;
+  /* Container spacing (optional) */
+  /* Make H5 clickable */
+  /* Optional arrow indicator */
+  /* Accordion content */
+  /* Open state */
 }
 @media (min-width: 768px) {
   #trip-planner-custom-code {
@@ -3505,4 +3511,40 @@ b mark, mark b {
   background: none;
   border: none;
   font-size: 1.5rem;
+}
+#trip-planner-custom-code .audienceFilter,
+#trip-planner-custom-code .demographicFilter,
+#trip-planner-custom-code .durationFilter,
+#trip-planner-custom-code .typeFilter {
+  border-bottom: 1px solid #ddd;
+}
+#trip-planner-custom-code .audienceFilter h5,
+#trip-planner-custom-code .demographicFilter h5,
+#trip-planner-custom-code .durationFilter h5,
+#trip-planner-custom-code .typeFilter h5 {
+  cursor: pointer;
+  margin: 0;
+  padding: 1rem 0;
+  position: relative;
+}
+#trip-planner-custom-code .audienceFilter h5::after,
+#trip-planner-custom-code .demographicFilter h5::after,
+#trip-planner-custom-code .durationFilter h5::after,
+#trip-planner-custom-code .typeFilter h5::after {
+  content: "+";
+  position: absolute;
+  right: 0;
+  transition: transform 0.3s ease;
+}
+#trip-planner-custom-code .active > h5::after {
+  content: "−";
+}
+#trip-planner-custom-code .filter {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+#trip-planner-custom-code .active .filter {
+  max-height: 500px;
+  /* large enough to fit content */
 }

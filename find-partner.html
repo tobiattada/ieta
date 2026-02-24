@@ -222,3 +222,28 @@ function closePopup() {
   document.body.style.overflow = "";
 }
 </script>
+
+
+<script>
+const accordionItems = document.querySelectorAll(
+  ".audienceFilter, .demographicFilter, .durationFilter, .typeFilter"
+);
+
+accordionItems.forEach(item => {
+  const trigger = item.querySelector("h5");
+
+  trigger.addEventListener("click", () => {
+
+    // Close all other accordions
+    accordionItems.forEach(el => {
+      if (el !== item) {
+        el.classList.remove("active");
+      }
+    });
+
+    // Toggle current one
+    item.classList.toggle("active");
+
+  });
+});
+</script>

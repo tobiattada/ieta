@@ -910,6 +910,55 @@
 	  border: none;
 	  font-size: 1.5rem;
 	}
+
+
+
+	
+	/* Container spacing (optional) */
+	.audienceFilter,
+	.demographicFilter,
+	.durationFilter,
+	.typeFilter {
+	  border-bottom: 1px solid #ddd;
+	}
+
+	/* Make H5 clickable */
+	.audienceFilter h5,
+	.demographicFilter h5,
+	.durationFilter h5,
+	.typeFilter h5 {
+	  cursor: pointer;
+	  margin: 0;
+	  padding: 1rem 0;
+	  position: relative;
+	}
+
+	/* Optional arrow indicator */
+	.audienceFilter h5::after,
+	.demographicFilter h5::after,
+	.durationFilter h5::after,
+	.typeFilter h5::after {
+	  content: "+";
+	  position: absolute;
+	  right: 0;
+	  transition: transform 0.3s ease;
+	}
+
+	.active > h5::after {
+	  content: "−";
+	}
+
+	/* Accordion content */
+	.filter {
+	  max-height: 0;
+	  overflow: hidden;
+	  transition: max-height 0.3s ease;
+	}
+
+	/* Open state */
+	.active .filter {
+	  max-height: 500px; /* large enough to fit content */
+	}
 }
 
 
