@@ -810,9 +810,9 @@
       border-radius: 20px;
 
       &:hover{
-      	box-shadow: 0px 6px 20px 5px #0000000f;
-      	p{
-      		text-decoration: none;
+      	a{
+      		box-shadow: 0px 6px 20px 5px #0000000f;
+      		p{text-decoration: none;}
       	}
       }
 
@@ -823,6 +823,7 @@
       p.bold{
       	@include p-bold($dark-gray);
       }
+
     }
 
     .item-name {

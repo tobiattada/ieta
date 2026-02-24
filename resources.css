@@ -3413,10 +3413,10 @@ b mark, mark b {
   border: 1px solid #ddd;
   border-radius: 20px;
 }
-#trip-planner-custom-code #data-list li:hover {
+#trip-planner-custom-code #data-list li:hover a {
   box-shadow: 0px 6px 20px 5px #0000000f;
 }
-#trip-planner-custom-code #data-list li:hover p {
+#trip-planner-custom-code #data-list li:hover a p {
   text-decoration: none;
 }
 #trip-planner-custom-code #data-list li img {
