@@ -3461,8 +3461,15 @@ b mark, mark b {
 #trip-planner-custom-code #data-list li:hover a p {
   text-decoration: none;
 }
-#trip-planner-custom-code #data-list li img {
+#trip-planner-custom-code #data-list li .image-wrap {
   width: 100%;
+  text-align: center;
+}
+#trip-planner-custom-code #data-list li img {
+  max-width: 80%;
+  max-height: 100px;
+  height: auto;
+  width: auto;
 }
 #trip-planner-custom-code #data-list li p.bold {
   font-family: "Outfit", sans-serif;

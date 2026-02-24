@@ -29,12 +29,12 @@ const list = document.getElementById("data-list");
 
 function getLogoUrl(programName) {
   const encodedName = encodeURIComponent(programName); // spaces and special characters
-  return `https://raw.githubusercontent.com/tobiattada/ieta/9c89562a8444a56a1f20b14abe0dcee53702feab/logos/${encodedName}/logo.png`;
+  return `https://raw.githubusercontent.com/tobiattada/ieta/9fb32e1e6dc67f7c50165345630c896d5aaaa64a/logos/${encodedName}/logo.png`;
 }
 
 
 // 🔹 Load JSON from GitHub RAW
-fetch("https://raw.githubusercontent.com/tobiattada/ieta/9c89562a8444a56a1f20b14abe0dcee53702feab/trip-platform-org-list.json")
+fetch("https://raw.githubusercontent.com/tobiattada/ieta/9fb32e1e6dc67f7c50165345630c896d5aaaa64a/trip-platform-org-list.json")
   .then(res => res.json())
   .then(json => {
     data = json;
@@ -180,7 +180,7 @@ function renderData(items) {
 
     li.innerHTML = `
       <a href="${item.Website}" target="_blank">
-        <img src="${getLogoUrl(item["Program Name (for Display)"])}" alt="${item["Program Name (for Display)"]}">
+        <div class="image-wrap"><img src="${getLogoUrl(item["Program Name (for Display)"])}" alt="${item["Program Name (for Display)"]}"></div>
         <p class="bold">${item["Program Name (for Display)"]}</p>
         <p>${item["Organization Name"]}</p>
       </a>

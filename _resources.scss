@@ -860,8 +860,16 @@
       	}
       }
 
+      .image-wrap{
+      		width: 100%;
+      		text-align:center;
+      }
+
       img{
-      	width: 100%;
+      	    max-width: 80%;
+		    max-height: 100px;
+		    height: auto;
+		    width: auto;
       }
 
       p.bold{
