@@ -897,21 +897,16 @@
 
 
 
-
+@media (max-width: 767px) {
     .popup {
 	  position: fixed;
-	  // inset: 0;
-	  // background: rgba(0, 0, 0, 0.6);
+	  inset: 0;
+	  background: rgba(0, 0, 0, 0.6);
 	  display: none;
 	  align-items: center;
 	  justify-content: center;
-	  // padding: 1rem;
+	  padding: 1rem;
 	  z-index: 9999;
-
-	  @include desktop{
-	  	position: relative;
-	  	display: inline-block;
-	  }
 	}
 
 	.popup.active {
@@ -921,9 +916,9 @@
 	.popup-content {
 	  background: #fff;
 	  width: 100%;
-	  // max-width: 400px;
+	  max-width: 400px;
 	  border-radius: 12px;
-	  // padding: 1.5rem;
+	  padding: 1.5rem;
 	  position: relative;
 	  animation: fadeIn 0.3s ease;
 	}
@@ -985,6 +980,7 @@
 	.open-filter .filter {
 	  max-height: 500px; /* large enough to fit content */
 	}
+}
 }
 
 
