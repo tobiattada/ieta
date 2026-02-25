@@ -896,91 +896,102 @@
 
 
 
+/// POP UP AND FILTER ACCORDIONS
 
-@media (max-width: 767px) {
-    .popup {
-	  position: fixed;
-	  inset: 0;
-	  background: rgba(0, 0, 0, 0.6);
-	  display: none;
-	  align-items: center;
-	  justify-content: center;
-	  padding: 1rem;
-	  z-index: 9999;
+	@media (max-width: 767px) {
+
+		#openPopup{
+			@include tablet{
+			  	display: none;
+			  }
+		}
+	    .popup {
+		  position: fixed;
+		  inset: 0;
+		  background: rgba(0, 0, 0, 0.6);
+		  display: none;
+		  align-items: center;
+		  justify-content: center;
+		  padding: 1rem;
+		  z-index: 9999;
+		}
+
+		.popup.active {
+		  display: flex;
+		}
+
+		.popup-content {
+		  background: #fff;
+		  width: 100%;
+		  max-width: 400px;
+		  border-radius: 12px;
+		  padding: 1.5rem;
+		  position: relative;
+		  animation: fadeIn 0.3s ease;
+		}
+
+		.close {
+		  position: absolute;
+		  top: 10px;
+		  right: 10px;
+		  background: none;
+		  border: none;
+		  font-size: 1.5rem;
+
+		  @include tablet{
+		  	display: none;
+		  }
+		}
+
+
+
+
+		/* Container spacing (optional) */
+		.audienceFilter,
+		.demographicFilter,
+		.durationFilter,
+		.typeFilter {
+		  border-bottom: 1px solid #ddd;
+		}
+
+		/* Make H5 clickable */
+		.audienceFilter h5,
+		.demographicFilter h5,
+		.durationFilter h5,
+		.typeFilter h5 {
+		  cursor: pointer;
+		  margin: 0;
+		  padding: 1rem 0;
+		  position: relative;
+		}
+
+		/* Optional arrow indicator */
+		.audienceFilter h5::after,
+		.demographicFilter h5::after,
+		.durationFilter h5::after,
+		.typeFilter h5::after {
+		  content: "+";
+		  position: absolute;
+		  right: 0;
+		  transition: transform 0.3s ease;
+		}
+
+		.active > h5::after {
+		  content: "−";
+		}
+
+		/* Accordion content */
+		.filter {
+		  max-height: 0;
+		  overflow: hidden;
+		  transition: max-height 0.3s ease;
+		}
+
+		/* Open state */
+		.open-filter .filter {
+		  max-height: 500px; /* large enough to fit content */
+		}
 	}
-
-	.popup.active {
-	  display: flex;
-	}
-
-	.popup-content {
-	  background: #fff;
-	  width: 100%;
-	  max-width: 400px;
-	  border-radius: 12px;
-	  padding: 1.5rem;
-	  position: relative;
-	  animation: fadeIn 0.3s ease;
-	}
-
-	.close {
-	  position: absolute;
-	  top: 10px;
-	  right: 10px;
-	  background: none;
-	  border: none;
-	  font-size: 1.5rem;
-	}
-
-
-
-
-	/* Container spacing (optional) */
-	.audienceFilter,
-	.demographicFilter,
-	.durationFilter,
-	.typeFilter {
-	  border-bottom: 1px solid #ddd;
-	}
-
-	/* Make H5 clickable */
-	.audienceFilter h5,
-	.demographicFilter h5,
-	.durationFilter h5,
-	.typeFilter h5 {
-	  cursor: pointer;
-	  margin: 0;
-	  padding: 1rem 0;
-	  position: relative;
-	}
-
-	/* Optional arrow indicator */
-	.audienceFilter h5::after,
-	.demographicFilter h5::after,
-	.durationFilter h5::after,
-	.typeFilter h5::after {
-	  content: "+";
-	  position: absolute;
-	  right: 0;
-	  transition: transform 0.3s ease;
-	}
-
-	.active > h5::after {
-	  content: "−";
-	}
-
-	/* Accordion content */
-	.filter {
-	  max-height: 0;
-	  overflow: hidden;
-	  transition: max-height 0.3s ease;
-	}
-
-	/* Open state */
-	.open-filter .filter {
-	  max-height: 500px; /* large enough to fit content */
-	}
-}
 }
 
 

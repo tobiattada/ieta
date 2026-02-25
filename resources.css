@@ -3501,6 +3501,13 @@ b mark, mark b {
     /* Accordion content */
     /* Open state */
   }
+}
+@media (max-width: 767px) and (min-width: 768px) {
+  #trip-planner-custom-code #openPopup {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
   #trip-planner-custom-code .popup {
     position: fixed;
     inset: 0;
@@ -3511,9 +3518,13 @@ b mark, mark b {
     padding: 1rem;
     z-index: 9999;
   }
+}
+@media (max-width: 767px) {
   #trip-planner-custom-code .popup.active {
     display: flex;
   }
+}
+@media (max-width: 767px) {
   #trip-planner-custom-code .popup-content {
     background: #fff;
     width: 100%;
@@ -3523,6 +3534,8 @@ b mark, mark b {
     position: relative;
     animation: fadeIn 0.3s ease;
   }
+}
+@media (max-width: 767px) {
   #trip-planner-custom-code .close {
     position: absolute;
     top: 10px;
@@ -3531,12 +3544,21 @@ b mark, mark b {
     border: none;
     font-size: 1.5rem;
   }
+}
+@media (max-width: 767px) and (min-width: 768px) {
+  #trip-planner-custom-code .close {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
   #trip-planner-custom-code .audienceFilter,
 #trip-planner-custom-code .demographicFilter,
 #trip-planner-custom-code .durationFilter,
 #trip-planner-custom-code .typeFilter {
     border-bottom: 1px solid #ddd;
   }
+}
+@media (max-width: 767px) {
   #trip-planner-custom-code .audienceFilter h5,
 #trip-planner-custom-code .demographicFilter h5,
 #trip-planner-custom-code .durationFilter h5,
@@ -3546,6 +3568,8 @@ b mark, mark b {
     padding: 1rem 0;
     position: relative;
   }
+}
+@media (max-width: 767px) {
   #trip-planner-custom-code .audienceFilter h5::after,
 #trip-planner-custom-code .demographicFilter h5::after,
 #trip-planner-custom-code .durationFilter h5::after,
@@ -3555,14 +3579,20 @@ b mark, mark b {
     right: 0;
     transition: transform 0.3s ease;
   }
+}
+@media (max-width: 767px) {
   #trip-planner-custom-code .active > h5::after {
     content: "−";
   }
+}
+@media (max-width: 767px) {
   #trip-planner-custom-code .filter {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease;
   }
+}
+@media (max-width: 767px) {
   #trip-planner-custom-code .open-filter .filter {
     max-height: 500px;
     /* large enough to fit content */
