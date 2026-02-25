@@ -814,6 +814,11 @@
 	      	grid-template-columns: 1fr 1fr;
 	      	gap: 10px;
 
+	      	label{
+				border-radius: 10px;
+				padding: 10px 10px;
+	      	}
+
 	      	@include tablet {
 	      		grid-template-columns: 1fr 1fr;
 	      	}

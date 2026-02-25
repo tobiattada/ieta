@@ -3414,6 +3414,10 @@ b mark, mark b {
   grid-template-columns: 1fr 1fr;
   gap: 10px;
 }
+#trip-planner-custom-code .filter-wrapper .filters #typeFilter.filter label {
+  border-radius: 10px;
+  padding: 10px 10px;
+}
 @media (min-width: 768px) {
   #trip-planner-custom-code .filter-wrapper .filters #typeFilter.filter {
     grid-template-columns: 1fr 1fr;
