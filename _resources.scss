@@ -899,12 +899,6 @@
 /// POP UP AND FILTER ACCORDIONS
 
 	@media (max-width: 767px) {
-
-		#openPopup{
-			@include tablet{
-			  	display: none;
-			  }
-		}
 	    .popup {
 		  position: fixed;
 		  inset: 0;
@@ -937,10 +931,6 @@
 		  background: none;
 		  border: none;
 		  font-size: 1.5rem;
-
-		  @include tablet{
-		  	display: none;
-		  }
 		}
 
 
@@ -993,6 +983,15 @@
 		}
 	}
 }
+
+#trip-planner-custom-code{
+@include tablet{
+	.close, #openPopup{
+		display: none;
+	}	
+}
+}
+
 
 
 
