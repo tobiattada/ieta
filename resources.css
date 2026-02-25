@@ -3463,7 +3463,10 @@ b mark, mark b {
 }
 #trip-planner-custom-code #data-list li .image-wrap {
   width: 100%;
-  text-align: center;
+  height: 120px;
+  display: flex;
+  align-itemsalign-items: center;
+  justify-content: center;
 }
 #trip-planner-custom-code #data-list li img {
   max-width: 80%;
@@ -3497,13 +3500,16 @@ b mark, mark b {
 }
 #trip-planner-custom-code .popup {
   position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.6);
   display: none;
   align-items: center;
   justify-content: center;
-  padding: 1rem;
   z-index: 9999;
+}
+@media (min-width: 1024px) {
+  #trip-planner-custom-code .popup {
+    position: relative;
+    display: inline-block;
+  }
 }
 #trip-planner-custom-code .popup.active {
   display: flex;
@@ -3511,9 +3517,7 @@ b mark, mark b {
 #trip-planner-custom-code .popup-content {
   background: #fff;
   width: 100%;
-  max-width: 400px;
   border-radius: 12px;
-  padding: 1.5rem;
   position: relative;
   animation: fadeIn 0.3s ease;
 }
