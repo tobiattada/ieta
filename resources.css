@@ -3523,7 +3523,7 @@ b mark, mark b {
     position: relative;
     animation: fadeIn 0.3s ease;
   }
-  #trip-planner-custom-code .close {
+  #trip-planner-custom-code .close-filters {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -3570,7 +3570,7 @@ b mark, mark b {
 }
 
 @media (min-width: 768px) {
-  #trip-planner-custom-code .close, #trip-planner-custom-code #openPopup {
+  #trip-planner-custom-code .close-filters, #trip-planner-custom-code #openPopup {
     display: none;
   }
 }
