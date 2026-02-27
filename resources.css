@@ -3451,9 +3451,6 @@ b mark, mark b {
     grid-gap: 30px;
   }
 }
-#trip-planner-custom-code #data-list li:hover {
-  box-shadow: 0px 6px 20px 5px #0000000f;
-}
 #trip-planner-custom-code #data-list li:hover a p {
   text-decoration: none;
 }
@@ -3465,10 +3462,14 @@ b mark, mark b {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 10px;
+}
+#trip-planner-custom-code #data-list li .image-wrap:hover {
+  box-shadow: 0px 6px 20px 5px #0000000f;
 }
 #trip-planner-custom-code #data-list li img {
-  max-width: 80%;
-  max-height: 80%;
+  max-width: 85%;
+  max-height: 85%;
   height: auto;
   width: auto;
 }
