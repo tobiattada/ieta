@@ -777,6 +777,9 @@
 
 	      .filter-nav-top{
 	      	grid-area: top-nav;
+	      	display: flex;
+    		align-items: center;
+    		justify-content: space-between;
 	      }
 	      .audienceFilter{
 	      	grid-area: audience;
@@ -825,6 +828,14 @@
 	      			@include caption($light);
 	      		}
 	      	}
+	      }
+
+	      .clearFiltersBtn{
+			background: none;
+    		border: none;
+
+    		@include caption($dark-gray);
+    		font-weight: 600;
 	      }
 
 	      #typeFilter.filter{
