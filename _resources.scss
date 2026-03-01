@@ -753,7 +753,7 @@
 	      display: grid;
 	      grid-template-columns: 1fr;
 	      grid-template-areas:
-	      "top-nav"
+	      "select"
 	      "audience"
 	      "demographic"
 	      "duration"
@@ -766,7 +766,7 @@
 	      @include tablet{
 	      	grid-template-columns: 1fr 1fr;
 	      	grid-template-areas:
-	      	"top-nav top-nav"
+	      	"select clear"
 	      	"audience audience"
 	      	"demographic duration"
 	      	"type type";
@@ -791,6 +791,11 @@
 	      .close-filters{
 	      	grid-area: close;
 	      }
+
+	       p.caption{
+	      	grid-area: select;
+	      }
+
 
 	      #clearFiltersBtn{
 	      	grid-area: clear;

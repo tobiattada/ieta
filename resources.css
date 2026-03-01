@@ -3335,14 +3335,14 @@ b mark, mark b {
 #trip-planner-custom-code .filter-wrapper .filters {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-areas: "top-nav" "audience" "demographic" "duration" "type" "close" "clear";
+  grid-template-areas: "select" "audience" "demographic" "duration" "type" "close" "clear";
   gap: 15px;
   margin-bottom: 24px;
 }
 @media (min-width: 768px) {
   #trip-planner-custom-code .filter-wrapper .filters {
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "top-nav top-nav" "audience audience" "demographic duration" "type type";
+    grid-template-areas: "select clear" "audience audience" "demographic duration" "type type";
   }
 }
 @media (min-width: 1024px) {
@@ -3379,6 +3379,9 @@ b mark, mark b {
 }
 #trip-planner-custom-code .filter-wrapper .filters .close-filters {
   grid-area: close;
+}
+#trip-planner-custom-code .filter-wrapper .filters p.caption {
+  grid-area: select;
 }
 #trip-planner-custom-code .filter-wrapper .filters #clearFiltersBtn {
   grid-area: clear;
