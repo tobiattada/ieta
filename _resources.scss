@@ -833,6 +833,7 @@
 	      button#clearFiltersBtn{
 			background: none;
     		border: none;
+    		display: none;
 
     		@include caption($dark-gray);
     		font-weight: 600;

@@ -12,7 +12,7 @@
         <div class="filters">
           <div class="filter-nav-top">
             <p class="caption">Select all that apply:</p>
-            <button id="clearFiltersBtn">Clear Filters</button>
+            <button id="clearFiltersBtn">Clear Filters <span>&times;</span></button>
           </div>
           <div class="audienceFilter"><h5>Audience</h5><div id="audienceFilter" class="filter"></div></div>
           <div class="demographicFilter"><h5>Demographic</h5><div id="demographicFilter" class="filter"></div></div>
@@ -22,7 +22,7 @@
 
         <div class="filter-nav">
           <a class="close-filters button"><p>Apply filters</p></a>
-          <button id="clearFiltersBtn">Clear Filters</button>
+          <button id="clearFiltersBtn">Clear Filters <span>&times;</span></button>
         </div>
       </div>
   </div>
@@ -222,6 +222,15 @@ function wrapLabelText() {
     label.insertBefore(bold, span);
   });
 }
+
+function updateClearButtonVisibility() {
+  const anyChecked = document.querySelectorAll(
+    "#audienceFilter input:checked, #demographicFilter input:checked, #typeFilter input:checked, #durationFilter input:checked"
+  ).length > 0;
+
+  clearFiltersBtn.style.display = anyChecked ? "inline-block" : "none";
+}
+
 // 🔹 Clear Filters button
 clearFiltersBtn.addEventListener("click", () => {
   document.querySelectorAll("#audienceFilter input, #demographicFilter input, #typeFilter input, #durationFilter input")
@@ -229,6 +238,7 @@ clearFiltersBtn.addEventListener("click", () => {
 
   itemsToShow = 0; // reset Load More counter
   renderData(data);  // show first 10 of full data
+  updateClearButtonVisibility();   // 👈 ADD THIS
 });
 
 // 🔹 Listen for checkbox changes
