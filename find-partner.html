@@ -1,9 +1,9 @@
 
 <div id="trip-planner-custom-code">
 
-    <div id="openPopup">
-      <p>Filters</p><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 4.83337H13M4.92333 8.00004H11.0767M6.84667 11.1667H9.15333" stroke="#545454" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-    </div>
+  <div id="openPopup">
+    <p>Filters</p><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 4.83337H13M4.92333 8.00004H11.0767M6.84667 11.1667H9.15333" stroke="#545454" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </div>
 
 
   <div id="popup" class="popup filter-wrapper">
@@ -13,33 +13,28 @@
           <div class="filter-nav-top">
             <p class="caption">Select all that apply:</p>
             <button id="clearFiltersBtn">Clear Filters <span>&times;</span></button>
+            <a class="close-filters button"><p>Apply filters</p></a>
           </div>
           <div class="audienceFilter"><h5>Audience</h5><div id="audienceFilter" class="filter"></div></div>
           <div class="demographicFilter"><h5>Demographic</h5><div id="demographicFilter" class="filter"></div></div>
           <div class="durationFilter"><h5>Program Duration</h5><div id="durationFilter" class="filter"></div></div>
           <div class="typeFilter"><h5>Program Type</h5><div id="typeFilter" class="filter"></div></div>
         </div>
-
-        <div class="filter-nav">
-          <a class="close-filters button"><p>Apply filters</p></a>
-          <button id="clearFiltersBtn">Clear Filters <span>&times;</span></button>
-        </div>
       </div>
   </div>
 
+  <div>
     <br>
     <p style="text-align:center;">* Eligible for RootOne Vouchers</p>
     <br>
+  </div>
 
+  <ul id="data-list"></ul>
 
-    <ul id="data-list"></ul>
+  <div class="load-more">
+    <button id="loadMoreBtn"></button>
+  </div>
 
-    <div class="load-more">
-      <button id="loadMoreBtn"></button>
-    </div>
-
-<!--   <button id="loadMoreBtn"></button>
- -->
 </div>
 
 
@@ -228,7 +223,7 @@ function updateClearButtonVisibility() {
     "#audienceFilter input:checked, #demographicFilter input:checked, #typeFilter input:checked, #durationFilter input:checked"
   ).length > 0;
 
-  clearFiltersBtn.style.display = anyChecked ? "inline-block" : "none";
+  clearFiltersBtn.style.display = anyChecked ? "flex" : "none";
 }
 
 // 🔹 Clear Filters button
@@ -245,6 +240,7 @@ clearFiltersBtn.addEventListener("click", () => {
 document.addEventListener("change", function(e) {
   if (e.target.matches("input[type=checkbox]")) {
     applyFilters();
+    updateClearButtonVisibility();   // 👈 ADD THIS
   }
 });
 </script>
