@@ -3329,6 +3329,7 @@ b mark, mark b {
 @media (min-width: 1024px) {
   #trip-planner-custom-code .filter-wrapper {
     border-radius: 24px;
+    margin-bottom: 30px;
   }
 }
 #trip-planner-custom-code .filter-wrapper .filters {
@@ -3336,7 +3337,6 @@ b mark, mark b {
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "x x" "select select" "audience audience" "demographic demographic" "duration duration" "type type" "close clear";
   gap: 15px;
-  margin-bottom: 24px;
   align-items: center;
 }
 @media (min-width: 768px) {

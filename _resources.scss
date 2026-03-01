@@ -743,6 +743,7 @@
 
 	    @include desktop{
 	    	border-radius:24px;
+	    	margin-bottom:30px;
 	    }
 
 		.filters {
@@ -757,7 +758,7 @@
 		        "type type"
 		        "close clear";
 	      gap: 15px;
-	      margin-bottom: 24px;
+	      // margin-bottom: 24px;
 	      align-items: center;
 
 	      @include tablet{
