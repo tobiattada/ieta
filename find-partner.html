@@ -1,8 +1,10 @@
 
 <div id="trip-planner-custom-code">
-  <div id="openPopup"><p>Filters</p><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M3 4.83337H13M4.92333 8.00004H11.0767M6.84667 11.1667H9.15333" stroke="#545454" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-  </svg></div>
+
+    <div id="openPopup">
+      <p>Filters</p><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 4.83337H13M4.92333 8.00004H11.0767M6.84667 11.1667H9.15333" stroke="#545454" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+
 
   <div id="popup" class="popup filter-wrapper">
 <!--     <div id="popup" class="popup"> -->
@@ -16,9 +18,15 @@
         </div>
 
         <a class="close-filters button"><p>Apply filters</p></a>
+        <button id="clearFiltersBtn">Clear Filters</button>
       </div>
   <!--   </div> -->
   </div>
+
+    <br>
+  <p style="text-align:center;">* Eligible for RootOne Vouchers</p>
+  <br>
+
 
   <ul id="data-list"></ul>
 </div>
@@ -44,6 +52,7 @@ fetch("https://raw.githubusercontent.com/tobiattada/ieta/9fb32e1e6dc67f7c5016534
 
     // Render all items on load
     renderData(data);
+    wrapLabelText();
 
     createCheckboxes("audienceFilter", getValues(["Program Audience 1","Program Audience 2","Program Audience 3","Program Audience 4"]));
     createCheckboxes("demographicFilter", getValues(["Program Demographic 1","Program Demographic 2","Program Demographic 3"]));
@@ -51,22 +60,9 @@ fetch("https://raw.githubusercontent.com/tobiattada/ieta/9fb32e1e6dc67f7c5016534
     createCheckboxes("durationFilter", getValues(["Program Duration 1","Program Duration 2","Program Duration 3"]));
 
     renderData(data);
+    wrapLabelText();
   })
   .catch(err => console.error("JSON load error:", err));
-
-
-// 🔹 Collect unique values from multiple columns
-// function getValues(columns) {
-//   const values = [];
-
-//   data.forEach(item => {
-//     columns.forEach(col => {
-//       if (item[col]) values.push(item[col]);
-//     });
-//   });
-
-//   return [...new Set(values)].sort();
-// }
 
 
 // 🔹 Collect unique values and normalize for case-insensitive filtering
@@ -103,23 +99,6 @@ function createCheckboxes(containerId, values) {
     // container.appendChild(document.createElement("br"));
   });
 }
-
-
-// 🔹 Get selected values
-// function getValues(columns) {
-//   const values = [];
-
-//   data.forEach(item => {
-//     columns.forEach(col => {
-//       if (item[col]) values.push(item[col].toString().toLowerCase());
-//     });
-//   });
-
-//   // Capitalize first letter for display
-//   return [...new Set(values)]
-//     .sort()
-//     .map(v => v.charAt(0).toUpperCase() + v.slice(1));
-// }
 
 
 // 🔹 Check if item matches any value in multi-columns (case-insensitive)
@@ -167,6 +146,7 @@ function applyFilters() {
   });
 
   renderData(filtered);
+  wrapLabelText();
 }
 
 // 🔹 Render Results
@@ -193,6 +173,28 @@ function renderData(items) {
   });
 }
 
+function wrapLabelText() {
+  document.querySelectorAll("label").forEach(label => {
+    // Skip if no text node
+    const textNode = Array.from(label.childNodes)
+      .find(node => node.nodeType === Node.TEXT_NODE && node.textContent.trim());
+    if (!textNode) return;
+
+    const text = textNode.textContent.trim();
+    const colonIndex = text.indexOf(":");
+    if (colonIndex === -1) return; // no colon, skip
+
+    const before = text.slice(0, colonIndex).trim();
+    const after = text.slice(colonIndex + 1).trim(); // remove colon
+
+    const bold = document.createElement("b");
+    bold.textContent = before;
+
+    textNode.textContent = " " + after;
+    label.insertBefore(bold, textNode);
+  });
+}
+
 
 // 🔹 Listen for filter changes
 // 🔹 Listen for all checkbox changes
@@ -200,6 +202,18 @@ document.addEventListener("change", function(e) {
   if (e.target.matches("input[type=checkbox]")) {
     applyFilters();
   }
+});
+
+document.getElementById("clearFiltersBtn").addEventListener("click", () => {
+  // Uncheck all checkboxes
+  document.querySelectorAll("#audienceFilter input, #demographicFilter input, #typeFilter input, #durationFilter input")
+    .forEach(cb => cb.checked = false);
+
+  // Render full data again
+  renderData(data);
+
+  // Wrap label text if needed
+  wrapLabelText();
 });
 </script>
 

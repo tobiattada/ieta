@@ -830,6 +830,12 @@
 	      	label{
 				border-radius: 10px;
 				padding: 10px 10px;
+
+				b{
+					@include desktop{
+						display: block;
+					}
+				}
 	      	}
 
 	      	@include tablet {
@@ -1001,6 +1007,10 @@
 		  max-height: 0;
 		  overflow: hidden;
 		  transition: max-height 0.3s ease;
+
+		  label{
+		  	    font-size: 12px !important;
+		  }
 		}
 
 		/* Open state */

@@ -3456,6 +3456,11 @@ b mark, mark b {
   border-radius: 10px;
   padding: 10px 10px;
 }
+@media (min-width: 1024px) {
+  #trip-planner-custom-code .filter-wrapper .filters #typeFilter.filter label b {
+    display: block;
+  }
+}
 @media (min-width: 768px) {
   #trip-planner-custom-code .filter-wrapper .filters #typeFilter.filter {
     grid-template-columns: 1fr 1fr;
@@ -3599,6 +3604,9 @@ b mark, mark b {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease;
+  }
+  #trip-planner-custom-code .filter label {
+    font-size: 12px !important;
   }
   #trip-planner-custom-code .open-filter .filter {
     max-height: 500px;
