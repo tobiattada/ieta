@@ -3645,7 +3645,7 @@ b mark, mark b {
   text-align: center;
   position: relative;
 }
-#trip-planner-custom-code .load-more button#load-more-btn {
+#trip-planner-custom-code .load-more button#loadMoreBtn {
   background: transparent;
   border: 0px;
   font-family: "Outfit", sans-serif;
@@ -3659,26 +3659,26 @@ b mark, mark b {
   transition: 0.3s;
 }
 @media (min-width: 1024px) {
-  #trip-planner-custom-code .load-more button#load-more-btn {
+  #trip-planner-custom-code .load-more button#loadMoreBtn {
     font-size: 16px;
     line-height: 150%;
   }
 }
-#trip-planner-custom-code .load-more button#load-more-btn:hover {
+#trip-planner-custom-code .load-more button#loadMoreBtn:hover {
   cursor: pointer;
   color: #1c88ed;
   transition: 0.3s;
   text-decoration: none !important;
 }
-#trip-planner-custom-code .load-more button#load-more-btn:hover::before {
+#trip-planner-custom-code .load-more button#loadMoreBtn:hover::before {
   background: #1c88ed;
   transition: 0.3s;
   content: url("data:image/svg+xml,%3Csvg%20width%3D%2212%22%20height%3D%228%22%20viewBox%3D%220%200%2012%208%22%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath%20d%3D%22M0%206L6%200L12%206L10.6%207.4L6%202.8L1.4%207.4L0%206Z%22%20fill%3D%22%23FDFDFD%22/%3E%3C/svg%3E");
 }
-#trip-planner-custom-code .load-more button#load-more-btn:disabled {
+#trip-planner-custom-code .load-more button#loadMoreBtn:disabled {
   color: #ECECEC;
 }
-#trip-planner-custom-code .load-more button#load-more-btn::before {
+#trip-planner-custom-code .load-more button#loadMoreBtn::before {
   content: url("data:image/svg+xml,%3Csvg%20width%3D%2212%22%20height%3D%228%22%20viewBox%3D%220%200%2012%208%22%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath%20d%3D%22M0%206L6%200L12%206L10.6%207.4L6%202.8L1.4%207.4L0%206Z%22%20fill%3D%22black%22/%3E%3C/svg%3E");
   position: relative;
   transform: rotate(180deg);
@@ -3695,10 +3695,10 @@ b mark, mark b {
   margin: 0 auto;
   margin-bottom: 10px;
 }
-#trip-planner-custom-code .load-more button#load-more-btn:disabled::before {
+#trip-planner-custom-code .load-more button#loadMoreBtn:disabled::before {
   background: #ECECEC;
   content: url("data:image/svg+xml,%3Csvg%20width%3D%2212%22%20height%3D%228%22%20viewBox%3D%220%200%2012%208%22%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath%20d%3D%22M0%206L6%200L12%206L10.6%207.4L6%202.8L1.4%207.4L0%206Z%22%20fill%3D%22%23c9c9c9%22/%3E%3C/svg%3E");
 }
-#trip-planner-custom-code .load-more button#load-more-btn.arrow-reverse::before {
+#trip-planner-custom-code .load-more button#loadMoreBtn.arrow-reverse::before {
   transform: rotate(0deg);
 }

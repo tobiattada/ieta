@@ -1058,11 +1058,11 @@
 
 #trip-planner-custom-code{
 
-.load-more{
+	.load-more{
 		text-align: center;
 		position: relative;
 
-		button#load-more-btn{
+		button#loadMoreBtn{
 			background: transparent;
     		border: 0px;
     		@include label($navy-blue);
@@ -1089,7 +1089,7 @@
     		}
 		}
 
-		button#load-more-btn::before {
+		button#loadMoreBtn::before {
 		  	content: url("data:image/svg+xml,%3Csvg%20width%3D%2212%22%20height%3D%228%22%20viewBox%3D%220%200%2012%208%22%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath%20d%3D%22M0%206L6%200L12%206L10.6%207.4L6%202.8L1.4%207.4L0%206Z%22%20fill%3D%22black%22/%3E%3C/svg%3E");
 			position: relative;
 			transform: rotate(180deg);
@@ -1109,13 +1109,13 @@
 			margin-bottom: 10px;
 		}
 
-		button#load-more-btn:disabled::before {
+		button#loadMoreBtn:disabled::before {
 		  background: $light-gray;
 		  content: url("data:image/svg+xml,%3Csvg%20width%3D%2212%22%20height%3D%228%22%20viewBox%3D%220%200%2012%208%22%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath%20d%3D%22M0%206L6%200L12%206L10.6%207.4L6%202.8L1.4%207.4L0%206Z%22%20fill%3D%22%23c9c9c9%22/%3E%3C/svg%3E");
 
 		}
 
-		button#load-more-btn.arrow-reverse::before {
+		button#loadMoreBtn.arrow-reverse::before {
 			transform: rotate(0deg);
 		}
 	}
