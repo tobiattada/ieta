@@ -3606,7 +3606,7 @@ b mark, mark b {
     margin-bottom: 15px;
   }
   #trip-planner-custom-code .open-filter .filter label {
-    font-size: 12px;
+    font-size: 12px !important;
   }
 }
 
