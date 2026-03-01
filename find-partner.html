@@ -10,6 +10,10 @@
       <div class="popup-content">
         
         <div class="filters">
+          <div>
+            <p class="caption">Select all that apply:</p>
+            <button id="clearFiltersBtn">Clear Filters</button>
+          </div>
           <div class="audienceFilter"><h5>Audience</h5><div id="audienceFilter" class="filter"></div></div>
           <div class="demographicFilter"><h5>Demographic</h5><div id="demographicFilter" class="filter"></div></div>
           <div class="durationFilter"><h5>Program Duration</h5><div id="durationFilter" class="filter"></div></div>
@@ -34,19 +38,18 @@
 </div>
 
 
-
 <script>
 let data = [];
 const list = document.getElementById("data-list");
 const loadMoreBtn = document.getElementById("loadMoreBtn");
 const clearFiltersBtn = document.getElementById("clearFiltersBtn");
 
-let itemsToShow = 10; // initial items to show
-let currentData = []; // stores filtered data for Load More
+let itemsToShow = 0;      // number of items currently rendered
+let currentData = [];      // stores filtered or full data
 
 // 🔹 Get logo URL
 function getLogoUrl(programName) {
-  const encodedName = encodeURIComponent(programName); // spaces and special characters
+  const encodedName = encodeURIComponent(programName);
   return `https://raw.githubusercontent.com/tobiattada/ieta/9fb32e1e6dc67f7c50165345630c896d5aaaa64a/logos/${encodedName}/logo.png`;
 }
 
@@ -56,7 +59,7 @@ fetch("https://raw.githubusercontent.com/tobiattada/ieta/9fb32e1e6dc67f7c5016534
   .then(json => {
     data = json;
 
-    // Initial render
+    // Initial render (first 10 items)
     renderData(data);
 
     // Create filters
@@ -70,13 +73,11 @@ fetch("https://raw.githubusercontent.com/tobiattada/ieta/9fb32e1e6dc67f7c5016534
 // 🔹 Get unique values for filters
 function getValues(columns) {
   const values = [];
-
   data.forEach(item => {
     columns.forEach(col => {
       if (item[col]) values.push(item[col].toString().toLowerCase());
     });
   });
-
   return [...new Set(values)]
     .sort()
     .map(v => v.charAt(0).toUpperCase() + v.slice(1));
@@ -114,56 +115,39 @@ function matchesColumns(item, columns, selectedValues) {
 
 // 🔹 Apply filters
 function applyFilters() {
-  itemsToShow = 10; // reset items to show
+  itemsToShow = 0; // reset for Load More
+
   const audiences = getCheckedValues("audienceFilter");
   const demographics = getCheckedValues("demographicFilter");
   const types = getCheckedValues("typeFilter");
   const durations = getCheckedValues("durationFilter");
 
   const filtered = data.filter(item => {
-    if (audiences.length &&
-        !matchesColumns(item,
-          ["Program Audience 1","Program Audience 2","Program Audience 3","Program Audience 4"],
-          audiences)) return false;
-
-    if (demographics.length &&
-        !matchesColumns(item,
-          ["Program Demographic 1","Program Demographic 2","Program Demographic 3"],
-          demographics)) return false;
-
-    if (types.length &&
-        !matchesColumns(item,
-          ["Program Type 1","Program Type 2","Program Type 3"],
-          types)) return false;
-
-    if (durations.length &&
-        !matchesColumns(item,
-          ["Program Duration 1","Program Duration 2","Program Duration 3"],
-          durations)) return false;
-
+    if (audiences.length && !matchesColumns(item,
+        ["Program Audience 1","Program Audience 2","Program Audience 3","Program Audience 4"], audiences)) return false;
+    if (demographics.length && !matchesColumns(item,
+        ["Program Demographic 1","Program Demographic 2","Program Demographic 3"], demographics)) return false;
+    if (types.length && !matchesColumns(item,
+        ["Program Type 1","Program Type 2","Program Type 3"], types)) return false;
+    if (durations.length && !matchesColumns(item,
+        ["Program Duration 1","Program Duration 2","Program Duration 3"], durations)) return false;
     return true;
   });
 
-  renderData(filtered);
+  renderData(filtered); // render first 10 of filtered data
 }
 
-// 🔹 Render data with Load More support
+// 🔹 Render data with Load More / Back to Top support
 function renderData(items, reset = true) {
   if (reset) {
     list.innerHTML = "";
-    itemsToShow = 10;
+    itemsToShow = 0;
     currentData = items;
   }
 
-  const itemsForRender = items.slice(0, itemsToShow);
+  const remainingItems = currentData.slice(itemsToShow, itemsToShow + 10);
 
-  if (!itemsForRender.length) {
-    list.innerHTML = `<li class="no-results">No matching results</li>`;
-    loadMoreBtn.style.display = "none";
-    return;
-  }
-
-  itemsForRender.forEach(item => {
+  remainingItems.forEach(item => {
     const li = document.createElement("li");
 
     li.innerHTML = `
@@ -180,50 +164,66 @@ function renderData(items, reset = true) {
     list.appendChild(li);
   });
 
+  itemsToShow += remainingItems.length;
+
   wrapLabelText();
 
-  // Show or hide Load More button
-  if (itemsToShow >= items.length) {
-    loadMoreBtn.style.display = "none";
+  // Update button text
+  if (itemsToShow >= currentData.length) {
+    loadMoreBtn.textContent = "Back to Top";
   } else {
-    loadMoreBtn.style.display = "inline-block";
+    loadMoreBtn.textContent = "Load More";
   }
+
+  // Show button only if there are items
+  loadMoreBtn.style.display = currentData.length ? "inline-block" : "none";
 }
 
-// 🔹 Load More button click
+// 🔹 Load More / Back to Top button click
 loadMoreBtn.addEventListener("click", () => {
-  itemsToShow += 10;
-  renderData(currentData, false); // append more items
+  if (itemsToShow < currentData.length) {
+    renderData(currentData, false); // append next 10
+  } else {
+    const topEl = document.getElementById("trip-planner-custom-code");
+    if (topEl) topEl.scrollIntoView({ behavior: "smooth" });
+  }
 });
 
 // 🔹 Wrap label text before colon in <b> and remove colon
 function wrapLabelText() {
   document.querySelectorAll("label").forEach(label => {
+    // Find the text node in the label
     const textNode = Array.from(label.childNodes)
       .find(node => node.nodeType === Node.TEXT_NODE && node.textContent.trim());
     if (!textNode) return;
 
     const text = textNode.textContent.trim();
     const colonIndex = text.indexOf(":");
-    if (colonIndex === -1) return;
+    if (colonIndex === -1) return; // no colon, skip
 
-    const before = text.slice(0, colonIndex).trim();
-    const after = text.slice(colonIndex + 1).trim();
+    const before = text.slice(0, colonIndex).trim(); // text before colon
+    const after = text.slice(colonIndex + 1).trim(); // text after colon
 
+    // Create <b> for before
     const bold = document.createElement("b");
     bold.textContent = before;
 
-    textNode.textContent = " " + after;
-    label.insertBefore(bold, textNode);
+    // Create <span> for after
+    const span = document.createElement("span");
+    span.textContent = " " + after; // preserve space
+
+    // Replace the original text node with <b> + <span>
+    label.replaceChild(span, textNode);
+    label.insertBefore(bold, span);
   });
 }
-
 // 🔹 Clear Filters button
 clearFiltersBtn.addEventListener("click", () => {
   document.querySelectorAll("#audienceFilter input, #demographicFilter input, #typeFilter input, #durationFilter input")
     .forEach(cb => cb.checked = false);
 
-  renderData(data); // reset full data
+  itemsToShow = 0; // reset Load More counter
+  renderData(data);  // show first 10 of full data
 });
 
 // 🔹 Listen for checkbox changes
