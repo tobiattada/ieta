@@ -729,12 +729,8 @@
 #trip-planner-custom-code{
 	@include responsive-padding;
 
-	display: grid;
-
-
-
 	.filter-wrapper{
-	
+
 	    box-shadow: 0px 6px 20px 5px #0000000f;
 	    position:relative;
 	    margin: 0 auto;
@@ -1068,7 +1064,9 @@
 	    align-items: center;
 	    gap: 10px;
 		border-radius: 5px;
-		margin-bottom:20px;
+		
+
+		margin: 30px 0px 0px 0px;
 
 		&:hover{
 			background: $light-blue;

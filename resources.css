@@ -3295,7 +3295,6 @@ b mark, mark b {
 #trip-planner-custom-code {
   box-sizing: border-box;
   padding: 30px 20px;
-  display: grid;
 }
 @media (min-width: 768px) {
   #trip-planner-custom-code {
@@ -3674,7 +3673,7 @@ b mark, mark b {
   align-items: center;
   gap: 10px;
   border-radius: 5px;
-  margin-bottom: 20px;
+  margin: 30px 0px 0px 0px;
 }
 #trip-planner-custom-code #openPopup:hover {
   background: #D2E9FF;
