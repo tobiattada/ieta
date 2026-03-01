@@ -3382,6 +3382,7 @@ b mark, mark b {
 }
 #trip-planner-custom-code .filter-wrapper .filters #clearFiltersBtn {
   grid-area: clear;
+  justify-content: flex-end;
 }
 #trip-planner-custom-code .filter-wrapper .filters .audienceFilter {
   grid-area: audience;
