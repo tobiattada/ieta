@@ -836,6 +836,10 @@
 						display: block;
 					}
 				}
+
+				span::first-letter {
+				  text-transform: uppercase;
+				}
 	      	}
 
 	      	@include tablet {
