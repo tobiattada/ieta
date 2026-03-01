@@ -3334,14 +3334,14 @@ b mark, mark b {
 #trip-planner-custom-code .filter-wrapper .filters {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-areas: "audience" "demographic" "duration" "type";
+  grid-template-areas: "top-nav" "audience" "demographic" "duration" "type";
   gap: 15px;
   margin-bottom: 24px;
 }
 @media (min-width: 768px) {
   #trip-planner-custom-code .filter-wrapper .filters {
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "audience audience" "demographic duration" "type type";
+    grid-template-areas: "top-nav top-nav" "audience audience" "demographic duration" "type type";
   }
 }
 @media (min-width: 1024px) {
@@ -3369,6 +3369,9 @@ b mark, mark b {
   font-weight: 700;
   text-align: right;
   direction: rtl;
+}
+#trip-planner-custom-code .filter-wrapper .filters .filter-nav-top {
+  grid-area: top-nav;
 }
 #trip-planner-custom-code .filter-wrapper .filters .audienceFilter {
   grid-area: audience;
@@ -3546,7 +3549,6 @@ b mark, mark b {
 @media (max-width: 767px) {
   #trip-planner-custom-code {
     /* Container spacing (optional) */
-    /* Make H5 clickable */
     /* Optional arrow indicator */
     /* Accordion content */
     /* Open state */

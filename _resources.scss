@@ -749,6 +749,7 @@
 	      display: grid;
 	      grid-template-columns: 1fr;
 	      grid-template-areas:
+	      "top-nav"
 	      "audience"
 	      "demographic"
 	      "duration"
@@ -759,9 +760,10 @@
 	      @include tablet{
 	      	grid-template-columns: 1fr 1fr;
 	      	grid-template-areas:
-	      "audience audience"
-	      "demographic duration"
-	      "type type";
+	      	"top-nav top-nav"
+	      	"audience audience"
+	      	"demographic duration"
+	      	"type type";
 	      }
 
 	      @include desktop{
@@ -773,6 +775,9 @@
 	      	@include h6($primary-blue);
 	      }
 
+	      .filter-nav-top{
+	      	grid-area: top-nav;
+	      }
 	      .audienceFilter{
 	      	grid-area: audience;
 	      }
@@ -961,17 +966,6 @@
         max-width: none;
 		}
 
-		// .close-filters {
-		//   position: absolute;
-		//   top: 10px;
-		//   right: 10px;
-		//   background: none;
-		//   border: none;
-		//   font-size: 1.5rem;
-		// }
-
-
-
 
 		/* Container spacing (optional) */
 		.audienceFilter,
@@ -979,16 +973,12 @@
 		.durationFilter,
 		.typeFilter {
 		  border-bottom: 1px solid #ddd;
-		}
 
-		/* Make H5 clickable */
-		.audienceFilter h5,
-		.demographicFilter h5,
-		.durationFilter h5,
-		.typeFilter h5 {
-		  cursor: pointer;
-		  margin: 0;
-		  position: relative;
+		  h5{
+		  	cursor: pointer;
+			margin: 0;
+			position: relative
+		  }
 		}
 
 		/* Optional arrow indicator */
