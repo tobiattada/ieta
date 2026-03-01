@@ -749,6 +749,7 @@
 	      display: grid;
 	      grid-template-columns: 1fr;
 	      grid-template-areas:
+	      "x"
 	      "select"
 	      "audience"
 	      "demographic"
@@ -777,11 +778,8 @@
 	      	@include h6($primary-blue);
 	      }
 
-	      .filter-nav-top{
-	      	grid-area: top-nav;
-	      	display: flex;
-    		align-items: center;
-    		justify-content: space-between;
+	      .close-x{
+	      	grid-area: x;
 	      }
 
 	      .close-filters{
