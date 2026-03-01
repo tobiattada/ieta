@@ -778,11 +778,11 @@
 	      	@include h6($primary-blue);
 	      }
 
-	      .close-x{
+	      span.close-x{
 	      	grid-area: x;
 	      }
 
-	      .close-filters{
+	      a.close-filters{
 	      	grid-area: close;
 	      }
 

@@ -3370,10 +3370,10 @@ b mark, mark b {
   text-align: right;
   direction: rtl;
 }
-#trip-planner-custom-code .filter-wrapper .filters .close-x {
+#trip-planner-custom-code .filter-wrapper .filters span.close-x {
   grid-area: x;
 }
-#trip-planner-custom-code .filter-wrapper .filters .close-filters {
+#trip-planner-custom-code .filter-wrapper .filters a.close-filters {
   grid-area: close;
 }
 #trip-planner-custom-code .filter-wrapper .filters p.caption {
