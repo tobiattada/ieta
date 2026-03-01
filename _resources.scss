@@ -757,7 +757,9 @@
 	      "audience"
 	      "demographic"
 	      "duration"
-	      "type";
+	      "type"
+	      "close"
+	      "clear";
 	      gap: 15px;
 	      margin-bottom: 24px;
 
@@ -786,6 +788,13 @@
     		justify-content: space-between;
 	      }
 
+	      .close-filters{
+	      	grid-area: close;
+	      }
+
+	      #clearFiltersBtn{
+	      	grid-area: clear;
+	      }
 
 
 	      .audienceFilter{

@@ -3335,7 +3335,7 @@ b mark, mark b {
 #trip-planner-custom-code .filter-wrapper .filters {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-areas: "top-nav" "audience" "demographic" "duration" "type";
+  grid-template-areas: "top-nav" "audience" "demographic" "duration" "type" "close" "clear";
   gap: 15px;
   margin-bottom: 24px;
 }
@@ -3376,6 +3376,12 @@ b mark, mark b {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+#trip-planner-custom-code .filter-wrapper .filters .close-filters {
+  grid-area: close;
+}
+#trip-planner-custom-code .filter-wrapper .filters #clearFiltersBtn {
+  grid-area: clear;
 }
 #trip-planner-custom-code .filter-wrapper .filters .audienceFilter {
   grid-area: audience;
