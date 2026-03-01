@@ -753,11 +753,11 @@
 	      display: grid;
 	      grid-template-columns: 1fr;
 	      grid-template-areas:
+	      "top-nav"
 	      "audience"
 	      "demographic"
 	      "duration"
-	      "type"
-	      "top-nav";
+	      "type";
 	      gap: 15px;
 	      margin-bottom: 24px;
 

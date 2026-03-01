@@ -3335,7 +3335,7 @@ b mark, mark b {
 #trip-planner-custom-code .filter-wrapper .filters {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-areas: "audience" "demographic" "duration" "type" "top-nav";
+  grid-template-areas: "top-nav" "audience" "demographic" "duration" "type";
   gap: 15px;
   margin-bottom: 24px;
 }
