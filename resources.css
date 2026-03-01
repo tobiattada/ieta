@@ -3320,11 +3320,16 @@ b mark, mark b {
   box-shadow: 0px 6px 20px 5px #0000000f;
   position: relative;
   margin: 0 auto;
-  border-radius: 24px;
+  border-radius: 0px;
   box-sizing: border-box;
   background: #FDFDFD;
   width: auto;
   padding: 40px;
+}
+@media (min-width: 1024px) {
+  #trip-planner-custom-code .filter-wrapper {
+    border-radius: 24px;
+  }
 }
 #trip-planner-custom-code .filter-wrapper .filters {
   display: grid;
@@ -3341,6 +3346,24 @@ b mark, mark b {
 }
 #trip-planner-custom-code .filter-wrapper .filters h5 {
   margin-bottom: 15px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 130%;
+  letter-spacing: 0%;
+  color: #1E3EAF;
+}
+@media (min-width: 1024px) {
+  #trip-planner-custom-code .filter-wrapper .filters h5 {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+#trip-planner-custom-code .filter-wrapper .filters h5.hebrew {
+  font-family: "Noto Sans Hebrew", sans-serif !important;
+  font-weight: 700;
+  text-align: right;
+  direction: rtl;
 }
 #trip-planner-custom-code .filter-wrapper .filters .audienceFilter {
   grid-area: audience;
@@ -3523,9 +3546,13 @@ b mark, mark b {
     width: 100%;
     max-width: 400px;
     border-radius: 12px;
-    padding: 1.5rem;
+    padding: 20px;
     position: relative;
     animation: fadeIn 0.3s ease;
+    height: 100%;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: none;
   }
   #trip-planner-custom-code .audienceFilter,
 #trip-planner-custom-code .demographicFilter,
