@@ -3456,6 +3456,7 @@ b mark, mark b {
 #trip-planner-custom-code .filter-wrapper .filters button#clearFiltersBtn {
   background: none;
   border: none;
+  display: flex;
   display: none;
   font-family: "Outfit", sans-serif;
   font-weight: 400;
@@ -3477,6 +3478,10 @@ b mark, mark b {
   font-weight: 600;
   text-align: right;
   direction: rtl;
+}
+#trip-planner-custom-code .filter-wrapper .filters button#clearFiltersBtn span {
+  font-size: 20px;
+  padding-left: 7px;
 }
 #trip-planner-custom-code .filter-wrapper .filters #typeFilter.filter {
   display: grid;
@@ -3674,6 +3679,7 @@ b mark, mark b {
 #trip-planner-custom-code .load-more {
   text-align: center;
   position: relative;
+  margin-top: 40px;
 }
 #trip-planner-custom-code .load-more button#loadMoreBtn {
   background: transparent;
