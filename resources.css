@@ -3335,13 +3335,18 @@ b mark, mark b {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas: "audience" "demographic" "duration" "type";
-  gap: 25px;
+  gap: 15px;
   margin-bottom: 24px;
 }
 @media (min-width: 768px) {
   #trip-planner-custom-code .filter-wrapper .filters {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "audience audience" "demographic duration" "type type";
+  }
+}
+@media (min-width: 1024px) {
+  #trip-planner-custom-code .filter-wrapper .filters {
+    gap: 25px;
   }
 }
 #trip-planner-custom-code .filter-wrapper .filters h5 {
@@ -3381,7 +3386,12 @@ b mark, mark b {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 5px;
+}
+@media (min-width: 1024px) {
+  #trip-planner-custom-code .filter-wrapper .filters .filter {
+    gap: 10px;
+  }
 }
 #trip-planner-custom-code .filter-wrapper .filters .filter label {
   border-radius: 25px;
@@ -3393,7 +3403,7 @@ b mark, mark b {
   letter-spacing: 0%;
   color: #2A2A2A;
   margin-top: 3px;
-  padding: 10px 20px;
+  padding: 5px 10px;
 }
 @media (min-width: 1024px) {
   #trip-planner-custom-code .filter-wrapper .filters .filter label {
@@ -3406,6 +3416,11 @@ b mark, mark b {
   font-weight: 600;
   text-align: right;
   direction: rtl;
+}
+@media (min-width: 1024px) {
+  #trip-planner-custom-code .filter-wrapper .filters .filter label {
+    padding: 10px 20px;
+  }
 }
 #trip-planner-custom-code .filter-wrapper .filters .filter label input {
   display: none;
@@ -3588,6 +3603,10 @@ b mark, mark b {
   #trip-planner-custom-code .open-filter .filter {
     max-height: 500px;
     /* large enough to fit content */
+    margin-bottom: 15px;
+  }
+  #trip-planner-custom-code .open-filter .filter label {
+    font-size: 12px;
   }
 }
 
