@@ -3773,3 +3773,7 @@ b mark, mark b {
   opacity: 1;
   visibility: visible;
 }
+
+.bg-ieta h3 {
+  color: #27277C !important;
+}
