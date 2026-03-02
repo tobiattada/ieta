@@ -2354,14 +2354,6 @@ footer.page-footer .footer-section .flex-item a:hover {
   opacity: 1;
 }
 
-nav {
-  position: sticky;
-  top: 0;
-  z-index: 999;
-  background: #fff;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
 .navbar {
   background-color: #ffffff;
   color: #1E3EAF;
