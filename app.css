@@ -71,6 +71,8 @@ html {
 
 header.page-header {
   display: none;
+  max-width: none;
+  width: 100%;
 }
 
 .header-wrap, .navs, div.navs nav {
