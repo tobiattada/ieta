@@ -3780,6 +3780,11 @@ b mark, mark b {
 
 .resource-highlight.text-image .row .col-6:first-child {
   flex: 2;
+  position: relative;
+}
+.resource-highlight.text-image .row .col-6:first-child:after {
+  content: "";
+  position: absolute;
 }
 .resource-highlight.text-image .row .col-6:last-child {
   flex: 1;

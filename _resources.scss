@@ -1192,11 +1192,17 @@
 .resource-highlight{
 	&.text-image{
 		.row{
-			.col-6:first-child{
+			.col-6:first-child{ //TEXT
 				flex: 2;
+				position: relative;
+
+				&:after{
+					content: "";
+					position: absolute;
+				}
 			}
 
-			.col-6:last-child{
+			.col-6:last-child{ //IMAGE
 				flex: 1;
 			}
 		}
@@ -1204,11 +1210,11 @@
 
 	&.image-text{
 		.row{
-			.col-6:first-child{
+			.col-6:first-child{ //IMAGE
 				flex: 1;
 			}
 
-			.col-6:last-child{
+			.col-6:last-child{ //TEXT
 				flex: 2;
 			}
 		}
