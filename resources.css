@@ -3807,7 +3807,7 @@ b mark, mark b {
 }
 .resource-highlight.image-text .row .col-6:first-child {
   flex: 1.5;
-  z-index: 2;
+  z-index: 3;
 }
 .resource-highlight.image-text .row .col-6:last-child {
   flex: 2;
