@@ -1194,11 +1194,19 @@
 		.row{
 			.col-6:first-child{ //TEXT
 				flex: 2;
-				position: relative;
+				// position: relative;
+				z-index: 2;
 
 				&:after{
 					content: "";
 					position: absolute;
+				    background: $light;
+				    height: 100%;
+				    width: 80%;
+				    top: 0;
+				    z-index: -1;
+				    left: 0px;
+				    border-radius: 0px 20px 20px 0px;
 				}
 			}
 
