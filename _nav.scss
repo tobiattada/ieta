@@ -592,9 +592,11 @@ a.search-toggle{
     border-radius: 100px;
     top: 0px;
     background: $light-gray;
-
-
     @include p($dark-gray);
+
+    @include largedesktop{
+      right: -15px;
+    }
 }
 
 

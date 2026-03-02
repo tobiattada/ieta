@@ -3110,6 +3110,11 @@ a.search-toggle {
   text-align: right;
   direction: rtl;
 }
+@media (min-width: 1300px) {
+  .search-container.active .search-input {
+    right: -15px;
+  }
+}
 
 #emergency-bar {
   background: #490E0A;

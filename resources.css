@@ -3777,3 +3777,16 @@ b mark, mark b {
 .bg-ieta h3 {
   color: #27277C !important;
 }
+
+.resource-highlight.text-image .row .col-6:first-child {
+  flex: 2;
+}
+.resource-highlight.text-image .row .col-6:last-child {
+  flex: 1;
+}
+.resource-highlight.image-text .row .col-6:first-child {
+  flex: 1;
+}
+.resource-highlight.image-text .row .col-6:last-child {
+  flex: 2;
+}
