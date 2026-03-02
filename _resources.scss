@@ -1150,6 +1150,36 @@
 			transform: rotate(0deg);
 		}
 	}
+
+	.tooltip {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.tooltip-text {
+  position: absolute;
+  bottom: 125%;           /* above the text */
+  left: 50%;
+  transform: translateX(-50%);
+  
+  background: #333;
+  color: #fff;
+  padding: 6px 10px;
+  font-size: 13px;
+  border-radius: 4px;
+  white-space: nowrap;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease;
+  z-index: 10;
+}
+
+.tooltip:hover .tooltip-text {
+  opacity: 1;
+  visibility: visible;
+}
 }
 
 

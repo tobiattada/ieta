@@ -1,7 +1,7 @@
 
 <div id="trip-planner-custom-code">
-  <div class="show-for-mobile">
-    <p style="text-align:center;">* Eligible for RootOne Vouchers</p>
+  <div class="hide-for-desktop">
+    <p style="text-align:center;" class="rootone">* Eligible for RootOne Vouchers <span class="tooltip">0</span><span class="tooltip-text">Applicable for Jewish teens currently in 9th, 10th or 11th grade and are residents of the United States or Canada. Learn more at rootone.org</span></p>
   </div>
 
   <div id="openPopup">
@@ -13,10 +13,11 @@
         
         <div class="filters">
           
-          <div class="filter-nav-top">
+          <!-- <div class="filter-nav-top"> -->
+            <span class="close-x close-filters">&times;</span>
             <p class="caption">Select all that apply:</p>
-            <button id="clearFiltersBtn">Clear all filters <span>&times;</span></button>
-          </div>
+            <button id="clearFiltersBtn">Reset filters <span>&times;</span></button>
+      <!--     </div> -->
 
           <div class="audienceFilter"><h5>Audience</h5><div id="audienceFilter" class="filter"></div></div>
           <div class="demographicFilter"><h5>Demographic</h5><div id="demographicFilter" class="filter"></div></div>
@@ -29,7 +30,7 @@
   </div>
 
   <div class="hide-for-mobile">
-    <p style="text-align:center;">* Eligible for RootOne Vouchers</p>
+    <p style="text-align:center;" class="rootone">* Eligible for RootOne Vouchers <span class="tooltip">0</span> <span class="tooltip-text">Applicable for Jewish teens currently in 9th, 10th or 11th grade and are residents of the United States or Canada. Learn more at rootone.org</span></p>
   </div>
 
   <ul id="data-list"></ul>
