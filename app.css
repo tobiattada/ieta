@@ -2661,15 +2661,11 @@ footer.page-footer .footer-section .flex-item a:hover {
 }
 
 .nav-menu .nav-item.has-dropdown .dropdown {
-  display: none;
-  position: absolute;
-  background: #ffffff;
-  top: 0;
-  left: 0;
-  z-index: 4000;
-  padding: 0px;
-  width: 100%;
-  height: 100vh;
+  display: inline-block;
+  position: relative;
+  background: none;
+  width: auto;
+  height: auto;
 }
 @media (min-width: 1024px) {
   .nav-menu .nav-item.has-dropdown .dropdown {
