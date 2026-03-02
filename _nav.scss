@@ -354,11 +354,19 @@
     margin-top: 20px;
     display: grid;
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 0px;
+
+    @include desktop{
+      gap: 20px;
+    }
 
     li{
       margin: 0px;
-      padding: 0px;
+      padding: 0px 10px;
+
+      @include desktop{
+        padding: 0px;
+      }
 
       &:last-child{margin-bottom:0px;}
       

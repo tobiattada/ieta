@@ -2811,11 +2811,21 @@ footer.page-footer .footer-section .flex-item a:hover {
   margin-top: 20px;
   display: grid;
   grid-template-columns: 1fr;
-  gap: 20px;
+  gap: 0px;
+}
+@media (min-width: 1024px) {
+  .nav-menu .nav-item.has-dropdown .dropdown ul {
+    gap: 20px;
+  }
 }
 .nav-menu .nav-item.has-dropdown .dropdown ul li {
   margin: 0px;
-  padding: 0px;
+  padding: 0px 10px;
+}
+@media (min-width: 1024px) {
+  .nav-menu .nav-item.has-dropdown .dropdown ul li {
+    padding: 0px;
+  }
 }
 .nav-menu .nav-item.has-dropdown .dropdown ul li:last-child {
   margin-bottom: 0px;
