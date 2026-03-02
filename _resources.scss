@@ -1190,6 +1190,11 @@
 
 
 .resource-highlight{
+	margin-top: $toppad-mob;
+		@include desktop{
+			margin-top: $toppad-desk;
+		}
+
 	&.text-image{
 		.row{
 			.col-6:first-child{ //TEXT
@@ -1211,7 +1216,8 @@
 			}
 
 			.col-6:last-child{ //IMAGE
-				flex: 1;
+				flex: 1.5;
+				z-index: 2;
 			}
 		}
 	}
@@ -1219,11 +1225,26 @@
 	&.image-text{
 		.row{
 			.col-6:first-child{ //IMAGE
-				flex: 1;
+				flex: 1.5;
+				z-index: 2;
 			}
 
 			.col-6:last-child{ //TEXT
 				flex: 2;
+				// position: relative;
+				z-index: 2;
+
+				&:after{
+					content: "";
+					position: absolute;
+				    background: $light;
+				    height: 100%;
+				    width: 80%;
+				    top: 0;
+				    z-index: -1;
+				    right: 0px;
+				    border-radius: 20px 0px 0px 20px;
+				}
 			}
 		}
 	}
