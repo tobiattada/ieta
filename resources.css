@@ -3786,7 +3786,7 @@ b mark, mark b {
 }
 @media (min-width: 1024px) {
   .resource-highlight {
-    margin: 0 20px;
+    margin: 0 0;
     margin-top: 50px;
   }
 }
