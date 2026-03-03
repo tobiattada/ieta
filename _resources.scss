@@ -1201,7 +1201,7 @@
     box-sizing: border-box;
     width: auto;
 
-		@include tablet{
+		@include desktop{
 			margin: 0 20px;
 			margin-top: $toppad-desk;
 		}
@@ -1224,7 +1224,7 @@
 				    z-index: -1;
 				    border-radius: 20px 20px 20px 20px;
 
-				    @include tablet{
+				    @include desktop{
 				    	content: "";
 						position: absolute;
 					    background: $light;
@@ -1269,7 +1269,7 @@
 				    z-index: -1;
 				    border-radius: 20px 20px 20px 20px;
 
-					@include tablet{
+					@include desktop{
 						content: "";
 						position: absolute;
 					    background: $light;
