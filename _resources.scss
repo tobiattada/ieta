@@ -1189,6 +1189,11 @@
 }
 
 
+
+
+
+
+
 .resource-highlight{
 	margin-top: $toppad-mob;
 		@include desktop{
@@ -1206,12 +1211,24 @@
 					content: "";
 					position: absolute;
 				    background: $light;
-				    height: 100%;
-				    width: 80%;
-				    top: 0;
+				    height: 80%;
+				    width: 100%;
+				    bottom: 0;
 				    z-index: -1;
-				    left: 0px;
-				    border-radius: 0px 20px 20px 0px;
+				    border-radius: 20px 20px 0px 0px;
+
+				    @include tablet{
+				    	content: "";
+						position: absolute;
+					    background: $light;
+					    height: 100%;
+					    width: 80%;
+					    top: 0;
+					    bottom: 0;
+					    z-index: -1;
+					    left: 0px;
+					    border-radius: 0px 20px 20px 0px;
+				    }
 				}
 			}
 
@@ -1238,12 +1255,23 @@
 					content: "";
 					position: absolute;
 				    background: $light;
-				    height: 100%;
-				    width: 80%;
-				    top: 0;
+				    height: 80%;
+				    width: 100%;
+				    bottom: 0;
 				    z-index: -1;
-				    right: 0px;
-				    border-radius: 20px 0px 0px 20px;
+				    border-radius: 20px 20px 0px 0px;
+				    
+					@include tablet{
+						content: "";
+						position: absolute;
+					    background: $light;
+					    height: 100%;
+					    width: 80%;
+					    top: 0;
+					    z-index: -1;
+					    right: 0px;
+					    border-radius: 20px 0px 0px 20px;
+					}
 				}
 			}
 		}

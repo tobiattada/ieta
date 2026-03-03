@@ -3640,6 +3640,7 @@ a.search-toggle {
 }
 .event-promo-full-width.basic .component-image .has-ratio-image {
   height: 100%;
+  border-radius: 0px !important;
 }
 .event-promo-full-width.basic .component-image .has-ratio-image .aspect-ratio {
   height: 50%;
