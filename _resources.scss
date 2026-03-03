@@ -242,9 +242,7 @@
 				}
 
 				@include tablet{
-
 					&::placeholder {
-						
 					}
 
 					&:focus::placeholder {
@@ -264,13 +262,14 @@
 				}
 			}
 
+
 			select[name="type"] {
 				background: red;
 				border: 1px solid $gray;
    	 			border-radius: 24px;
 			}
 
-			select[name="topic"], .chzn-container a{
+			select[name="topic"]{
 				// background: red;
 				border: 1px solid $gray;
    	 			border-radius: 24px;
