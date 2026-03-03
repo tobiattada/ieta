@@ -9829,6 +9829,7 @@ div.two-videos {
   width: 100%;
   margin-top: 30px;
   box-sizing: border-box;
+  max-width: none;
   position: relative;
 }
 .featured-resource .component-feature.manual .home-boxes .box .body {
