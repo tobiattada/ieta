@@ -3799,7 +3799,7 @@ b mark, mark b {
   bottom: 0;
   left: 0;
   z-index: -1;
-  border-radius: 20px 20px 0px 0px;
+  border-radius: 20px 20px 20px 20px;
 }
 @media (min-width: 768px) {
   .resource-highlight.text-image .row .col-6:first-child:after {
@@ -3836,7 +3836,7 @@ b mark, mark b {
   bottom: 0;
   left: 0;
   z-index: -1;
-  border-radius: 20px 20px 0px 0px;
+  border-radius: 20px 20px 20px 20px;
 }
 @media (min-width: 768px) {
   .resource-highlight.image-text .row .col-6:last-child:after {
@@ -3846,6 +3846,7 @@ b mark, mark b {
     height: 100%;
     width: 80%;
     top: 0;
+    left: auto;
     z-index: -1;
     right: 0px;
     border-radius: 20px 0px 0px 20px;
