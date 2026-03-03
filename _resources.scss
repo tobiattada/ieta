@@ -1214,6 +1214,7 @@
 				    height: 80%;
 				    width: 100%;
 				    bottom: 0;
+				    left: 0;
 				    z-index: -1;
 				    border-radius: 20px 20px 0px 0px;
 
@@ -1258,9 +1259,10 @@
 				    height: 80%;
 				    width: 100%;
 				    bottom: 0;
+				    left: 0;
 				    z-index: -1;
 				    border-radius: 20px 20px 0px 0px;
-				    
+
 					@include tablet{
 						content: "";
 						position: absolute;
