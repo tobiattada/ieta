@@ -2376,6 +2376,7 @@ b mark, mark b {
   background-position: 47% center;
   background-size: 36%;
   background-color: #ECECEC;
+  background-repeat: no-repeat;
   font-family: "Outfit", sans-serif;
   font-weight: 400;
   font-size: 15px;
