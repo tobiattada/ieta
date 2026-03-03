@@ -3780,9 +3780,13 @@ b mark, mark b {
 
 .resource-highlight {
   margin-top: 30px;
+  margin: 0 20px;
+  box-sizing: border-box;
+  width: auto;
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .resource-highlight {
+    margin: 0 20px;
     margin-top: 50px;
   }
 }

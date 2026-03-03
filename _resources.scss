@@ -1196,7 +1196,13 @@
 
 .resource-highlight{
 	margin-top: $toppad-mob;
-		@include desktop{
+
+	margin: 0 20px;
+    box-sizing: border-box;
+    width: auto;
+
+		@include tablet{
+			margin: 0 20px;
 			margin-top: $toppad-desk;
 		}
 
