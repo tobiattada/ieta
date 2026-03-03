@@ -2278,7 +2278,7 @@ b mark, mark b {
 .section-resource-center.section-resource-center-main .page-top #resource-center-controls .grid .select-wrapper {
   margin: 0px;
 }
-.section-resource-center.section-resource-center-main .page-top #resource-center-controls .select-wrapper select {
+.section-resource-center.section-resource-center-main .page-top #resource-center-controls .select-wrapper select, .section-resource-center.section-resource-center-main .page-top #resource-center-controls .chzn-container {
   background: transparent;
   width: auto !important;
   box-shadow: none;
@@ -2298,24 +2298,24 @@ b mark, mark b {
   margin-top: 3px;
 }
 @media (min-width: 1024px) {
-  .section-resource-center.section-resource-center-main .page-top #resource-center-controls .select-wrapper select {
+  .section-resource-center.section-resource-center-main .page-top #resource-center-controls .select-wrapper select, .section-resource-center.section-resource-center-main .page-top #resource-center-controls .chzn-container {
     font-size: 15px;
     line-height: 150%;
   }
 }
-.section-resource-center.section-resource-center-main .page-top #resource-center-controls .select-wrapper select.hebrew {
+.section-resource-center.section-resource-center-main .page-top #resource-center-controls .select-wrapper select.hebrew, .section-resource-center.section-resource-center-main .page-top #resource-center-controls .chzn-container.hebrew {
   font-family: "Noto Sans Hebrew", sans-serif !important;
   font-weight: 600;
   text-align: right;
   direction: rtl;
 }
 @media (min-width: 768px) {
-  .section-resource-center.section-resource-center-main .page-top #resource-center-controls .select-wrapper select {
+  .section-resource-center.section-resource-center-main .page-top #resource-center-controls .select-wrapper select, .section-resource-center.section-resource-center-main .page-top #resource-center-controls .chzn-container {
     height: 45px;
     line-height: 45px;
   }
 }
-.section-resource-center.section-resource-center-main .page-top #resource-center-controls .select-wrapper select span {
+.section-resource-center.section-resource-center-main .page-top #resource-center-controls .select-wrapper select span, .section-resource-center.section-resource-center-main .page-top #resource-center-controls .chzn-container span {
   font-family: "Outfit", sans-serif;
   font-weight: 400;
   font-size: 15px;
@@ -2326,18 +2326,18 @@ b mark, mark b {
   margin-top: 0px;
 }
 @media (min-width: 1024px) {
-  .section-resource-center.section-resource-center-main .page-top #resource-center-controls .select-wrapper select span {
+  .section-resource-center.section-resource-center-main .page-top #resource-center-controls .select-wrapper select span, .section-resource-center.section-resource-center-main .page-top #resource-center-controls .chzn-container span {
     font-size: 15px;
     line-height: 150%;
   }
 }
-.section-resource-center.section-resource-center-main .page-top #resource-center-controls .select-wrapper select span.hebrew {
+.section-resource-center.section-resource-center-main .page-top #resource-center-controls .select-wrapper select span.hebrew, .section-resource-center.section-resource-center-main .page-top #resource-center-controls .chzn-container span.hebrew {
   font-family: "Noto Sans Hebrew", sans-serif !important;
   font-weight: 600;
   text-align: right;
   direction: rtl;
 }
-.section-resource-center.section-resource-center-main .page-top #resource-center-controls .select-wrapper::after {
+.section-resource-center.section-resource-center-main .page-top #resource-center-controls .select-wrapper::after, .section-resource-center.section-resource-center-main .page-top #resource-center-controls .chzn-container::after {
   content: url("data:image/svg+xml,%3Csvg%20width%3D%2212%22%20height%3D%228%22%20viewBox%3D%220%200%2012%208%22%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath%20d%3D%22M0%206L6%200L12%206L10.6%207.4L6%202.8L1.4%207.4L0%206Z%22%20fill%3D%22black%22/%3E%3C/svg%3E");
   position: absolute;
   right: 16px;
@@ -2465,7 +2465,7 @@ b mark, mark b {
   border: 1px solid #c9c9c9;
   border-radius: 24px;
 }
-.section-resource-center.section-resource-center-main .page-top #resource-center-controls select[name=topic] {
+.section-resource-center.section-resource-center-main .page-top #resource-center-controls select[name=topic], .section-resource-center.section-resource-center-main .page-top #resource-center-controls .chzn-container a {
   border: 1px solid #c9c9c9;
   border-radius: 24px;
 }

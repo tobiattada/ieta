@@ -144,7 +144,7 @@
 
 
 
-			.select-wrapper select{
+			.select-wrapper select, .chzn-container{
 				background: transparent;
 				width: auto !important;
 				box-shadow: none;
@@ -173,15 +173,14 @@
 			}
 
 			/* Add dropdown arrow via ::before */
-				.select-wrapper::after {
-					  	content: url("data:image/svg+xml,%3Csvg%20width%3D%2212%22%20height%3D%228%22%20viewBox%3D%220%200%2012%208%22%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath%20d%3D%22M0%206L6%200L12%206L10.6%207.4L6%202.8L1.4%207.4L0%206Z%22%20fill%3D%22black%22/%3E%3C/svg%3E");
-						position:absolute;
-						right: 16px;
-    					top: 16px;
-		    			transform: rotate(180deg);
-					  	transition: transform 0.3s ease;
-					}
-
+			.select-wrapper::after, .chzn-container::after {
+			  	content: url("data:image/svg+xml,%3Csvg%20width%3D%2212%22%20height%3D%228%22%20viewBox%3D%220%200%2012%208%22%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath%20d%3D%22M0%206L6%200L12%206L10.6%207.4L6%202.8L1.4%207.4L0%206Z%22%20fill%3D%22black%22/%3E%3C/svg%3E");
+				position:absolute;
+				right: 16px;
+				top: 16px;
+    			transform: rotate(180deg);
+			  	transition: transform 0.3s ease;
+			}
 
 			.chzn-container-single .chzn-drop{
 				margin-top: 8px;
@@ -269,7 +268,7 @@
    	 			border-radius: 24px;
 			}
 
-			select[name="topic"] {
+			select[name="topic"], .chzn-container a{
 				// background: red;
 				border: 1px solid $gray;
    	 			border-radius: 24px;
