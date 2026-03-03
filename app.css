@@ -3856,6 +3856,7 @@ a.search-toggle {
   box-sizing: border-box;
   padding: 30px 20px;
   width: 85%;
+  height: 80%;
   max-height: 80%;
   overflow: scroll;
   border-radius: 24px;
