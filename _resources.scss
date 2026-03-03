@@ -145,7 +145,7 @@
 
 
 			// .select-wrapper select{
-			.chzn-container{
+			.select-wrapper select{
 				background: transparent;
 				width: auto !important;
 				box-shadow: none;
@@ -175,13 +175,32 @@
 
 			/* Add dropdown arrow via ::before */
 			// .select-wrapper::after, 
-			.chzn-container::after {
+			.select-wrapper::after {
 			  	content: url("data:image/svg+xml,%3Csvg%20width%3D%2212%22%20height%3D%228%22%20viewBox%3D%220%200%2012%208%22%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath%20d%3D%22M0%206L6%200L12%206L10.6%207.4L6%202.8L1.4%207.4L0%206Z%22%20fill%3D%22black%22/%3E%3C/svg%3E");
 				position:absolute;
-				right: 16px;
-				top: 16px;
+				right: 22px;
+				top: 22px;
     			transform: rotate(180deg);
 			  	transition: transform 0.3s ease;
+			  	    z-index: 3000;
+			}
+
+			.select-wrapper .chzn-container-single .chzn-single{
+				border: 2px solid $gray;
+				background: transparent !important;
+    			border-radius: 50px;
+
+    			height: 35px;
+    			line-height: 35px;
+    			display: flex;
+   			 	align-items: center;
+   			 	padding:10px 40px 10px 25px;
+
+    			span{
+    				@include p($medium-gray);
+    				        font-weight: 500;
+    				    margin-right: 0px;
+    			}
 			}
 
 			.chzn-container-single .chzn-drop{
@@ -195,6 +214,7 @@
 
 			.chzn-container .chzn-results li+li {
 				border: 0px;
+				@include label($medium-gray);
 			}
 
 			.chzn-container .chzn-results .active-result{
@@ -228,6 +248,8 @@
 		        background-color: $light-gray;
 
 		        background-repeat: no-repeat;
+
+		        margin-right: 0px;
 
 			    @include caption($text);
 			    line-height: 15px !important;
