@@ -2997,21 +2997,18 @@ b mark, mark b {
 .section-resource-center.section-resource-center-main .page-main .shell.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_card_default] .row .positions .listing-container .entry.resource-entry .resource-content .resource-description, .section-resource-center.section-resource-center-main .page-main .shell.resource-center-style#resource-center-listing[data-display-type=card_view_only] .row .positions .listing-container .entry.resource-entry .resource-content .resource-description {
   order: 3;
   font-family: "Outfit", sans-serif;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 24px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 150%;
   letter-spacing: 0%;
   color: #2A2A2A;
+  margin-top: 3px;
 }
 @media (min-width: 1024px) {
   .section-resource-center.section-resource-center-main .page-main .shell.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_card_default] .row .positions .listing-container .entry.resource-entry .resource-content .resource-description, .section-resource-center.section-resource-center-main .page-main .shell.resource-center-style#resource-center-listing[data-display-type=card_view_only] .row .positions .listing-container .entry.resource-entry .resource-content .resource-description {
-    font-size: 18px;
-    line-height: 27px;
+    font-size: 15px;
+    line-height: 150%;
   }
-}
-.section-resource-center.section-resource-center-main .page-main .shell.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_card_default] .row .positions .listing-container .entry.resource-entry .resource-content .resource-description strong, .section-resource-center.section-resource-center-main .page-main .shell.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_card_default] .row .positions .listing-container .entry.resource-entry .resource-content .resource-description em, .section-resource-center.section-resource-center-main .page-main .shell.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_card_default] .row .positions .listing-container .entry.resource-entry .resource-content .resource-description b, .section-resource-center.section-resource-center-main .page-main .shell.resource-center-style#resource-center-listing[data-display-type=card_view_only] .row .positions .listing-container .entry.resource-entry .resource-content .resource-description strong, .section-resource-center.section-resource-center-main .page-main .shell.resource-center-style#resource-center-listing[data-display-type=card_view_only] .row .positions .listing-container .entry.resource-entry .resource-content .resource-description em, .section-resource-center.section-resource-center-main .page-main .shell.resource-center-style#resource-center-listing[data-display-type=card_view_only] .row .positions .listing-container .entry.resource-entry .resource-content .resource-description b {
-  font-weight: 600;
-  color: #2A2A2A;
 }
 .section-resource-center.section-resource-center-main .page-main .shell.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_card_default] .row .positions .listing-container .entry.resource-entry .resource-content .resource-description.hebrew, .section-resource-center.section-resource-center-main .page-main .shell.resource-center-style#resource-center-listing[data-display-type=card_view_only] .row .positions .listing-container .entry.resource-entry .resource-content .resource-description.hebrew {
   font-family: "Noto Sans Hebrew", sans-serif !important;

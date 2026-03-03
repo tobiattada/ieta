@@ -494,7 +494,7 @@
 
 									.resource-description{
 										order: 3;
-										@include p($dark-gray);
+										@include caption($dark-gray);
 									}
 								}
 							}
