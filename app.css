@@ -10166,6 +10166,7 @@ div.two-videos {
   margin: 0px;
   width: 100%;
   height: 100%;
+  max-width: none !important;
 }
 .features-4-up .component-class-featuremanual .home-boxes .box ul, .features-2-up .component-class-featuremanual .home-boxes .box ul, .features-3-up .component-class-featuremanual .home-boxes .box ul, .features .component-class-featuremanual .home-boxes .box ul {
   height: 100%;
