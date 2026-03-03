@@ -2898,7 +2898,7 @@ footer.page-footer .footer-section .flex-item a:hover {
     z-index: 5000;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
   }
   .navbar__toggle div {
     display: flex;
