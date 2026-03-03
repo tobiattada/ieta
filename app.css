@@ -2668,6 +2668,7 @@ footer.page-footer .footer-section .flex-item a:hover {
   background: none;
   width: auto;
   height: auto;
+  margin-top: 15px;
 }
 @media (min-width: 1024px) {
   .nav-menu .nav-item.has-dropdown .dropdown {
@@ -2679,6 +2680,7 @@ footer.page-footer .footer-section .flex-item a:hover {
     z-index: 1000;
     padding: 50px 30px 40px;
     width: 225px;
+    margin-top: 0px;
     height: auto;
   }
 }

@@ -253,6 +253,7 @@
     // padding: 0px;
     width: auto;
     height: auto;
+        margin-top: 15px;
 
   @include desktop {
     display: none;
@@ -263,6 +264,7 @@
     z-index: 1000;
     padding: 50px 30px 40px;
     width: 225px;
+    margin-top: 0px;
     height: auto;
   }
 
