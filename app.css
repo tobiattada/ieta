@@ -2663,7 +2663,7 @@ footer.page-footer .footer-section .flex-item a:hover {
 }
 
 .nav-menu .nav-item.has-dropdown .dropdown {
-  display: inline-block;
+  display: block;
   position: relative;
   background: none;
   width: auto;
