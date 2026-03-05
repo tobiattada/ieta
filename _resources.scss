@@ -967,7 +967,12 @@
 		grid-column: 1 / -1;
     	text-align: center;
 
-    	p{@include p-large($dark-gray);}
+    	p{
+    		@include p-large($dark-gray);
+    		a{
+    			@include p-large($primary-blue);
+    		}
+    	}
 	}
 
 
@@ -1152,6 +1157,14 @@
 		}
 	}
 
+	p.rootone{
+		text-align: center;
+	    display: flex;
+	    align-items: center;
+	    justify-content: center;
+	    gap: 10px;
+	}
+
 	.tooltip {
 	  position: relative;
 	  cursor: pointer;
@@ -1175,6 +1188,10 @@
 	  visibility: hidden;
 	  transition: opacity 0.2s ease;
 	  z-index: 10;
+
+	  svg{
+	  	margin-top: 6px;
+	  }
 	}
 
 	.tooltip:hover .tooltip-text {

@@ -1,7 +1,10 @@
 
 <div id="trip-planner-custom-code">
   <div class="hide-for-desktop">
-    <p style="text-align:center;" class="rootone">* Eligible for RootOne Vouchers <span class="tooltip">0</span><span class="tooltip-text">Applicable for Jewish teens currently in 9th, 10th or 11th grade and are residents of the United States or Canada. Learn more at rootone.org</span></p>
+    <p style="text-align:center;" class="rootone">* Eligible for RootOne Vouchers <span class="tooltip"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="12" cy="12" r="11" stroke="currentColor" stroke-width="2"/>
+      <text x="12" y="16" font-size="14" font-weight="bold" text-anchor="middle" fill="currentColor">?</text>
+    </svg> <span class="tooltip-text">Applicable for Jewish teens currently in 9th, 10th or 11th grade and are residents of the United States or Canada. Learn more at rootone.org</span></p>
   </div>
 
   <div id="openPopup">
@@ -30,7 +33,10 @@
   </div>
 
   <div class="hide-for-mobile">
-    <p style="text-align:center;" class="rootone">* Eligible for RootOne Vouchers <span class="tooltip">0</span> <span class="tooltip-text">Applicable for Jewish teens currently in 9th, 10th or 11th grade and are residents of the United States or Canada. Learn more at rootone.org</span></p>
+    <p style="text-align:center;" class="rootone">* Eligible for RootOne Vouchers <span class="tooltip"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="12" cy="12" r="11" stroke="currentColor" stroke-width="2"/>
+      <text x="12" y="16" font-size="14" font-weight="bold" text-anchor="middle" fill="currentColor">?</text>
+    </svg> <span class="tooltip-text">Applicable for Jewish teens currently in 9th, 10th or 11th grade and are residents of the United States or Canada. Learn more at rootone.org</span></p>
   </div>
 
   <ul id="data-list"></ul>
@@ -141,12 +147,40 @@ function applyFilters() {
   renderData(filtered); // render first 10 of filtered data
 }
 
+// 🔹 Render "No Results" message
+function showNoResults() {
+  list.innerHTML = `
+    <li class="no-results">
+      <p>No programs found matching your filters.</p>
+      <p>Try adjusting your selections or <a href="#" onclick="clearAllFilters(event)">clear all filters</a>.</p>
+    </li>
+  `;
+  loadMoreBtn.style.display = "none";
+}
+
+// 🔹 Clear all filters (helper function for no results message)
+function clearAllFilters(event) {
+  event.preventDefault();
+  document.querySelectorAll("#audienceFilter input, #demographicFilter input, #typeFilter input, #durationFilter input")
+    .forEach(cb => cb.checked = false);
+  itemsToShow = 0;
+  renderData(data);
+  updateClearButtonVisibility();
+}
+
 // 🔹 Render data with Load More / Back to Top support
 function renderData(items, reset = true) {
   if (reset) {
     list.innerHTML = "";
     itemsToShow = 0;
     currentData = items;
+  }
+
+  // Check if no results
+  if (currentData.length === 0) {
+    showNoResults();
+    updateClearButtonVisibility();
+    return;
   }
 
   const remainingItems = currentData.slice(itemsToShow, itemsToShow + 10);
@@ -237,14 +271,14 @@ clearFiltersBtn.addEventListener("click", () => {
 
   itemsToShow = 0; // reset Load More counter
   renderData(data);  // show first 10 of full data
-  updateClearButtonVisibility();   // 👈 ADD THIS
+  updateClearButtonVisibility();
 });
 
 // 🔹 Listen for checkbox changes
 document.addEventListener("change", function(e) {
   if (e.target.matches("input[type=checkbox]")) {
     applyFilters();
-    updateClearButtonVisibility();   // 👈 ADD THIS
+    updateClearButtonVisibility();
   }
 });
 </script>
