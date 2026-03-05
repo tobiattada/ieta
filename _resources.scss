@@ -1181,22 +1181,30 @@
 	  left: 50%;
 	  transform: translateX(-50%);
 	  
-	  background: #333;
-	  color: #fff;
-	  padding: 6px 10px;
-	  font-size: 13px;
+	  background: $dark-gray;
+	  color: $white;
+	  padding: 10px 10px;
+	  font-size: 15px;
 	  border-radius: 4px;
-	  white-space: nowrap;
+	  // white-space: nowrap;
+
+		  width: 50vw;
+		  bottom: 125%;
+		    left: -200%;
+	   		 transform: translateX(-73%);
 
 	  opacity: 0;
 	  visibility: hidden;
 	  transition: opacity 0.2s ease;
 	  z-index: 10;
+
+	      // display: none;
 	}
 
 	.tooltip:hover .tooltip-text {
 	  opacity: 1;
 	  visibility: visible;
+	
 	}
 }
 

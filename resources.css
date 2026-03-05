@@ -3882,12 +3882,15 @@ b mark, mark b {
   /* above the text */
   left: 50%;
   transform: translateX(-50%);
-  background: #333;
-  color: #fff;
-  padding: 6px 10px;
-  font-size: 13px;
+  background: #2A2A2A;
+  color: #FDFDFD;
+  padding: 10px 10px;
+  font-size: 15px;
   border-radius: 4px;
-  white-space: nowrap;
+  width: 50vw;
+  bottom: 125%;
+  left: -200%;
+  transform: translateX(-73%);
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.2s ease;
