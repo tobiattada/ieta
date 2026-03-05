@@ -760,7 +760,7 @@
 		        "close clear";
 	      gap: 15px;
 	      // margin-bottom: 24px;
-	      align-items: center;
+	      //align-items: center;
 
 	      @include tablet{
 	      	grid-template-columns: 1fr 1fr;
@@ -998,12 +998,11 @@
 		  position: relative;
 		  animation: fadeIn 0.3s ease;
 
-		  height: 100%;
+		  	height: 100%;
         	box-sizing: border-box;
         	width: 100%;
-        max-width: none;
+        	max-width: none;
 		}
-
 
 		/* Container spacing (optional) */
 		.audienceFilter,
@@ -1065,8 +1064,6 @@
 	    align-items: center;
 	    gap: 10px;
 		border-radius: 5px;
-		
-
 		margin: 30px 0px 0px 0px;
 
 		&:hover{

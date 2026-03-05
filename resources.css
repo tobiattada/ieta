@@ -3406,7 +3406,6 @@ b mark, mark b {
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "x x" "select select" "audience audience" "demographic demographic" "duration duration" "type type" "close clear";
   gap: 15px;
-  align-items: center;
 }
 @media (min-width: 768px) {
   #trip-planner-custom-code .filter-wrapper .filters {
