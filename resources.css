@@ -3873,6 +3873,9 @@ b mark, mark b {
   cursor: pointer;
   display: inline-block;
 }
+#trip-planner-custom-code .tooltip svg {
+  margin-top: 6px;
+}
 #trip-planner-custom-code .tooltip-text {
   position: absolute;
   bottom: 125%;
@@ -3889,9 +3892,6 @@ b mark, mark b {
   visibility: hidden;
   transition: opacity 0.2s ease;
   z-index: 10;
-}
-#trip-planner-custom-code .tooltip-text svg {
-  margin-top: 6px;
 }
 #trip-planner-custom-code .tooltip:hover .tooltip-text {
   opacity: 1;

@@ -1169,6 +1169,10 @@
 	  position: relative;
 	  cursor: pointer;
 	  display: inline-block;
+
+	  svg{
+	  	margin-top: 6px;
+	  }
 	}
 
 	.tooltip-text {
@@ -1188,10 +1192,6 @@
 	  visibility: hidden;
 	  transition: opacity 0.2s ease;
 	  z-index: 10;
-
-	  svg{
-	  	margin-top: 6px;
-	  }
 	}
 
 	.tooltip:hover .tooltip-text {
