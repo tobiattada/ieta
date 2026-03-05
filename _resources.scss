@@ -962,10 +962,13 @@
       font-size: 18px;
     }
 
+
     .no-results {
-      color: #888;
-      font-style: italic;
-    }
+		grid-column: 1 / -1;
+    	text-align: center;
+
+    	p{@include p-large($dark-gray);}
+	}
 
 
 

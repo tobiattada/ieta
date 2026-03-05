@@ -3653,8 +3653,31 @@ b mark, mark b {
   font-size: 18px;
 }
 #trip-planner-custom-code .no-results {
-  color: #888;
-  font-style: italic;
+  grid-column: 1/-1;
+  text-align: center;
+}
+#trip-planner-custom-code .no-results p {
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0;
+  color: #2A2A2A;
+}
+#trip-planner-custom-code .no-results p strong, #trip-planner-custom-code .no-results p em, #trip-planner-custom-code .no-results p b {
+  font-weight: 600;
+  color: #1E3EAF;
+}
+@media (min-width: 1024px) {
+  #trip-planner-custom-code .no-results p {
+    font-size: 24px;
+  }
+}
+#trip-planner-custom-code .no-results p.hebrew {
+  font-family: "Noto Sans Hebrew", sans-serif !important;
+  font-weight: 400;
+  text-align: right;
+  direction: rtl;
 }
 @media (max-width: 767px) {
   #trip-planner-custom-code {
