@@ -1,10 +1,10 @@
 
 <div id="trip-planner-custom-code">
   <div class="hide-for-desktop">
-    <p style="text-align:center;" class="rootone">* Eligible for RootOne Vouchers <span class="tooltip"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <p style="text-align:center;" class="rootone">* Eligible for <a href="https://rootone.org/" target="_blank">RootOne</a> Vouchers <span class="tooltip"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
       <circle cx="12" cy="12" r="11" stroke="currentColor" stroke-width="2"/>
       <text x="12" y="16" font-size="14" font-weight="bold" text-anchor="middle" fill="currentColor">?</text>
-    </svg> <span class="tooltip-text">Applicable for Jewish teens currently in 9th, 10th or 11th grade and are residents of the United States or Canada. Learn more at rootone.org</span></p>
+    </svg> <span class="tooltip-text">Applicable for Jewish teens currently in 9th, 10th or 11th grade and are residents of the United States or Canada. Learn more at rootone.org</span></span></p>
   </div>
 
   <div id="openPopup">
@@ -33,10 +33,10 @@
   </div>
 
   <div class="hide-for-mobile">
-    <p style="text-align:center;" class="rootone">* Eligible for RootOne Vouchers <span class="tooltip"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <p style="text-align:center;" class="rootone">* Eligible for <a href="https://rootone.org/" target="_blank">RootOne</a>Vouchers <span class="tooltip"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
       <circle cx="12" cy="12" r="11" stroke="currentColor" stroke-width="2"/>
       <text x="12" y="16" font-size="14" font-weight="bold" text-anchor="middle" fill="currentColor">?</text>
-    </svg> <span class="tooltip-text">Applicable for Jewish teens currently in 9th, 10th or 11th grade and are residents of the United States or Canada. Learn more at rootone.org</span></p>
+    </svg> <span class="tooltip-text">Applicable for Jewish teens currently in 9th, 10th or 11th grade and are residents of the United States or Canada. Learn more at rootone.org</span></span></p>
   </div>
 
   <ul id="data-list"></ul>
@@ -209,8 +209,10 @@ function renderData(items, reset = true) {
   // Update button text
   if (itemsToShow >= currentData.length) {
     loadMoreBtn.textContent = "Back to Top";
+    loadMoreBtn.classList.add("backtotop");  // 👈 ADD CLASS
   } else {
     loadMoreBtn.textContent = "Load More";
+    loadMoreBtn.classList.remove("backtotop");  // 👈 REMOVE CLASS
   }
 
   // Show button only if there are items
