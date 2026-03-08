@@ -787,7 +787,7 @@
 	      a.close-filters{
 	      	grid-area: close;
 
-	      	@include button(solid, $primary-blue, $light);
+	      	@include button($primary-blue, $light, solid);
 	      }
 
 	       p.caption{

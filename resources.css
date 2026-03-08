@@ -3461,6 +3461,9 @@ b mark, mark b {
   gap: 10px;
   cursor: pointer;
   transition: all 0.2s ease;
+  background: #1E3EAF;
+  color: #f2f2f2 !important;
+  border: none;
 }
 #trip-planner-custom-code .filter-wrapper .filters a.close-filters span, #trip-planner-custom-code .filter-wrapper .filters a.close-filters p {
   font-family: "Outfit", sans-serif;
@@ -3468,11 +3471,21 @@ b mark, mark b {
   font-size: 18px;
   line-height: 27px;
   text-align: center;
-  color: #1E3EAF;
+  color: #f2f2f2;
   transition: 0.3s;
 }
 #trip-planner-custom-code .filter-wrapper .filters a.close-filters span:hover, #trip-planner-custom-code .filter-wrapper .filters a.close-filters p:hover {
   transition: 0.3s;
+}
+#trip-planner-custom-code .filter-wrapper .filters a.close-filters a, #trip-planner-custom-code .filter-wrapper .filters a.close-filters span {
+  color: #f2f2f2 !important;
+}
+#trip-planner-custom-code .filter-wrapper .filters a.close-filters:hover {
+  background: #1c88ed;
+  color: #f2f2f2 !important;
+}
+#trip-planner-custom-code .filter-wrapper .filters a.close-filters:hover a, #trip-planner-custom-code .filter-wrapper .filters a.close-filters:hover span {
+  color: #f2f2f2 !important;
 }
 #trip-planner-custom-code .filter-wrapper .filters a.close-filters:active {
   background: #27277C;
