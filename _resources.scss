@@ -782,12 +782,18 @@
 
 	      span.close-x{
 	      	grid-area: x;
+	      	text-align: right;
+   			font-size: 20px;
 	      }
 
 	      a.close-filters{
 	      	grid-area: close;
 
 	      	@include button($primary-blue, $light, solid);
+
+	      	@include desktop{
+	      		display: none;
+	      	}
 	      }
 
 	       p.caption{

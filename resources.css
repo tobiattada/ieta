@@ -3441,6 +3441,8 @@ b mark, mark b {
 }
 #trip-planner-custom-code .filter-wrapper .filters span.close-x {
   grid-area: x;
+  text-align: right;
+  font-size: 20px;
 }
 #trip-planner-custom-code .filter-wrapper .filters a.close-filters {
   grid-area: close;
@@ -3489,6 +3491,11 @@ b mark, mark b {
 }
 #trip-planner-custom-code .filter-wrapper .filters a.close-filters:active {
   background: #27277C;
+}
+@media (min-width: 1024px) {
+  #trip-planner-custom-code .filter-wrapper .filters a.close-filters {
+    display: none;
+  }
 }
 #trip-planner-custom-code .filter-wrapper .filters p.caption {
   grid-area: select;
