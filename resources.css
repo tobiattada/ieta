@@ -3444,6 +3444,38 @@ b mark, mark b {
 }
 #trip-planner-custom-code .filter-wrapper .filters a.close-filters {
   grid-area: close;
+  padding: 12px 24px;
+  border-radius: 30px;
+  height: auto;
+  font-family: "Outfit", sans-serif;
+  font-weight: 600 !important;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  display: inline-block;
+  margin-right: auto;
+  white-space: nowrap;
+  display: flex;
+  width: auto;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+#trip-planner-custom-code .filter-wrapper .filters a.close-filters span, #trip-planner-custom-code .filter-wrapper .filters a.close-filters p {
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  color: #1E3EAF;
+  transition: 0.3s;
+}
+#trip-planner-custom-code .filter-wrapper .filters a.close-filters span:hover, #trip-planner-custom-code .filter-wrapper .filters a.close-filters p:hover {
+  transition: 0.3s;
+}
+#trip-planner-custom-code .filter-wrapper .filters a.close-filters:active {
+  background: #27277C;
 }
 #trip-planner-custom-code .filter-wrapper .filters p.caption {
   grid-area: select;

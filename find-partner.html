@@ -47,7 +47,6 @@
 
 </div>
 
-
 <script>
 let data = [];
 const list = document.getElementById("data-list");
@@ -60,11 +59,11 @@ let currentData = [];      // stores filtered or full data
 // 🔹 Get logo URL
 function getLogoUrl(programName) {
   const encodedName = encodeURIComponent(programName);
-  return `https://raw.githubusercontent.com/tobiattada/ieta/9fb32e1e6dc67f7c50165345630c896d5aaaa64a/logos/${encodedName}/logo.png`;
+  return `https://raw.githubusercontent.com/tobiattada/ieta/b0acabf5555275d79aecf59050c48efa8bad78ec/logos/${encodedName}/logo.png`;
 }
 
 // 🔹 Load JSON from GitHub RAW
-fetch("https://raw.githubusercontent.com/tobiattada/ieta/9fb32e1e6dc67f7c50165345630c896d5aaaa64a/trip-platform-org-list.json")
+fetch("https://raw.githubusercontent.com/tobiattada/ieta/b0acabf5555275d79aecf59050c48efa8bad78ec/trip-platform-org-list.json")
   .then(res => res.json())
   .then(json => {
     data = json;
@@ -166,6 +165,33 @@ function clearAllFilters(event) {
   itemsToShow = 0;
   renderData(data);
   updateClearButtonVisibility();
+  updateFilterCounts();
+}
+
+// 🔹 Update filter counts next to headings
+function updateFilterCounts() {
+  const filterGroups = [
+    { containerId: "audienceFilter", containerClass: "audienceFilter", baseText: "Audience" },
+    { containerId: "demographicFilter", containerClass: "demographicFilter", baseText: "Demographic" },
+    { containerId: "typeFilter", containerClass: "typeFilter", baseText: "Program Type" },
+    { containerId: "durationFilter", containerClass: "durationFilter", baseText: "Program Duration" }
+  ];
+
+  filterGroups.forEach(group => {
+    const containerDiv = document.querySelector(`.${group.containerClass}`);
+    if (!containerDiv) return;
+
+    const heading = containerDiv.querySelector("h5");
+    if (!heading) return;
+
+    const checkedCount = document.querySelectorAll(`#${group.containerId} input:checked`).length;
+
+    if (checkedCount > 0) {
+      heading.textContent = `${group.baseText} (${checkedCount})`;
+    } else {
+      heading.textContent = group.baseText;
+    }
+  });
 }
 
 // 🔹 Render data with Load More / Back to Top support
@@ -274,6 +300,7 @@ clearFiltersBtn.addEventListener("click", () => {
   itemsToShow = 0; // reset Load More counter
   renderData(data);  // show first 10 of full data
   updateClearButtonVisibility();
+  updateFilterCounts();
 });
 
 // 🔹 Listen for checkbox changes
@@ -281,11 +308,10 @@ document.addEventListener("change", function(e) {
   if (e.target.matches("input[type=checkbox]")) {
     applyFilters();
     updateClearButtonVisibility();
+    updateFilterCounts();
   }
 });
 </script>
-
-
 <script>
 const popup = document.getElementById("popup");
 const openBtn = document.getElementById("openPopup");
