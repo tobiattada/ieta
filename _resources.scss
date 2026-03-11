@@ -706,16 +706,15 @@
 		.resource-link-button{
 			.resource-download-btn{
 				i{display: none;}
-				
-					display: inline-flex;
+					    display: flex !important;
+					display: inline-flex  !important;
     				position: relative;
-				    display: flex !important;
 				    align-items: center;
 				    justify-content: flex-start;
 				    color: $white;
 				    transition: .3s;
 				    background-color: $navy-blue;
-				    border-radius: 24px;
+				    border-radius: 50px;
 
 				    &:hover{
 				    	text-decoration:none;

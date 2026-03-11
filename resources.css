@@ -3350,15 +3350,15 @@ b mark, mark b {
   padding: 0px;
 }
 .section-resource-center.section-resource-center-listing article.post .resource-link-button .resource-download-btn {
-  display: inline-flex;
-  position: relative;
   display: flex !important;
+  display: inline-flex !important;
+  position: relative;
   align-items: center;
   justify-content: flex-start;
   color: #FDFDFD;
   transition: 0.3s;
   background-color: #27277C;
-  border-radius: 24px;
+  border-radius: 50px;
 }
 .section-resource-center.section-resource-center-listing article.post .resource-link-button .resource-download-btn i {
   display: none;
