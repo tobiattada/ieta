@@ -712,6 +712,7 @@
 			.resource-link-url{
 				display: flex;
 				gap: 15px;
+				background: none;
 
 				strong{
 					@include p-bold($dark-gray);
