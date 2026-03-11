@@ -3352,15 +3352,20 @@ b mark, mark b {
 .section-resource-center.section-resource-center-listing article.post .resource-link-button .resource-download-btn {
   display: inline-flex;
   position: relative;
-  display: flex;
+  display: flex !important;
   align-items: center;
   justify-content: flex-start;
   color: #FDFDFD;
   transition: 0.3s;
   background-color: #27277C;
+  border-radius: 24px;
 }
 .section-resource-center.section-resource-center-listing article.post .resource-link-button .resource-download-btn i {
   display: none;
+}
+.section-resource-center.section-resource-center-listing article.post .resource-link-button .resource-download-btn:hover {
+  text-decoration: none;
+  background-color: #1c88ed;
 }
 .section-resource-center.section-resource-center-listing article.post .resource-link-button .resource-download-btn::after {
   position: relative;

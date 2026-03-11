@@ -709,12 +709,18 @@
 				
 					display: inline-flex;
     				position: relative;
-				    display: flex;
+				    display: flex !important;
 				    align-items: center;
 				    justify-content: flex-start;
 				    color: $white;
 				    transition: .3s;
 				    background-color: $navy-blue;
+				    border-radius: 24px;
+
+				    &:hover{
+				    	text-decoration:none;
+				    	background-color: $medium-blue;
+				    }
 
 				    &::after{ // PRIMARY BLUE ARROW 
 				      position: relative;
