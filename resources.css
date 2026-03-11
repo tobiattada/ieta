@@ -3332,7 +3332,7 @@ b mark, mark b {
   }
 }
 .section-resource-center.section-resource-center-listing article.post img {
-  max-width: 70%;
+  width: 70%;
   margin: 0 auto;
   border-radius: 24px;
   background: #1E3EAF;
