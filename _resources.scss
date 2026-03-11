@@ -1165,17 +1165,17 @@
 	}
 
 	@include tablet{
-		.close-filters{
-			display: none;
-		}	
-
-		.close-filters.close-desktop{
-			display: inline;
-		}
-
-		// .close-filters, #openPopup{
+		// .close-filters{
 		// 	display: none;
 		// }	
+
+		// .close-filters.close-desktop{
+		// 	display: inline;
+		// }
+
+		.close-filters, #openPopup{
+			display: none;
+		}	
 	}
 }
 
@@ -1296,6 +1296,13 @@
 	  opacity: 1;
 	  visibility: visible;
 	
+	}
+
+	.filter-nav-desktop{
+		display: flex;
+	    justify-content: space-between;
+	    align-items: center;
+	    margin-bottom: 25px;
 	}
 }
 

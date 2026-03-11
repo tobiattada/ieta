@@ -3935,11 +3935,8 @@ b mark, mark b {
   display: none;
 }
 @media (min-width: 768px) {
-  #trip-planner-custom-code .close-filters {
+  #trip-planner-custom-code .close-filters, #trip-planner-custom-code #openPopup {
     display: none;
-  }
-  #trip-planner-custom-code .close-filters.close-desktop {
-    display: inline;
   }
 }
 
@@ -4043,6 +4040,12 @@ b mark, mark b {
 #trip-planner-custom-code .tooltip:hover .tooltip-text {
   opacity: 1;
   visibility: visible;
+}
+#trip-planner-custom-code .filter-nav-desktop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
 }
 
 .bg-ieta h3 {
