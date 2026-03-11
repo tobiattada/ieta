@@ -3349,6 +3349,11 @@ b mark, mark b {
   margin: 0px;
   padding: 0px;
 }
+.section-resource-center.section-resource-center-listing article.post .resource-link-button {
+  max-width: 80% !important;
+  width: 80%;
+  margin: 0 auto;
+}
 .section-resource-center.section-resource-center-listing article.post .resource-link-button .resource-download-btn {
   display: flex !important;
   display: inline-flex !important;
@@ -3925,11 +3930,6 @@ b mark, mark b {
   background: #D2E9FF;
   transition: 0.2s;
   cursor: pointer;
-}
-@media (min-width: 768px) {
-  #trip-planner-custom-code .close-filters, #trip-planner-custom-code #openPopup {
-    display: none;
-  }
 }
 
 #trip-planner-custom-code .load-more {

@@ -704,6 +704,10 @@
 		}
 
 		.resource-link-button{
+			max-width: 80% !important;
+		    width: 80%;
+		    margin: 0 auto;
+
 			.resource-download-btn{
 				i{display: none;}
 					    display: flex !important;
@@ -1156,11 +1160,11 @@
 		}
 	}
 
-	@include tablet{
-		.close-filters, #openPopup{
-			display: none;
-		}	
-	}
+	// @include tablet{
+	// 	.close-filters, #openPopup{
+	// 		display: none;
+	// 	}	
+	// }
 }
 
 
