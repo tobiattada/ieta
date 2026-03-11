@@ -3278,7 +3278,6 @@ b mark, mark b {
 .section-resource-center.section-resource-center-listing article.post {
   box-sizing: border-box;
   padding: 30px 20px;
-  padding-bottom: 0px !important;
 }
 @media (min-width: 768px) {
   .section-resource-center.section-resource-center-listing article.post {

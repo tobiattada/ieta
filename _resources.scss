@@ -668,7 +668,7 @@
 
 	article.post{
 		@include responsive-padding;
-		padding-bottom: 0px !important;
+		//padding-bottom: 0px !important;
 
 		.resource-article-content{
 			@include tablet {
