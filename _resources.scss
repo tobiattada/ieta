@@ -1160,11 +1160,23 @@
 		}
 	}
 
-	// @include tablet{
-	// 	.close-filters, #openPopup{
-	// 		display: none;
-	// 	}	
-	// }
+	.close-filters.close-desktop{
+		display: none;
+	}
+
+	@include tablet{
+		.close-filters{
+			display: none;
+		}	
+
+		.close-filters.close-desktop{
+			display: inline;
+		}
+
+		// .close-filters, #openPopup{
+		// 	display: none;
+		// }	
+	}
 }
 
 
