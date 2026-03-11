@@ -705,7 +705,21 @@
 
 		.resource-link-button{
 			.resource-download-btn{
-				@include button($primary-blue, $white, solid);
+				@include external-btn($primary-blue);
+				display: inline-block;
+			}
+
+			.resource-link-url{
+				display: flex;
+				gap: 15px;
+
+				strong{
+					@include p-bold($dark-gray);
+				}
+
+				a{
+					@include p-bold($navy-blue);
+				}
 			}
 		}
 	}
