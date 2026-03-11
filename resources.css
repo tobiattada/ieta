@@ -3382,7 +3382,7 @@ b mark, mark b {
 .section-resource-center.section-resource-center-listing article.post .resource-link-button .resource-link-url {
   display: flex;
   gap: 15px;
-  background: none;
+  background: transparent !important;
 }
 .section-resource-center.section-resource-center-listing article.post .resource-link-button .resource-link-url strong {
   font-family: "Outfit", sans-serif;
