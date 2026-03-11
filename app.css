@@ -2684,8 +2684,12 @@ footer.page-footer .footer-section .flex-item a:hover {
     height: auto;
   }
 }
-.nav-menu .nav-item.has-dropdown .dropdown a:hover, .nav-menu .nav-item.has-dropdown .dropdown a:hover p {
+.nav-menu .nav-item.has-dropdown .dropdown a {
+  border-bottom: 3px solid transparent;
+}
+.nav-menu .nav-item.has-dropdown .dropdown a:hover {
   background: #ECECEC !important;
+  border-bottom: 3ps solid #1E3EAF;
   transition: 0.3s;
 }
 .nav-menu .nav-item.has-dropdown .dropdown.mega {

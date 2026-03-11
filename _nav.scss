@@ -268,9 +268,13 @@
     height: auto;
   }
 
+  a{
+    border-bottom: 3px solid transparent;
+  }
 
-  a:hover, a:hover p{
+  a:hover{ // a:hover p
     background: $light-gray !important;
+    border-bottom: 3ps solid $primary-blue;
     transition:.3s;
   }
 
