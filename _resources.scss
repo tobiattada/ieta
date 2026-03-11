@@ -672,7 +672,7 @@
 
 		.resource-article-content{
 			    display: grid;
-			    gap: 15px;
+			    gap: 20px;
 
 			@include tablet {
 				@include responsive-padding;
@@ -700,6 +700,12 @@
 				box-sizing: border-box;
 				margin: 0px;
 				padding: 0px;
+			}
+		}
+
+		.resource-link-button{
+			.resource-download-btn{
+				@include button($primary-blue, $white, solid);
 			}
 		}
 	}

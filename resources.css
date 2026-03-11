@@ -3301,7 +3301,7 @@ b mark, mark b {
 }
 .section-resource-center.section-resource-center-listing article.post .resource-article-content {
   display: grid;
-  gap: 15px;
+  gap: 20px;
 }
 @media (min-width: 768px) {
   .section-resource-center.section-resource-center-listing article.post .resource-article-content {
@@ -3348,6 +3348,53 @@ b mark, mark b {
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
+}
+.section-resource-center.section-resource-center-listing article.post .resource-link-button .resource-download-btn {
+  padding: 12px 24px;
+  border-radius: 30px;
+  height: auto;
+  font-family: "Outfit", sans-serif;
+  font-weight: 600 !important;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  display: inline-block;
+  margin-right: auto;
+  white-space: nowrap;
+  display: flex;
+  width: auto;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: #1E3EAF;
+  color: #FDFDFD !important;
+  border: none;
+}
+.section-resource-center.section-resource-center-listing article.post .resource-link-button .resource-download-btn span, .section-resource-center.section-resource-center-listing article.post .resource-link-button .resource-download-btn p {
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  color: #FDFDFD;
+  transition: 0.3s;
+}
+.section-resource-center.section-resource-center-listing article.post .resource-link-button .resource-download-btn span:hover, .section-resource-center.section-resource-center-listing article.post .resource-link-button .resource-download-btn p:hover {
+  transition: 0.3s;
+}
+.section-resource-center.section-resource-center-listing article.post .resource-link-button .resource-download-btn a, .section-resource-center.section-resource-center-listing article.post .resource-link-button .resource-download-btn span {
+  color: #FDFDFD !important;
+}
+.section-resource-center.section-resource-center-listing article.post .resource-link-button .resource-download-btn:hover {
+  background: #1c88ed;
+  color: #f2f2f2 !important;
+}
+.section-resource-center.section-resource-center-listing article.post .resource-link-button .resource-download-btn:hover a, .section-resource-center.section-resource-center-listing article.post .resource-link-button .resource-download-btn:hover span {
+  color: #f2f2f2 !important;
+}
+.section-resource-center.section-resource-center-listing article.post .resource-link-button .resource-download-btn:active {
+  background: #27277C;
 }
 @media (min-width: 768px) {
   .section-resource-center.section-resource-center-listing .wrapper.article-back {
