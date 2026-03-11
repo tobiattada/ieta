@@ -709,6 +709,8 @@
 				display: inline-block;
 			}
 
+			@include external-btn($primary-blue);
+
 			.resource-link-url{
 				display: flex;
 				gap: 15px;
