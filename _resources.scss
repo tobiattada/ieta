@@ -671,6 +671,9 @@
 		//padding-bottom: 0px !important;
 
 		.resource-article-content{
+			    display: grid;
+			    gap: 15px;
+
 			@include tablet {
 				@include responsive-padding;
 				padding-top: 0px;
@@ -679,7 +682,9 @@
 		}
 
 		img{
-			width: 100%;
+			max-width: 70%;
+			margin: 0 auto;
+
 			border-radius: 24px;
 			background: $primary-blue;
 		}

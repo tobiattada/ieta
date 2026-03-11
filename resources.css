@@ -3299,6 +3299,10 @@ b mark, mark b {
     padding: 60px 10%;
   }
 }
+.section-resource-center.section-resource-center-listing article.post .resource-article-content {
+  display: grid;
+  gap: 15px;
+}
 @media (min-width: 768px) {
   .section-resource-center.section-resource-center-listing article.post .resource-article-content {
     box-sizing: border-box;
@@ -3328,7 +3332,8 @@ b mark, mark b {
   }
 }
 .section-resource-center.section-resource-center-listing article.post img {
-  width: 100%;
+  max-width: 70%;
+  margin: 0 auto;
   border-radius: 24px;
   background: #1E3EAF;
 }
