@@ -2382,6 +2382,9 @@ b mark, mark b {
   text-align: right;
   direction: rtl;
 }
+.section-resource-center.section-resource-center-main .page-top #resource-center-controls .chzn-container-single {
+  min-width: 230px !important;
+}
 .section-resource-center.section-resource-center-main .page-top #resource-center-controls .chzn-container-single .chzn-drop {
   margin-top: 8px;
   padding-top: 0px;
