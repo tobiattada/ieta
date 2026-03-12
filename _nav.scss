@@ -669,7 +669,7 @@ a.search-toggle{
 
   a.button:nth-of-type(2) {
     margin-top: 10px;
-    margin-left: 25px;
+    margin-left: 15px;
     @include button($white, $white, outline);
 
     &:hover{
