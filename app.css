@@ -3310,6 +3310,101 @@ a.search-toggle {
 #emergency-bar a.button:hover:active {
   background: #27277C;
 }
+#emergency-bar a.button:nth-child(2) {
+  margin-top: 10px;
+  padding: 12px 24px;
+  border-radius: 30px;
+  height: auto;
+  font-family: "Outfit", sans-serif;
+  font-weight: 600 !important;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  display: inline-block;
+  margin-right: auto;
+  white-space: nowrap;
+  display: flex;
+  width: auto;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: transparent;
+  color: #FDFDFD !important;
+  border: 3px solid #FDFDFD;
+}
+#emergency-bar a.button:nth-child(2) span, #emergency-bar a.button:nth-child(2) p {
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  color: #FDFDFD;
+  transition: 0.3s;
+}
+#emergency-bar a.button:nth-child(2) span:hover, #emergency-bar a.button:nth-child(2) p:hover {
+  transition: 0.3s;
+}
+#emergency-bar a.button:nth-child(2) a, #emergency-bar a.button:nth-child(2) span {
+  color: #FDFDFD !important;
+}
+#emergency-bar a.button:nth-child(2):hover {
+  color: #1c88ed !important;
+  border: 3px solid #1c88ed;
+}
+#emergency-bar a.button:nth-child(2):hover a, #emergency-bar a.button:nth-child(2):hover span {
+  color: #1c88ed !important;
+}
+#emergency-bar a.button:nth-child(2):active {
+  background: #27277C;
+}
+#emergency-bar a.button:nth-child(2):hover {
+  padding: 12px 24px;
+  border-radius: 30px;
+  height: auto;
+  font-family: "Outfit", sans-serif;
+  font-weight: 600 !important;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  display: inline-block;
+  margin-right: auto;
+  white-space: nowrap;
+  display: flex;
+  width: auto;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: #FDFDFD;
+  color: #1E3EAF !important;
+  border: none;
+}
+#emergency-bar a.button:nth-child(2):hover span, #emergency-bar a.button:nth-child(2):hover p {
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  color: #1E3EAF;
+  transition: 0.3s;
+}
+#emergency-bar a.button:nth-child(2):hover span:hover, #emergency-bar a.button:nth-child(2):hover p:hover {
+  transition: 0.3s;
+}
+#emergency-bar a.button:nth-child(2):hover a, #emergency-bar a.button:nth-child(2):hover span {
+  color: #1E3EAF !important;
+}
+#emergency-bar a.button:nth-child(2):hover:hover {
+  background: #1c88ed;
+  color: #f2f2f2 !important;
+}
+#emergency-bar a.button:nth-child(2):hover:hover a, #emergency-bar a.button:nth-child(2):hover:hover span {
+  color: #f2f2f2 !important;
+}
+#emergency-bar a.button:nth-child(2):hover:active {
+  background: #27277C;
+}
 #emergency-bar #close-btn {
   position: absolute;
   top: 20px;

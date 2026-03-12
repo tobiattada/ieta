@@ -667,6 +667,15 @@ a.search-toggle{
     }
   }
 
+  a.button:nth-child(2){
+    margin-top: 10px;
+    @include button($white, $white, outline);
+
+    &:hover{
+      @include button($white, $primary-blue, solid);
+    }
+  }
+
   #close-btn {
     position: absolute;
     top: 20px;
