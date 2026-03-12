@@ -667,7 +667,7 @@ a.search-toggle{
     }
   }
 
-  a.button:nth-child(2){
+  a.button:nth-of-type(2) {
     margin-top: 10px;
     @include button($white, $white, outline);
 
