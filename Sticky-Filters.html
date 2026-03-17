@@ -1,0 +1,63 @@
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var sticky = document.getElementById('popup');
+  var nav = document.querySelector('nav.navbar');
+  if (!sticky || !nav) return;
+  var originalTop = sticky.getBoundingClientRect().top + window.scrollY;
+  var hasCollapsed = false;
+  var placeholder = document.createElement('div');
+  placeholder.style.display = 'none';
+  sticky.parentNode.insertBefore(placeholder, sticky.nextSibling);
+  var toggleBtn = document.createElement('button');
+  toggleBtn.className = 'popup-collapse-btn';
+  toggleBtn.textContent = 'Show Filters';
+  sticky.prepend(toggleBtn);
+
+  toggleBtn.addEventListener('click', function() {
+    sticky.classList.toggle('collapsed');
+    toggleBtn.textContent = sticky.classList.contains('collapsed') ? 'Show Filters' : 'Hide Filters';
+    setTimeout(function() {
+      placeholder.style.height = sticky.offsetHeight + 'px';
+    }, 0);
+  });
+
+  function onScroll() {
+    if (window.innerWidth < 1024) return;
+    var navHeight = nav.offsetHeight;
+    if (window.scrollY + navHeight >= originalTop) {
+      placeholder.style.height = sticky.offsetHeight + 'px';
+      placeholder.style.display = 'block';
+      sticky.style.position = 'fixed';
+      sticky.style.top = (navHeight + 10) + 'px';
+      sticky.style.left = '10%';
+      sticky.style.width = '80%';
+      sticky.style.zIndex = '999';
+      if (!hasCollapsed) {
+        sticky.classList.add('collapsed');
+        toggleBtn.textContent = 'Show Filters';
+        setTimeout(function() {
+          placeholder.style.height = sticky.offsetHeight + 'px';
+        }, 0);
+        hasCollapsed = true;
+      }
+    } else {
+      placeholder.style.display = 'none';
+      sticky.style.position = '';
+      sticky.style.top = '';
+      sticky.style.left = '';
+      sticky.style.width = '';
+      sticky.style.zIndex = '';
+      hasCollapsed = false;
+      sticky.classList.remove('collapsed');
+      toggleBtn.textContent = 'Hide Filters';
+    }
+  }
+
+  window.addEventListener('scroll', onScroll);
+});
+</script>
+<style>
+#popup.collapsed .filters {
+  display: none;
+}
+</style>

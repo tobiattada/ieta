@@ -976,19 +976,6 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/logos\/CTeen Summer Programs\/CTeen.png" : {
-      "ft" : 32768,
-      "iS" : 65868,
-      "oA" : 0,
-      "oAP" : "\/logos\/CTeen Summer Programs\/CTeen.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
     "\/logos\/CTeen Summer Programs\/logo.png" : {
       "ft" : 32768,
       "iS" : 65868,
@@ -1541,6 +1528,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/sample-database.html",
+      "oF" : 0
+    },
+    "\/Sticky-Filters.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/Sticky-Filters.html",
       "oF" : 0
     },
     "\/trip-planning-script-min.js" : {
