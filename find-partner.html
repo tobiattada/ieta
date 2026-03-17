@@ -6,24 +6,19 @@
       <text x="12" y="16" font-size="14" font-weight="bold" text-anchor="middle" fill="currentColor">?</text>
     </svg> <span class="tooltip-text">Applicable for Jewish teens currently in 9th, 10th or 11th grade and are residents of the United States or Canada. Learn more at rootone.org</span></span></p>
   </div>
-  <div class="filter-nav-desktop">
+
+
     <div id="openPopup">
       <p>Filters</p><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 4.83337H13M4.92333 8.00004H11.0767M6.84667 11.1667H9.15333" stroke="#545454" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
     </div>
-      <span class="close-x close-filters close-desktop">&times;</span>
-
-  </div>
 
   <div id="popup" class="popup filter-wrapper">
       <div class="popup-content">
         
         <div class="filters">
-          
-          <!-- <div class="filter-nav-top"> -->
             <span class="close-x close-filters">&times;</span>
             <p class="caption">Select all that apply:</p>
             <button id="clearFiltersBtn">Reset filters <span>&times;</span></button>
-      <!--     </div> -->
 
           <div class="audienceFilter"><h5>Audience</h5><div id="audienceFilter" class="filter"></div></div>
           <div class="demographicFilter"><h5>Demographic</h5><div id="demographicFilter" class="filter"></div></div>
@@ -62,23 +57,19 @@ let currentData = [];      // stores filtered or full data
 // 🔹 Get logo URL
 function getLogoUrl(programName) {
   const encodedName = encodeURIComponent(programName);
-  return `https://raw.githubusercontent.com/tobiattada/ieta/b0acabf5555275d79aecf59050c48efa8bad78ec/logos/${encodedName}/logo.png`;
+  return `https://raw.githubusercontent.com/tobiattada/ieta/f762db1ba8b8540919fa46fd8182c742ce79dcb3/logos/${encodedName}/logo.png`;
 }
 
 // 🔹 Load JSON from GitHub RAW
-fetch("https://raw.githubusercontent.com/tobiattada/ieta/b0acabf5555275d79aecf59050c48efa8bad78ec/trip-platform-org-list.json")
+fetch("https://raw.githubusercontent.com/tobiattada/ieta/f762db1ba8b8540919fa46fd8182c742ce79dcb3/trip-platform-org-list.json")
   .then(res => res.json())
   .then(json => {
     data = json;
-
-    // Initial render (first 10 items)
     renderData(data);
-
-    // Create filters
     createCheckboxes("audienceFilter", getValues(["Program Audience 1","Program Audience 2","Program Audience 3","Program Audience 4"]));
     createCheckboxes("demographicFilter", getValues(["Program Demographic 1","Program Demographic 2","Program Demographic 3"]));
     createCheckboxes("typeFilter", getValues(["Program Type 1","Program Type 2","Program Type 3"]));
-    createCheckboxes("durationFilter", getValues(["Program Duration 1","Program Duration 2","Program Duration 3"]));
+    createCheckboxes("durationFilter", ["Up to 2 weeks", "3-10 weeks", "Semester/year"]); // ✅ hardcoded order
   })
   .catch(err => console.error("JSON load error:", err));
 
