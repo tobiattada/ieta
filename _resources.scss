@@ -909,6 +909,7 @@
 	      		border: 1px solid $gray;
 	      		@include caption($dark-gray);
 				padding: 5px 10px;
+				text-transform: capitalize;
 
 				@include desktop{
 					padding: 10px 20px;
