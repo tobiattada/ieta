@@ -3620,7 +3620,6 @@ b mark, mark b {
   color: #2A2A2A;
   margin-top: 3px;
   padding: 5px 10px;
-  text-transform: capitalize;
 }
 @media (min-width: 1024px) {
   #trip-planner-custom-code .filter-wrapper .filters .filter label {
