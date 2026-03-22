@@ -472,7 +472,7 @@
 
 											&:after{
 												margin-top: 20px;
-												@include document($medium-blue);
+												@include arrow($medium-blue);
 											}
 										}		
 					
