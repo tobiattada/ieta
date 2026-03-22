@@ -462,7 +462,7 @@
 
 										&:after{
 											margin-top: 20px;
-											@include document($primary-blue);
+											@include arrow($primary-blue);
 										}
 
 										&:hover{
