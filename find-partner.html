@@ -57,11 +57,11 @@ let currentData = [];      // stores filtered or full data
 // 🔹 Get logo URL
 function getLogoUrl(programName) {
   const encodedName = encodeURIComponent(programName);
-  return `https://raw.githubusercontent.com/tobiattada/ieta/f762db1ba8b8540919fa46fd8182c742ce79dcb3/logos/${encodedName}/logo.png`;
+  return `https://raw.githubusercontent.com/tobiattada/ieta/11910f5f7f42e39e9fad1f4b38fae555c49d563f/logos/${encodedName}/logo.png`;
 }
 
 // 🔹 Load JSON from GitHub RAW
-fetch("https://raw.githubusercontent.com/tobiattada/ieta/f762db1ba8b8540919fa46fd8182c742ce79dcb3/trip-platform-org-list.json")
+fetch("https://raw.githubusercontent.com/tobiattada/ieta/11910f5f7f42e39e9fad1f4b38fae555c49d563f/trip-platform-org-list.json")
   .then(res => res.json())
   .then(json => {
     data = json;
@@ -83,7 +83,8 @@ function getValues(columns) {
   });
   return [...new Set(values)]
     .sort()
-    .map(v => v.charAt(0).toUpperCase() + v.slice(1));
+    .map(v => v.charAt(0).toUpperCase() + v.slice(1))
+    .map(v => v.replace(/-([a-z])/g, (match, letter) => '-' + letter.toUpperCase()));
 }
 
 // 🔹 Get checked checkbox values
@@ -96,13 +97,12 @@ function getCheckedValues(containerId) {
 function createCheckboxes(containerId, values) {
   const container = document.getElementById(containerId);
   container.innerHTML = "";
-
   values.forEach(value => {
+    const displayValue = value.replace(/(^|[\s-])jew\b/gi, (match, prefix) => prefix + 'Jew');
     const label = document.createElement("label");
-    label.innerHTML = `<input type="checkbox" value="${value}"> ${value}`;
+    label.innerHTML = `<input type="checkbox" value="${value}"> ${displayValue}`;
     container.appendChild(label);
   });
-
   wrapLabelText();
 }
 

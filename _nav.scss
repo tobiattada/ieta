@@ -319,8 +319,11 @@
         a p{ display: inline;}
         
         a:hover, a:hover p{
-          background: $light-gray !important;
+          //background: $light-gray !important;
           transition:.3s;
+
+          border-bottom: 5px solid navy;
+          padding-bottom: 5px;
         }
 
         p.caption{
@@ -345,8 +348,11 @@
           a p{ display: inline;}
           
           a:hover, a:hover p{
-            background: $light-gray !important;
+            //background: $light-gray !important;
             transition:.3s;
+
+            border-bottom: 5px solid navy;
+            padding-bottom: 5px;
           }
         }
       }
@@ -383,8 +389,11 @@
       }
 
       a:hover, a:hover p{
-        background: $light-gray !important;
+        //background: $light-gray !important;
         transition:.3s;
+
+        border-bottom: 5px solid navy;
+        padding-bottom: 5px;
       }
     }
   }

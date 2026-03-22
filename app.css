@@ -2748,8 +2748,9 @@ footer.page-footer .footer-section .flex-item a:hover {
   display: inline;
 }
 .nav-menu .nav-item.has-dropdown .dropdown.mega ul li a:hover, .nav-menu .nav-item.has-dropdown .dropdown.mega ul li a:hover p {
-  background: #ECECEC !important;
   transition: 0.3s;
+  border-bottom: 5px solid navy;
+  padding-bottom: 5px;
 }
 .nav-menu .nav-item.has-dropdown .dropdown.mega ul li p.caption {
   font-family: "Outfit", sans-serif;
@@ -2808,8 +2809,9 @@ footer.page-footer .footer-section .flex-item a:hover {
     display: inline;
   }
   .nav-menu .nav-item.has-dropdown .dropdown.mega ul li a:hover, .nav-menu .nav-item.has-dropdown .dropdown.mega ul li a:hover p {
-    background: #ECECEC !important;
     transition: 0.3s;
+    border-bottom: 5px solid navy;
+    padding-bottom: 5px;
   }
 }
 .nav-menu .nav-item.has-dropdown .dropdown ul {
@@ -2865,8 +2867,9 @@ footer.page-footer .footer-section .flex-item a:hover {
   direction: rtl;
 }
 .nav-menu .nav-item.has-dropdown .dropdown ul li a:hover, .nav-menu .nav-item.has-dropdown .dropdown ul li a:hover p {
-  background: #ECECEC !important;
   transition: 0.3s;
+  border-bottom: 5px solid navy;
+  padding-bottom: 5px;
 }
 
 @media (min-width: 1024px) {
