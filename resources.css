@@ -4007,7 +4007,10 @@ b mark, mark b {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 5px;
+}
+#trip-planner-custom-code p.rootone a {
+  text-decoration: underline;
 }
 #trip-planner-custom-code .tooltip {
   position: relative;
@@ -4016,6 +4019,10 @@ b mark, mark b {
 }
 #trip-planner-custom-code .tooltip svg {
   margin-top: 6px;
+  transform: scale(0.6);
+  top: -6px;
+  left: -4px;
+  position: relative;
 }
 #trip-planner-custom-code .tooltip-text {
   position: absolute;

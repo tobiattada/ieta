@@ -1253,7 +1253,11 @@
 	    display: flex;
 	    align-items: center;
 	    justify-content: center;
-	    gap: 10px;
+	    gap: 5px;
+
+	    a{
+			text-decoration: underline;
+	    }
 	}
 
 	.tooltip {
@@ -1263,6 +1267,11 @@
 
 	  svg{
 	  	margin-top: 6px;
+
+	  	    transform: scale(.6);
+		    top: -6px;
+		    left: -4px;
+		    position: relative;
 	  }
 	}
 
