@@ -3707,9 +3707,6 @@ b mark, mark b {
     display: block;
   }
 }
-#trip-planner-custom-code .filter-wrapper .filters #typeFilter.filter label span {
-  text-transform: capitalize;
-}
 @media (min-width: 768px) {
   #trip-planner-custom-code .filter-wrapper .filters #typeFilter.filter {
     grid-template-columns: 1fr 1fr;
