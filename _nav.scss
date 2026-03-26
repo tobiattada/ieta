@@ -653,7 +653,7 @@ a.search-toggle{
 
 
   @include tablet{
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 1fr 4fr;
   }
  
   h6{
@@ -667,8 +667,11 @@ a.search-toggle{
   }
 
   div img{
-    max-width: 100%;
+    max-width: 90%;
     border-radius:20px;
+    @include mini{
+       max-width: 100%;
+    }
   }
 
   a.button{
@@ -718,4 +721,18 @@ a.search-toggle{
   display: flex;
   align-items: center;
   gap: 7px;
+}
+
+
+// sticky nav
+
+.navbar--sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
 }

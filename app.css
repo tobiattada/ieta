@@ -3169,7 +3169,7 @@ a.search-toggle {
 }
 @media (min-width: 768px) {
   #emergency-bar {
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 1fr 4fr;
   }
 }
 #emergency-bar h6 {
@@ -3219,8 +3219,13 @@ a.search-toggle {
   direction: rtl;
 }
 #emergency-bar div img {
-  max-width: 100%;
+  max-width: 90%;
   border-radius: 20px;
+}
+@media (min-width: 700px) {
+  #emergency-bar div img {
+    max-width: 100%;
+  }
 }
 #emergency-bar a.button {
   margin-top: 10px;
@@ -3435,6 +3440,17 @@ a.search-toggle {
   display: flex;
   align-items: center;
   gap: 7px;
+}
+
+.navbar--sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
 }
 
 .home-hero .row-has-promo .item-count-1 .component-class-promo {
