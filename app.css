@@ -3162,6 +3162,11 @@ a.search-toggle {
     padding: 20px 10%;
   }
 }
+@media (min-width: 700px) {
+  #emergency-bar {
+    grid-template-columns: 1fr 2fr;
+  }
+}
 @media (min-width: 768px) {
   #emergency-bar {
     grid-template-columns: 1fr 5fr;

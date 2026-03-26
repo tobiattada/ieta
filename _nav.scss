@@ -630,7 +630,7 @@ a.search-toggle{
   grid-template-columns: 1fr;
   gap:20px;
   padding: 20px $sidepad-mob;
- 
+
   @include tablet {
     padding: 20px $sidepad-mob;
   }
@@ -646,6 +646,11 @@ a.search-toggle{
   @include xlargedesktop {
      padding: 20px 10%;
   }
+
+  @include mini {
+     grid-template-columns: 1fr 2fr;
+  }
+
 
   @include tablet{
     grid-template-columns: 1fr 5fr;
