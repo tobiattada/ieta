@@ -536,6 +536,7 @@
 			box-shadow: $shadow;
 			transition: .3s;
 			width: auto;
+			max-width:none !important;
 
 			//new 
 			margin-top: 0px !important;
@@ -684,6 +685,7 @@
 			padding: 15px;
 			box-shadow: $shadow;
 			transition: .3s;
+			max-width: none !important;
 
 			@include desktop{
 				padding: 20px;
@@ -802,6 +804,7 @@
 			border: 0px solid $light;
 			background: $navy-blue;
 			padding: 20px;
+			max-width: none !important;
 
 			.body{
 				padding: 0px;

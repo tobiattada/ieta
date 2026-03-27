@@ -10955,6 +10955,7 @@ div.two-videos {
   box-shadow: 0px 1.541px 4.141px 0px rgba(0, 0, 0, 0.04), 0px 0.326px 1.059px 0px rgba(0, 0, 0, 0.02);
   transition: 0.3s;
   width: auto;
+  max-width: none !important;
   margin-top: 0px !important;
 }
 @media (min-width: 1024px) {
@@ -11242,6 +11243,7 @@ div.two-videos {
   padding: 15px;
   box-shadow: 0px 1.541px 4.141px 0px rgba(0, 0, 0, 0.04), 0px 0.326px 1.059px 0px rgba(0, 0, 0, 0.02);
   transition: 0.3s;
+  max-width: none !important;
 }
 @media (min-width: 1024px) {
   .feature-posts-manual .home-boxes .box {
@@ -11421,6 +11423,7 @@ div.two-videos {
   border: 0px solid #f2f2f2;
   background: #27277C;
   padding: 20px;
+  max-width: none !important;
 }
 .bg-navy-blue.feature-posts .component-feature .home-boxes .box .body {
   padding: 0px;
