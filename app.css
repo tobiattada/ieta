@@ -3847,9 +3847,9 @@ a.search-toggle {
   grid-template-areas: "first" "second";
   gap: 10px;
 }
-@media (min-width: 768px) {
+@media (min-width: 700px) {
   .modals.two-up-small .row {
-    grid-template-areas: " first second ";
+    grid-template-areas: "first second";
     gap: 20px;
     grid-template-columns: 1fr 1fr;
   }

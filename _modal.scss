@@ -53,9 +53,9 @@
 
 		  	gap: 10px;
 
-		@include tablet{
+		@include mini{
 			grid-template-areas:
-		  " first second ";
+		  "first second";
 			gap: 20px;
 			grid-template-columns: 1fr 1fr;
 		}
