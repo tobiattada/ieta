@@ -510,6 +510,11 @@
 											@include p-bold($medium-blue);
 											border: 0px;
 											padding: 0px !important;
+
+											&:hover{
+												@include p-bold($primary-blue);
+												background: none !important;
+											}
 										}
 									}
 

@@ -3039,6 +3039,23 @@ b mark, mark b {
   text-align: right;
   direction: rtl;
 }
+.section-resource-center.section-resource-center-main .page-main .shell.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_card_default] .row .positions .listing-container .entry.resource-entry .resource-content .resource-topics a:hover, .section-resource-center.section-resource-center-main .page-main .shell.resource-center-style#resource-center-listing[data-display-type=card_view_only] .row .positions .listing-container .entry.resource-entry .resource-content .resource-topics a:hover {
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0%;
+  color: #1E3EAF;
+  background: none !important;
+}
+.section-resource-center.section-resource-center-main .page-main .shell.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_card_default] .row .positions .listing-container .entry.resource-entry .resource-content .resource-topics a:hover strong, .section-resource-center.section-resource-center-main .page-main .shell.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_card_default] .row .positions .listing-container .entry.resource-entry .resource-content .resource-topics a:hover em, .section-resource-center.section-resource-center-main .page-main .shell.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_card_default] .row .positions .listing-container .entry.resource-entry .resource-content .resource-topics a:hover b, .section-resource-center.section-resource-center-main .page-main .shell.resource-center-style#resource-center-listing[data-display-type=card_view_only] .row .positions .listing-container .entry.resource-entry .resource-content .resource-topics a:hover strong, .section-resource-center.section-resource-center-main .page-main .shell.resource-center-style#resource-center-listing[data-display-type=card_view_only] .row .positions .listing-container .entry.resource-entry .resource-content .resource-topics a:hover em, .section-resource-center.section-resource-center-main .page-main .shell.resource-center-style#resource-center-listing[data-display-type=card_view_only] .row .positions .listing-container .entry.resource-entry .resource-content .resource-topics a:hover b {
+  font-weight: 600;
+  color: #1E3EAF;
+}
+.section-resource-center.section-resource-center-main .page-main .shell.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_card_default] .row .positions .listing-container .entry.resource-entry .resource-content .resource-topics a:hover.hebrew, .section-resource-center.section-resource-center-main .page-main .shell.resource-center-style#resource-center-listing[data-display-type=card_view_only] .row .positions .listing-container .entry.resource-entry .resource-content .resource-topics a:hover.hebrew {
+  font-family: "Noto Sans Hebrew", sans-serif !important;
+  font-weight: 600;
+  text-align: right;
+  direction: rtl;
+}
 .section-resource-center.section-resource-center-main .page-main .shell.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_card_default] .row .positions .listing-container .entry.resource-entry .resource-content .resource-description, .section-resource-center.section-resource-center-main .page-main .shell.resource-center-style#resource-center-listing[data-display-type=card_view_only] .row .positions .listing-container .entry.resource-entry .resource-content .resource-description {
   order: 3;
   font-family: "Outfit", sans-serif;
