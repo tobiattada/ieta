@@ -96,6 +96,8 @@
 		padding-top: 10px;
 		padding-bottom: 10px;
 
+		border-bottom: 0px solid white !important;
+
 
 		.page-title{
 			h2{
@@ -476,6 +478,14 @@
 								a div.resource-thumbnail{
 									aspect-ratio: 3 / 2;
 									overflow: hidden;
+
+									@include mini{
+										aspect-ratio: 5 / 2;
+									}
+
+									@include tablet{
+										aspect-ratio: 3 / 2;
+									}
 
 									img{
 										height: 100%;

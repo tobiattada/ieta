@@ -2013,6 +2013,7 @@ b mark, mark b {
   background-color: #FDFDFD;
   padding-top: 10px;
   padding-bottom: 10px;
+  border-bottom: 0px solid white !important;
 }
 @media (min-width: 768px) {
   .section-resource-center.section-resource-center-main .page-top {
@@ -2964,6 +2965,16 @@ b mark, mark b {
 .section-resource-center.section-resource-center-main .page-main .shell.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_card_default] .row .positions .listing-container .entry.resource-entry a div.resource-thumbnail, .section-resource-center.section-resource-center-main .page-main .shell.resource-center-style#resource-center-listing[data-display-type=card_view_only] .row .positions .listing-container .entry.resource-entry a div.resource-thumbnail {
   aspect-ratio: 3/2;
   overflow: hidden;
+}
+@media (min-width: 700px) {
+  .section-resource-center.section-resource-center-main .page-main .shell.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_card_default] .row .positions .listing-container .entry.resource-entry a div.resource-thumbnail, .section-resource-center.section-resource-center-main .page-main .shell.resource-center-style#resource-center-listing[data-display-type=card_view_only] .row .positions .listing-container .entry.resource-entry a div.resource-thumbnail {
+    aspect-ratio: 5/2;
+  }
+}
+@media (min-width: 768px) {
+  .section-resource-center.section-resource-center-main .page-main .shell.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_card_default] .row .positions .listing-container .entry.resource-entry a div.resource-thumbnail, .section-resource-center.section-resource-center-main .page-main .shell.resource-center-style#resource-center-listing[data-display-type=card_view_only] .row .positions .listing-container .entry.resource-entry a div.resource-thumbnail {
+    aspect-ratio: 3/2;
+  }
 }
 .section-resource-center.section-resource-center-main .page-main .shell.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_card_default] .row .positions .listing-container .entry.resource-entry a div.resource-thumbnail img, .section-resource-center.section-resource-center-main .page-main .shell.resource-center-style#resource-center-listing[data-display-type=card_view_only] .row .positions .listing-container .entry.resource-entry a div.resource-thumbnail img {
   height: 100%;
