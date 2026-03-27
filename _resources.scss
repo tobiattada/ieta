@@ -481,10 +481,15 @@
 										height: 100%;
 									 //    width: auto;
 									    border-radius: 10px;
+									    max-height: none;
 									}
 
 									&.has-ratio{
 										padding-bottom: 0px !important;
+
+										img{
+											max-height: none;
+										}
 									}
 								}
 
