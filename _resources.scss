@@ -502,7 +502,8 @@
 
 									h3{
 										order: 2 !important;
-										@include h4($navy-blue);
+										/// UPDATED THIS to H5 because too big
+										@include h5($navy-blue);
 									}
 
 									.resource-topics{

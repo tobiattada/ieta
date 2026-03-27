@@ -2984,15 +2984,15 @@ b mark, mark b {
   order: 2 !important;
   font-family: "Outfit", sans-serif;
   font-weight: 600;
-  font-size: 22px;
-  line-height: 28px;
+  font-size: 20px;
+  line-height: 26px;
   letter-spacing: 0%;
   color: #27277C;
 }
 @media (min-width: 1024px) {
   .section-resource-center.section-resource-center-main .page-main .shell.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_card_default] .row .positions .listing-container .entry.resource-entry .resource-content h3, .section-resource-center.section-resource-center-main .page-main .shell.resource-center-style#resource-center-listing[data-display-type=card_view_only] .row .positions .listing-container .entry.resource-entry .resource-content h3 {
-    font-size: 32px;
-    line-height: 42px;
+    font-size: 24px;
+    line-height: 32px;
   }
 }
 .section-resource-center.section-resource-center-main .page-main .shell.resource-center-style#resource-center-listing[data-display-type=card_and_list_view_card_default] .row .positions .listing-container .entry.resource-entry .resource-content h3.hebrew, .section-resource-center.section-resource-center-main .page-main .shell.resource-center-style#resource-center-listing[data-display-type=card_view_only] .row .positions .listing-container .entry.resource-entry .resource-content h3.hebrew {

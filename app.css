@@ -3873,6 +3873,11 @@ a.search-toggle {
   grid-template-columns: 1fr 1fr;
   gap: 30px 10px;
 }
+@media (min-width: 700px) {
+  .modals.four-up .row {
+    gap: 30px 20px;
+  }
+}
 @media (min-width: 768px) {
   .modals.four-up .row {
     gap: 20px 20px;
