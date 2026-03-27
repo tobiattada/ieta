@@ -2254,12 +2254,7 @@ b mark, mark b {
   max-width: none !important;
   grid-gap: 10px;
   flex-wrap: wrap;
-  flex-direction: column;
-}
-@media (min-width: 768px) {
-  .section-resource-center.section-resource-center-main .page-top #resource-center-controls .grid {
-    flex-direction: row;
-  }
+  flex-direction: row;
 }
 .section-resource-center.section-resource-center-main .page-top #resource-center-controls .grid .col-span-2:first-child {
   order: 2;

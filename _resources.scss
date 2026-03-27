@@ -112,11 +112,8 @@
 				max-width: none !important;
 				grid-gap: 10px;
 				flex-wrap: wrap;
-				flex-direction: column;
-
-				@include tablet{
-					flex-direction: row;
-				}
+				flex-direction: row;
+			
 
 				.col-span-2:first-child{
 					order:2;
@@ -182,7 +179,7 @@
 				top: 22px;
     			transform: rotate(180deg);
 			  	transition: transform 0.3s ease;
-			  	    z-index: 3000;
+				z-index: 3000;
 			}
 
 			.select-wrapper .chzn-container-single .chzn-single{
@@ -198,8 +195,8 @@
 
     			span{
     				@include p($medium-gray);
-    				        font-weight: 500;
-    				    margin-right: 0px;
+					font-weight: 500;
+					margin-right: 0px;
     			}
 			}
 
