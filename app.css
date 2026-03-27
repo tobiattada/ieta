@@ -3442,10 +3442,6 @@ a.search-toggle {
   gap: 7px;
 }
 
-.navbar {
-  transition: transform 0.3s ease;
-}
-
 .navbar--sticky {
   position: fixed;
   top: 0;
@@ -3454,14 +3450,17 @@ a.search-toggle {
   z-index: 9999;
   background: #fff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  transform: translateY(0);
+  animation: slideDown 0.3s ease forwards;
 }
 
-/* Slide up when sticky class is about to be removed */
-.navbar:not(.navbar--sticky) {
-  transform: translateY(-100%);
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
 }
-
 .home-hero .row-has-promo .item-count-1 .component-class-promo {
   height: 35vh;
   position: relative;
