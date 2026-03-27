@@ -725,6 +725,9 @@ a.search-toggle{
 
 
 // sticky nav
+.navbar {
+  transition: transform 0.3s ease;
+}
 
 .navbar--sticky {
   position: fixed;
@@ -734,5 +737,10 @@ a.search-toggle{
   z-index: 9999;
   background: #fff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
+  transform: translateY(0);
+}
+
+/* Slide up when sticky class is about to be removed */
+.navbar:not(.navbar--sticky) {
+  transform: translateY(-100%);
 }
