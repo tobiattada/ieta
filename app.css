@@ -9013,6 +9013,8 @@ ul.stats-main.col2 li {
 .about-us-header .component-promo {
   position: relative;
   display: inline-block;
+  position: relative;
+  width: 100%;
   height: 320px;
   margin-bottom: -6px !important;
 }
@@ -9105,10 +9107,10 @@ ul.stats-main.col2 li {
 }
 @media (min-width: 768px) {
   .about-us-header.pushdown .component-promo img {
-    translate: -50% -42%;
+    object-position: center 40% !important;
   }
   .about-us-header.pushup .component-promo img {
-    translate: -50% -62%;
+    object-position: center 60% !important;
   }
 }
 
