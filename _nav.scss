@@ -629,8 +629,16 @@ a.search-toggle{
       width: 200px;
     }
 
+    @include desktop{
+      width: 90px;
+      right: -1px;
+       padding: 10px 40px 10px 15px;
+       font-size: 14px;
+    }
+
     @include largedesktop{
       right: -15px;
+       @include p($dark-gray);
     }
 }
 
