@@ -9107,10 +9107,10 @@ ul.stats-main.col2 li {
 }
 @media (min-width: 768px) {
   .about-us-header.pushdown .component-promo img {
-    object-position: center 40% !important;
+    object-position: center 30% !important;
   }
   .about-us-header.pushup .component-promo img {
-    object-position: center 60% !important;
+    object-position: center 70% !important;
   }
 }
 
