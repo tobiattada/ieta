@@ -177,9 +177,17 @@
 
      @include p-bold($dark-gray);
 
-     @include desktop{
-      font-size:16px !important;
-     }
+     // @include desktop{
+     //  font-size:16px !important;
+     // }
+
+     @include desktop {
+        font-size: 14px;
+      }
+
+       @include largedesktop {
+        @include p-bold($dark-gray);
+      }
 
     &.has-button{
         padding: 0px 0px;
