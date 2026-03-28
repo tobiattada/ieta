@@ -3151,7 +3151,7 @@ b mark, mark b {
     padding: 60px 10%;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 700px) {
   .section-resource-center.section-resource-center-listing .post-heading .resource-header-content {
     box-sizing: border-box;
     padding: 30px 20px;
@@ -3159,22 +3159,22 @@ b mark, mark b {
     padding-bottom: 0px;
   }
 }
-@media (min-width: 768px) and (min-width: 768px) {
+@media (min-width: 700px) and (min-width: 768px) {
   .section-resource-center.section-resource-center-listing .post-heading .resource-header-content {
     padding: 30px 30px;
   }
 }
-@media (min-width: 768px) and (min-width: 1024px) {
+@media (min-width: 700px) and (min-width: 1024px) {
   .section-resource-center.section-resource-center-listing .post-heading .resource-header-content {
     padding: 50px 60px;
   }
 }
-@media (min-width: 768px) and (min-width: 1300px) {
+@media (min-width: 700px) and (min-width: 1300px) {
   .section-resource-center.section-resource-center-listing .post-heading .resource-header-content {
     padding: 60px 80px;
   }
 }
-@media (min-width: 768px) and (min-width: 1500px) {
+@media (min-width: 700px) and (min-width: 1500px) {
   .section-resource-center.section-resource-center-listing .post-heading .resource-header-content {
     padding: 60px 10%;
   }
