@@ -164,7 +164,10 @@
 	.bg-overlay{
 		width: 100%;
 	    box-sizing: border-box;
-	    @include responsive-padding();
+	    
+	    @include tablet{
+	    	@include responsive-padding();
+	    }
 	}
 
 
@@ -881,7 +884,7 @@ div.two-videos{
 				width: 100%;
 				margin-top: 30px;
 				box-sizing: border-box;
-				        max-width: none;
+				max-width: none !important;
 
 				.body{
 				  min-height: auto;
@@ -1009,7 +1012,6 @@ div.two-videos{
 			}
 		}
 	}
-
 }
 
 
