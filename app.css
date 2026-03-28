@@ -2511,7 +2511,7 @@ footer.page-footer .footer-section .flex-item a:hover {
 }
 @media (min-width: 1024px) {
   .nav-menu {
-    gap: 10px;
+    gap: 0px;
     margin-left: auto;
   }
 }
@@ -2556,11 +2556,6 @@ footer.page-footer .footer-section .flex-item a:hover {
   letter-spacing: 0%;
   color: #2A2A2A;
 }
-@media (min-width: 1300px) {
-  .nav-menu .nav-item a {
-    padding: 22px 15px;
-  }
-}
 .nav-menu .nav-item a strong, .nav-menu .nav-item a em, .nav-menu .nav-item a b {
   font-weight: 600;
   color: #2A2A2A;
@@ -2570,6 +2565,30 @@ footer.page-footer .footer-section .flex-item a:hover {
   font-weight: 600;
   text-align: right;
   direction: rtl;
+}
+@media (min-width: 1024px) {
+  .nav-menu .nav-item a {
+    font-size: 14px;
+  }
+}
+@media (min-width: 1300px) {
+  .nav-menu .nav-item a {
+    padding: 22px 15px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
+    letter-spacing: 0%;
+    color: #2A2A2A;
+  }
+  .nav-menu .nav-item a strong, .nav-menu .nav-item a em, .nav-menu .nav-item a b {
+    font-weight: 600;
+    color: #2A2A2A;
+  }
+  .nav-menu .nav-item a.hebrew {
+    font-family: "Noto Sans Hebrew", sans-serif !important;
+    font-weight: 600;
+    text-align: right;
+    direction: rtl;
+  }
 }
 .nav-menu .nav-item a.button {
   z-index: 2000;
