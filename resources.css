@@ -3155,8 +3155,6 @@ b mark, mark b {
   .section-resource-center.section-resource-center-listing .post-heading .resource-header-content {
     box-sizing: border-box;
     padding: 30px 20px;
-    padding-top: 0px;
-    padding-bottom: 0px;
   }
 }
 @media (min-width: 700px) and (min-width: 768px) {
