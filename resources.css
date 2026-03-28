@@ -4179,15 +4179,32 @@ b mark, mark b {
   align-items: center;
   gap: 6px;
   font-size: 11px;
-  padding: 4px 10px;
+  padding: 5px 14px;
   border-radius: 20px;
-  background: #e8f0fe;
-  color: #1E3EAF;
+  background: #D2E9FF;
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: #27277C;
+  margin-top: 3px;
+}
+@media (min-width: 1024px) {
+  .partner-badge {
+    font-size: 15px;
+    line-height: 150%;
+  }
+}
+.partner-badge.hebrew {
+  font-family: "Noto Sans Hebrew", sans-serif !important;
   font-weight: 600;
+  text-align: right;
+  direction: rtl;
 }
 
 .partner-badge img {
-  width: 16px;
-  height: 16px;
+  width: 24px !important;
+  height: auto;
   object-fit: contain;
 }
