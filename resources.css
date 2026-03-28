@@ -4166,3 +4166,28 @@ b mark, mark b {
     border-radius: 20px 0px 0px 20px;
   }
 }
+
+.partner-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 6px;
+}
+
+.partner-badge {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  background: #e8f0fe;
+  color: #1E3EAF;
+  font-weight: 600;
+}
+
+.partner-badge img {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+}
