@@ -3,30 +3,57 @@
 ///// ARROWS - this gets added in the before/after of an object
 ////// in custom.scss in the body/box/feature thing in the :after
 
+// @mixin arrow($color){
+//   position: relative;
+//   background-image: url('data:image/svg+xml;charset=UTF-8,<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="Icon"><path id="icon" d="M17.3938 14.0287L13.5799 17.8533L15.082 19.3554L21.474 12.9633L15.082 6.57129L13.5799 8.07342L17.3938 11.898H4.42859V14.0287H17.3938Z" fill="%231E3EAF"/></g></svg>');
+//   height: 40px;
+//   width: 40px;
+//   background: $color;
+//   border-radius: 100%;
+//   left: 0px;
+//   display: flex;
+//   align-items: flex-end;
+//   justify-content: center;
+//   transition:.3s;
+
+//   &:hover{
+//     content: url('data:image/svg+xml;charset=UTF-8,<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="Icon"><path id="icon" d="M17.3938 14.0287L13.5799 17.8533L15.082 19.3554L21.474 12.9633L15.082 6.57129L13.5799 8.07342L17.3938 11.898H4.42859V14.0287H17.3938Z" fill="%23D2E9FF"/></g></svg>');
+//      background: $medium-blue;
+//   }
+
+//   @if $color == $medium-blue { 
+//     content: url('data:image/svg+xml;charset=UTF-8,<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="Icon"><path id="icon" d="M17.3938 14.0287L13.5799 17.8533L15.082 19.3554L21.474 12.9633L15.082 6.57129L13.5799 8.07342L17.3938 11.898H4.42859V14.0287H17.3938Z" fill="%23f5f5f5"/></g></svg>');
+//   }
+
+//   @if $color == $primary-blue { 
+//     content: url('data:image/svg+xml;charset=UTF-8,<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="Icon"><path id="icon" d="M17.3938 14.0287L13.5799 17.8533L15.082 19.3554L21.474 12.9633L15.082 6.57129L13.5799 8.07342L17.3938 11.898H4.42859V14.0287H17.3938Z" fill="%23f5f5f5"/></g></svg>');
+//   }
+// }
+
 @mixin arrow($color){
   position: relative;
-  content: url('data:image/svg+xml;charset=UTF-8,<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="Icon"><path id="icon" d="M17.3938 14.0287L13.5799 17.8533L15.082 19.3554L21.474 12.9633L15.082 6.57129L13.5799 8.07342L17.3938 11.898H4.42859V14.0287H17.3938Z" fill="%231E3EAF"/></g></svg>');
+  background-color: $color;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 26px 26px;
   height: 40px;
   width: 40px;
-  background: $color;
   border-radius: 100%;
   left: 0px;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  transition:.3s;
-
-  &:hover{
-    content: url('data:image/svg+xml;charset=UTF-8,<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="Icon"><path id="icon" d="M17.3938 14.0287L13.5799 17.8533L15.082 19.3554L21.474 12.9633L15.082 6.57129L13.5799 8.07342L17.3938 11.898H4.42859V14.0287H17.3938Z" fill="%23D2E9FF"/></g></svg>');
-     background: $medium-blue;
-  }
+  display: block;
+  content: "";
+  transition: .3s;
 
   @if $color == $medium-blue { 
-    content: url('data:image/svg+xml;charset=UTF-8,<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="Icon"><path id="icon" d="M17.3938 14.0287L13.5799 17.8533L15.082 19.3554L21.474 12.9633L15.082 6.57129L13.5799 8.07342L17.3938 11.898H4.42859V14.0287H17.3938Z" fill="%23f5f5f5"/></g></svg>');
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg width='26' height='26' viewBox='0 0 26 26' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Icon'%3E%3Cpath id='icon' d='M17.3938 14.0287L13.5799 17.8533L15.082 19.3554L21.474 12.9633L15.082 6.57129L13.5799 8.07342L17.3938 11.898H4.42859V14.0287H17.3938Z' fill='%23f5f5f5'/%3E%3C/g%3E%3C/svg%3E");
+  }
+  @if $color == $primary-blue { 
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg width='26' height='26' viewBox='0 0 26 26' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Icon'%3E%3Cpath id='icon' d='M17.3938 14.0287L13.5799 17.8533L15.082 19.3554L21.474 12.9633L15.082 6.57129L13.5799 8.07342L17.3938 11.898H4.42859V14.0287H17.3938Z' fill='%23f5f5f5'/%3E%3C/g%3E%3C/svg%3E");
   }
 
-  @if $color == $primary-blue { 
-    content: url('data:image/svg+xml;charset=UTF-8,<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="Icon"><path id="icon" d="M17.3938 14.0287L13.5799 17.8533L15.082 19.3554L21.474 12.9633L15.082 6.57129L13.5799 8.07342L17.3938 11.898H4.42859V14.0287H17.3938Z" fill="%23f5f5f5"/></g></svg>');
+  &:hover {
+    background-color: $medium-blue;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg width='26' height='26' viewBox='0 0 26 26' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Icon'%3E%3Cpath id='icon' d='M17.3938 14.0287L13.5799 17.8533L15.082 19.3554L21.474 12.9633L15.082 6.57129L13.5799 8.07342L17.3938 11.898H4.42859V14.0287H17.3938Z' fill='%23D2E9FF'/%3E%3C/g%3E%3C/svg%3E");
   }
 }
 
@@ -40,39 +67,139 @@
 }
 
 
-@mixin document($color){ //on the P tag
+// @mixin document($color){ //on the P tag
 
+//   position: relative;
+//   content: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='22' height='23' viewBox='0 0 22 23' fill='none'><path d='M21.1595 21.3396H19.0166V18.9551L15.8557 22.116L14.3563 20.5894L17.5162 17.4285H15.1055V15.2856H21.1595V21.3396Z' fill='%231E3EAF'/><path d='M17.5706 6.71422V13.1428H15.4277V7.78565H10.0706V2.4285H2.57059V19.5714H12.2134V21.7142H2.57059C1.98131 21.7142 1.47726 21.504 1.05762 21.0843C0.637974 20.6647 0.427734 20.1606 0.427734 19.5714V2.4285C0.427734 1.83922 0.637974 1.33517 1.05762 0.915527C1.47726 0.495884 1.98131 0.285645 2.57059 0.285645H11.142L17.5706 6.71422Z' fill='%231E3EAF'/></svg>");
+//   height: 38px;
+//   width: 38px;
+//   padding-bottom: 2px;
+//   padding-left: 2px;
+//   background: $color;
+//   border-radius: 100%;
+//   left: 0px;
+//   display: flex;
+//   align-items: flex-end;
+//   justify-content: center;
+//   transition:.3s;
+
+//   &:hover{
+//     content: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='22' height='23' viewBox='0 0 22 23' fill='none'><path d='M21.1595 21.3396H19.0166V18.9551L15.8557 22.116L14.3563 20.5894L17.5162 17.4285H15.1055V15.2856H21.1595V21.3396Z' fill='%23D2E9FF'/><path d='M17.5706 6.71422V13.1428H15.4277V7.78565H10.0706V2.4285H2.57059V19.5714H12.2134V21.7142H2.57059C1.98131 21.7142 1.47726 21.504 1.05762 21.0843C0.637974 20.6647 0.427734 20.1606 0.427734 19.5714V2.4285C0.427734 1.83922 0.637974 1.33517 1.05762 0.915527C1.47726 0.495884 1.98131 0.285645 2.57059 0.285645H11.142L17.5706 6.71422Z' fill='%23D2E9FF'/></svg>");
+//      background: $medium-blue;
+//   }
+
+//   @if $color == $medium-blue { 
+//       content: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='22' height='23' viewBox='0 0 22 23' fill='none'><path d='M21.1595 21.3396H19.0166V18.9551L15.8557 22.116L14.3563 20.5894L17.5162 17.4285H15.1055V15.2856H21.1595V21.3396Z' fill='%23f5f5f5'/><path d='M17.5706 6.71422V13.1428H15.4277V7.78565H10.0706V2.4285H2.57059V19.5714H12.2134V21.7142H2.57059C1.98131 21.7142 1.47726 21.504 1.05762 21.0843C0.637974 20.6647 0.427734 20.1606 0.427734 19.5714V2.4285C0.427734 1.83922 0.637974 1.33517 1.05762 0.915527C1.47726 0.495884 1.98131 0.285645 2.57059 0.285645H11.142L17.5706 6.71422Z' fill='%23f5f5f5'/></svg>");
+//   }
+
+//   @if $color == $primary-blue { 
+//       content: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='22' height='23' viewBox='0 0 22 23' fill='none'><path d='M21.1595 21.3396H19.0166V18.9551L15.8557 22.116L14.3563 20.5894L17.5162 17.4285H15.1055V15.2856H21.1595V21.3396Z' fill='%23f5f5f5'/><path d='M17.5706 6.71422V13.1428H15.4277V7.78565H10.0706V2.4285H2.57059V19.5714H12.2134V21.7142H2.57059C1.98131 21.7142 1.47726 21.504 1.05762 21.0843C0.637974 20.6647 0.427734 20.1606 0.427734 19.5714V2.4285C0.427734 1.83922 0.637974 1.33517 1.05762 0.915527C1.47726 0.495884 1.98131 0.285645 2.57059 0.285645H11.142L17.5706 6.71422Z' fill='%23f5f5f5'/></svg>");
+//   }
+// }
+
+
+@mixin document($color){ //on the P tag
   position: relative;
-  content: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='22' height='23' viewBox='0 0 22 23' fill='none'><path d='M21.1595 21.3396H19.0166V18.9551L15.8557 22.116L14.3563 20.5894L17.5162 17.4285H15.1055V15.2856H21.1595V21.3396Z' fill='%231E3EAF'/><path d='M17.5706 6.71422V13.1428H15.4277V7.78565H10.0706V2.4285H2.57059V19.5714H12.2134V21.7142H2.57059C1.98131 21.7142 1.47726 21.504 1.05762 21.0843C0.637974 20.6647 0.427734 20.1606 0.427734 19.5714V2.4285C0.427734 1.83922 0.637974 1.33517 1.05762 0.915527C1.47726 0.495884 1.98131 0.285645 2.57059 0.285645H11.142L17.5706 6.71422Z' fill='%231E3EAF'/></svg>");
+  background-color: $color;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 22px 23px;
   height: 38px;
   width: 38px;
-  padding-bottom: 2px;
-  padding-left: 2px;
-  background: $color;
   border-radius: 100%;
   left: 0px;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  transition:.3s;
+  display: block;
+  content: "";
+  transition: .3s;
 
-  &:hover{
-    content: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='22' height='23' viewBox='0 0 22 23' fill='none'><path d='M21.1595 21.3396H19.0166V18.9551L15.8557 22.116L14.3563 20.5894L17.5162 17.4285H15.1055V15.2856H21.1595V21.3396Z' fill='%23D2E9FF'/><path d='M17.5706 6.71422V13.1428H15.4277V7.78565H10.0706V2.4285H2.57059V19.5714H12.2134V21.7142H2.57059C1.98131 21.7142 1.47726 21.504 1.05762 21.0843C0.637974 20.6647 0.427734 20.1606 0.427734 19.5714V2.4285C0.427734 1.83922 0.637974 1.33517 1.05762 0.915527C1.47726 0.495884 1.98131 0.285645 2.57059 0.285645H11.142L17.5706 6.71422Z' fill='%23D2E9FF'/></svg>");
-     background: $medium-blue;
+  @if $color == $medium-blue {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='23' viewBox='0 0 22 23' fill='none'%3E%3Cpath d='M21.1595 21.3396H19.0166V18.9551L15.8557 22.116L14.3563 20.5894L17.5162 17.4285H15.1055V15.2856H21.1595V21.3396Z' fill='%23f5f5f5'/%3E%3Cpath d='M17.5706 6.71422V13.1428H15.4277V7.78565H10.0706V2.4285H2.57059V19.5714H12.2134V21.7142H2.57059C1.98131 21.7142 1.47726 21.504 1.05762 21.0843C0.637974 20.6647 0.427734 20.1606 0.427734 19.5714V2.4285C0.427734 1.83922 0.637974 1.33517 1.05762 0.915527C1.47726 0.495884 1.98131 0.285645 2.57059 0.285645H11.142L17.5706 6.71422Z' fill='%23f5f5f5'/%3E%3C/svg%3E");
+  }
+  @if $color == $primary-blue {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='23' viewBox='0 0 22 23' fill='none'%3E%3Cpath d='M21.1595 21.3396H19.0166V18.9551L15.8557 22.116L14.3563 20.5894L17.5162 17.4285H15.1055V15.2856H21.1595V21.3396Z' fill='%23f5f5f5'/%3E%3Cpath d='M17.5706 6.71422V13.1428H15.4277V7.78565H10.0706V2.4285H2.57059V19.5714H12.2134V21.7142H2.57059C1.98131 21.7142 1.47726 21.504 1.05762 21.0843C0.637974 20.6647 0.427734 20.1606 0.427734 19.5714V2.4285C0.427734 1.83922 0.637974 1.33517 1.05762 0.915527C1.47726 0.495884 1.98131 0.285645 2.57059 0.285645H11.142L17.5706 6.71422Z' fill='%23f5f5f5'/%3E%3C/svg%3E");
   }
 
-  @if $color == $medium-blue { 
-      content: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='22' height='23' viewBox='0 0 22 23' fill='none'><path d='M21.1595 21.3396H19.0166V18.9551L15.8557 22.116L14.3563 20.5894L17.5162 17.4285H15.1055V15.2856H21.1595V21.3396Z' fill='%23f5f5f5'/><path d='M17.5706 6.71422V13.1428H15.4277V7.78565H10.0706V2.4285H2.57059V19.5714H12.2134V21.7142H2.57059C1.98131 21.7142 1.47726 21.504 1.05762 21.0843C0.637974 20.6647 0.427734 20.1606 0.427734 19.5714V2.4285C0.427734 1.83922 0.637974 1.33517 1.05762 0.915527C1.47726 0.495884 1.98131 0.285645 2.57059 0.285645H11.142L17.5706 6.71422Z' fill='%23f5f5f5'/></svg>");
-  }
-
-  @if $color == $primary-blue { 
-      content: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='22' height='23' viewBox='0 0 22 23' fill='none'><path d='M21.1595 21.3396H19.0166V18.9551L15.8557 22.116L14.3563 20.5894L17.5162 17.4285H15.1055V15.2856H21.1595V21.3396Z' fill='%23f5f5f5'/><path d='M17.5706 6.71422V13.1428H15.4277V7.78565H10.0706V2.4285H2.57059V19.5714H12.2134V21.7142H2.57059C1.98131 21.7142 1.47726 21.504 1.05762 21.0843C0.637974 20.6647 0.427734 20.1606 0.427734 19.5714V2.4285C0.427734 1.83922 0.637974 1.33517 1.05762 0.915527C1.47726 0.495884 1.98131 0.285645 2.57059 0.285645H11.142L17.5706 6.71422Z' fill='%23f5f5f5'/></svg>");
+  &:hover {
+    background-color: $medium-blue;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='23' viewBox='0 0 22 23' fill='none'%3E%3Cpath d='M21.1595 21.3396H19.0166V18.9551L15.8557 22.116L14.3563 20.5894L17.5162 17.4285H15.1055V15.2856H21.1595V21.3396Z' fill='%23D2E9FF'/%3E%3Cpath d='M17.5706 6.71422V13.1428H15.4277V7.78565H10.0706V2.4285H2.57059V19.5714H12.2134V21.7142H2.57059C1.98131 21.7142 1.47726 21.504 1.05762 21.0843C0.637974 20.6647 0.427734 20.1606 0.427734 19.5714V2.4285C0.427734 1.83922 0.637974 1.33517 1.05762 0.915527C1.47726 0.495884 1.98131 0.285645 2.57059 0.285645H11.142L17.5706 6.71422Z' fill='%23D2E9FF'/%3E%3C/svg%3E");
   }
 }
 
 
+// @mixin arrow-btn($color) { //on the P tag
+//   a{
+//     position: relative;
+//     display: flex;
+//     align-items: center;
+//     justify-content: flex-start;
+//     color: $color;
+//     transition: .3s;
+
+//     &::after{ // PRIMARY BLUE ARROW 
+//       position: relative;
+//       content: url('data:image/svg+xml;charset=UTF-8,<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="Icon"><path id="icon" d="M17.3938 14.0287L13.5799 17.8533L15.082 19.3554L21.474 12.9633L15.082 6.57129L13.5799 8.07342L17.3938 11.898H4.42859V14.0287H17.3938Z" fill="%231E3EAF"/></g></svg>');
+//       height: 40px;
+//       width: 40px;
+//       background: $color;
+//       border-radius: 100%;
+//       left: 12px;
+//       display: flex;
+//       align-items: flex-end;
+//       justify-content: center;
+//       transition: .3s;
+//       flex: none;
+//     }
+
+//     &:hover::after{
+//     	transition: .3s;
+//     	background: $light-blue;
+//     }
+
+
+//     @if $color == $white { 
+//       color: $white;
+//       &::after{ background: $white; } /// Keeps Primary blue arrow from default 
+      
+// 			&:hover::after{
+// 	      background: $primary-blue; 
+// 	      content: url('data:image/svg+xml;charset=UTF-8,<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="Icon"><path id="icon" d="M17.3938 14.0287L13.5799 17.8533L15.082 19.3554L21.474 12.9633L15.082 6.57129L13.5799 8.07342L17.3938 11.898H4.42859V14.0287H17.3938Z" fill="%23f5f5f5"/></g></svg>');
+// 	    }
+//     }
+
+
+//     ///// THIS IS THE DEFULAT 
+//     @if $color == $primary-blue { 
+//       color: $navy-blue;
+//        &::after{  // primay blue bg and white arrow
+//         background: $primary-blue; 
+//         content: url('data:image/svg+xml;charset=UTF-8,<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="Icon"><path id="icon" d="M17.3938 14.0287L13.5799 17.8533L15.082 19.3554L21.474 12.9633L15.082 6.57129L13.5799 8.07342L17.3938 11.898H4.42859V14.0287H17.3938Z" fill="%23f5f5f5"/></g></svg>');
+//        }
+
+//        &:hover::after{ // medium blue bg and white arrow
+//           content: url('data:image/svg+xml;charset=UTF-8,<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="Icon"><path id="icon" d="M17.3938 14.0287L13.5799 17.8533L15.082 19.3554L21.474 12.9633L15.082 6.57129L13.5799 8.07342L17.3938 11.898H4.42859V14.0287H17.3938Z" fill="%23f5f5f5"/></g></svg>');
+//           background: $medium-blue; 
+//        }
+//     }
+
+
+//     @if $color == $light-blue {
+//       color: $primary-blue;
+
+//        &::after{  /// DEFAULT PRIMARY ARROW
+//         background: $light-blue; 
+//       }
+
+//       &:hover::after{ // medium blue bg and white arrow
+//           content: url('data:image/svg+xml;charset=UTF-8,<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="Icon"><path id="icon" d="M17.3938 14.0287L13.5799 17.8533L15.082 19.3554L21.474 12.9633L15.082 6.57129L13.5799 8.07342L17.3938 11.898H4.42859V14.0287H17.3938Z" fill="%23f5f5f5"/></g></svg>');
+//           background: $medium-blue; 
+//       }
+//     }
+//   }
+// }
+
+
 @mixin arrow-btn($color) { //on the P tag
-  a{
+  a {
     position: relative;
     display: flex;
     align-items: center;
@@ -80,63 +207,71 @@
     color: $color;
     transition: .3s;
 
-    &::after{ // PRIMARY BLUE ARROW 
+    &::after {
       position: relative;
-      content: url('data:image/svg+xml;charset=UTF-8,<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="Icon"><path id="icon" d="M17.3938 14.0287L13.5799 17.8533L15.082 19.3554L21.474 12.9633L15.082 6.57129L13.5799 8.07342L17.3938 11.898H4.42859V14.0287H17.3938Z" fill="%231E3EAF"/></g></svg>');
+      content: "";
+      display: block;
       height: 40px;
       width: 40px;
-      background: $color;
+      min-width: 40px;
+      background-color: $color;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 26px 26px;
+      // Default: primary blue arrow icon
+      background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg width='26' height='26' viewBox='0 0 26 26' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Icon'%3E%3Cpath id='icon' d='M17.3938 14.0287L13.5799 17.8533L15.082 19.3554L21.474 12.9633L15.082 6.57129L13.5799 8.07342L17.3938 11.898H4.42859V14.0287H17.3938Z' fill='%231E3EAF'/%3E%3C/g%3E%3C/svg%3E");
       border-radius: 100%;
       left: 12px;
-      display: flex;
-      align-items: flex-end;
-      justify-content: center;
-      transition: .3s;
       flex: none;
+      transition: .3s;
     }
 
-    &:hover::after{
-    	transition: .3s;
-    	background: $light-blue;
+    &:hover::after {
+      background-color: $light-blue;
     }
 
-
-    @if $color == $white { 
+    // WHITE variant
+    @if $color == $white {
       color: $white;
-      &::after{ background: $white; } /// Keeps Primary blue arrow from default 
-      
-			&:hover::after{
-	      background: $primary-blue; 
-	      content: url('data:image/svg+xml;charset=UTF-8,<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="Icon"><path id="icon" d="M17.3938 14.0287L13.5799 17.8533L15.082 19.3554L21.474 12.9633L15.082 6.57129L13.5799 8.07342L17.3938 11.898H4.42859V14.0287H17.3938Z" fill="%23f5f5f5"/></g></svg>');
-	    }
+
+      &::after {
+        background-color: $white;
+        // Keeps primary blue arrow from default
+      }
+
+      &:hover::after {
+        background-color: $primary-blue;
+        background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg width='26' height='26' viewBox='0 0 26 26' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Icon'%3E%3Cpath id='icon' d='M17.3938 14.0287L13.5799 17.8533L15.082 19.3554L21.474 12.9633L15.082 6.57129L13.5799 8.07342L17.3938 11.898H4.42859V14.0287H17.3938Z' fill='%23f5f5f5'/%3E%3C/g%3E%3C/svg%3E");
+      }
     }
 
-
-    ///// THIS IS THE DEFULAT 
-    @if $color == $primary-blue { 
+    // PRIMARY BLUE variant — DEFAULT
+    @if $color == $primary-blue {
       color: $navy-blue;
-       &::after{  // primay blue bg and white arrow
-        background: $primary-blue; 
-        content: url('data:image/svg+xml;charset=UTF-8,<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="Icon"><path id="icon" d="M17.3938 14.0287L13.5799 17.8533L15.082 19.3554L21.474 12.9633L15.082 6.57129L13.5799 8.07342L17.3938 11.898H4.42859V14.0287H17.3938Z" fill="%23f5f5f5"/></g></svg>');
-       }
 
-       &:hover::after{ // medium blue bg and white arrow
-          content: url('data:image/svg+xml;charset=UTF-8,<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="Icon"><path id="icon" d="M17.3938 14.0287L13.5799 17.8533L15.082 19.3554L21.474 12.9633L15.082 6.57129L13.5799 8.07342L17.3938 11.898H4.42859V14.0287H17.3938Z" fill="%23f5f5f5"/></g></svg>');
-          background: $medium-blue; 
-       }
+      &::after {
+        background-color: $primary-blue;
+        background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg width='26' height='26' viewBox='0 0 26 26' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Icon'%3E%3Cpath id='icon' d='M17.3938 14.0287L13.5799 17.8533L15.082 19.3554L21.474 12.9633L15.082 6.57129L13.5799 8.07342L17.3938 11.898H4.42859V14.0287H17.3938Z' fill='%23f5f5f5'/%3E%3C/g%3E%3C/svg%3E");
+      }
+
+      &:hover::after {
+        background-color: $medium-blue;
+        background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg width='26' height='26' viewBox='0 0 26 26' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Icon'%3E%3Cpath id='icon' d='M17.3938 14.0287L13.5799 17.8533L15.082 19.3554L21.474 12.9633L15.082 6.57129L13.5799 8.07342L17.3938 11.898H4.42859V14.0287H17.3938Z' fill='%23f5f5f5'/%3E%3C/g%3E%3C/svg%3E");
+      }
     }
 
-
+    // LIGHT BLUE variant
     @if $color == $light-blue {
       color: $primary-blue;
 
-       &::after{  /// DEFAULT PRIMARY ARROW
-        background: $light-blue; 
+      &::after {
+        background-color: $light-blue;
+        // Inherits default primary blue arrow icon
       }
 
-      &:hover::after{ // medium blue bg and white arrow
-          content: url('data:image/svg+xml;charset=UTF-8,<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="Icon"><path id="icon" d="M17.3938 14.0287L13.5799 17.8533L15.082 19.3554L21.474 12.9633L15.082 6.57129L13.5799 8.07342L17.3938 11.898H4.42859V14.0287H17.3938Z" fill="%23f5f5f5"/></g></svg>');
-          background: $medium-blue; 
+      &:hover::after {
+        background-color: $medium-blue;
+        background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg width='26' height='26' viewBox='0 0 26 26' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Icon'%3E%3Cpath id='icon' d='M17.3938 14.0287L13.5799 17.8533L15.082 19.3554L21.474 12.9633L15.082 6.57129L13.5799 8.07342L17.3938 11.898H4.42859V14.0287H17.3938Z' fill='%23f5f5f5'/%3E%3C/g%3E%3C/svg%3E");
       }
     }
   }
