@@ -138,7 +138,7 @@ function renderData(items, reset = true) {
           <span>${p.label}</span>
         </div>`)
       .join('');
-    return badges ? `<div class="partner-badges">${badges}</div>` : '';
+    return badges ? `<div class="partner-badges">${badges} eligible</div>` : '';
   }
 
   currentData.slice(itemsToShow, itemsToShow + 10).forEach(item => {
