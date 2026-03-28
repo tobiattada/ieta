@@ -637,6 +637,7 @@ a.search-toggle{
     }
 
     @include largedesktop{
+      width: 200px;
       right: -15px;
        @include p($dark-gray);
     }

@@ -3174,6 +3174,7 @@ a.search-toggle {
 }
 @media (min-width: 1300px) {
   .search-container.active .search-input {
+    width: 200px;
     right: -15px;
     font-family: "Outfit", sans-serif;
     font-weight: 300;
