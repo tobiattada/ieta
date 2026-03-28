@@ -9027,11 +9027,10 @@ ul.stats-main.col2 li {
 .about-us-header .component-promo img {
   object-fit: cover;
   object-position: center !important;
-  min-height: 100%;
-  min-width: 100%;
-  position: relative;
+  translate: none;
+  height: 100%;
+  width: 100%;
   transform: none;
-  translate: -50% -50%;
   z-index: -1;
 }
 .about-us-header .component-promo .promo-text p {
