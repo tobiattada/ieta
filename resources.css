@@ -4196,7 +4196,8 @@ b mark, mark b {
   overflow: hidden;
 }
 .news-event-feature .col-12 .component-feature .box ul h4.title a {
-  margin-top: 25px;
+  margin-top: 20px;
+  display: inline-block;
   font-family: "Outfit", sans-serif;
   font-weight: 600;
   font-size: 28px;
@@ -4213,6 +4214,25 @@ b mark, mark b {
 }
 @media (min-width: 1024px) {
   .news-event-feature .col-12 .component-feature .box ul h4.title a {
+    font-size: 45px;
+  }
+}
+.news-event-feature .col-12 .component-feature .box ul h4.title a:hover {
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 130%;
+  letter-spacing: 0%;
+  color: #1c88ed;
+}
+.news-event-feature .col-12 .component-feature .box ul h4.title a:hover.hebrew {
+  font-family: "Noto Sans Hebrew", sans-serif !important;
+  font-weight: 600;
+  text-align: right;
+  direction: rtl;
+}
+@media (min-width: 1024px) {
+  .news-event-feature .col-12 .component-feature .box ul h4.title a:hover {
     font-size: 45px;
   }
 }
@@ -4237,7 +4257,7 @@ b mark, mark b {
   background: #1E3EAF;
   color: #FDFDFD !important;
   border: none;
-  margin-top: 25px;
+  margin-top: 20px;
 }
 .news-event-feature .col-12 .component-feature .box ul a.button span, .news-event-feature .col-12 .component-feature .box ul a.button p {
   font-family: "Outfit", sans-serif;

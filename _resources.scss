@@ -1496,15 +1496,20 @@
 
     		h4.title{
     			a{
-    				margin-top: 25px;
+    				margin-top: 20px;
+    				    display: inline-block;
     				@include h3($navy-blue);
     				text-transform: capitalize;
+
+    				&:hover{
+    					@include h3($medium-blue);
+    				}
     			}
     		}
 
     		a.button{
     			@include button($primary-blue, $white, solid);
-    			margin-top: 25px;
+    			margin-top: 20px;
     		}
 
     		.resource-type-icon{
