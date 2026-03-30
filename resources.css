@@ -4201,7 +4201,7 @@ b mark, mark b {
   font-size: 28px;
   line-height: 130%;
   letter-spacing: 0%;
-  color: #1E3EAF;
+  color: #27277C;
   text-transform: capitalize;
 }
 .news-event-feature .col-12 .component-feature .box ul h4.title a.hebrew {
@@ -4266,6 +4266,9 @@ b mark, mark b {
   display: none;
 }
 .news-event-feature .col-12 .component-feature .box ul span.resource-topics-list a.resource-topic-badge {
+  border-radius: 0px;
+  background: none;
+  border: none;
   font-family: "Outfit", sans-serif;
   font-weight: 600;
   letter-spacing: 0%;

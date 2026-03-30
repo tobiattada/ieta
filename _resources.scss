@@ -1496,7 +1496,7 @@
 
     		h4.title{
     			a{
-    				@include h3($primary-blue);
+    				@include h3($navy-blue);
     				text-transform: capitalize;
     			}
     		}
@@ -1510,6 +1510,10 @@
     		}
     		
     		span.resource-topics-list a.resource-topic-badge{
+    			border-radius: 0px;
+			    background: none;
+			    border: none;
+			    
     		 	@include p-bold($primary-blue);
 			  	@include underscore(p);
 			 		margin-right: auto;
