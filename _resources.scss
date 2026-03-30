@@ -959,7 +959,13 @@
 	      			}
 	      		}
 
+	      		&:hover{
+	      			border: 1px solid $primary-blue;
+	      			background: $pale-blue;
+	      		}
+
 	      		&:has(input:checked){
+	      			border: 1px solid $primary-blue;
 	      			background: $primary-blue;
 	      			@include caption($light);
 	      		}

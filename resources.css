@@ -3677,7 +3677,12 @@ b mark, mark b {
 #trip-planner-custom-code .filter-wrapper .filters .filter label input {
   display: none;
 }
+#trip-planner-custom-code .filter-wrapper .filters .filter label:hover {
+  border: 1px solid #1E3EAF;
+  background: #E8F3FD;
+}
 #trip-planner-custom-code .filter-wrapper .filters .filter label:has(input:checked) {
+  border: 1px solid #1E3EAF;
   background: #1E3EAF;
   font-family: "Outfit", sans-serif;
   font-weight: 400;
