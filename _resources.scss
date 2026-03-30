@@ -1221,6 +1221,21 @@
 		}
 	}
 
+	// hiding this for now while working out the UX
+	span.close-x{
+		display: none;
+	}
+
+	.filter-wrapper{
+		max-height: 0;
+	    overflow: hidden;
+	    transition: max-height 0.4s ease;
+	}
+
+	.filter-wrapper.active{
+		max-height: 2000px;
+	}
+
 	// .close-filters.close-desktop{
 	// 	display: none;
 	// }
@@ -1241,7 +1256,7 @@
 
 	/// NEW CODE
 
-	
+
 
 	// @include tablet {
 	//   #popup {

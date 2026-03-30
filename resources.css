@@ -3960,6 +3960,17 @@ b mark, mark b {
   transition: 0.2s;
   cursor: pointer;
 }
+#trip-planner-custom-code span.close-x {
+  display: none;
+}
+#trip-planner-custom-code .filter-wrapper {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+#trip-planner-custom-code .filter-wrapper.active {
+  max-height: 2000px;
+}
 #trip-planner-custom-code .load-more {
   text-align: center;
   position: relative;
