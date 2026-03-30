@@ -3504,12 +3504,16 @@ b mark, mark b {
   }
 }
 #trip-planner-custom-code .filter-wrapper {
+  box-shadow: 0px 6px 20px 5px #0000000f;
   position: relative;
   margin: 0 auto;
   border-radius: 0px;
   box-sizing: border-box;
   background: #fff;
   width: auto;
+  box-shadow: 0px 6px 20px 5px #0000000f;
+  padding: 20px;
+  border-radius: 15px;
 }
 @media (min-width: 1024px) {
   #trip-planner-custom-code .filter-wrapper {
@@ -3934,6 +3938,7 @@ b mark, mark b {
   border: none;
   display: flex;
   display: none;
+  float: right;
   font-family: "Outfit", sans-serif;
   font-weight: 400;
   font-size: 15px;
@@ -3973,6 +3978,12 @@ b mark, mark b {
   visibility: visible;
   opacity: 1;
   max-height: 2000px;
+  padding-bottom: 40px;
+}
+@media (min-width: 1024px) {
+  #trip-planner-custom-code .popup-content .filters.active {
+    padding-bottom: 40px;
+  }
 }
 #trip-planner-custom-code .popup-content.sticky {
   position: fixed;
@@ -3987,6 +3998,8 @@ b mark, mark b {
   width: 100%;
   border-top: 2px solid #ECECEC;
   box-shadow: 0px 26px 20px -25px #0000000f;
+  max-height: 93%;
+  overflow: scroll;
 }
 @media (min-width: 768px) {
   #trip-planner-custom-code .popup-content.sticky {
