@@ -3520,7 +3520,12 @@ b mark, mark b {
     border-radius: 24px;
     margin-bottom: 30px;
     box-shadow: 0px 6px 20px 5px #0000000f;
-    padding: 40px;
+    padding: 20px;
+  }
+}
+@media (min-width: 1300px) {
+  #trip-planner-custom-code .filter-wrapper {
+    padding: 40px 40px;
   }
 }
 #trip-planner-custom-code .filter-wrapper .filters {
