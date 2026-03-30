@@ -4167,6 +4167,22 @@ b mark, mark b {
   }
 }
 
+.news-and-events-feature .col-12 .component-feature.-alignment-side-by-side .box ul {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.news-and-events-feature .col-12 .component-feature.-alignment-side-by-side .box ul li:first-child {
+  order: 2;
+}
+.news-and-events-feature .col-12 .component-feature.-alignment-side-by-side .box ul li:last-child {
+  order: 1;
+}
+@media (min-width: 768px) {
+  .news-and-events-feature .col-12 .component-feature.-alignment-side-by-side .box ul {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 .partner-badges {
   display: flex;
   flex-wrap: wrap;

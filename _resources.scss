@@ -1461,7 +1461,26 @@
 
 
 
+.news-and-events-feature{
+	.col-12 .component-feature.-alignment-side-by-side .box{
+		ul{
+			display: grid;
+    		grid-template-columns: 1fr;
 
+    		li:first-child{
+    			order: 2;
+    		}
+
+    		li:last-child{
+    			order: 1;
+    		}
+
+    		@include tablet{
+    			grid-template-columns: 1fr 1fr;
+    		}
+		}
+	}
+}
 
 .partner-badges {
   display: flex;
