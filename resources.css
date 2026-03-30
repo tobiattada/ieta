@@ -3504,14 +3504,12 @@ b mark, mark b {
   }
 }
 #trip-planner-custom-code .filter-wrapper {
-  box-shadow: 0px 6px 20px 5px #0000000f;
   position: relative;
   margin: 0 auto;
   border-radius: 0px;
   box-sizing: border-box;
   background: #FDFDFD;
   width: auto;
-  padding: 40px;
 }
 @media (min-width: 1024px) {
   #trip-planner-custom-code .filter-wrapper {
@@ -3929,6 +3927,7 @@ b mark, mark b {
     content: "−";
   }
   #trip-planner-custom-code .filter {
+    max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease;
   }
@@ -3936,6 +3935,8 @@ b mark, mark b {
     font-size: 12px !important;
   }
   #trip-planner-custom-code .open-filter .filter {
+    max-height: 500px;
+    /* large enough to fit content */
     margin-bottom: 15px;
   }
   #trip-planner-custom-code .open-filter .filter label {
@@ -3979,7 +3980,7 @@ b mark, mark b {
   padding: 30px 20px;
   padding-top: 20px;
   padding-bottom: 20px;
-  background: #E8F3FD;
+  background: #FDFDFD;
   left: 0;
   width: 100%;
   border-top: 2px solid #ECECEC;
