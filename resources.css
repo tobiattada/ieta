@@ -3777,6 +3777,13 @@ b mark, mark b {
     grid-gap: 30px;
   }
 }
+#trip-planner-custom-code #data-list li {
+  transition: 0.3s;
+}
+#trip-planner-custom-code #data-list li:hover {
+  transform: scale(1.02);
+  transition: 0.3s;
+}
 #trip-planner-custom-code #data-list li:hover a {
   text-decoration: none;
   cursor: pointer;
@@ -3789,6 +3796,7 @@ b mark, mark b {
 #trip-planner-custom-code #data-list li:hover a .image-wrap {
   transition: 0.3s;
   box-shadow: 0px 6px 20px 5px #0000000f;
+  border: 1px solid #1E3EAF;
 }
 #trip-planner-custom-code #data-list li .image-wrap {
   transition: 0.3s;

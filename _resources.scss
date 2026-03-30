@@ -1040,8 +1040,10 @@
     }
 
     #data-list li {
-
+    	transition: .3s;
       &:hover{
+		transform: scale(1.02);
+		transition: .3s;
       	a{
       		text-decoration: none;
       		cursor: pointer;
@@ -1054,6 +1056,7 @@
       		.image-wrap{
       			transition:.3s;
       			box-shadow: 0px 6px 20px 5px #0000000f;
+      			border: 1px solid $primary-blue;
       		}
       	}
       }
