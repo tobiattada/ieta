@@ -4170,9 +4170,14 @@ b mark, mark b {
 .news-event-feature .col-12 .component-feature .box {
   width: 100%;
 }
+.news-event-feature .col-12 .component-feature .box .body {
+  padding: 0px;
+}
 .news-event-feature .col-12 .component-feature .box ul {
   display: grid;
   grid-template-columns: 1fr;
+  align-items: center;
+  gap: 20px;
 }
 .news-event-feature .col-12 .component-feature .box ul li:first-child {
   order: 2;
@@ -4180,10 +4185,15 @@ b mark, mark b {
 .news-event-feature .col-12 .component-feature .box ul li:last-child {
   order: 1;
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .news-event-feature .col-12 .component-feature .box ul {
     grid-template-columns: 1fr 1fr;
+    gap: 60px;
   }
+}
+.news-event-feature .col-12 .component-feature .box ul li img {
+  border-radius: 24px;
+  overflow: hidden;
 }
 .news-event-feature .col-12 .component-feature .box ul h4.title a {
   font-family: "Outfit", sans-serif;
@@ -4255,7 +4265,7 @@ b mark, mark b {
 .news-event-feature .col-12 .component-feature .box ul .resource-type-icon {
   display: none;
 }
-.news-event-feature .col-12 .component-feature .box ul .resource-topic-badge a {
+.news-event-feature .col-12 .component-feature .box ul span.resource-topics-list a.resource-topic-badge {
   font-family: "Outfit", sans-serif;
   font-weight: 600;
   letter-spacing: 0%;
@@ -4267,11 +4277,11 @@ b mark, mark b {
   margin-right: auto;
   margin-left: 0px;
 }
-.news-event-feature .col-12 .component-feature .box ul .resource-topic-badge a strong, .news-event-feature .col-12 .component-feature .box ul .resource-topic-badge a em, .news-event-feature .col-12 .component-feature .box ul .resource-topic-badge a b {
+.news-event-feature .col-12 .component-feature .box ul span.resource-topics-list a.resource-topic-badge strong, .news-event-feature .col-12 .component-feature .box ul span.resource-topics-list a.resource-topic-badge em, .news-event-feature .col-12 .component-feature .box ul span.resource-topics-list a.resource-topic-badge b {
   font-weight: 600;
   color: #1E3EAF;
 }
-.news-event-feature .col-12 .component-feature .box ul .resource-topic-badge a.hebrew {
+.news-event-feature .col-12 .component-feature .box ul span.resource-topics-list a.resource-topic-badge.hebrew {
   font-family: "Noto Sans Hebrew", sans-serif !important;
   font-weight: 600;
   text-align: right;

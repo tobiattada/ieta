@@ -1466,9 +1466,15 @@
 
 		width: 100%;
 
+		.body{
+			padding: 0px;
+		}
+
 		ul{
 			display: grid;
     		grid-template-columns: 1fr;
+    		align-items: center;
+    		gap: 20px;
 
     		li:first-child{
     			order: 2;
@@ -1478,8 +1484,14 @@
     			order: 1;
     		}
 
-    		@include tablet{
+    		@include desktop{
     			grid-template-columns: 1fr 1fr;
+    			gap: 60px;
+    		}
+
+    		li img{
+    			border-radius: 24px;
+    			overflow:hidden;
     		}
 
     		h4.title{
@@ -1496,7 +1508,8 @@
     		.resource-type-icon{
     			display:none;
     		}
-    		 .resource-topic-badge a{
+    		
+    		span.resource-topics-list a.resource-topic-badge{
     		 	@include p-bold($primary-blue);
 			  	@include underscore(p);
 			 		margin-right: auto;
