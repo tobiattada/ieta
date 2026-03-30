@@ -3971,6 +3971,35 @@ b mark, mark b {
 #trip-planner-custom-code .filter-wrapper.active {
   max-height: 2000px;
 }
+#trip-planner-custom-code .popup-content.sticky {
+  position: fixed;
+  z-index: 9999;
+  background: #fff;
+  box-sizing: border-box;
+  padding: 30px 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+@media (min-width: 768px) {
+  #trip-planner-custom-code .popup-content.sticky {
+    padding: 30px 30px;
+  }
+}
+@media (min-width: 1024px) {
+  #trip-planner-custom-code .popup-content.sticky {
+    padding: 50px 60px;
+  }
+}
+@media (min-width: 1300px) {
+  #trip-planner-custom-code .popup-content.sticky {
+    padding: 60px 80px;
+  }
+}
+@media (min-width: 1500px) {
+  #trip-planner-custom-code .popup-content.sticky {
+    padding: 60px 10%;
+  }
+}
 #trip-planner-custom-code .load-more {
   text-align: center;
   position: relative;

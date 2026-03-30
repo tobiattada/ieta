@@ -1,14 +1,20 @@
 <div id="trip-planner-custom-code">
+  
 
+<!--   <div class="filterBtn">
     <div id="openPopup">
       <p>Filters</p><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 4.83337H13M4.92333 8.00004H11.0767M6.84667 11.1667H9.15333" stroke="#545454" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
     </div>
-
+  </div>
+ -->
   <div id="popup" class="popup filter-wrapper">
       <div class="popup-content">
-        
+        <div id="openPopup">
+          <p>Filters</p><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 4.83337H13M4.92333 8.00004H11.0767M6.84667 11.1667H9.15333" stroke="#545454" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+
         <div class="filters">
-            <span class="close-x close-filters">×</span>
+            <!-- <span class="close-x close-filters">×</span> -->
             <!-- <p class="caption">Select all that apply:</p> -->
             <button id="clearFiltersBtn">Reset filters <span>×</span></button>
 
@@ -224,31 +230,52 @@ document.addEventListener("change", e => {
 
 <script>
 const popup = document.getElementById("popup");
+const filters = document.getElementById("popup");
 const openBtn = document.getElementById("openPopup");
-const closeBtns = document.querySelectorAll(".close-filters");
 
 openBtn.addEventListener("click", () => {
   const isDesktop = window.innerWidth >= 769;
   if (isDesktop) {
     popup.classList.toggle("active");
     openBtn.classList.toggle("active");
+    openBtn.querySelector("p").textContent = popup.classList.contains("active") ? "Hide filters" : "Show filters";
   } else {
-    popup.classList.add("active");
-    document.body.style.overflow = "hidden";
+    popup.classList.toggle("active");
+    document.body.style.overflow = popup.classList.contains("active") ? "hidden" : "";
   }
 });
 
-closeBtns.forEach(btn => btn.addEventListener("click", closePopup));
-
 popup.addEventListener("click", (e) => {
-  if (e.target === popup) closePopup();
+  if (e.target === popup) {
+    popup.classList.remove("active");
+    openBtn.classList.remove("active");
+    openBtn.querySelector("p").textContent = "Show filters";
+    document.body.style.overflow = "";
+  }
 });
 
-function closePopup() {
-  popup.classList.remove("active");
-  openBtn.classList.remove("active");
-  document.body.style.overflow = "";
-}
+window.addEventListener("resize", () => {
+  if (window.innerWidth >= 769) {
+    popup.classList.add("active");
+    openBtn.classList.add("active");
+    openBtn.querySelector("p").textContent = "Hide filters";
+  } else {
+    popup.classList.remove("active");
+    openBtn.classList.remove("active");
+    openBtn.querySelector("p").textContent = "Show filters";
+    document.body.style.overflow = "";
+  }
+});
+
+// THIS IS THE STICKY FILTER
+const nav = document.querySelector("nav"); // update to your nav selector
+
+window.addEventListener("scroll", () => {
+  const navBottom = nav.getBoundingClientRect().bottom;
+  openBtn.classList.toggle("sticky", window.scrollY > 0);
+  openBtn.style.top = `${navBottom}px`;
+});
+
 
 // Filter accordions
 const accordionItems = document.querySelectorAll(
@@ -265,50 +292,3 @@ accordionItems.forEach(item => {
   });
 });
 </script>
-<!-- 
-
-<script>
-const popup = document.getElementById("popup");
-const openBtn = document.getElementById("openPopup");
-const closeBtns = document.querySelectorAll(".close-filters");
-
-openBtn.addEventListener("click", () => {
-  popup.classList.add("active");
-  document.body.style.overflow = "hidden"; // prevent background scroll
-});
-
-closeBtns.forEach(btn => btn.addEventListener("click", closePopup));
-
-popup.addEventListener("click", (e) => {
-  if (e.target === popup) closePopup(); // close when clicking outside
-});
-
-function closePopup() {
-  popup.classList.remove("active");
-  document.body.style.overflow = "";
-}
-</script>
-
-<script>
-const accordionItems = document.querySelectorAll(
-  ".audienceFilter, .demographicFilter, .durationFilter, .typeFilter"
-);
-
-accordionItems.forEach(item => {
-  const trigger = item.querySelector("h5");
-
-  trigger.addEventListener("click", () => {
-
-    // Close all other accordions
-    accordionItems.forEach(el => {
-      if (el !== item) {
-        el.classList.remove("open-filter");
-      }
-    });
-
-    // Toggle current one
-    item.classList.toggle("open-filter");
-
-  });
-});
-</script> -->

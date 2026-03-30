@@ -1236,6 +1236,17 @@
 		max-height: 2000px;
 	}
 
+/// THIS IS FOR THE STICKY FILTER BAR
+	.popup-content{
+	  &.sticky {
+	    position: fixed;
+	    z-index: 9999;
+	    background: #fff;
+	    @include responsive-padding;
+	    padding-top: 20px;
+	    padding-bottom: 20px;
+	  }
+	}
 	// .close-filters.close-desktop{
 	// 	display: none;
 	// }
