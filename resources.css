@@ -4195,7 +4195,7 @@ b mark, mark b {
   border-radius: 24px;
   overflow: hidden;
 }
-.news-event-feature .col-12 .component-feature.dynamic .box ul h4.title a {
+.news-event-feature .col-12 .component-feature.dynamic .box ul .section-type-resourcecenter h4.title a {
   margin-top: 10px;
   display: inline-block;
   font-family: "Outfit", sans-serif;
@@ -4206,18 +4206,18 @@ b mark, mark b {
   color: #27277C;
   text-transform: capitalize;
 }
-.news-event-feature .col-12 .component-feature.dynamic .box ul h4.title a.hebrew {
+.news-event-feature .col-12 .component-feature.dynamic .box ul .section-type-resourcecenter h4.title a.hebrew {
   font-family: "Noto Sans Hebrew", sans-serif !important;
   font-weight: 600;
   text-align: right;
   direction: rtl;
 }
 @media (min-width: 1024px) {
-  .news-event-feature .col-12 .component-feature.dynamic .box ul h4.title a {
+  .news-event-feature .col-12 .component-feature.dynamic .box ul .section-type-resourcecenter h4.title a {
     font-size: 45px;
   }
 }
-.news-event-feature .col-12 .component-feature.dynamic .box ul h4.title a:hover {
+.news-event-feature .col-12 .component-feature.dynamic .box ul .section-type-resourcecenter h4.title a:hover {
   font-family: "Outfit", sans-serif;
   font-weight: 600;
   font-size: 28px;
@@ -4225,21 +4225,53 @@ b mark, mark b {
   letter-spacing: 0%;
   color: #1c88ed;
 }
-.news-event-feature .col-12 .component-feature.dynamic .box ul h4.title a:hover.hebrew {
+.news-event-feature .col-12 .component-feature.dynamic .box ul .section-type-resourcecenter h4.title a:hover.hebrew {
   font-family: "Noto Sans Hebrew", sans-serif !important;
   font-weight: 600;
   text-align: right;
   direction: rtl;
 }
 @media (min-width: 1024px) {
-  .news-event-feature .col-12 .component-feature.dynamic .box ul h4.title a:hover {
+  .news-event-feature .col-12 .component-feature.dynamic .box ul .section-type-resourcecenter h4.title a:hover {
     font-size: 45px;
   }
 }
 @media (min-width: 1024px) {
-  .news-event-feature .col-12 .component-feature.dynamic .box ul h4.title a {
+  .news-event-feature .col-12 .component-feature.dynamic .box ul .section-type-resourcecenter h4.title a {
     margin-top: 20px;
   }
+}
+.news-event-feature .col-12 .component-feature.dynamic .box ul .section-type-resourcecenter h4.title .resource-meta .resource-type-icon {
+  display: none !important;
+}
+.news-event-feature .col-12 .component-feature.dynamic .box ul .section-type-resourcecenter h4.title .resource-meta span.resource-topics-list {
+  margin-top: 0px;
+}
+.news-event-feature .col-12 .component-feature.dynamic .box ul .section-type-resourcecenter h4.title .resource-meta span.resource-topics-list a.resource-topic-badge {
+  border-radius: 0px;
+  background: none;
+  border: none;
+  padding: 0px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0%;
+  color: #1E3EAF;
+  display: table;
+  padding-bottom: 10px;
+  margin-left: 0;
+  border-bottom: 4px solid #1c88ed;
+  margin-right: auto;
+  margin-left: 0px;
+}
+.news-event-feature .col-12 .component-feature.dynamic .box ul .section-type-resourcecenter h4.title .resource-meta span.resource-topics-list a.resource-topic-badge strong, .news-event-feature .col-12 .component-feature.dynamic .box ul .section-type-resourcecenter h4.title .resource-meta span.resource-topics-list a.resource-topic-badge em, .news-event-feature .col-12 .component-feature.dynamic .box ul .section-type-resourcecenter h4.title .resource-meta span.resource-topics-list a.resource-topic-badge b {
+  font-weight: 600;
+  color: #1E3EAF;
+}
+.news-event-feature .col-12 .component-feature.dynamic .box ul .section-type-resourcecenter h4.title .resource-meta span.resource-topics-list a.resource-topic-badge.hebrew {
+  font-family: "Noto Sans Hebrew", sans-serif !important;
+  font-weight: 600;
+  text-align: right;
+  direction: rtl;
 }
 .news-event-feature .col-12 .component-feature.dynamic .box ul a.button {
   padding: 12px 24px;
@@ -4293,38 +4325,6 @@ b mark, mark b {
   .news-event-feature .col-12 .component-feature.dynamic .box ul a.button {
     margin-top: 20px;
   }
-}
-.news-event-feature .col-12 .component-feature.dynamic .box ul .section-type-resourcecenter .resource-meta .resource-type-icon {
-  display: none !important;
-}
-.news-event-feature .col-12 .component-feature.dynamic .box ul .section-type-resourcecenter .resource-meta span.resource-topics-list {
-  margin-top: 0px;
-}
-.news-event-feature .col-12 .component-feature.dynamic .box ul .section-type-resourcecenter .resource-meta span.resource-topics-list a.resource-topic-badge {
-  border-radius: 0px;
-  background: none;
-  border: none;
-  padding: 0px;
-  font-family: "Outfit", sans-serif;
-  font-weight: 600;
-  letter-spacing: 0%;
-  color: #1E3EAF;
-  display: table;
-  padding-bottom: 10px;
-  margin-left: 0;
-  border-bottom: 4px solid #1c88ed;
-  margin-right: auto;
-  margin-left: 0px;
-}
-.news-event-feature .col-12 .component-feature.dynamic .box ul .section-type-resourcecenter .resource-meta span.resource-topics-list a.resource-topic-badge strong, .news-event-feature .col-12 .component-feature.dynamic .box ul .section-type-resourcecenter .resource-meta span.resource-topics-list a.resource-topic-badge em, .news-event-feature .col-12 .component-feature.dynamic .box ul .section-type-resourcecenter .resource-meta span.resource-topics-list a.resource-topic-badge b {
-  font-weight: 600;
-  color: #1E3EAF;
-}
-.news-event-feature .col-12 .component-feature.dynamic .box ul .section-type-resourcecenter .resource-meta span.resource-topics-list a.resource-topic-badge.hebrew {
-  font-family: "Noto Sans Hebrew", sans-serif !important;
-  font-weight: 600;
-  text-align: right;
-  direction: rtl;
 }
 
 .partner-badges {

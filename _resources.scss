@@ -1495,7 +1495,7 @@
     			overflow:hidden;
     		}
 
-    		h4.title{
+    		.section-type-resourcecenter h4.title{
     			a{
     				margin-top: 10px;
     				display: inline-block;
@@ -1510,6 +1510,28 @@
     					margin-top: 20px;
     				}
     			}
+
+    			.resource-meta {
+	    			.resource-type-icon{
+		    			display:none !important;
+		    		}
+		    		
+		    		span.resource-topics-list {
+		    			margin-top: 0px;
+
+		    			a.resource-topic-badge{
+		    				border-radius: 0px;
+						    background: none;
+						    border: none;
+						    padding: 0px;
+
+			    		 	@include p-bold($primary-blue);
+						  	@include underscore(p);
+						 		margin-right: auto;
+								margin-left: 0px;
+			    		 }
+			    	}
+			    }
     		}
 
     		a.button{
@@ -1520,27 +1542,7 @@
 				}
     		}
 //.component-feature.dynamic .section-type-resourcecenter .resource-meta 
-    		.section-type-resourcecenter .resource-meta {
-	    		.resource-type-icon{
-	    			display:none !important;
-	    		}
-	    		
-	    		span.resource-topics-list {
-	    			margin-top: 0px;
 
-	    			a.resource-topic-badge{
-	    				border-radius: 0px;
-					    background: none;
-					    border: none;
-					    padding: 0px;
-
-		    		 	@include p-bold($primary-blue);
-					  	@include underscore(p);
-					 		margin-right: auto;
-							margin-left: 0px;
-		    		 }
-		    	}
-		    }
 		}
 	}
 }
