@@ -3929,7 +3929,6 @@ b mark, mark b {
     content: "−";
   }
   #trip-planner-custom-code .filter {
-    max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease;
   }
@@ -3937,8 +3936,6 @@ b mark, mark b {
     font-size: 12px !important;
   }
   #trip-planner-custom-code .open-filter .filter {
-    max-height: 500px;
-    /* large enough to fit content */
     margin-bottom: 15px;
   }
   #trip-planner-custom-code .open-filter .filter label {
@@ -3965,11 +3962,14 @@ b mark, mark b {
 #trip-planner-custom-code .popup-content .filters {
   visibility: hidden;
   opacity: 0;
-  transition: opacity 0.3s ease, visibility 0.3s ease;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease, max-height 0.4s ease;
 }
 #trip-planner-custom-code .popup-content .filters.active {
   visibility: visible;
   opacity: 1;
+  max-height: 2000px;
 }
 #trip-planner-custom-code .popup-content.sticky {
   position: fixed;
