@@ -850,11 +850,12 @@
 	    background: $white;
 	    width: auto;
 	    
-	    //padding: 40px;
 
 	    @include desktop{
 	    	border-radius:24px;
 	    	margin-bottom:30px;
+	    	box-shadow: 0px 6px 20px 5px #0000000f;
+	    	padding: 40px;
 	    }
 
 		.filters {
@@ -1224,7 +1225,7 @@
 	    @include responsive-padding;
 	    padding-top: 20px;
 	    padding-bottom: 20px;
-	    background: $white;
+	    background: #fff;
 
 	    left: 0;
 	    width: 100%;

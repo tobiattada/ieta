@@ -10,7 +10,7 @@
   <div id="popup" class="popup filter-wrapper">
       <div class="popup-content">
         <div id="openPopup">
-          <p>Filters</p><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 4.83337H13M4.92333 8.00004H11.0767M6.84667 11.1667H9.15333" stroke="#545454" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <p>Show Filters</p><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 4.83337H13M4.92333 8.00004H11.0767M6.84667 11.1667H9.15333" stroke="#545454" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </div>
 
         <div class="filters">
@@ -231,54 +231,46 @@ document.addEventListener("change", e => {
 <script>
 const popup = document.getElementById("popup");
 const filters = document.querySelector(".filters");
-
 const openBtn = document.getElementById("openPopup");
 
-// openBtn.addEventListener("click", () => {
-//   const isDesktop = window.innerWidth >= 769;
-//   if (isDesktop) {
-//     popup.classList.toggle("active");
-//     openBtn.classList.toggle("active");
-//     openBtn.querySelector("p").textContent = popup.classList.contains("active") ? "Hide filters" : "Show filters";
-//   } else {
-//     popup.classList.toggle("active");
-//     document.body.style.overflow = popup.classList.contains("active") ? "hidden" : "";
-//   }
-// });
+function updateBtnText() {
+  openBtn.querySelector("p").textContent = filters.classList.contains("active") ? "Hide filters" : "Show filters";
+}
 
 openBtn.addEventListener("click", () => {
   const isDesktop = window.innerWidth >= 769;
   if (isDesktop) {
-    popup.classList.toggle("active");
     filters.classList.toggle("active");
     openBtn.classList.toggle("active");
-    openBtn.querySelector("p").textContent = popup.classList.contains("active") ? "Close filters" : "Show filters";
   } else {
     popup.classList.toggle("active");
+    filters.classList.toggle("active");
     document.body.style.overflow = popup.classList.contains("active") ? "hidden" : "";
   }
+  updateBtnText();
 });
 
 popup.addEventListener("click", (e) => {
   if (e.target === popup) {
     popup.classList.remove("active");
+    filters.classList.remove("active");
     openBtn.classList.remove("active");
-    openBtn.querySelector("p").textContent = "Show filters";
     document.body.style.overflow = "";
+    updateBtnText();
   }
 });
 
 window.addEventListener("resize", () => {
   if (window.innerWidth >= 769) {
-    popup.classList.add("active");
+    filters.classList.add("active");
     openBtn.classList.add("active");
-    openBtn.querySelector("p").textContent = "Hide filters";
   } else {
     popup.classList.remove("active");
+    filters.classList.remove("active");
     openBtn.classList.remove("active");
-    openBtn.querySelector("p").textContent = "Show filters";
     document.body.style.overflow = "";
   }
+  updateBtnText();
 });
 
 // THIS IS THE STICKY FILTER
