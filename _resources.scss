@@ -866,13 +866,13 @@
 	      display: grid;
 	      grid-template-columns: 1fr 1fr;
 		    grid-template-areas:
-		        "x x"
-		        "select select"
+		        //"x x"
+		        //"select select"
 		        "audience audience"
 		        "demographic demographic"
 		        "duration duration"
 		        "type type"
-		        "close clear";
+		        "close close";
 	      gap: 15px;
 	      // margin-bottom: 24px;
 	      //align-items: center;
@@ -880,10 +880,11 @@
 	      @include tablet{
 	      	grid-template-columns: 1fr 1fr;
 	      	grid-template-areas:
-	      	"select clear"
+	      	//"select select"
 	      	"audience audience"
 	      	"demographic duration"
-	      	"type type";
+	      	"type type"
+	      	"close close";
 	      }
 
 	      @include desktop{
