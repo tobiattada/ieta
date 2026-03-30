@@ -1241,17 +1241,6 @@
 	  }
 	}
 
-
-	// .filter-wrapper{
-	// 	max-height: 0;
-	//     overflow: hidden;
-	//     transition: max-height 0.4s ease;
-	// }
-
-	// .filter-wrapper.active{
-	// 	max-height: 2000px;
-	// }
-
 /// THIS IS FOR THE STICKY FILTER BAR
 	.popup-content.sticky{
 	    position: fixed;
@@ -1260,12 +1249,23 @@
 	    @include responsive-padding;
 	    padding-top: 20px;
 	    padding-bottom: 20px;
+	    background: $pale-blue;
 
 	    left: 0;
 	    width: 100%;
 	    border-top: 2px solid $light-gray;
 
-	    box-shadow: 0px 6px 20px 5px #0000000f;
+	    box-shadow: 0px 26px 20px -25px #0000000f;
+
+	    @include desktop{
+	    	padding-top: 20px;
+	    	padding-bottom: 20px;
+	    }
+
+	    @include largedesktop{
+	    	padding-top: 20px;
+	    	padding-bottom: 20px;
+	    }
 	  
 	}
 	// .close-filters.close-desktop{
