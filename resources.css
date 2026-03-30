@@ -4285,7 +4285,7 @@ b mark, mark b {
   background: #27277C;
 }
 .news-event-feature .col-12 .component-feature .box ul .resource-type-icon {
-  display: none;
+  display: none !important;
 }
 .news-event-feature .col-12 .component-feature .box ul span.resource-topics-list a.resource-topic-badge {
   border-radius: 0px;

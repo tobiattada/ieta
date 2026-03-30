@@ -1497,7 +1497,7 @@
     		h4.title{
     			a{
     				margin-top: 20px;
-    				    display: inline-block;
+    				display: inline-block;
     				@include h3($navy-blue);
     				text-transform: capitalize;
 
@@ -1513,7 +1513,7 @@
     		}
 
     		.resource-type-icon{
-    			display:none;
+    			display:none !important;
     		}
     		
     		span.resource-topics-list a.resource-topic-badge{
