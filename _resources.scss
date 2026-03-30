@@ -1401,7 +1401,7 @@
 				    @include desktop{
 				    	content: "";
 						position: absolute;
-					    background: $light;
+					    background: $pale-blue;
 					    height: 100%;
 					    width: 80%;
 					    top: 0;
@@ -1435,7 +1435,7 @@
 				&:after{
 					content: "";
 					position: absolute;
-				    background: $light;
+				    background: $pale-blue;
 				    height: 80%;
 				    width: 100%;
 				    bottom: 0;
@@ -1446,7 +1446,7 @@
 					@include desktop{
 						content: "";
 						position: absolute;
-					    background: $light;
+					    background: $pale-blue;
 					    height: 100%;
 					    width: 80%;
 					    top: 0;
