@@ -269,11 +269,12 @@ window.addEventListener("resize", () => {
 
 // THIS IS THE STICKY FILTER
 const nav = document.querySelector("nav"); // update to your nav selector
+const popupContent = document.querySelector(".popup-content");
 
 window.addEventListener("scroll", () => {
   const navBottom = nav.getBoundingClientRect().bottom;
-  openBtn.classList.toggle("sticky", window.scrollY > 0);
-  openBtn.style.top = `${navBottom}px`;
+  const popupTop = popupContent.getBoundingClientRect().top;
+  popupContent.classList.toggle("sticky", popupTop <= navBottom);
 });
 
 
