@@ -4037,7 +4037,7 @@ b mark, mark b {
   visibility: visible;
   opacity: 1;
   max-height: 2000px;
-  padding-bottom: 40px;
+  margin-top: 20px;
 }
 @media (min-width: 768px) {
   #trip-planner-custom-code .popup-content .filters.active {
