@@ -1373,6 +1373,8 @@
     box-sizing: border-box;
     width: auto;
 
+
+
 		@include desktop{
 			margin: 0 0;
 			margin-top: $toppad-desk;
@@ -1388,7 +1390,7 @@
 				&:after{
 					content: "";
 					position: absolute;
-				    background: $light;
+				    background: $pale-blue;
 				    height: 80%;
 				    width: 100%;
 				    bottom: 0;
