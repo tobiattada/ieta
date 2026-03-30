@@ -3777,6 +3777,9 @@ b mark, mark b {
     grid-gap: 30px;
   }
 }
+#trip-planner-custom-code #data-list li:hover a {
+  text-decoration: none;
+}
 #trip-planner-custom-code #data-list li:hover a p {
   text-decoration: none;
 }
@@ -4224,6 +4227,7 @@ b mark, mark b {
   line-height: 130%;
   letter-spacing: 0%;
   color: #1c88ed;
+  text-decoration: none;
 }
 .news-event-feature .col-12 .component-feature.dynamic .box ul .section-type-resourcecenter h4.title a:not(.resource-topic-badge):hover.hebrew {
   font-family: "Noto Sans Hebrew", sans-serif !important;

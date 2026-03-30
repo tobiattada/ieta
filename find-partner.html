@@ -63,11 +63,11 @@ const FILTER_GROUPS = [
 
 // 🔹 Get logo URL
 function getLogoUrl(name) {
-  return `https://raw.githubusercontent.com/tobiattada/ieta/ab24829d543e40ed39ee6905212c868271b52155/logos/${encodeURIComponent(name.replace(/[':]/g, "").replace(/\s+/g, " ").trim())}/logo.png`;
+  return `https://raw.githubusercontent.com/tobiattada/ieta/b96334ab31f669636698e8c150067838593fdfb2/logos/${encodeURIComponent(name.replace(/[':]/g, "").replace(/\s+/g, " ").trim())}/logo.png`;
 }
 
 // 🔹 Load JSON
-fetch("https://raw.githubusercontent.com/tobiattada/ieta/ab24829d543e40ed39ee6905212c868271b52155/trip-platform-org-list.json")
+fetch("https://raw.githubusercontent.com/tobiattada/ieta/b96334ab31f669636698e8c150067838593fdfb2/trip-platform-org-list.json")
   .then(res => res.json())
   .then(json => {
     data = json;

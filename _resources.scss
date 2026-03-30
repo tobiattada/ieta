@@ -1043,6 +1043,7 @@
 
       &:hover{
       	a{
+      		text-decoration: none;
       		p{text-decoration: none;}
       	}
       }
@@ -1204,14 +1205,6 @@
 	}
 
 	@include tablet{
-		// .close-filters{
-		// 	display: none;
-		// }	
-
-		// .close-filters.close-desktop{
-		// 	display: inline;
-		// }
-
 		.close-filters, #openPopup{
 			display: none;
 		}	
@@ -1506,6 +1499,7 @@
 
     				&:hover{
     					@include h3($medium-blue);
+    					text-decoration: none;
     				}
 
     				@include desktop{
