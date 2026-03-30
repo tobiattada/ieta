@@ -3656,6 +3656,7 @@ b mark, mark b {
   color: #2A2A2A;
   margin-top: 3px;
   padding: 5px 10px;
+  transition: 0.3s;
 }
 @media (min-width: 1024px) {
   #trip-planner-custom-code .filter-wrapper .filters .filter label {
@@ -3680,6 +3681,7 @@ b mark, mark b {
 #trip-planner-custom-code .filter-wrapper .filters .filter label:hover {
   border: 1px solid #1E3EAF;
   background: #E8F3FD;
+  transition: 0.3s;
 }
 #trip-planner-custom-code .filter-wrapper .filters .filter label:has(input:checked) {
   border: 1px solid #1E3EAF;
@@ -3992,7 +3994,38 @@ b mark, mark b {
     display: none;
   }
 }
-
+#trip-planner-custom-code .filter-nav-desktop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+@media (min-width: 768px) {
+  #trip-planner-custom-code #popup {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+  }
+  #trip-planner-custom-code #popup.active {
+    max-height: 1000px;
+  }
+  #trip-planner-custom-code #openPopup {
+    display: inline-flex;
+  }
+  #trip-planner-custom-code #openPopup.active {
+    background: #D2E9FF;
+  }
+  #trip-planner-custom-code .filter {
+    max-height: none;
+    overflow: visible;
+  }
+  #trip-planner-custom-code .audienceFilter h5::after,
+#trip-planner-custom-code .demographicFilter h5::after,
+#trip-planner-custom-code .durationFilter h5::after,
+#trip-planner-custom-code .typeFilter h5::after {
+    display: none;
+  }
+}
 #trip-planner-custom-code .load-more {
   text-align: center;
   position: relative;
@@ -4054,58 +4087,6 @@ b mark, mark b {
 }
 #trip-planner-custom-code .load-more button#loadMoreBtn.backtotop::before {
   transform: rotate(0deg);
-}
-#trip-planner-custom-code p.rootone {
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 5px;
-}
-#trip-planner-custom-code p.rootone a {
-  text-decoration: underline;
-}
-#trip-planner-custom-code .tooltip {
-  position: relative;
-  cursor: pointer;
-  display: inline-block;
-}
-#trip-planner-custom-code .tooltip svg {
-  margin-top: 6px;
-  transform: scale(0.6);
-  top: -6px;
-  left: -4px;
-  position: relative;
-}
-#trip-planner-custom-code .tooltip-text {
-  position: absolute;
-  bottom: 125%;
-  /* above the text */
-  left: 50%;
-  transform: translateX(-50%);
-  background: #2A2A2A;
-  color: #FDFDFD;
-  padding: 10px 10px;
-  font-size: 15px;
-  border-radius: 4px;
-  width: 50vw;
-  bottom: 125%;
-  left: -200%;
-  transform: translateX(-73%);
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.2s ease;
-  z-index: 10;
-}
-#trip-planner-custom-code .tooltip:hover .tooltip-text {
-  opacity: 1;
-  visibility: visible;
-}
-#trip-planner-custom-code .filter-nav-desktop {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 25px;
 }
 
 .bg-ieta h3 {

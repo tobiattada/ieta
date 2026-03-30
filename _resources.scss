@@ -947,6 +947,7 @@
 	      		border: 1px solid $gray;
 	      		@include caption($dark-gray);
 				padding: 5px 10px;
+				transition: .3s;
 				//text-transform: capitalize;
 
 				@include desktop{
@@ -962,6 +963,7 @@
 	      		&:hover{
 	      			border: 1px solid $primary-blue;
 	      			background: $pale-blue;
+	      			transition: .3s;
 	      		}
 
 	      		&:has(input:checked){
@@ -1228,12 +1230,53 @@
 			display: none;
 		}	
 	}
-}
+
+	.filter-nav-desktop{
+		display: flex;
+	    justify-content: space-between;
+	    align-items: center;
+	    margin-bottom: 25px;
+	}
+
+
+	/// NEW CODE
+
+	
+
+	@include tablet {
+	  #popup {
+	    max-height: 0;
+	    overflow: hidden;
+	    transition: max-height 0.4s ease;
+
+	    &.active {
+	      max-height: 1000px;
+	    }
+	  }
+
+	  #openPopup {
+	    display: inline-flex;
+
+	    &.active {
+	      background: $light-blue;
+	    }
+	  }
+
+	  .filter {
+	    max-height: none;
+	    overflow: visible;
+	  }
+
+	  .audienceFilter h5::after,
+	  .demographicFilter h5::after,
+	  .durationFilter h5::after,
+	  .typeFilter h5::after {
+	    display: none;
+	  }
+	}
 
 
 
-
-#trip-planner-custom-code{
 
 	.load-more{
 		text-align: center;
@@ -1299,71 +1342,64 @@
 		}
 	}
 
-	p.rootone{
-		text-align: center;
-	    display: flex;
-	    align-items: center;
-	    justify-content: center;
-	    gap: 5px;
+	// p.rootone{
+	// 	text-align: center;
+	//     display: flex;
+	//     align-items: center;
+	//     justify-content: center;
+	//     gap: 5px;
 
-	    a{
-			text-decoration: underline;
-	    }
-	}
+	//     a{
+	// 		text-decoration: underline;
+	//     }
+	// }
 
-	.tooltip {
-	  position: relative;
-	  cursor: pointer;
-	  display: inline-block;
+	// .tooltip {
+	//   position: relative;
+	//   cursor: pointer;
+	//   display: inline-block;
 
-	  svg{
-	  	margin-top: 6px;
+	//   svg{
+	//   	margin-top: 6px;
 
-	  	    transform: scale(.6);
-		    top: -6px;
-		    left: -4px;
-		    position: relative;
-	  }
-	}
+	//   	    transform: scale(.6);
+	// 	    top: -6px;
+	// 	    left: -4px;
+	// 	    position: relative;
+	//   }
+	// }
 
-	.tooltip-text {
-	  position: absolute;
-	  bottom: 125%;           /* above the text */
-	  left: 50%;
-	  transform: translateX(-50%);
+	// .tooltip-text {
+	//   position: absolute;
+	//   bottom: 125%;           /* above the text */
+	//   left: 50%;
+	//   transform: translateX(-50%);
 	  
-	  background: $dark-gray;
-	  color: $white;
-	  padding: 10px 10px;
-	  font-size: 15px;
-	  border-radius: 4px;
-	  // white-space: nowrap;
+	//   background: $dark-gray;
+	//   color: $white;
+	//   padding: 10px 10px;
+	//   font-size: 15px;
+	//   border-radius: 4px;
+	//   // white-space: nowrap;
 
-		  width: 50vw;
-		  bottom: 125%;
-		    left: -200%;
-	   		 transform: translateX(-73%);
+	// 	  width: 50vw;
+	// 	  bottom: 125%;
+	// 	    left: -200%;
+	//    		 transform: translateX(-73%);
 
-	  opacity: 0;
-	  visibility: hidden;
-	  transition: opacity 0.2s ease;
-	  z-index: 10;
+	//   opacity: 0;
+	//   visibility: hidden;
+	//   transition: opacity 0.2s ease;
+	//   z-index: 10;
 
-	      // display: none;
-	}
+	//       // display: none;
+	// }
 
-	.tooltip:hover .tooltip-text {
-	  opacity: 1;
-	  visibility: visible;
+	// .tooltip:hover .tooltip-text {
+	//   opacity: 1;
+	//   visibility: visible;
 	
-	}
-
-	.filter-nav-desktop{
-		display: flex;
-	    justify-content: space-between;
-	    align-items: center;
-	    margin-bottom: 25px;
-	}
+	// }
 }
 
 .bg-ieta{
