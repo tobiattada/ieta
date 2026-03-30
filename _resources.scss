@@ -1462,7 +1462,10 @@
 
 
 .news-event-feature{
-	.col-12 .component-feature.-alignment-side-by-side .box{
+	.col-12 .component-feature .box{
+
+		width: 100%;
+
 		ul{
 			display: grid;
     		grid-template-columns: 1fr;
@@ -1478,13 +1481,29 @@
     		@include tablet{
     			grid-template-columns: 1fr 1fr;
     		}
+
+    		h4.title{
+    			a{
+    				@include h3($primary-blue);
+    			}
+    		}
+
+    		a.button{
+    			@include button($primary-blue, $white, solid)
+    		}
+
+    		 .resource-topic-badge{
+    		 	@include p-bold($primary-blue);
+			  	@include underscore(p);
+			 		margin-right: auto;
+					margin-left: 0px;
+    		 }
 		}
 	}
 }
 
 .partner-badges {
   display: flex;
-  flex-wrap: wrap;
   gap: 6px;
   margin-top: 6px;
 }
