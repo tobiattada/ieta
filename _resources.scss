@@ -847,7 +847,7 @@
 	    margin: 0 auto;
 	    border-radius:0px;
 	    box-sizing: border-box;
-	    background: $white;
+	    background: #fff;
 	    width: auto;
 	    
 
@@ -976,20 +976,7 @@
 	      	}
 	      }
 
-	      button#clearFiltersBtn{
-			background: none;
-    		border: none;
-    		display: flex;
-    		display: none;
-
-    		@include caption($dark-gray);
-    		font-weight: 600;
-
-    		span{
-    			font-size: 20px;
-    			padding-left: 7px;
-    		}
-	      }
+	     
 
 	      #typeFilter.filter{
 	      	display: grid;
@@ -1197,6 +1184,21 @@
 			cursor: pointer;
 		}
 	}
+
+	 button#clearFiltersBtn{
+		background: none;
+		border: none;
+		display: flex;
+		display: none;
+
+		@include caption($dark-gray);
+		font-weight: 600;
+
+		span{
+			font-size: 20px;
+			padding-left: 7px;
+		}
+      }
 
 	// hiding this for now while working out the UX
 	span.close-x{
