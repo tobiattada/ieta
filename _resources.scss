@@ -1496,7 +1496,7 @@
 
     		h4.title{
     			a{
-    				margin-top: 20px;
+    				margin-top: 10px;
     				display: inline-block;
     				@include h3($navy-blue);
     				text-transform: capitalize;
@@ -1504,29 +1504,42 @@
     				&:hover{
     					@include h3($medium-blue);
     				}
+
+    				@include desktop{
+    					margin-top: 20px;
+    				}
     			}
     		}
 
     		a.button{
     			@include button($primary-blue, $white, solid);
-    			margin-top: 20px;
+    			margin-top: 10px;
+    			@include desktop{
+					margin-top: 20px;
+				}
     		}
+//.component-feature.dynamic .section-type-resourcecenter .resource-meta 
+    		.resource-meta {
+	    		.resource-type-icon{
+	    			display:none !important;
+	    		}
+	    		
+	    		span.resource-topics-list {
+	    			margin-top: 0px;
 
-    		.resource-type-icon{
-    			display:none !important;
-    		}
-    		
-    		span.resource-topics-list a.resource-topic-badge{
-    			border-radius: 0px;
-			    background: none;
-			    border: none;
-			    padding: 0px;
+	    			a.resource-topic-badge{
+	    				border-radius: 0px;
+					    background: none;
+					    border: none;
+					    padding: 0px;
 
-    		 	@include p-bold($primary-blue);
-			  	@include underscore(p);
-			 		margin-right: auto;
-					margin-left: 0px;
-    		 }
+		    		 	@include p-bold($primary-blue);
+					  	@include underscore(p);
+					 		margin-right: auto;
+							margin-left: 0px;
+		    		 }
+		    	}
+		    }
 		}
 	}
 }

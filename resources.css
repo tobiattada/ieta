@@ -4196,7 +4196,7 @@ b mark, mark b {
   overflow: hidden;
 }
 .news-event-feature .col-12 .component-feature .box ul h4.title a {
-  margin-top: 20px;
+  margin-top: 10px;
   display: inline-block;
   font-family: "Outfit", sans-serif;
   font-weight: 600;
@@ -4236,6 +4236,11 @@ b mark, mark b {
     font-size: 45px;
   }
 }
+@media (min-width: 1024px) {
+  .news-event-feature .col-12 .component-feature .box ul h4.title a {
+    margin-top: 20px;
+  }
+}
 .news-event-feature .col-12 .component-feature .box ul a.button {
   padding: 12px 24px;
   border-radius: 30px;
@@ -4257,7 +4262,7 @@ b mark, mark b {
   background: #1E3EAF;
   color: #FDFDFD !important;
   border: none;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 .news-event-feature .col-12 .component-feature .box ul a.button span, .news-event-feature .col-12 .component-feature .box ul a.button p {
   font-family: "Outfit", sans-serif;
@@ -4284,10 +4289,18 @@ b mark, mark b {
 .news-event-feature .col-12 .component-feature .box ul a.button:active {
   background: #27277C;
 }
-.news-event-feature .col-12 .component-feature .box ul .resource-type-icon {
+@media (min-width: 1024px) {
+  .news-event-feature .col-12 .component-feature .box ul a.button {
+    margin-top: 20px;
+  }
+}
+.news-event-feature .col-12 .component-feature .box ul .resource-meta .resource-type-icon {
   display: none !important;
 }
-.news-event-feature .col-12 .component-feature .box ul span.resource-topics-list a.resource-topic-badge {
+.news-event-feature .col-12 .component-feature .box ul .resource-meta span.resource-topics-list {
+  margin-top: 0px;
+}
+.news-event-feature .col-12 .component-feature .box ul .resource-meta span.resource-topics-list a.resource-topic-badge {
   border-radius: 0px;
   background: none;
   border: none;
@@ -4303,11 +4316,11 @@ b mark, mark b {
   margin-right: auto;
   margin-left: 0px;
 }
-.news-event-feature .col-12 .component-feature .box ul span.resource-topics-list a.resource-topic-badge strong, .news-event-feature .col-12 .component-feature .box ul span.resource-topics-list a.resource-topic-badge em, .news-event-feature .col-12 .component-feature .box ul span.resource-topics-list a.resource-topic-badge b {
+.news-event-feature .col-12 .component-feature .box ul .resource-meta span.resource-topics-list a.resource-topic-badge strong, .news-event-feature .col-12 .component-feature .box ul .resource-meta span.resource-topics-list a.resource-topic-badge em, .news-event-feature .col-12 .component-feature .box ul .resource-meta span.resource-topics-list a.resource-topic-badge b {
   font-weight: 600;
   color: #1E3EAF;
 }
-.news-event-feature .col-12 .component-feature .box ul span.resource-topics-list a.resource-topic-badge.hebrew {
+.news-event-feature .col-12 .component-feature .box ul .resource-meta span.resource-topics-list a.resource-topic-badge.hebrew {
   font-family: "Noto Sans Hebrew", sans-serif !important;
   font-weight: 600;
   text-align: right;
