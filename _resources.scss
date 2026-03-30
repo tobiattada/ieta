@@ -1048,15 +1048,18 @@
       		p{
       			text-decoration: none;
       			color: $primary-blue;
+      			transition:.3s;
       		}
 
-      		img{
+      		.image-wrap{
+      			transition:.3s;
       			box-shadow: 0px 6px 20px 5px #0000000f;
       		}
       	}
       }
 
       .image-wrap{
+      	transition:.3s;
       	padding: 10px;
       	border: 1px solid $dark-gray;
      	border-radius: 20px;
@@ -1076,6 +1079,9 @@
 
       p.bold{
       	@include p-bold($dark-gray);
+      }
+      p{
+      	transition:.3s;
       }
 
     }

@@ -3784,11 +3784,14 @@ b mark, mark b {
 #trip-planner-custom-code #data-list li:hover a p {
   text-decoration: none;
   color: #1E3EAF;
+  transition: 0.3s;
 }
-#trip-planner-custom-code #data-list li:hover a img {
+#trip-planner-custom-code #data-list li:hover a .image-wrap {
+  transition: 0.3s;
   box-shadow: 0px 6px 20px 5px #0000000f;
 }
 #trip-planner-custom-code #data-list li .image-wrap {
+  transition: 0.3s;
   padding: 10px;
   border: 1px solid #2A2A2A;
   border-radius: 20px;
@@ -3819,6 +3822,9 @@ b mark, mark b {
   font-weight: 600;
   text-align: right;
   direction: rtl;
+}
+#trip-planner-custom-code #data-list li p {
+  transition: 0.3s;
 }
 #trip-planner-custom-code .item-name {
   font-weight: bold;
