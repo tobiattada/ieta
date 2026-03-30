@@ -4196,6 +4196,7 @@ b mark, mark b {
   overflow: hidden;
 }
 .news-event-feature .col-12 .component-feature .box ul h4.title a {
+  margin-top: 25px;
   font-family: "Outfit", sans-serif;
   font-weight: 600;
   font-size: 28px;
@@ -4236,6 +4237,7 @@ b mark, mark b {
   background: #1E3EAF;
   color: #FDFDFD !important;
   border: none;
+  margin-top: 25px;
 }
 .news-event-feature .col-12 .component-feature .box ul a.button span, .news-event-feature .col-12 .component-feature .box ul a.button p {
   font-family: "Outfit", sans-serif;
@@ -4269,6 +4271,7 @@ b mark, mark b {
   border-radius: 0px;
   background: none;
   border: none;
+  padding: 0px;
   font-family: "Outfit", sans-serif;
   font-weight: 600;
   letter-spacing: 0%;
