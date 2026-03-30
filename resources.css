@@ -4252,6 +4252,7 @@ b mark, mark b {
   background: none;
   border: none;
   padding: 0px;
+  text-transform: capitalize;
   font-family: "Outfit", sans-serif;
   font-weight: 600;
   letter-spacing: 0%;
