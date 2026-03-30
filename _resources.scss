@@ -1205,18 +1205,6 @@
 }
 
 #trip-planner-custom-code{
-
-	.filters {
-	  visibility: hidden;
-	  opacity: 0;
-	  transition: opacity 0.3s ease, visibility 0.3s ease;
-
-	  &.active {
-	    visibility: visible;
-	    opacity: 1;
-	  }
-	}
-
 	#openPopup, .popup-collapse-btn{
 		display: inline-flex;
 	    border: 1px solid $gray;
@@ -1239,15 +1227,27 @@
 		display: none;
 	}
 
-	.filter-wrapper{
-		max-height: 0;
-	    overflow: hidden;
-	    transition: max-height 0.4s ease;
+	.popup-content .filters {
+	  visibility: hidden;
+	  opacity: 0;
+	  transition: opacity 0.3s ease, visibility 0.3s ease;
+
+	  &.active {
+	    visibility: visible;
+	    opacity: 1;
+	  }
 	}
 
-	.filter-wrapper.active{
-		max-height: 2000px;
-	}
+
+	// .filter-wrapper{
+	// 	max-height: 0;
+	//     overflow: hidden;
+	//     transition: max-height 0.4s ease;
+	// }
+
+	// .filter-wrapper.active{
+	// 	max-height: 2000px;
+	// }
 
 /// THIS IS FOR THE STICKY FILTER BAR
 	.popup-content.sticky{

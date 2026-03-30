@@ -230,15 +230,29 @@ document.addEventListener("change", e => {
 
 <script>
 const popup = document.getElementById("popup");
-const filters = document.getElementById("popup");
+const filters = document.querySelector(".filters");
+
 const openBtn = document.getElementById("openPopup");
+
+// openBtn.addEventListener("click", () => {
+//   const isDesktop = window.innerWidth >= 769;
+//   if (isDesktop) {
+//     popup.classList.toggle("active");
+//     openBtn.classList.toggle("active");
+//     openBtn.querySelector("p").textContent = popup.classList.contains("active") ? "Hide filters" : "Show filters";
+//   } else {
+//     popup.classList.toggle("active");
+//     document.body.style.overflow = popup.classList.contains("active") ? "hidden" : "";
+//   }
+// });
 
 openBtn.addEventListener("click", () => {
   const isDesktop = window.innerWidth >= 769;
   if (isDesktop) {
     popup.classList.toggle("active");
+    filters.classList.toggle("active");
     openBtn.classList.toggle("active");
-    openBtn.querySelector("p").textContent = popup.classList.contains("active") ? "Hide filters" : "Show filters";
+    openBtn.querySelector("p").textContent = popup.classList.contains("active") ? "Close filters" : "Show filters";
   } else {
     popup.classList.toggle("active");
     document.body.style.overflow = popup.classList.contains("active") ? "hidden" : "";
