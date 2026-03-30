@@ -1485,6 +1485,7 @@
     		h4.title{
     			a{
     				@include h3($primary-blue);
+    				text-transform: capitalize;
     			}
     		}
 
@@ -1492,7 +1493,10 @@
     			@include button($primary-blue, $white, solid)
     		}
 
-    		 .resource-topic-badge{
+    		.resource-type-icon{
+    			display:none;
+    		}
+    		 .resource-topic-badge a{
     		 	@include p-bold($primary-blue);
 			  	@include underscore(p);
 			 		margin-right: auto;

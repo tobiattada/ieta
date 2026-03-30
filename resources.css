@@ -4192,6 +4192,7 @@ b mark, mark b {
   line-height: 130%;
   letter-spacing: 0%;
   color: #1E3EAF;
+  text-transform: capitalize;
 }
 .news-event-feature .col-12 .component-feature .box ul h4.title a.hebrew {
   font-family: "Noto Sans Hebrew", sans-serif !important;
@@ -4251,7 +4252,10 @@ b mark, mark b {
 .news-event-feature .col-12 .component-feature .box ul a.button:active {
   background: #27277C;
 }
-.news-event-feature .col-12 .component-feature .box ul .resource-topic-badge {
+.news-event-feature .col-12 .component-feature .box ul .resource-type-icon {
+  display: none;
+}
+.news-event-feature .col-12 .component-feature .box ul .resource-topic-badge a {
   font-family: "Outfit", sans-serif;
   font-weight: 600;
   letter-spacing: 0%;
@@ -4263,11 +4267,11 @@ b mark, mark b {
   margin-right: auto;
   margin-left: 0px;
 }
-.news-event-feature .col-12 .component-feature .box ul .resource-topic-badge strong, .news-event-feature .col-12 .component-feature .box ul .resource-topic-badge em, .news-event-feature .col-12 .component-feature .box ul .resource-topic-badge b {
+.news-event-feature .col-12 .component-feature .box ul .resource-topic-badge a strong, .news-event-feature .col-12 .component-feature .box ul .resource-topic-badge a em, .news-event-feature .col-12 .component-feature .box ul .resource-topic-badge a b {
   font-weight: 600;
   color: #1E3EAF;
 }
-.news-event-feature .col-12 .component-feature .box ul .resource-topic-badge.hebrew {
+.news-event-feature .col-12 .component-feature .box ul .resource-topic-badge a.hebrew {
   font-family: "Noto Sans Hebrew", sans-serif !important;
   font-weight: 600;
   text-align: right;
