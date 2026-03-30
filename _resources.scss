@@ -1122,35 +1122,35 @@
 /// POP UP AND FILTER ACCORDIONS
 
 	@media (max-width: 767px) {
-	    .popup {
-		  position: fixed;
-		  inset: 0;
-		  background: rgba(0, 0, 0, 0.6);
-		  display: none;
-		  align-items: center;
-		  justify-content: center;
-		  padding: 1rem;
-		  z-index: 9999;
-		}
+	 //    .popup {
+		//   position: fixed;
+		//   inset: 0;
+		//   background: rgba(0, 0, 0, 0.6);
+		//   display: none;
+		//   align-items: center;
+		//   justify-content: center;
+		//   padding: 1rem;
+		//   z-index: 9999;
+		// }
 
-		.popup.active {
-		  display: flex;
-		}
+		// .popup.active {
+		//   display: flex;
+		// }
 
-		.popup-content {
-		  background: #fff;
-		  width: 100%;
-		  max-width: 400px;
-		  border-radius: 12px;
-		  padding: 20px;
-		  position: relative;
-		  animation: fadeIn 0.3s ease;
+		// .popup-content {
+		//   background: #fff;
+		//   width: 100%;
+		//   max-width: 400px;
+		//   border-radius: 12px;
+		//   padding: 20px;
+		//   position: relative;
+		//   animation: fadeIn 0.3s ease;
 
-		  	height: 100%;
-        	box-sizing: border-box;
-        	width: 100%;
-        	max-width: none;
-		}
+		//   	height: 100%;
+  //       	box-sizing: border-box;
+  //       	width: 100%;
+  //       	max-width: none;
+		// }
 
 		/* Container spacing (optional) */
 		.audienceFilter,
@@ -1205,75 +1205,75 @@
 }
 
 #trip-planner-custom-code{
-	#openPopup, .popup-collapse-btn{
-		display: inline-flex;
-	    border: 1px solid $gray;
-	    padding: 5px 10px;
-	    align-items: center;
-	    gap: 10px;
-		border-radius: 5px;
-		margin: 30px 0px 0px 0px;
+	// #openPopup, .popup-collapse-btn{
+	// 	display: inline-flex;
+	//     border: 1px solid $gray;
+	//     padding: 5px 10px;
+	//     align-items: center;
+	//     gap: 10px;
+	// 	border-radius: 5px;
+	// 	margin: 30px 0px 0px 0px;
 
-		&:hover{
-			background: $light-blue;
-			transition: .2s;
-			cursor: pointer;
-		}
-	}
+	// 	&:hover{
+	// 		background: $light-blue;
+	// 		transition: .2s;
+	// 		cursor: pointer;
+	// 	}
+	// }
 
-	.close-filters.close-desktop{
-		display: none;
-	}
+	// .close-filters.close-desktop{
+	// 	display: none;
+	// }
 
-	@include tablet{
-		.close-filters, #openPopup{
-			display: none;
-		}	
-	}
+	// @include tablet{
+	// 	.close-filters, #openPopup{
+	// 		display: none;
+	// 	}	
+	// }
 
-	.filter-nav-desktop{
-		display: flex;
-	    justify-content: space-between;
-	    align-items: center;
-	    margin-bottom: 25px;
-	}
+	// .filter-nav-desktop{
+	// 	display: flex;
+	//     justify-content: space-between;
+	//     align-items: center;
+	//     margin-bottom: 25px;
+	// }
 
 
 	/// NEW CODE
 
 	
 
-	@include tablet {
-	  #popup {
-	    max-height: 0;
-	    overflow: hidden;
-	    transition: max-height 0.4s ease;
+	// @include tablet {
+	//   #popup {
+	//     max-height: 0;
+	//     overflow: hidden;
+	//     transition: max-height 0.4s ease;
 
-	    &.active {
-	      max-height: 1000px;
-	    }
-	  }
+	//     &.active {
+	//       max-height: 1000px;
+	//     }
+	//   }
 
-	  #openPopup {
-	    display: inline-flex;
+	//   #openPopup {
+	//     display: inline-flex;
 
-	    &.active {
-	      background: $light-blue;
-	    }
-	  }
+	//     &.active {
+	//       background: $light-blue;
+	//     }
+	//   }
 
-	  .filter {
-	    max-height: none;
-	    overflow: visible;
-	  }
+	//   .filter {
+	//     max-height: none;
+	//     overflow: visible;
+	//   }
 
-	  .audienceFilter h5::after,
-	  .demographicFilter h5::after,
-	  .durationFilter h5::after,
-	  .typeFilter h5::after {
-	    display: none;
-	  }
-	}
+	//   .audienceFilter h5::after,
+	//   .demographicFilter h5::after,
+	//   .durationFilter h5::after,
+	//   .typeFilter h5::after {
+	//     display: none;
+	//   }
+	// }
 
 
 

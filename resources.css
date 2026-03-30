@@ -3902,32 +3902,6 @@ b mark, mark b {
     /* Accordion content */
     /* Open state */
   }
-  #trip-planner-custom-code .popup {
-    position: fixed;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.6);
-    display: none;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem;
-    z-index: 9999;
-  }
-  #trip-planner-custom-code .popup.active {
-    display: flex;
-  }
-  #trip-planner-custom-code .popup-content {
-    background: #fff;
-    width: 100%;
-    max-width: 400px;
-    border-radius: 12px;
-    padding: 20px;
-    position: relative;
-    animation: fadeIn 0.3s ease;
-    height: 100%;
-    box-sizing: border-box;
-    width: 100%;
-    max-width: none;
-  }
   #trip-planner-custom-code .audienceFilter,
 #trip-planner-custom-code .demographicFilter,
 #trip-planner-custom-code .durationFilter,
@@ -3972,60 +3946,6 @@ b mark, mark b {
   }
 }
 
-#trip-planner-custom-code #openPopup, #trip-planner-custom-code .popup-collapse-btn {
-  display: inline-flex;
-  border: 1px solid #c9c9c9;
-  padding: 5px 10px;
-  align-items: center;
-  gap: 10px;
-  border-radius: 5px;
-  margin: 30px 0px 0px 0px;
-}
-#trip-planner-custom-code #openPopup:hover, #trip-planner-custom-code .popup-collapse-btn:hover {
-  background: #D2E9FF;
-  transition: 0.2s;
-  cursor: pointer;
-}
-#trip-planner-custom-code .close-filters.close-desktop {
-  display: none;
-}
-@media (min-width: 768px) {
-  #trip-planner-custom-code .close-filters, #trip-planner-custom-code #openPopup {
-    display: none;
-  }
-}
-#trip-planner-custom-code .filter-nav-desktop {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 25px;
-}
-@media (min-width: 768px) {
-  #trip-planner-custom-code #popup {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.4s ease;
-  }
-  #trip-planner-custom-code #popup.active {
-    max-height: 1000px;
-  }
-  #trip-planner-custom-code #openPopup {
-    display: inline-flex;
-  }
-  #trip-planner-custom-code #openPopup.active {
-    background: #D2E9FF;
-  }
-  #trip-planner-custom-code .filter {
-    max-height: none;
-    overflow: visible;
-  }
-  #trip-planner-custom-code .audienceFilter h5::after,
-#trip-planner-custom-code .demographicFilter h5::after,
-#trip-planner-custom-code .durationFilter h5::after,
-#trip-planner-custom-code .typeFilter h5::after {
-    display: none;
-  }
-}
 #trip-planner-custom-code .load-more {
   text-align: center;
   position: relative;
