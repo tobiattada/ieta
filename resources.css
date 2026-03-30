@@ -4195,7 +4195,7 @@ b mark, mark b {
   border-radius: 24px;
   overflow: hidden;
 }
-.news-event-feature .col-12 .component-feature.dynamic .box ul .section-type-resourcecenter h4.title a[class=""] {
+.news-event-feature .col-12 .component-feature.dynamic .box ul .section-type-resourcecenter h4.title a:not(.resource-topic-badge) {
   margin-top: 10px;
   display: inline-block;
   font-family: "Outfit", sans-serif;
@@ -4206,18 +4206,18 @@ b mark, mark b {
   color: #27277C;
   text-transform: capitalize;
 }
-.news-event-feature .col-12 .component-feature.dynamic .box ul .section-type-resourcecenter h4.title a[class=""].hebrew {
+.news-event-feature .col-12 .component-feature.dynamic .box ul .section-type-resourcecenter h4.title a:not(.resource-topic-badge).hebrew {
   font-family: "Noto Sans Hebrew", sans-serif !important;
   font-weight: 600;
   text-align: right;
   direction: rtl;
 }
 @media (min-width: 1024px) {
-  .news-event-feature .col-12 .component-feature.dynamic .box ul .section-type-resourcecenter h4.title a[class=""] {
+  .news-event-feature .col-12 .component-feature.dynamic .box ul .section-type-resourcecenter h4.title a:not(.resource-topic-badge) {
     font-size: 45px;
   }
 }
-.news-event-feature .col-12 .component-feature.dynamic .box ul .section-type-resourcecenter h4.title a[class=""]:hover {
+.news-event-feature .col-12 .component-feature.dynamic .box ul .section-type-resourcecenter h4.title a:not(.resource-topic-badge):hover {
   font-family: "Outfit", sans-serif;
   font-weight: 600;
   font-size: 28px;
@@ -4225,19 +4225,19 @@ b mark, mark b {
   letter-spacing: 0%;
   color: #1c88ed;
 }
-.news-event-feature .col-12 .component-feature.dynamic .box ul .section-type-resourcecenter h4.title a[class=""]:hover.hebrew {
+.news-event-feature .col-12 .component-feature.dynamic .box ul .section-type-resourcecenter h4.title a:not(.resource-topic-badge):hover.hebrew {
   font-family: "Noto Sans Hebrew", sans-serif !important;
   font-weight: 600;
   text-align: right;
   direction: rtl;
 }
 @media (min-width: 1024px) {
-  .news-event-feature .col-12 .component-feature.dynamic .box ul .section-type-resourcecenter h4.title a[class=""]:hover {
+  .news-event-feature .col-12 .component-feature.dynamic .box ul .section-type-resourcecenter h4.title a:not(.resource-topic-badge):hover {
     font-size: 45px;
   }
 }
 @media (min-width: 1024px) {
-  .news-event-feature .col-12 .component-feature.dynamic .box ul .section-type-resourcecenter h4.title a[class=""] {
+  .news-event-feature .col-12 .component-feature.dynamic .box ul .section-type-resourcecenter h4.title a:not(.resource-topic-badge) {
     margin-top: 20px;
   }
 }

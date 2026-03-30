@@ -1496,7 +1496,7 @@
     		}
 
     		.section-type-resourcecenter h4.title{
-    			a[class=""]{
+    			a:not(.resource-topic-badge){
     				margin-top: 10px;
     				display: inline-block;
     				@include h3($navy-blue);
