@@ -912,6 +912,19 @@
 	      	}
 	      }
 
+	      &.active{
+	      	 a.close-filters{
+		      	grid-area: close;
+
+		      	@include button($primary-blue, $light, solid);
+		      	display: inline-block;
+
+		      	@include desktop{
+		      		display: inline-block;
+		      	}
+		      }
+	      }
+
 	       p.caption{
 	      	grid-area: select;
 	      }
@@ -1223,6 +1236,10 @@
 	    opacity: 1;
 	    max-height: 2000px;
 	    padding-bottom:40px;
+
+	    @include tablet{
+	    	margin-top: 30px;
+	    }
 
 	    @include desktop{
 	    	padding-bottom:40px;
