@@ -3946,6 +3946,15 @@ b mark, mark b {
   }
 }
 
+#trip-planner-custom-code .filters {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+#trip-planner-custom-code .filters.active {
+  visibility: visible;
+  opacity: 1;
+}
 #trip-planner-custom-code #openPopup, #trip-planner-custom-code .popup-collapse-btn {
   display: inline-flex;
   border: 1px solid #c9c9c9;
@@ -3953,7 +3962,6 @@ b mark, mark b {
   align-items: center;
   gap: 10px;
   border-radius: 5px;
-  margin: 30px 0px 0px 0px;
 }
 #trip-planner-custom-code #openPopup:hover, #trip-planner-custom-code .popup-collapse-btn:hover {
   background: #D2E9FF;
@@ -3979,6 +3987,10 @@ b mark, mark b {
   padding: 30px 20px;
   padding-top: 20px;
   padding-bottom: 20px;
+  left: 0;
+  width: 100%;
+  border-top: 2px solid #ECECEC;
+  box-shadow: 0px 6px 20px 5px #0000000f;
 }
 @media (min-width: 768px) {
   #trip-planner-custom-code .popup-content.sticky {

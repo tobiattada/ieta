@@ -268,15 +268,33 @@ window.addEventListener("resize", () => {
 });
 
 // THIS IS THE STICKY FILTER
-const nav = document.querySelector("nav"); // update to your nav selector
+const nav = document.querySelector("nav.navbar");
 const popupContent = document.querySelector(".popup-content");
+let isSticky = false;
+let stickyTriggerY = null;
 
 window.addEventListener("scroll", () => {
-  const navBottom = nav.getBoundingClientRect().bottom;
-  const popupTop = popupContent.getBoundingClientRect().top;
-  popupContent.classList.toggle("sticky", popupTop <= navBottom);
-});
+  const navHeight = nav.offsetHeight;
 
+  if (!isSticky) {
+    const popupTop = popupContent.getBoundingClientRect().top;
+    if (popupTop <= navHeight) {
+      stickyTriggerY = window.scrollY;
+      isSticky = true;
+      popupContent.classList.add("sticky");
+      popupContent.style.top = `${navHeight}px`;
+    }
+  } else {
+    if (window.scrollY < stickyTriggerY) {
+      isSticky = false;
+      stickyTriggerY = null;
+      popupContent.classList.remove("sticky");
+      popupContent.style.top = "";
+    } else {
+      popupContent.style.top = `${navHeight}px`;
+    }
+  }
+});
 
 // Filter accordions
 const accordionItems = document.querySelectorAll(
