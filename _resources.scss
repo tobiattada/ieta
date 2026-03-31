@@ -1047,6 +1047,10 @@
 
       margin-top: 40px;
 
+      a{
+      	transition: .3s;
+      }
+
       @include tablet {
       	grid-template-columns: 1fr 1fr 1fr;
       	grid-gap: 20px;
@@ -1060,25 +1064,28 @@
 
     #data-list li {
     	transition: .3s;
-      &:hover{
-		transform: scale(1.02);
-		transition: .3s;
-      	a{
-      		text-decoration: none;
-      		cursor: pointer;
-      		p{
-      			text-decoration: none;
-      			color: $primary-blue;
-      			transition:.3s;
-      		}
+      	
+      	&:hover{
+			
 
-      		.image-wrap{
-      			transition:.3s;
-      			box-shadow: 0px 6px 20px 5px #0000000f;
-      			border: 1px solid $primary-blue;
-      		}
-      	}
-      }
+	      	a{
+	      		text-decoration: none;
+	      		cursor: pointer;
+	      		transform: scale(1.02);
+				transition: .3s;
+	      		p{
+	      			text-decoration: none;
+	      			color: $primary-blue;
+	      			transition:.3s;
+	      		}
+
+	      		.image-wrap{
+	      			transition:.3s;
+	      			box-shadow: 0px 6px 20px 5px #0000000f;
+	      			border: 1px solid $primary-blue;
+	      		}
+	      	}
+     	}
 
       .image-wrap{
       	transition:.3s;
@@ -1568,6 +1575,10 @@
   border-radius: 20px;
   background: $pale-blue;
   @include caption($navy-blue);
+
+  &:hover{
+  	background: $medium-blue;
+  }
 }
 
 .partner-badge img {

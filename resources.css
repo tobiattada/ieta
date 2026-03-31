@@ -3805,6 +3805,9 @@ b mark, mark b {
   grid-gap: 20px;
   margin-top: 40px;
 }
+#trip-planner-custom-code #data-list a {
+  transition: 0.3s;
+}
 @media (min-width: 768px) {
   #trip-planner-custom-code #data-list {
     grid-template-columns: 1fr 1fr 1fr;
@@ -3820,13 +3823,11 @@ b mark, mark b {
 #trip-planner-custom-code #data-list li {
   transition: 0.3s;
 }
-#trip-planner-custom-code #data-list li:hover {
-  transform: scale(1.02);
-  transition: 0.3s;
-}
 #trip-planner-custom-code #data-list li:hover a {
   text-decoration: none;
   cursor: pointer;
+  transform: scale(1.02);
+  transition: 0.3s;
 }
 #trip-planner-custom-code #data-list li:hover a p {
   text-decoration: none;
@@ -4438,6 +4439,9 @@ b mark, mark b {
   font-weight: 600;
   text-align: right;
   direction: rtl;
+}
+.partner-badge:hover {
+  background: #1c88ed;
 }
 
 .partner-badge img {

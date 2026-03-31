@@ -58,11 +58,11 @@ const FILTER_GROUPS = [
 
 // 🔹 Get logo URL
 function getLogoUrl(name) {
-  return `https://raw.githubusercontent.com/tobiattada/ieta/b96334ab31f669636698e8c150067838593fdfb2/logos/${encodeURIComponent(name.replace(/[':]/g, "").replace(/\s+/g, " ").trim())}/logo.png`;
+  return `https://raw.githubusercontent.com/tobiattada/ieta/6135c35132b39fac26f6269480bdc6b13ed65140/logos/${encodeURIComponent(name.replace(/[':]/g, "").replace(/\s+/g, " ").trim())}/logo.png`;
 }
 
 // 🔹 Load JSON
-fetch("https://raw.githubusercontent.com/tobiattada/ieta/b96334ab31f669636698e8c150067838593fdfb2/trip-platform-org-list.json")
+fetch("https://raw.githubusercontent.com/tobiattada/ieta/6135c35132b39fac26f6269480bdc6b13ed65140/trip-platform-org-list.json")
   .then(res => res.json())
   .then(json => {
     data = json;
@@ -118,9 +118,9 @@ function renderData(items, reset = true) {
   }
 
   const PARTNERS = [
-    { field: "RootOne Partner",              label: "RootOne" },
-    { field: "Masa Israel Journey Partner",  label: "Masa Israel Journey" },
-    { field: "Taglit-Birthright Partner",    label: "Taglit-Birthright" },
+    { field: "RootOne Partner",              label: "RootOne", link: "https://rootone.org/"  },
+    { field: "Masa Israel Journey Partner",  label: "Masa Israel Journey", link: "https://www.masaisrael.org/"  },
+    { field: "Taglit-Birthright Partner",    label: "Taglit-Birthright", link: "https://www.birthrightisrael.com/" },
   ];
 
   // 🔹 Build partner badges HTML
@@ -128,10 +128,10 @@ function renderData(items, reset = true) {
     const badges = PARTNERS
       .filter(p => item[p.field]?.toString().toUpperCase() === "TRUE")
       .map(p => `
-        <div class="partner-badge">
+        <a href="${p.link}" class="partner-badge">
           <img src="https://cdn.fedweb.org/fed-42/2/fontisto_plane-ticket.png" alt="partner icon">
           <span>${p.label}</span>
-        </div>`)
+        </a>`)
       .join('');
     return badges ? `<div class="partner-badges">${badges}</div>` : '';
   }
@@ -145,8 +145,7 @@ function renderData(items, reset = true) {
         </div>
         <p class="bold">${item["Program Name (for Display)"]}</p>
         <p>${item["Organization Name"]}</p>
-        ${getPartnerBadges(item)}
-      </a>`;
+      </a> ${getPartnerBadges(item)}`;
     list.appendChild(li);
   });
 
@@ -254,7 +253,7 @@ openBtn.addEventListener("click", () => {
 });
 
 popup.addEventListener("click", (e) => {
-  if (e.target === popup) {
+  if (e.target === popup || e.target.closest("a.close-filters")) {
     popup.classList.remove("active");
     filters.classList.remove("active");
     openBtn.classList.remove("active");
