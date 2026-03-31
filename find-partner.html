@@ -128,7 +128,7 @@ function renderData(items, reset = true) {
     const badges = PARTNERS
       .filter(p => item[p.field]?.toString().toUpperCase() === "TRUE")
       .map(p => `
-        <a href="${p.link}" class="partner-badge">
+        <a href="${p.link}" class="partner-badge" target="_blank">
           <img src="https://cdn.fedweb.org/fed-42/2/fontisto_plane-ticket.png" alt="partner icon">
           <span>${p.label}</span>
         </a>`)
