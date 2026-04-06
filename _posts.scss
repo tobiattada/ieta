@@ -352,7 +352,7 @@
 	    align-items: center;
 
 	    .col-1, .col-6, .col-12{width: 100%;}
-		.col-6{ padding-bottom: 20px; }
+		//.col-6{ padding-bottom: 20px; }
 
 	    @include desktop {
 	    	.col-6:first-child{ padding-right: 60px;  }

@@ -2114,6 +2114,13 @@ footer.page-footer .footer-section section.flex-item:nth-child(3) {
 footer.page-footer .footer-section section.flex-item:nth-child(4) {
   grid-area: info;
 }
+@media (min-width: 700px) {
+  footer.page-footer .footer-section {
+    grid-template-areas: "quicklinks join contact info";
+    grid-template-columns: 4fr 4fr 4fr 4fr;
+    gap: 0px;
+  }
+}
 @media (min-width: 1024px) {
   footer.page-footer .footer-section {
     grid-template-areas: "quicklinks join contact info";
@@ -2217,9 +2224,15 @@ footer.page-footer .footer-wrapper ul.social-links li img {
   margin: 0px;
   height: auto;
 }
+@media (min-width: 700px) {
+  footer.page-footer .footer-wrapper ul.social-links {
+    gap: 10px;
+  }
+}
 @media (min-width: 1024px) {
   footer.page-footer .footer-wrapper ul.social-links {
     justify-content: flex-start;
+    gap: 22px;
   }
 }
 footer.page-footer .footer-wrapper form#subForm {
@@ -16913,9 +16926,6 @@ div.two-videos {
 }
 .basic .row .col-1, .basic .row .col-6, .basic .row .col-12 {
   width: 100%;
-}
-.basic .row .col-6 {
-  padding-bottom: 20px;
 }
 @media (min-width: 1024px) {
   .basic .row {
