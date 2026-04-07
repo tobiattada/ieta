@@ -234,22 +234,39 @@ document.addEventListener("change", e => {
 const popup = document.getElementById("popup");
 const filters = document.querySelector(".filters");
 const openBtn = document.getElementById("openPopup");
+const dataList = document.getElementById("data-list");
+
 
 function updateBtnText() {
   openBtn.querySelector("p").textContent = filters.classList.contains("active") ? "Hide filters" : "Show filters";
 }
+
+function scrollToDataList() {
+  dataList.scrollIntoView({ behavior: "smooth", block: "center" });
+}
+
 
 openBtn.addEventListener("click", () => {
   const isDesktop = window.innerWidth >= 769;
   if (isDesktop) {
     filters.classList.toggle("active");
     openBtn.classList.toggle("active");
+
+    // Push data-list down by the filters' height when open
+    const dataList = document.getElementById("data-list");
+    if (filters.classList.contains("active")) {
+      dataList.style.marginTop = `${filters.offsetHeight}px`;
+    } else {
+      dataList.style.marginTop = "";
+    }
+
   } else {
     popup.classList.toggle("active");
     filters.classList.toggle("active");
     document.body.style.overflow = popup.classList.contains("active") ? "hidden" : "";
   }
   updateBtnText();
+  scrollToDataList();
 });
 
 popup.addEventListener("click", (e) => {
@@ -259,6 +276,7 @@ popup.addEventListener("click", (e) => {
     openBtn.classList.remove("active");
     document.body.style.overflow = "";
     updateBtnText();
+    scrollToDataList();
   }
 });
 
@@ -283,7 +301,6 @@ let stickyTriggerY = null;
 
 window.addEventListener("scroll", () => {
   const navHeight = nav.offsetHeight;
-
   if (!isSticky) {
     const popupTop = popupContent.getBoundingClientRect().top;
     if (popupTop <= navHeight) {
@@ -291,6 +308,17 @@ window.addEventListener("scroll", () => {
       isSticky = true;
       popupContent.classList.add("sticky");
       popupContent.style.top = `${navHeight}px`;
+
+      // Auto-collapse filters when they become sticky
+      // Auto-collapse filters when they become sticky
+      if (window.innerWidth >= 769) {
+        filters.classList.remove("active");
+        openBtn.classList.remove("active");
+        updateBtnText();
+
+        // Remove the margin when auto-collapsing on stick
+        document.getElementById("data-list").style.marginTop = "";
+      }
     }
   } else {
     if (window.scrollY < stickyTriggerY) {
@@ -298,6 +326,13 @@ window.addEventListener("scroll", () => {
       stickyTriggerY = null;
       popupContent.classList.remove("sticky");
       popupContent.style.top = "";
+
+      // Re-expand filters when they un-stick
+      if (window.innerWidth >= 769) {
+        filters.classList.add("active");
+        openBtn.classList.add("active");
+        updateBtnText();
+      }
     } else {
       popupContent.style.top = `${navHeight}px`;
     }

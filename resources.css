@@ -4247,6 +4247,7 @@ b mark, mark b {
 
 .news-event-feature .col-12 .component-feature.dynamic .box {
   width: 100%;
+  max-width: none !important;
 }
 .news-event-feature .col-12 .component-feature.dynamic .box .body {
   padding: 0px;
