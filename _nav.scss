@@ -196,7 +196,7 @@
     a { 
       text-decoration: none;
       padding: 22px 10px;
-          display: flex;
+
 
       @include p-bold($dark-gray);
 
@@ -233,7 +233,8 @@
 
       &:hover{
         color: $primary-blue;
-        border-bottom: 8px solid $primary-blue;
+        box-shadow: inset 0 0 0 8px $primary-blue;
+        //border-bottom: 8px solid $primary-blue;
       }
     }
 
@@ -247,7 +248,8 @@
     &.has-dropdown{
       a:hover{
         color: $primary-blue;
-        border-bottom: 0px solid $primary-blue;
+        // border-bottom: 0px solid $primary-blue;
+        box-shadow: inset 0 0 0 0px $primary-blue;
       }
     }
 
@@ -284,12 +286,15 @@
   }
 
   a{
-    border-bottom: 3px solid transparent;
+    box-shadow: inset 0 0 0 3px transparent;
+    //border-bottom: 3px solid transparent;
   }
 
   a:hover{ // a:hover p
     background: $light-gray !important;
-    border-bottom: 3ps solid $primary-blue;
+        box-shadow: inset 0 0 0 3px $primary-blue;
+
+    //border-bottom: 3px solid $primary-blue;
     transition:.3s;
   }
 
@@ -428,7 +433,9 @@
 @include desktop {
   .nav-item a.active { 
     @include p-bold($primary-blue);
-    border-bottom: 8px solid $primary-blue;
+
+      box-shadow: inset 0 0 0 8px $primary-blue;
+    //border-bottom: 8px solid $primary-blue;
   }
 }
 

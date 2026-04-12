@@ -2591,7 +2591,6 @@ footer.page-footer .footer-section .flex-item a:hover {
 .nav-menu .nav-item a {
   text-decoration: none;
   padding: 22px 10px;
-  display: flex;
   font-family: "Outfit", sans-serif;
   font-weight: 600;
   letter-spacing: 0%;
@@ -2708,7 +2707,7 @@ footer.page-footer .footer-section .flex-item a:hover {
 }
 .nav-menu .nav-item a:hover {
   color: #1E3EAF;
-  border-bottom: 8px solid #1E3EAF;
+  box-shadow: inset 0 0 0 8px #1E3EAF;
 }
 .nav-menu .nav-item.search a:hover {
   border-bottom: 0px solid #1E3EAF;
@@ -2716,7 +2715,7 @@ footer.page-footer .footer-section .flex-item a:hover {
 }
 .nav-menu .nav-item.has-dropdown a:hover {
   color: #1E3EAF;
-  border-bottom: 0px solid #1E3EAF;
+  box-shadow: inset 0 0 0 0px #1E3EAF;
 }
 .nav-menu .nav-item.hidden {
   display: none;
@@ -2745,11 +2744,11 @@ footer.page-footer .footer-section .flex-item a:hover {
   }
 }
 .nav-menu .nav-item.has-dropdown .dropdown a {
-  border-bottom: 3px solid transparent;
+  box-shadow: inset 0 0 0 3px transparent;
 }
 .nav-menu .nav-item.has-dropdown .dropdown a:hover {
   background: #ECECEC !important;
-  border-bottom: 3ps solid #1E3EAF;
+  box-shadow: inset 0 0 0 3px #1E3EAF;
   transition: 0.3s;
 }
 .nav-menu .nav-item.has-dropdown .dropdown.mega {
@@ -2947,7 +2946,7 @@ footer.page-footer .footer-section .flex-item a:hover {
     font-weight: 600;
     letter-spacing: 0%;
     color: #1E3EAF;
-    border-bottom: 8px solid #1E3EAF;
+    box-shadow: inset 0 0 0 8px #1E3EAF;
   }
   .nav-item a.active strong, .nav-item a.active em, .nav-item a.active b {
     font-weight: 600;
