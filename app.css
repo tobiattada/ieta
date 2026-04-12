@@ -2707,7 +2707,7 @@ footer.page-footer .footer-section .flex-item a:hover {
 }
 .nav-menu .nav-item a:hover {
   color: #1E3EAF;
-  box-shadow: inset 0 0 0 8px #1E3EAF;
+  box-shadow: inset 0 -8px 0 0 #1E3EAF;
 }
 .nav-menu .nav-item.search a:hover {
   border-bottom: 0px solid #1E3EAF;
@@ -2715,7 +2715,7 @@ footer.page-footer .footer-section .flex-item a:hover {
 }
 .nav-menu .nav-item.has-dropdown a:hover {
   color: #1E3EAF;
-  box-shadow: inset 0 0 0 0px #1E3EAF;
+  box-shadow: inset 0 0 0 0 #1E3EAF;
 }
 .nav-menu .nav-item.hidden {
   display: none;
@@ -2744,11 +2744,11 @@ footer.page-footer .footer-section .flex-item a:hover {
   }
 }
 .nav-menu .nav-item.has-dropdown .dropdown a {
-  box-shadow: inset 0 0 0 3px transparent;
+  box-shadow: inset 0 -3px 0 0 transparent;
 }
 .nav-menu .nav-item.has-dropdown .dropdown a:hover {
   background: #ECECEC !important;
-  box-shadow: inset 0 0 0 3px #1E3EAF;
+  box-shadow: inset 0 -3px 0 0 #1E3EAF;
   transition: 0.3s;
 }
 .nav-menu .nav-item.has-dropdown .dropdown.mega {
@@ -2946,7 +2946,7 @@ footer.page-footer .footer-section .flex-item a:hover {
     font-weight: 600;
     letter-spacing: 0%;
     color: #1E3EAF;
-    box-shadow: inset 0 0 0 8px #1E3EAF;
+    box-shadow: inset 0 -8px 0 0 #1E3EAF;
   }
   .nav-item a.active strong, .nav-item a.active em, .nav-item a.active b {
     font-weight: 600;
