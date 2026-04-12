@@ -2590,7 +2590,7 @@ footer.page-footer .footer-section .flex-item a:hover {
 }
 .nav-menu .nav-item a {
   text-decoration: none;
-  padding: 22px 10px;
+  padding: 22px 10px 30px 10px;
   font-family: "Outfit", sans-serif;
   font-weight: 600;
   letter-spacing: 0%;
@@ -2613,7 +2613,7 @@ footer.page-footer .footer-section .flex-item a:hover {
 }
 @media (min-width: 1300px) {
   .nav-menu .nav-item a {
-    padding: 22px 15px;
+    padding: 22px 10px 30px 10px;
     font-family: "Outfit", sans-serif;
     font-weight: 600;
     letter-spacing: 0%;
