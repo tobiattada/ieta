@@ -1,12 +1,5 @@
 <div id="trip-planner-custom-code">
   
-
-<!--   <div class="filterBtn">
-    <div id="openPopup">
-      <p>Filters</p><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 4.83337H13M4.92333 8.00004H11.0767M6.84667 11.1667H9.15333" stroke="#545454" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-    </div>
-  </div>
- -->
   <div id="popup" class="popup filter-wrapper">
       <div class="popup-content">
 
@@ -17,9 +10,6 @@
         <button id="clearFiltersBtn">Reset filters <span>×</span></button>
 
         <div class="filters">
-            <!-- <span class="close-x close-filters">×</span> -->
-            <!-- <p class="caption">Select all that apply:</p> -->
-           <!--  <button id="clearFiltersBtn">Reset filters <span>×</span></button> -->
 
           <div class="audienceFilter"><h5>Audience</h5><div id="audienceFilter" class="filter"></div></div>
           <div class="demographicFilter"><h5>Community</h5><div id="demographicFilter" class="filter"></div></div>
@@ -39,6 +29,9 @@
 
 </div>
 
+
+
+
 <script>
 
 let data = [];
@@ -48,6 +41,9 @@ let itemsToShow = 0;
 const list = document.getElementById("data-list");
 const loadMoreBtn = document.getElementById("loadMoreBtn");
 const clearFiltersBtn = document.getElementById("clearFiltersBtn");
+
+let filterChanged = false;
+
 
 const FILTER_GROUPS = [
   { id: "audienceFilter",    label: "Audience",         cols: ["Program Audience 1","Program Audience 2","Program Audience 3","Program Audience 4"] },
@@ -158,14 +154,17 @@ function renderData(items, reset = true) {
   loadMoreBtn.style.display = "inline-block";
 }
 
-// 🔹 Wrap label text before colon in <b>
+function capitalizeAfterSlash(str) {
+  return str.split('/').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join('/');
+}
+
 function wrapLabelText() {
   document.querySelectorAll("label").forEach(label => {
     const textNode = [...label.childNodes].find(n => n.nodeType === Node.TEXT_NODE && n.textContent.trim());
     if (!textNode) return;
     const [before, ...rest] = textNode.textContent.trim().split(":");
     if (!rest.length) return;
-    const b = Object.assign(document.createElement("b"), { textContent: before.trim() });
+    const b = Object.assign(document.createElement("b"), { textContent: capitalizeAfterSlash(before.trim()) });
     const span = Object.assign(document.createElement("span"), { textContent: " " + rest.join(":").trim() });
     label.replaceChild(span, textNode);
     label.insertBefore(b, span);
@@ -190,13 +189,32 @@ function updateFilterCounts() {
   });
 }
 
+function updateFilterBadge() {
+  const total = FILTER_GROUPS.reduce((sum, g) => sum + getCheckedValues(g.id).length, 0);
+  const badge = openBtn.querySelector("span.filter-count");
+  if (total > 0) {
+    if (badge) {
+      badge.textContent = ` (${total})`;
+    } else {
+      const span = document.createElement("span");
+      span.className = "filter-count";
+      span.textContent = ` (${total})`;
+      openBtn.querySelector("p").appendChild(span);
+    }
+  } else {
+    badge?.remove();
+  }
+}
+
 function clearAllFilters(event) {
   event?.preventDefault();
   document.querySelectorAll(FILTER_GROUPS.map(g => `#${g.id} input`).join(", ")).forEach(cb => cb.checked = false);
   itemsToShow = 0;
   renderData(data);
+  filterChanged = true;
   updateClearButtonVisibility();
   updateFilterCounts();
+  updateFilterBadge();
 }
 
 // 🔹 Events
@@ -210,13 +228,14 @@ clearFiltersBtn.addEventListener("click", clearAllFilters);
 
 document.addEventListener("change", e => {
   if (e.target.matches("input[type=checkbox]")) {
+    filterChanged = true;
     applyFilters();
     updateClearButtonVisibility();
     updateFilterCounts();
+    updateFilterBadge();
   }
 });
 
-</script>
 
 
 
@@ -225,48 +244,55 @@ document.addEventListener("change", e => {
 
 
 
-
-
-
-
-
-<script>
 const popup = document.getElementById("popup");
 const filters = document.querySelector(".filters");
 const openBtn = document.getElementById("openPopup");
 const dataList = document.getElementById("data-list");
 
 
-function updateBtnText() {
-  openBtn.querySelector("p").textContent = filters.classList.contains("active") ? "Hide filters" : "Show filters";
+
+// Open filters on page load (desktop only)
+if (window.innerWidth >= 769) {
+  filters.classList.add("active");
+  openBtn.classList.add("active");
+  updateBtnText();
 }
+
+
+function updateBtnText() {
+  const p = openBtn.querySelector("p");
+  const badge = p.querySelector("span.filter-count");
+  p.textContent = filters.classList.contains("active") ? "Hide filters" : "Show filters";
+  if (badge) p.appendChild(badge);
+}
+
 
 function scrollToDataList() {
-  dataList.scrollIntoView({ behavior: "smooth", block: "center" });
+  const offset = popupContent.offsetHeight + nav.offsetHeight;
+  const top = dataList.getBoundingClientRect().top + window.scrollY - offset;
+  window.scrollTo({ top, behavior: "smooth" });
 }
-
 
 openBtn.addEventListener("click", () => {
   const isDesktop = window.innerWidth >= 769;
   if (isDesktop) {
     filters.classList.toggle("active");
     openBtn.classList.toggle("active");
-
-    // Push data-list down by the filters' height when open
-    const dataList = document.getElementById("data-list");
     if (filters.classList.contains("active")) {
       dataList.style.marginTop = `${filters.offsetHeight}px`;
     } else {
       dataList.style.marginTop = "";
+      if (filterChanged) {
+        scrollToDataList();
+        filterChanged = false;
+      }
     }
-
   } else {
     popup.classList.toggle("active");
     filters.classList.toggle("active");
-    document.body.style.overflow = popup.classList.contains("active") ? "hidden" : "";
+    //document.body.style.overflow = popup.classList.contains("active") ? "hidden" : "";
   }
   updateBtnText();
-  scrollToDataList();
 });
 
 popup.addEventListener("click", (e) => {
@@ -274,9 +300,11 @@ popup.addEventListener("click", (e) => {
     popup.classList.remove("active");
     filters.classList.remove("active");
     openBtn.classList.remove("active");
-    document.body.style.overflow = "";
     updateBtnText();
-    scrollToDataList();
+    if (filterChanged) {
+      scrollToDataList();
+      filterChanged = false;
+    }
   }
 });
 
@@ -288,7 +316,7 @@ window.addEventListener("resize", () => {
     popup.classList.remove("active");
     filters.classList.remove("active");
     openBtn.classList.remove("active");
-    document.body.style.overflow = "";
+    //document.body.style.overflow = "";
   }
   updateBtnText();
 });
@@ -308,16 +336,11 @@ window.addEventListener("scroll", () => {
       isSticky = true;
       popupContent.classList.add("sticky");
       popupContent.style.top = `${navHeight}px`;
-
-      // Auto-collapse filters when they become sticky
-      // Auto-collapse filters when they become sticky
       if (window.innerWidth >= 769) {
         filters.classList.remove("active");
         openBtn.classList.remove("active");
         updateBtnText();
-
-        // Remove the margin when auto-collapsing on stick
-        document.getElementById("data-list").style.marginTop = "";
+        dataList.style.marginTop = `${popupContent.offsetHeight}px`;
       }
     }
   } else {
@@ -326,13 +349,12 @@ window.addEventListener("scroll", () => {
       stickyTriggerY = null;
       popupContent.classList.remove("sticky");
       popupContent.style.top = "";
-
-      // Re-expand filters when they un-stick
-      if (window.innerWidth >= 769) {
-        filters.classList.add("active");
-        openBtn.classList.add("active");
-        updateBtnText();
-      }
+      dataList.style.marginTop = "";
+      // if (window.innerWidth >= 769) {
+      //   filters.classList.add("active");
+      //   openBtn.classList.add("active");
+      //   updateBtnText();
+      // }
     } else {
       popupContent.style.top = `${navHeight}px`;
     }
@@ -353,4 +375,5 @@ accordionItems.forEach(item => {
     item.classList.toggle("open-filter");
   });
 });
+
 </script>

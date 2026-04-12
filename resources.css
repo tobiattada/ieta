@@ -4053,7 +4053,7 @@ b mark, mark b {
 }
 #trip-planner-custom-code .popup-content.sticky {
   position: fixed;
-  z-index: 9999;
+  z-index: 999;
   background: #fff;
   box-sizing: border-box;
   padding: 30px 20px;
