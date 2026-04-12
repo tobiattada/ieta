@@ -2591,6 +2591,7 @@ footer.page-footer .footer-section .flex-item a:hover {
 .nav-menu .nav-item a {
   text-decoration: none;
   padding: 22px 10px;
+  display: flex;
   font-family: "Outfit", sans-serif;
   font-weight: 600;
   letter-spacing: 0%;
