@@ -1,0 +1,61 @@
+<!-- The Modal -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close">×</span>
+    <div id="modal-body"></div>
+  </div>
+</div>
+
+<script>
+  const modal = document.getElementById("modal");
+  const modalBody = document.getElementById("modal-body");
+  const modalContent = modal.querySelector(".modal-content");
+  const closeBtn = modal.querySelector(".close");
+
+  // OPEN MODAL – .col-3
+
+document.querySelectorAll(".enabled .col-3").forEach(trigger => {
+  trigger.addEventListener("click", (e) => {
+    e.preventDefault();
+    modalBody.innerHTML = trigger.innerHTML;
+    modal.style.display = "flex";
+    modalContent.style.overflowY = "auto";
+    modalContent.scrollTop = 0;
+  });
+});
+
+
+  // OPEN MODAL – .col-6
+
+document.querySelectorAll(".enabled .col-6").forEach(trigger => {
+  trigger.addEventListener("click", (e) => {
+    e.preventDefault();
+    modalBody.innerHTML = trigger.innerHTML;
+    modal.style.display = "flex";
+    modalContent.style.overflowY = "auto";
+    modalContent.scrollTop = 0;
+  });
+});
+
+
+
+
+  // CLOSE MODAL (button)
+  closeBtn.onclick = () => {
+    modal.style.display = "none";
+  };
+
+  // CLOSE MODAL (click outside)
+  window.onclick = (e) => {
+    if (e.target === modal) {
+      modal.style.display = "none";
+    }
+  };
+
+  // CLOSE MODAL (ESC key) ← ADD THIS HERE
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && modal.style.display === "flex") {
+      modal.style.display = "none";
+    }
+  });
+</script>

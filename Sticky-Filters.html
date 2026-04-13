@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
     sticky.classList.toggle('collapsed');
     toggleBtn.textContent = sticky.classList.contains('collapsed') ? 'Show Filters' : 'Hide Filters';
     setTimeout(function() {
-      placeholder.style.height = sticky.offsetHeight + 'px';
+      placeholder.style.height = sticky.offsetHeight + 30 + 'px';
     }, 0);
   });
 
