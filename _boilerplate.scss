@@ -138,6 +138,10 @@ footer, footer section{
 	background-color: $medium-gray;
 }
 
+.component-divider[data-height=medium] .line-container{
+	padding: 0px;
+}
+
 
 .breadcrumbs{
 	display: none;

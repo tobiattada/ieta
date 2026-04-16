@@ -150,6 +150,10 @@ footer, footer section {
   background-color: #545454;
 }
 
+.component-divider[data-height=medium] .line-container {
+  padding: 0px;
+}
+
 .breadcrumbs {
   display: none;
 }
