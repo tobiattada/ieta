@@ -195,8 +195,12 @@
 
     a { 
       text-decoration: none;
-      padding: 22px 10px;
+      padding: 15px 10px;
       display: flex;
+
+      @include tablet{
+        padding: 22px 10px;
+      }
 
 
       @include p-bold($dark-gray);
@@ -271,9 +275,13 @@
     // padding: 0px;
     width: auto;
     height: auto;
-        margin-top: 15px;
+      //margin-top: 15px;
+
+      font-size:14px;
 
   @include desktop {
+    font-size:16px;
+    font-size:inherit;
     display: none;
     position: absolute;
     background: #ffffff;
@@ -493,7 +501,15 @@
     box-sizing: border-box;
 
     justify-content: flex-start;
-    gap: 40px;
+    gap: 0px;
+
+    @include tablet{
+      gap: 30px;
+    }
+
+    @include desktop{
+      gap: 40px;
+    }
 
     .subscribe, .search-wrap{
       display:none;

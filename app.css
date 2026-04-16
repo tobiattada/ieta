@@ -2590,12 +2590,17 @@ footer.page-footer .footer-section .flex-item a:hover {
 }
 .nav-menu .nav-item a {
   text-decoration: none;
-  padding: 22px 10px;
+  padding: 15px 10px;
   display: flex;
   font-family: "Outfit", sans-serif;
   font-weight: 600;
   letter-spacing: 0%;
   color: #2A2A2A;
+}
+@media (min-width: 768px) {
+  .nav-menu .nav-item a {
+    padding: 22px 10px;
+  }
 }
 .nav-menu .nav-item a strong, .nav-menu .nav-item a em, .nav-menu .nav-item a b {
   font-weight: 600;
@@ -2728,10 +2733,12 @@ footer.page-footer .footer-section .flex-item a:hover {
   background: none;
   width: auto;
   height: auto;
-  margin-top: 15px;
+  font-size: 14px;
 }
 @media (min-width: 1024px) {
   .nav-menu .nav-item.has-dropdown .dropdown {
+    font-size: 16px;
+    font-size: inherit;
     display: none;
     position: absolute;
     background: #ffffff;
@@ -3006,12 +3013,25 @@ footer.page-footer .footer-section .flex-item a:hover {
     padding: 25% 20px;
     box-sizing: border-box;
     justify-content: flex-start;
+    gap: 0px;
+  }
+}
+@media (max-width: 1024px) and (min-width: 768px) {
+  .nav-menu.open {
+    gap: 30px;
+  }
+}
+@media (max-width: 1024px) and (min-width: 1024px) {
+  .nav-menu.open {
     gap: 40px;
   }
+}
+@media (max-width: 1024px) {
   .nav-menu.open .subscribe, .nav-menu.open .search-wrap {
     display: none;
   }
-
+}
+@media (max-width: 1024px) {
   .nav-menu .nav-item.open .dropdown {
     position: fixed;
     top: 0px;
@@ -3024,7 +3044,8 @@ footer.page-footer .footer-section .flex-item a:hover {
     padding: 60px 20px;
     box-sizing: border-box;
   }
-
+}
+@media (max-width: 1024px) {
   .quick-links-nav {
     width: 100%;
     gap: 10px;
