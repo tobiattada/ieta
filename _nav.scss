@@ -309,86 +309,7 @@
     transition:.3s;
   }
 
-  &.mega{
-    overflow: scroll;
-
-    @include desktop {
-      width: 900px;
-      left: -500%;
-      overflow: visible;
-    }
-
-    > p{
-      margin-top: 10px;
-      margin-bottom: 20px;
-      line-height: 20px;
-      color: $navy-blue;
-      
-      b{
-        color: $navy-blue;
-      }
-
-      @include desktop {
-        margin-top: 0px;
-        line-height: inherit;
-      }
-    }
-
-    @include largedesktop{
-       left: -270%;
-    }
-
-    ul{
-      margin-top: 10px;
-
-      li{
-        a b{
-          @include p-bold($dark-gray);
-        }
-        a p b span{color: $primary-blue;}
-
-        a p{ display: inline;}
-        
-        a:hover, a:hover p{
-          //background: $light-gray !important;
-          transition:.3s;
-
-          border-bottom: 5px solid navy;
-          padding-bottom: 5px;
-        }
-
-        p.caption{
-           @include p($dark-gray);
-        }
-      }
-
-      @include desktop {
-        display: inline-block;
-        column-count: 2;
-
-        li{
-          break-inside: avoid; 
-          margin-bottom: 20px;
-          padding-right: 60px; // to make space
-            
-          a b{
-            @include p-bold($dark-gray);
-          }
-          a p b span{color: $primary-blue;}
-
-          a p{ display: inline;}
-          
-          a:hover, a:hover p{
-            //background: $light-gray !important;
-            transition:.3s;
-
-            border-bottom: 5px solid navy;
-            padding-bottom: 5px;
-          }
-        }
-      }
-    }
-  }
+ 
 
   ul{
     list-style: none;
@@ -417,6 +338,11 @@
         @include p($dark-gray);
         padding: 0px;
         transition:.3s;
+        font-size: 14px;
+
+        @include desktop{
+          font-size: 16px;
+        }
       }
 
       a:hover, a:hover p{
